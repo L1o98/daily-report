@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产业投研日报 VOL.015 · 2026.05.20</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #2c1810;
+  --ink-mid: #5a3825;
+  --ink-light: #8a6550;
+  --ink-ghost: #c4a882;
+  --paper: #f7f4ef;
+  --paper-warm: #f0ebe0;
+  --paper-deep: #e8e0d0;
+  --accent: #b45309;
+  --accent-light: #f7eddb;
+  --accent-bright: #d97706;
+  --new-pill: #1d4ed8;
+  --new-pill-bg: #eff6ff;
+  --hot-pill: #dc2626;
+  --hot-pill-bg: #fef2f2;
+  --spread-pill: #7c3aed;
+  --spread-pill-bg: #f5f3ff;
+  --rule: rgba(90,56,37,0.15);
+  --rule-strong: rgba(90,56,37,0.35);
+  --grid-pad: 48px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ── MASTHEAD ── */
+.masthead {
+  background: #3b1a06;
+  padding: 28px var(--grid-pad) 20px;
+  position: relative;
+  overflow: hidden;
+}
+.masthead::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 8px,
+    rgba(255,255,255,0.02) 8px,
+    rgba(255,255,255,0.02) 9px
+  );
+}
+.masthead-inner { position: relative; z-index: 1; }
+.masthead-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 6px;
+}
+.vol-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.12em;
+}
+.date-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.05em;
+}
+.masthead h1 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #f5e8cf;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+.masthead-sub {
+  font-size: 11px;
+  color: rgba(245,232,207,0.5);
+  letter-spacing: 0.15em;
+  margin-top: 3px;
+}
+.stats-bar {
+  display: flex;
+  background: var(--paper-warm);
+  border-bottom: 1px solid var(--rule-strong);
+  padding: 10px var(--grid-pad);
+  gap: 0;
+}
+.stat-item {
+  flex: 1;
+  text-align: center;
+  padding: 0 12px;
+  border-right: 1px solid var(--rule);
+}
+.stat-item:last-child { border-right: none; }
+.stat-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--accent);
+  display: block;
+}
+.stat-label {
+  font-size: 10px;
+  color: var(--ink-light);
+  letter-spacing: 0.08em;
+  display: block;
+  margin-top: 1px;
+}
+
+/* ── SECTION HEADERS ── */
+.section {
+  padding: 32px var(--grid-pad) 0;
+}
+.section:last-child { padding-bottom: 40px; }
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule-strong);
+}
+.section-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  background: var(--accent-light);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.section-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+.section-desc {
+  font-size: 12px;
+  color: var(--ink-light);
+  margin-left: auto;
+}
+
+/* ── CONCEPT RADAR CARDS ── */
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.concept-card {
+  background: white;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 16px 18px;
+  position: relative;
+  overflow: hidden;
+}
+.concept-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+}
+.concept-card.new::before { background: var(--new-pill); }
+.concept-card.spreading::before { background: var(--spread-pill); }
+.concept-card.hot::before { background: var(--hot-pill); }
+
+.concept-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.concept-name {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.concept-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+.badge-new { background: var(--new-pill-bg); color: var(--new-pill); }
+.badge-spreading { background: var(--spread-pill-bg); color: var(--spread-pill); }
+.badge-hot { background: var(--hot-pill-bg); color: var(--hot-pill); }
+
+.concept-catalyst {
+  font-size: 12px;
+  color: var(--ink-mid);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.concept-stocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.stock-chip {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  background: var(--paper-warm);
+  color: var(--ink-mid);
+  padding: 2px 8px;
+  border-radius: 3px;
+  border: 1px solid var(--rule);
+}
+.stock-chip.primary {
+  background: var(--accent-light);
+  color: var(--accent);
+  border-color: rgba(180,83,9,0.25);
+  font-weight: 500;
+}
+.sources-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-ghost);
+  margin-top: 10px;
+}
+
+/* ── RESONANCE MATRIX ── */
+.matrix-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: white;
+}
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+.matrix-table th {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--ink-light);
+  letter-spacing: 0.05em;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+  text-align: center;
+  background: var(--paper-warm);
+}
+.matrix-table th.stock-col {
+  text-align: left;
+  padding-left: 16px;
+  min-width: 120px;
+}
+.matrix-table td {
+  padding: 8px;
+  border-bottom: 1px solid var(--rule);
+  text-align: center;
+  vertical-align: middle;
+}
+.matrix-table td.stock-name-cell {
+  text-align: left;
+  padding-left: 16px;
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.matrix-table td.stock-name-cell .code {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-ghost);
+  margin-left: 5px;
+}
+.matrix-table tr:last-child td { border-bottom: none; }
+.matrix-table tr:hover td { background: var(--paper); }
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-primary { background: var(--accent-bright); }
+.dot-secondary { background: var(--spread-pill); opacity: 0.6; }
+.dot-empty { opacity: 0; }
+
+.resonance-count {
+  font-family: 'DM Mono', monospace;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--accent);
+  display: inline-block;
+  min-width: 28px;
+  text-align: center;
+}
+.matrix-legend {
+  display: flex;
+  gap: 20px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--rule);
+  background: var(--paper-warm);
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--ink-light);
+}
+
+/* ── INDEX TABLE ── */
+.index-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.index-table thead th {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-light);
+  letter-spacing: 0.08em;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--rule-strong);
+  text-align: left;
+  background: var(--paper-warm);
+}
+.index-table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+.index-table tbody tr:hover td { background: rgba(255,255,255,0.5); }
+.concept-label {
+  font-weight: 500;
+  color: var(--ink);
+  font-size: 13px;
+  white-space: nowrap;
+}
+.concept-logic {
+  font-size: 12px;
+  color: var(--ink-light);
+  line-height: 1.4;
+}
+.stock-chips-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* ── GLOSSARY ── */
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.gloss-card {
+  background: white;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  padding: 14px 16px;
+}
+.gloss-term {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--new-pill);
+  margin-bottom: 4px;
+}
+.gloss-def {
+  font-size: 12px;
+  color: var(--ink-mid);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.gloss-why {
+  font-size: 11px;
+  color: var(--ink-light);
+  border-top: 1px dashed var(--rule);
+  padding-top: 5px;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 24px 0 0;
+}
+
+/* ── FOOTER ── */
+.footer {
+  padding: 16px var(--grid-pad);
+  border-top: 1px solid var(--rule-strong);
+  display: flex;
+  justify-content: space-between;
+  background: var(--paper-warm);
+}
+.footer-note {
+  font-size: 11px;
+  color: var(--ink-ghost);
+  font-family: 'DM Mono', monospace;
+}
+
+/* ── CALLOUT BOX ── */
+.callout {
+  background: var(--accent-light);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 5px 5px 0;
+  padding: 12px 16px;
+  margin: 16px 0;
+  font-size: 12px;
+  color: var(--ink-mid);
+  line-height: 1.5;
+}
+.callout strong { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-top">
+      <span class="vol-tag">VOL.015</span>
+      <span class="date-tag">2026 · 05 · 20 &nbsp;|&nbsp; WED</span>
+    </div>
+    <h1>产业投研日报</h1>
+    <div class="masthead-sub">INDUSTRIAL RESEARCH DAILY — 概念新鲜度 × 共振强度框架</div>
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-num">87</span>
+    <span class="stat-label">原始条数</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">56</span>
+    <span class="stat-label">去重有效</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">14</span>
+    <span class="stat-label">活跃概念</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">3</span>
+    <span class="stat-label">首现新概念</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">10</span>
+    <span class="stat-label">多主题共振标的</span>
+  </div>
+</div>
+
+<!-- ══════════ SECTION 1: 新概念雷达 ══════════ -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <span class="section-title">今日新概念雷达</span>
+    <span class="section-desc">首现 = 今日首次被提出 · 扩散中 = 今日被多家机构独立提及</span>
+  </div>
+
+  <div class="concept-grid">
+
+    <!-- CPO光学胶 -->
+    <div class="concept-card new">
+      <div class="concept-top">
+        <div class="concept-name">CPO光学胶</div>
+        <span class="concept-badge badge-new">首现</span>
+      </div>
+      <div class="concept-catalyst">
+        今日原文明确标注"没炒过，新东西，第一天"。CPO模块中光学胶占成本5-10%，决定良率/寿命/传输上限，800G/1.6T级核心胶90%以上仍依赖进口，国产替代几乎空白。
+      </div>
+      <div class="concept-stocks">
+        <span class="stock-chip primary">激智科技 300566</span>
+      </div>
+      <div class="sources-label">1家机构独立推介 · 多条消息共振</div>
+    </div>
+
+    <!-- AI高端阻燃剂 -->
+    <div class="concept-card new">
+      <div class="concept-top">
+        <div class="concept-name">AI高端阻燃剂（M8/M9磷系）</div>
+        <span class="concept-badge badge-new">首现</span>
+      </div>
+      <div class="concept-catalyst">
+        AI新材料全家桶下一个品种：M8/M9无卤磷系阻燃剂，对标hvlp4铜箔+cte布。境内唯一M8/9量产，配方壁垒高，台资竞对无法进欧美市场。阻燃剂在涨价：溴系涨价50-100%，磷系涨价10-15%。
+      </div>
+      <div class="concept-stocks">
+        <span class="stock-chip primary">呈和科技</span>
+        <span class="stock-chip">生益科技</span>
+        <span class="stock-chip">东材科技</span>
+      </div>
+      <div class="sources-label">1家机构 · 呈和科技已供生益/台耀/台光</div>
+    </div>
+
+    <!-- MicroLED光通信 -->
+    <div class="concept-card new">
+      <div class="concept-top">
+        <div class="concept-name">MicroLED光通信</div>
+        <span class="concept-badge badge-new">首现</span>
+      </div>
+      <div class="concept-catalyst">
+        用可见光LED替代激光进行短距光互联，功耗显著优于铜/激光方案，有望成CPO短距光互联主流方案之一。微软/台积电/富采/Credo均已布局，思特威具备TX/MicroLED/CMOS/RX四大芯片设计能力，预计6-7月推原型产品。
+      </div>
+      <div class="concept-stocks">
+        <span class="stock-chip primary">思特威</span>
+      </div>
+      <div class="sources-label">1家机构 · 产业趋势明确，今日首次专题推介</div>
+    </div>
+
+    <!-- SST固态变压器 -->
+    <div class="concept-card spreading">
+      <div class="concept-top">
+        <div class="concept-name">SST（固态变压器）</div>
+        <span class="concept-badge badge-spreading">扩散中</span>
+      </div>
+      <div class="concept-catalyst">
+        今日最热主题，6+条独立来源。核心催化：海外大厂给台达1GW+框架协议订单，6月台北电脑展英伟达将展示SST配套供电方案。2030年AIDC 100GW出货对应1200亿元市场。核心问题：电力电子、高频磁材、MFT器件、SiC均为卡位环节。
+      </div>
+      <div class="concept-stocks">
+        <span class="stock-chip primary">阳光电源</span>
+        <span class="stock-chip primary">四方股份</span>
+        <span class="stock-chip primary">云路股份</span>
+        <span class="stock-chip">特锐德</span>
+        <span class="stock-chip">金盘科技</span>
+        <span class="stock-chip">法拉电子</span>
+        <span class="stock-chip">可立克</span>
+        <span class="stock-chip">京泉华</span>
+      </div>
+      <div class="sources-label">6家机构独立提及 · 天风/长江/华安/中金/申万等</div>
+    </div>
+
+    <!-- 垂直供电/IVR -->
+    <div class="concept-card hot">
+      <div class="concept-top">
+        <div class="concept-name">垂直供电 / IVR集成稳压器</div>
+        <span class="concept-badge badge-hot">重大验证</span>
+      </div>
+      <div class="concept-catalyst">
+        ADI拟以15亿美元收购Empower Semiconductor（IVR核心公司），收购溢价约28倍营收。极大程度验证垂直供电趋势，IVR被称为"电源中的CPO"。AI服务器功耗是传统的15倍，功率器件及上游重晶硅均有量价齐升逻辑。
+      </div>
+      <div class="concept-stocks">
+        <span class="stock-chip primary">中富电路</span>
+        <span class="stock-chip">新洁能</span>
+        <span class="stock-chip">士兰微</span>
+        <span class="stock-chip">立昂微</span>
+      </div>
+      <div class="sources-label">天风电子 · ADI收购事件驱动 · 今日重大催化</div>
+    </div>
+
+    <!-- AgentOS/Token经济 -->
+    <div class="concept-card hot">
+      <div class="concept-top">
+        <div class="concept-name">AgentOS / Token经济普惠</div>
+        <span class="concept-badge badge-hot">今日催化</span>
+      </div>
+      <div class="concept-catalyst">
+        Google I/O发布Gemini 3.5 Flash/Omni/Spark，Token处理量一年翻7倍至3200万亿次/月。国内三大运营商上线算力Token套餐（类比手机流量套餐），算力网升格为国家公共基础设施。彩讯股份今日大涨20%。
+      </div>
+      <div class="concept-stocks">
+        <span class="stock-chip primary">彩讯股份</span>
+        <span class="stock-chip primary">易点天下</span>
+        <span class="stock-chip">润泽科技</span>
+        <span class="stock-chip">盛科通信</span>
+        <span class="stock-chip">锐捷网络</span>
+      </div>
+      <div class="sources-label">申万/国金/东财/中泰 · Google I/O 大会催化</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════ SECTION 2: 多主题共振标的 ══════════ -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <span class="section-title">多主题共振标的</span>
+    <span class="section-desc">同时出现在 2 个及以上今日热门概念中的标的 · 橙点=主要受益 · 紫点=次要受益</span>
+  </div>
+
+  <div class="callout">
+    <strong>核心判断：</strong>多概念叠加意味着多个催化剂在同一时间窗口共振，且不同逻辑的研究员都在覆盖，降低了单一叙事崩塌的风险。以下标的为今日最值得重点关注的共振结构。
+  </div>
+
+  <div class="matrix-wrapper">
+    <table class="matrix-table">
+      <thead>
+        <tr>
+          <th class="stock-col">标的</th>
+          <th>SST<br>固态变压器</th>
+          <th>AIDC<br>储能</th>
+          <th>垂直<br>供电</th>
+          <th>硅光/<br>CPO</th>
+          <th>机器人/<br>物理AI</th>
+          <th>商业<br>航天</th>
+          <th>光通信<br>测试</th>
+          <th>先进<br>制程</th>
+          <th>共振<br>数</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="stock-name-cell">阳光电源<span class="code">300274</span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-secondary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="resonance-count">3</span></td>
+        </tr>
+        <tr>
+          <td class="stock-name-cell">南风股份<span class="code">300004</span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-secondary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="resonance-count">3</span></td>
+        </tr>
+        <tr>
+          <td class="stock-name-cell">联讯仪器<span class="code">688289</span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-secondary"></span></td>
+          <td><span class="resonance-count">3</span></td>
+        </tr>
+        <tr>
+          <td class="stock-name-cell">中芯国际<span class="code">688981</span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-secondary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="resonance-count">2</span></td>
+        </tr>
+        <tr>
+          <td class="stock-name-cell">飞亚达<span class="code">000026</span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-secondary"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="resonance-count">3</span></td>
+        </tr>
+        <tr>
+          <td class="stock-name-cell">德业股份<span class="code">605117</span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="resonance-count">2</span></td>
+        </tr>
+        <tr>
+          <td class="stock-name-cell">芯原股份<span class="code">688521</span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-secondary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="resonance-count">2</span></td>
+        </tr>
+        <tr>
+          <td class="stock-name-cell">银轮股份<span class="code">002126</span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-secondary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="resonance-count">2</span></td>
+        </tr>
+        <tr>
+          <td class="stock-name-cell">立昂微<span class="code">605358</span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="resonance-count">2</span></td>
+        </tr>
+        <tr>
+          <td class="stock-name-cell">晶盛机电<span class="code">300316</span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-secondary"></span></td>
+          <td><span class="dot dot-primary"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="dot dot-empty"></span></td>
+          <td><span class="resonance-count">2</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="matrix-legend">
+      <div class="legend-item"><span class="dot dot-primary" style="flex-shrink:0"></span>主要受益（明确点名/首推）</div>
+      <div class="legend-item"><span class="dot dot-secondary" style="flex-shrink:0"></span>次要受益（产业链映射）</div>
+      <div class="legend-item" style="margin-left:auto; font-style:italic;">共振数≥3为今日最高优先级关注标的</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ SECTION 3: 概念全景索引 ══════════ -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <span class="section-title">概念全景索引</span>
+    <span class="section-desc">今日全部14个活跃概念 · 供查询用 · 非主阅读区</span>
+  </div>
+
+  <div style="border: 1px solid var(--rule); border-radius: 6px; overflow: hidden;">
+    <table class="index-table">
+      <thead>
+        <tr>
+          <th style="width:18%">概念主题</th>
+          <th style="width:34%">今日核心逻辑</th>
+          <th style="width:48%">相关标的（橙色=主要受益）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="concept-label">SST固态变压器</div><div class="concept-logic" style="color:var(--spread-pill)">扩散中</div></td>
+          <td class="concept-logic">台达1GW+框架订单，6月台北展英伟达亮相，1200亿元市场空间</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">阳光电源</span><span class="stock-chip primary">四方股份</span><span class="stock-chip primary">云路股份</span><span class="stock-chip">特锐德</span><span class="stock-chip">金盘科技</span><span class="stock-chip">法拉电子</span><span class="stock-chip">可立克</span><span class="stock-chip">京泉华</span><span class="stock-chip">中国西电</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">CPO光学胶</div><div class="concept-logic" style="color:var(--new-pill)">今日首现</div></td>
+          <td class="concept-logic">CPO模块关键耗材，决定良率/寿命，90%依赖进口，国产替代空间大</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">激智科技</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">AI高端阻燃剂</div><div class="concept-logic" style="color:var(--new-pill)">今日首现</div></td>
+          <td class="concept-logic">M8/M9磷系无卤，AI新材料全家桶下一个，境内唯一量产，格局好</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">呈和科技</span><span class="stock-chip">生益科技</span><span class="stock-chip">东材科技</span><span class="stock-chip">圣泉集团</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">MicroLED光通信</div><div class="concept-logic" style="color:var(--new-pill)">今日首现</div></td>
+          <td class="concept-logic">可见光替代激光短距互联，思特威6-7月推原型，台积电/微软布局</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">思特威</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">垂直供电/IVR</div><div class="concept-logic" style="color:var(--hot-pill)">重大验证</div></td>
+          <td class="concept-logic">ADI 15亿美元收购Empower，IVR为"电源中的CPO"，AI服务器功耗是传统15倍</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">中富电路</span><span class="stock-chip">新洁能</span><span class="stock-chip">士兰微</span><span class="stock-chip">立昂微</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">AIDC储能/SST</div><div class="concept-logic">持续扩散</div></td>
+          <td class="concept-logic">锂价压制缓解，北美AIDC储能蓄势；阳光电源AIDC订单首个落地</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">阳光电源</span><span class="stock-chip primary">德业股份</span><span class="stock-chip">艾罗能源</span><span class="stock-chip">锦浪科技</span><span class="stock-chip">固德威</span><span class="stock-chip">海博思创</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">磁悬浮AIDC液冷</div><div class="concept-logic">扩散中</div></td>
+          <td class="concept-logic">丹佛斯产能饱满，国内替代窗口；银轮G客户CDU板换供需缺口27-28年显著</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">鑫磊股份</span><span class="stock-chip primary">银轮股份</span><span class="stock-chip">达瑞电子</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">机器人/物理AI</div><div class="concept-logic">持续</div></td>
+          <td class="concept-logic">特斯拉量产明确指引：6月百台/周→7月300-500台→Q4 1-2k台；李强调研灵心巧手</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">福莱新材</span><span class="stock-chip primary">飞亚达</span><span class="stock-chip">峰岹科技</span><span class="stock-chip">科达利</span><span class="stock-chip">胜通能源</span><span class="stock-chip">上纬新材</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">商业航天</div><div class="concept-logic">持续</div></td>
+          <td class="concept-logic">南风股份商业航天总装业务正式落地，广目星座300颗规划；飞亚达长空齿轮</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">南风股份</span><span class="stock-chip primary">飞亚达</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">硅光/CPO产业链</div><div class="concept-logic">持续</div></td>
+          <td class="concept-logic">硅片价格拐点确认，SOI弹性方向；罗博特科、万通发展PCIe SW国产替代</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">罗博特科</span><span class="stock-chip primary">万通发展</span><span class="stock-chip">沪硅产业</span><span class="stock-chip">立昂微</span><span class="stock-chip">广立微</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">AgentOS/Token经济</div><div class="concept-logic" style="color:var(--hot-pill)">今日催化</div></td>
+          <td class="concept-logic">Google I/O发布完整Agent生态；国内运营商Token套餐落地，彩讯今日大涨20%</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">彩讯股份</span><span class="stock-chip primary">易点天下</span><span class="stock-chip">润泽科技</span><span class="stock-chip">盛科通信</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">先进制程突破</div><div class="concept-logic">持续</div></td>
+          <td class="concept-logic">中芯国际DUV+3DIC将差距缩至两年，Mate 90性能媲美台积电3nm</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">中芯国际</span><span class="stock-chip">拓荆科技</span><span class="stock-chip">华海清科</span><span class="stock-chip">长川科技</span><span class="stock-chip">飞荣达</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">存储扩产周期</div><div class="concept-logic">持续</div></td>
+          <td class="concept-logic">长存IPO辅导备案，接长鑫后第二大催化；二线存储设备大弹性</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">中科飞测</span><span class="stock-chip">微导纳米</span><span class="stock-chip">北方华创</span><span class="stock-chip">精测电子</span><span class="stock-chip">德龙激光</span>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div class="concept-label">对位芳纶/光纤上游</div><div class="concept-logic">扩散中</div></td>
+          <td class="concept-logic">AIDC光缆需求是传统DC 5-10倍，杜邦高端芳纶已涨价3倍，国产化率不足25%</td>
+          <td><div class="stock-chips-inline">
+            <span class="stock-chip primary">泰和新材</span>
+          </div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════ SECTION 4: 新词速查 ══════════ -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <span class="section-title">新词速查</span>
+    <span class="section-desc">今日首现术语 · 已收录词汇不重复出现</span>
+  </div>
+
+  <div class="glossary-grid">
+    <div class="gloss-card">
+      <div class="gloss-term">CPO光学胶 / Optical Adhesive for CPO</div>
+      <div class="gloss-def">安装在CPO（Co-Packaged Optics）模块内用于粘合光学元件的高性能透明胶材，技术要求包括折射率精准调控、低收缩、耐高低温（-55°C~125°C）。</div>
+      <div class="gloss-why">为什么重要：CPO是AI服务器光互联核心，光学胶决定模块良率和寿命，成本占比5-10%。国内90%以上依赖进口（主要是3M、陶氏），今日为A股首次被专项推介，激智科技技术同源显示光学膜。</div>
+    </div>
+    <div class="gloss-card">
+      <div class="gloss-term">IVR / 集成稳压器 Integrated Voltage Regulator</div>
+      <div class="gloss-def">将电源调节模块集成到AI芯片封装内部或正下方的垂直供电方案，核心是将稳压器尽量靠近芯片。ADI将其类比为"电源中的CPO"。</div>
+      <div class="gloss-why">为什么重要：ADI拟15亿美元收购IVR龙头Empower，溢价28倍营收。AI服务器功耗是传统的15倍，垂直供电是必然路径，事件极大验证了三次电源环节的战略价值。</div>
+    </div>
+    <div class="gloss-card">
+      <div class="gloss-term">MicroLED光通信</div>
+      <div class="gloss-def">使用MicroLED芯片发射可见光，配合CMOS接收器实现芯片间并行光互联，以代替传统激光或铜导线方案，用于板内/机架内短距高速传输。</div>
+      <div class="gloss-why">为什么重要：相比铜方案功耗更低，相比激光方案成本更低、更易集成。微软/台积电/富采等头部已布局，是继CPO后下一代光互联路线，今日中泰电子首次专项覆盖思特威。</div>
+    </div>
+    <div class="gloss-card">
+      <div class="gloss-term">AgentOS / Always-on AI</div>
+      <div class="gloss-def">Google在I/O 2026提出的AI战略新定位：AI不再被动等待用户指令，而是在后台持续运行、主动监控和执行任务的"持续运行智能体"。Gemini Spark为其代表产品。</div>
+      <div class="gloss-why">为什么重要：标志AI竞争重心从"最强模型"转向"应用场景闭环"，对推理算力需求量级有指数级影响（Google内部token消耗已超3万亿/天，Flash上线后每几周翻倍）。</div>
+    </div>
+    <div class="gloss-card">
+      <div class="gloss-term">M8/M9 磷系阻燃剂</div>
+      <div class="gloss-def">针对服务器高端PCB基板（M8/M9等级，即介电常数Dk&lt;3.5）使用的无卤磷系阻燃剂，相比传统溴系（M6以下）具备更低介电损耗、符合欧美环保标准。</div>
+      <div class="gloss-why">为什么重要：AI服务器PCB材料持续向M8/M9升级，境内唯一量产企业呈和科技格局极好（台资和日企进不了欧美），当前高端磷系已在涨价2-4万元/吨。</div>
+    </div>
+    <div class="gloss-card">
+      <div class="gloss-term">TGV / 玻璃通孔 Through Glass Via</div>
+      <div class="gloss-def">玻璃基板上的垂直导电通孔工艺，是实现高密度封装基板的关键制程，配合下拉工艺可实现线宽1-2微米、IO密度提升约10倍。</div>
+      <div class="gloss-why">为什么重要：台积电2028年COPS工艺将大规模商用玻璃基板，替代ABF约20%。2026年为商业化元年，康宁熔融下拉工艺品质最优，国内正处于验证阶段（已在前期词汇库登记"TGV"，此为补充说明更新）。</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div style="height:32px"></div>
+<div class="footer">
+  <span class="footer-note">VOL.015 &nbsp;|&nbsp; 2026.05.20 &nbsp;|&nbsp; 新概念×共振框架 v1.0</span>
+  <span class="footer-note">数据来源：李东平私域群 &nbsp;|&nbsp; 仅供内部参考，不构成投资建议</span>
+</div>
+
+</body>
+</html>
