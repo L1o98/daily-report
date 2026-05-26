@@ -3,587 +3,940 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>产业投研日报 VOL.018 · 2026.05.25</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>产业投研日报 VOL.019 · 2026.05.25</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ink:#2c1810;--ink-mid:#5a3825;--ink-light:#8a6550;--ink-ghost:#c4a882;
-  --paper:#f7f4ef;--paper-warm:#f0ebe0;
-  --accent:#b45309;--accent-light:#f7eddb;--accent-bright:#d97706;
-  --new:#1d4ed8;--new-bg:#eff6ff;
-  --hot:#dc2626;--hot-bg:#fef2f2;
-  --spread:#7c3aed;--spread-bg:#f5f3ff;
-  --rule:rgba(90,56,37,0.15);--rule-strong:rgba(90,56,37,0.35);
-  --pad:48px;
+:root {
+  --ink:           #2c1810;
+  --ink-light:     #5a3e35;
+  --ghost:         #9e8878;
+  --paper:         #f7f4ef;
+  --paper-warm:    #f0ebe0;
+  --paper-deep:    #e8dfd0;
+  --border:        #d8cfc0;
+  --masthead-bg:   #3b1a06;
+  --accent:        #b45309;
+  --accent-light:  #f7eddb;
+  --accent-pale:   #fdf8f0;
+  --pill-new:      #1d4ed8;
+  --pill-new-bg:   #eff6ff;
+  --pill-hot:      #dc2626;
+  --pill-hot-bg:   #fef2f2;
+  --pill-spread:   #7c3aed;
+  --pill-spread-bg:#f5f3ff;
+  --pill-data:     #0f766e;
+  --pill-data-bg:  #f0fdfa;
 }
-*{margin:0;padding:0;box-sizing:border-box;}
-body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-serif;font-size:14px;line-height:1.7;max-width:900px;margin:0 auto;}
 
-.masthead{background:#3b1a06;padding:28px var(--pad) 20px;position:relative;overflow:hidden;}
-.masthead::before{content:'';position:absolute;left:0;top:0;right:0;bottom:0;background:repeating-linear-gradient(-45deg,transparent,transparent 8px,rgba(255,255,255,0.02) 8px,rgba(255,255,255,0.02) 9px);}
-.mi{position:relative;z-index:1;}
-.mt{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:6px;}
-.vt{font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:.12em;}
-.dt{font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.45);}
-.masthead h1{font-family:'Noto Serif SC',serif;font-size:26px;font-weight:700;color:#f5e8cf;letter-spacing:.04em;line-height:1.1;}
-.ms{font-size:11px;color:rgba(245,232,207,0.45);letter-spacing:.15em;margin-top:3px;}
+* { margin:0; padding:0; box-sizing:border-box; }
 
-.stats-bar{display:flex;background:var(--paper-warm);border-bottom:1px solid var(--rule-strong);padding:10px var(--pad);}
-.si{flex:1;text-align:center;padding:0 12px;border-right:1px solid var(--rule);}
-.si:last-child{border-right:none;}
-.sn{font-family:'DM Mono',monospace;font-size:20px;font-weight:500;color:var(--accent);display:block;}
-.sl{font-size:10px;color:var(--ink-light);letter-spacing:.08em;display:block;margin-top:1px;}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 14px;
+  line-height: 1.72;
+  -webkit-font-smoothing: antialiased;
+}
 
-.section{padding:30px var(--pad) 0;}
-.section:last-child{padding-bottom:40px;}
-.sh{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;padding-bottom:8px;border-bottom:1px solid var(--rule-strong);}
-.snum{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);background:var(--accent-light);padding:2px 8px;border-radius:3px;letter-spacing:.1em;}
-.stitle{font-family:'Noto Serif SC',serif;font-size:16px;font-weight:600;color:var(--ink);}
-.sdesc{font-size:12px;color:var(--ink-light);margin-left:auto;}
+/* ─── MASTHEAD ─────────────────────────────────── */
+.masthead {
+  background: var(--masthead-bg);
+  position: relative;
+  overflow: hidden;
+}
+.masthead::before {
+  content:'';
+  position:absolute; inset:0;
+  background: repeating-linear-gradient(-52deg,transparent,transparent 4px,rgba(255,255,255,.016) 4px,rgba(255,255,255,.016) 8px);
+  pointer-events:none;
+}
+.masthead-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 34px 44px 30px;
+  position: relative;
+  z-index: 1;
+}
+.vol-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 12px;
+}
+.vol-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .2em;
+  color: rgba(245,232,207,.5);
+  text-transform: uppercase;
+}
+.vol-sep {
+  width: 32px; height: 1px;
+  background: rgba(245,232,207,.25);
+  margin: 0 14px;
+}
+.vol-date {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .15em;
+  color: rgba(245,232,207,.38);
+}
+.masthead-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 38px;
+  font-weight: 900;
+  color: #f5e8cf;
+  letter-spacing: -.015em;
+  line-height: 1.1;
+  margin-bottom: 9px;
+}
+.masthead-en {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .24em;
+  color: rgba(245,232,207,.35);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.masthead-lede {
+  padding: 11px 16px;
+  background: rgba(180,83,9,.2);
+  border-left: 3px solid #b45309;
+  border-radius: 2px;
+  font-size: 13px;
+  color: rgba(245,232,207,.78);
+  line-height: 1.6;
+}
+.masthead-lede strong { color: #fbbf24; font-weight: 600; }
 
-/* BIG NUMBER HIGHLIGHT */
-.num-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px;}
-.num-box{background:white;border:1px solid var(--rule);border-radius:6px;padding:14px 16px;text-align:center;}
-.num-val{font-family:'DM Mono',monospace;font-size:24px;font-weight:500;color:var(--hot);display:block;line-height:1;}
-.num-val.blue{color:var(--new);}
-.num-val.orange{color:var(--accent-bright);}
-.num-lbl{font-size:11px;color:var(--ink-mid);margin-top:5px;display:block;line-height:1.4;}
+/* ─── STATS BAR ─────────────────────────────────── */
+.stats-bar { background: var(--paper-deep); border-bottom: 1.5px solid var(--border); }
+.stats-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 44px;
+  display: flex;
+}
+.stat {
+  flex: 1;
+  padding: 15px 0;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+.stat:last-child { border-right: none; }
+.stat-n {
+  font-family: 'DM Mono', monospace;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--accent);
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.stat-l {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .05em;
+  color: var(--ghost);
+}
 
-/* CONCEPT CARDS */
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
-.card{background:white;border:1px solid var(--rule);border-radius:6px;padding:16px 18px;position:relative;overflow:hidden;}
-.card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;}
-.card.new::before{background:var(--new);}
-.card.hot::before{background:var(--hot);}
-.card.spread::before{background:var(--spread);}
-.ctop{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;}
-.cname{font-family:'Noto Serif SC',serif;font-size:15px;font-weight:600;color:var(--ink);line-height:1.3;}
-.badge{font-family:'DM Mono',monospace;font-size:10px;padding:2px 8px;border-radius:10px;white-space:nowrap;margin-left:8px;flex-shrink:0;}
-.bn{background:var(--new-bg);color:var(--new);}
-.bh{background:var(--hot-bg);color:var(--hot);}
-.bs{background:var(--spread-bg);color:var(--spread);}
-.cbody{font-size:12px;color:var(--ink-mid);line-height:1.55;margin-bottom:10px;}
-.cbody b{color:var(--ink);font-weight:500;}
-.chips{display:flex;flex-wrap:wrap;gap:5px;}
-.chip{font-family:'DM Mono',monospace;font-size:11px;background:var(--paper-warm);color:var(--ink-mid);padding:2px 8px;border-radius:3px;border:1px solid var(--rule);}
-.chip.p{background:var(--accent-light);color:var(--accent);border-color:rgba(180,83,9,.25);font-weight:500;}
-.src{font-family:'DM Mono',monospace;font-size:10px;color:var(--ink-ghost);margin-top:8px;}
+/* ─── SOURCE NOTICE ─────────────────────────────── */
+.source-notice {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 10px 44px;
+  background: var(--paper-warm);
+  border-bottom: 1px solid var(--border);
+  font-family: 'DM Mono', monospace;
+  font-size: 10.5px;
+  color: var(--ghost);
+  letter-spacing: .04em;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.src-item::before { content: '◆ '; font-size: 7px; vertical-align: middle; color: var(--accent); }
 
-/* INDEX TABLE */
-.itable{width:100%;border-collapse:collapse;background:white;border:1px solid var(--rule);border-radius:6px;overflow:hidden;}
-.itable thead th{font-family:'DM Mono',monospace;font-size:10px;color:var(--ink-light);padding:8px 12px;border-bottom:1px solid var(--rule-strong);text-align:left;background:var(--paper-warm);}
-.itable tbody td{padding:10px 12px;border-bottom:1px solid var(--rule);vertical-align:top;font-size:12px;}
-.itable tr:last-child td{border-bottom:none;}
-.clbl{font-weight:500;color:var(--ink);font-size:13px;}
-.csub{font-size:11px;margin-top:2px;}
-.ci{display:flex;flex-wrap:wrap;gap:4px;}
+/* ─── MAIN ───────────────────────────────────────── */
+.main { max-width: 920px; margin: 0 auto; padding: 0 44px 64px; }
 
-/* CALLOUT */
-.callout{background:var(--accent-light);border-left:3px solid var(--accent);border-radius:0 5px 5px 0;padding:12px 16px;margin:14px 0;font-size:12px;color:var(--ink-mid);line-height:1.6;}
-.callout b{color:var(--accent);}
+/* ─── SECTION HEADERS ───────────────────────────── */
+.sh {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: 48px 0 22px;
+  padding-bottom: 11px;
+  border-bottom: 2px solid var(--ink);
+}
+.sh-num { font-family:'DM Mono',monospace; font-size:10.5px; color:var(--ghost); letter-spacing:.14em; }
+.sh-title { font-family:'Noto Serif SC',serif; font-size:20px; font-weight:700; color:var(--ink); }
+.sh-meta { font-family:'DM Mono',monospace; font-size:10px; color:var(--ghost); margin-left:auto; }
 
-/* MATRIX */
-.mwrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:white;}
-.mtable{width:100%;border-collapse:collapse;min-width:720px;}
-.mtable th{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;color:var(--ink-light);padding:10px 8px;border-bottom:1px solid var(--rule);white-space:nowrap;text-align:center;background:var(--paper-warm);}
-.mtable th.sc{text-align:left;padding-left:16px;min-width:130px;}
-.mtable td{padding:8px;border-bottom:1px solid var(--rule);text-align:center;vertical-align:middle;}
-.mtable td.snc{text-align:left;padding-left:16px;font-size:13px;font-weight:500;white-space:nowrap;}
-.mtable td.snc .code{font-family:'DM Mono',monospace;font-size:10px;color:var(--ink-ghost);margin-left:5px;}
-.mtable tr:last-child td{border-bottom:none;}
-.mtable tr:hover td{background:var(--paper);}
-.dot{width:10px;height:10px;border-radius:50%;display:inline-block;}
-.dp{background:var(--accent-bright);}
-.ds{background:var(--spread);opacity:.6;}
-.de{opacity:0;}
-.rc{font-family:'DM Mono',monospace;font-size:18px;font-weight:500;color:var(--accent);display:inline-block;min-width:28px;text-align:center;}
-.mleg{display:flex;gap:20px;padding:10px 16px;border-top:1px solid var(--rule);background:var(--paper-warm);}
-.mli{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--ink-light);}
+/* ─── BADGES ─────────────────────────────────────── */
+.badge {
+  display:inline-block;
+  font-family:'DM Mono',monospace;
+  font-size:9.5px;
+  font-weight:500;
+  letter-spacing:.09em;
+  padding:2px 8px;
+  border-radius:2px;
+  line-height:1.7;
+  text-transform:uppercase;
+  vertical-align:middle;
+  white-space:nowrap;
+}
+.b-hot    { background:var(--pill-hot-bg);    color:var(--pill-hot);    border:1px solid rgba(220,38,38,.22); }
+.b-new    { background:var(--pill-new-bg);    color:var(--pill-new);    border:1px solid rgba(29,78,216,.22); }
+.b-spread { background:var(--pill-spread-bg); color:var(--pill-spread); border:1px solid rgba(124,58,237,.22); }
+.b-data   { background:var(--pill-data-bg);   color:var(--pill-data);   border:1px solid rgba(15,118,110,.22); }
+.b-paper  { background:#fdf4ff; color:#86198f; border:1px solid rgba(134,25,143,.2); }
 
-/* GLOSSARY */
-.gd{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
-.gc{background:white;border:1px solid var(--rule);border-radius:5px;padding:14px 16px;}
-.gt{font-family:'DM Mono',monospace;font-size:12px;font-weight:500;color:var(--new);margin-bottom:4px;}
-.gdef{font-size:12px;color:var(--ink-mid);line-height:1.5;}
-.gwhy{font-size:11px;color:var(--ink-light);border-top:1px dashed var(--rule);padding-top:5px;margin-top:6px;line-height:1.4;}
+/* ─── CHIP ───────────────────────────────────────── */
+.chip {
+  display:inline-block;
+  font-family:'DM Mono',monospace;
+  font-size:11px;
+  padding:2px 10px;
+  border-radius:2px;
+  background:var(--paper-warm);
+  color:var(--ink-light);
+  border:1px solid var(--border);
+  margin:2px 3px 2px 0;
+}
+.chip.p {
+  background:var(--accent-light);
+  color:var(--accent);
+  border-color:rgba(180,83,9,.28);
+  font-weight:500;
+}
+.chip.p::before { content:'★ '; font-size:8px; vertical-align:middle; }
 
-.footer{padding:14px var(--pad);border-top:1px solid var(--rule-strong);display:flex;justify-content:space-between;background:var(--paper-warm);}
-.fn{font-size:11px;color:var(--ink-ghost);font-family:'DM Mono',monospace;}
+/* ─── CARD GRID ─────────────────────────────────── */
+.card-grid { display:grid; grid-template-columns:1fr 1fr; gap:15px; }
+.card-full { grid-column:1 / -1; }
+
+/* ─── CONCEPT CARD ───────────────────────────────── */
+.cc {
+  background:#fff;
+  border:1px solid var(--border);
+  border-left-width:4px;
+  border-radius:4px;
+  padding:20px 22px 17px;
+}
+.cc.c-hot    { border-left-color:var(--pill-hot); }
+.cc.c-new    { border-left-color:var(--pill-new); }
+.cc.c-spread { border-left-color:var(--pill-spread); }
+.cc.c-data   { border-left-color:var(--pill-data); }
+
+.cc-header { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:12px; }
+.cc-name { font-family:'Noto Serif SC',serif; font-size:16px; font-weight:700; color:var(--ink); line-height:1.3; }
+
+.catalyst {
+  font-family:'Noto Serif SC',serif;
+  font-size:13px;
+  font-weight:600;
+  color:var(--ink);
+  padding:8px 12px;
+  background:var(--paper-warm);
+  border-left:3px solid var(--accent);
+  border-radius:2px;
+  margin-bottom:11px;
+  line-height:1.65;
+}
+
+.cc-body {
+  font-size:13px;
+  color:var(--ink-light);
+  line-height:1.78;
+  margin-bottom:13px;
+}
+
+.cc-source {
+  font-family:'DM Mono',monospace;
+  font-size:10px;
+  color:var(--ghost);
+  letter-spacing:.04em;
+  padding-top:10px;
+  border-top:1px solid var(--paper-deep);
+}
+
+/* ─── PAPER DATA BOX ─────────────────────────────── */
+.paper-data {
+  background:var(--paper-warm);
+  border:1px solid var(--paper-deep);
+  border-radius:3px;
+  padding:14px 16px;
+  margin-bottom:13px;
+}
+.pd-title {
+  font-family:'DM Mono',monospace;
+  font-size:9.5px;
+  letter-spacing:.12em;
+  color:var(--ghost);
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.pd-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+.pd-item { text-align:center; }
+.pd-num {
+  font-family:'DM Mono',monospace;
+  font-size:18px;
+  font-weight:500;
+  color:var(--accent);
+  display:block;
+  line-height:1;
+  margin-bottom:3px;
+}
+.pd-label { font-size:10.5px; color:var(--ghost); line-height:1.4; }
+
+/* ─── MARKET SENTIMENT ───────────────────────────── */
+.sentiment-box {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--paper-deep);
+  border-radius: 4px;
+  padding: 18px 22px;
+  margin-top: 15px;
+}
+.sb-header {
+  font-family:'DM Mono',monospace;
+  font-size:10px;
+  letter-spacing:.12em;
+  color:var(--ghost);
+  text-transform:uppercase;
+  margin-bottom:14px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.sb-header::after { content:''; flex:1; height:1px; background:var(--paper-deep); }
+.sb-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.sb-item {
+  padding:10px 13px;
+  background:var(--paper-warm);
+  border-radius:3px;
+  font-family:'Noto Serif SC',serif;
+  font-size:12.5px;
+  color:var(--ink-light);
+  line-height:1.65;
+  border-left:2px solid var(--border);
+}
+.sb-item.highlight { border-left-color:var(--accent); background:var(--accent-pale); color:var(--ink); }
+.sb-footer {
+  margin-top:10px;
+  font-family:'DM Mono',monospace;
+  font-size:10px;
+  color:var(--ghost);
+  font-style:italic;
+}
+
+/* ─── CALLOUT / HIGHLIGHT BOX ───────────────────── */
+.callout {
+  background:var(--accent-pale);
+  border:1px solid rgba(180,83,9,.18);
+  border-radius:4px;
+  padding:15px 20px;
+  margin-bottom:18px;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+.callout-icon { font-size:18px; flex-shrink:0; margin-top:1px; }
+.callout-text {
+  font-family:'Noto Serif SC',serif;
+  font-size:13.5px;
+  font-weight:600;
+  color:var(--ink);
+  line-height:1.65;
+}
+.callout-text em { font-style:normal; color:var(--accent); }
+
+/* ─── MATRIX TABLE ───────────────────────────────── */
+.mtable {
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:4px;
+  overflow:hidden;
+  font-size:13px;
+}
+.mtable th {
+  font-family:'DM Mono',monospace;
+  font-size:9.5px;
+  letter-spacing:.07em;
+  color:var(--ghost);
+  font-weight:500;
+  background:var(--paper-warm);
+  padding:10px 14px;
+  text-align:center;
+  border-bottom:1.5px solid var(--border);
+  border-right:1px solid var(--border);
+  line-height:1.5;
+}
+.mtable th:first-child { text-align:left; width:110px; }
+.mtable th:last-child { border-right:none; }
+.mtable td {
+  padding:10px 14px;
+  border-bottom:1px solid var(--paper-deep);
+  border-right:1px solid var(--paper-deep);
+  text-align:center;
+  vertical-align:middle;
+}
+.mtable td:first-child { text-align:left; font-weight:500; color:var(--ink); }
+.mtable td:last-child { border-right:none; }
+.mtable tr:last-child td { border-bottom:none; }
+.dot-p { width:13px; height:13px; background:var(--accent); border-radius:50%; display:inline-block; }
+.dot-s { width:13px; height:13px; background:transparent; border:2px solid var(--pill-spread); border-radius:50%; display:inline-block; opacity:.55; }
+.res { font-family:'DM Mono',monospace; font-size:22px; font-weight:500; color:var(--accent); line-height:1; }
+.res.hi { font-size:28px; }
+
+/* ─── INDEX TABLE ────────────────────────────────── */
+.idx-wrap { background:#fff; border:1px solid var(--border); border-radius:4px; overflow:hidden; }
+.idx-table { width:100%; border-collapse:collapse; font-size:12.5px; }
+.idx-table th {
+  font-family:'DM Mono',monospace;
+  font-size:9.5px;
+  letter-spacing:.1em;
+  color:var(--ghost);
+  text-transform:uppercase;
+  padding:8px 14px;
+  background:var(--paper-warm);
+  border-bottom:1.5px solid var(--border);
+  border-right:1px solid var(--border);
+  text-align:left;
+}
+.idx-table th:last-child { border-right:none; }
+.idx-table td {
+  padding:11px 14px;
+  border-bottom:1px solid var(--paper-deep);
+  border-right:1px solid var(--paper-deep);
+  vertical-align:top;
+  color:var(--ink-light);
+  line-height:1.65;
+}
+.idx-table td:first-child { white-space:nowrap; color:var(--ink); font-weight:500; }
+.idx-table td:last-child { border-right:none; }
+.idx-table tr:last-child td { border-bottom:none; }
+
+/* ─── GLOSSARY ───────────────────────────────────── */
+.glos-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.glos-card {
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:18px 20px;
+}
+.glos-term {
+  font-family:'DM Mono',monospace;
+  font-size:12.5px;
+  font-weight:500;
+  color:var(--pill-new);
+  letter-spacing:.04em;
+  display:block;
+  margin-bottom:8px;
+}
+.glos-def { font-size:12.5px; color:var(--ink-light); line-height:1.72; margin-bottom:10px; }
+.glos-why {
+  font-size:11.5px;
+  color:var(--ghost);
+  padding-top:9px;
+  border-top:1px solid var(--paper-deep);
+  line-height:1.65;
+}
+.glos-why strong { color:var(--accent); font-weight:500; }
+
+/* ─── PAPER QUOTE ────────────────────────────────── */
+.paper-quote {
+  background: #fdf4ff;
+  border-left: 3px solid #86198f;
+  border-radius: 2px;
+  padding: 11px 14px;
+  margin: 12px 0;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.7;
+  font-style: italic;
+}
+.paper-quote .attr {
+  display: block;
+  margin-top: 6px;
+  font-style: normal;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--ghost);
+}
+
+/* ─── FOOTER ─────────────────────────────────────── */
+.footer {
+  background: var(--masthead-bg);
+  padding: 22px 44px;
+  text-align: center;
+}
+.footer-text { font-family:'DM Mono',monospace; font-size:10px; color:rgba(245,232,207,.3); letter-spacing:.1em; }
+
+/* ─── RESPONSIVE ─────────────────────────────────── */
+@media (max-width:680px) {
+  .masthead-inner,.stats-inner,.main,.footer { padding-left:20px; padding-right:20px; }
+  .card-grid,.glos-grid,.sb-grid,.pd-grid { grid-template-columns:1fr; }
+  .card-full { grid-column:1; }
+  .stats-inner { flex-wrap:wrap; }
+  .stat { min-width:50%; }
+}
 </style>
 </head>
 <body>
 
-<div class="masthead">
-  <div class="mi">
-    <div class="mt"><span class="vt">VOL.018</span><span class="dt">2026 · 05 · 25 &nbsp;|&nbsp; SUN</span></div>
-    <h1>产业投研日报</h1>
-    <div class="ms">INDUSTRIAL RESEARCH DAILY — 概念新鲜度 × 共振强度框架</div>
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="vol-row">
+      <span class="vol-num">VOL.019</span>
+      <div class="vol-sep"></div>
+      <span class="vol-date">2026.05.25 &nbsp;·&nbsp; MONDAY &nbsp;·&nbsp; 韬定律论文发布日</span>
+    </div>
+    <h1 class="masthead-title">产业投研日报</h1>
+    <div class="masthead-en">INDUSTRIAL RESEARCH DAILY — 概念新鲜度 × 共振强度框架</div>
+    <div class="masthead-lede">
+      <strong>今日关键事件：</strong>华为何廷波在ChinaXiv发表τ定律论文（2026.05.25），以6年381颗量产芯片为实证，提出取代摩尔定律的全栈时延优化路线。东吴电子跟进研报，点名先进封装标的。今日为<strong>单主题极端聚焦日</strong>——信息量稀少但信号强度达近期最高。
+    </div>
   </div>
-</div>
+</header>
 
+<!-- STATS BAR -->
 <div class="stats-bar">
-  <div class="si"><span class="sn">70</span><span class="sl">原始条数</span></div>
-  <div class="si"><span class="sn">48</span><span class="sl">去重有效</span></div>
-  <div class="si"><span class="sn">13</span><span class="sl">活跃概念</span></div>
-  <div class="si"><span class="sn">6</span><span class="sl">首现新概念</span></div>
-  <div class="si"><span class="sn">8</span><span class="sl">多主题共振标的</span></div>
-</div>
-
-<!-- ══ SECTION 1 ══ -->
-<div class="section">
-  <div class="sh">
-    <span class="snum">01</span>
-    <span class="stitle">今日新概念雷达</span>
-    <span class="sdesc">首现 = 今日首次被提出 · 扩散中 = 多家机构独立提及 · 重大催化 = 外部事件</span>
-  </div>
-
-  <!-- 今日核心数字 -->
-  <div class="num-row">
-    <div class="num-box">
-      <span class="num-val">+590%</span>
-      <span class="num-lbl">Rubin CPX单柜供电价值量<br>vs GB300</span>
-    </div>
-    <div class="num-box">
-      <span class="num-val orange">+435%</span>
-      <span class="num-lbl">Rubin单柜内存价值量<br>17TB→54TB</span>
-    </div>
-    <div class="num-box">
-      <span class="num-val blue">1/4</span>
-      <span class="num-lbl">DeepSeek API永久降价<br>输入0.025元/百万Token</span>
-    </div>
-    <div class="num-box">
-      <span class="num-val orange">+719%</span>
-      <span class="num-lbl">长鑫Q1营收同比增速<br>508亿元</span>
-    </div>
-  </div>
-
-  <div class="grid">
-
-    <!-- HVDC爆发拐点 -->
-    <div class="card hot">
-      <div class="ctop">
-        <div class="cname">HVDC爆发拐点 · 供电价值量+590%</div>
-        <span class="badge bh">今日最大变化</span>
-      </div>
-      <div class="cbody">
-        DB电新今日核心推介：Rubin CPX机架开始用HVDC，单柜供电价值量从<b>5.76万→39.8万美元（+590%）</b>，单W价值量0.41→1.05美元（+156%），单柜功率140kW→380kW。Rubin Ultra将用600kW，价值量还将进一步通胀。<br><br>
-        产业验证：<b>台达已与至少3家美国云厂商合作HVDC平台，ASIC电源架项目预计26H2开始落地。</b>东北计算机确认：SST/HVDC是本轮PCB、电源通胀的核心驱动，26年是比较关键的窗口，27-28年渗透率逐步提升。
-      </div>
-      <div class="chips">
-        <span class="chip p">中恒电气</span>
-        <span class="chip p">麦格米特</span>
-        <span class="chip p">盛弘股份</span>
-        <span class="chip p">科士达</span>
-        <span class="chip">科华数据</span>
-        <span class="chip">禾望电气</span>
-        <span class="chip">锐明技术</span>
-        <span class="chip">金盘科技</span>
-      </div>
-      <div class="src">DB电新&AI · 东北计算机 · HVDC是SST之前的过渡方案，先于SST大规模落地</div>
-    </div>
-
-    <!-- DeepSeek永久降价 -->
-    <div class="card hot">
-      <div class="ctop">
-        <div class="cname">DeepSeek API永久降价 · 国产AI闭环验证</div>
-        <span class="badge bh">今日最大AI催化</span>
-      </div>
-      <div class="cbody">
-        DeepSeek官宣<b>永久降价至原价1/4</b>，输入成本最低0.025元/百万Token，输出6元/百万Token，大超预期。降价底气三点：①模型架构省算力；②<b>国产模型+华为昇腾闭环跑通</b>，不缺算力；③首轮融资传闻500-700亿同步发酵。<br><br>
-        A股影响：①AI应用加速渗透（成本门槛再降）；②<b>国产算力直接受益</b>——DeepSeek与国产算力深度绑定，"地板价"吸引更多用户使用，拉动整个国产AI算力产业链。
-      </div>
-      <div class="chips">
-        <span class="chip p">寒武纪</span>
-        <span class="chip p">海光信息</span>
-        <span class="chip p">彩讯股份</span>
-        <span class="chip">润建股份</span>
-        <span class="chip">智谱</span>
-        <span class="chip">禾盛新材</span>
-      </div>
-      <div class="src">今日最大AI行业新闻 · 国产大模型+国产算力闭环，重塑AI新生态</div>
-    </div>
-
-    <!-- 博迁新材/镍粉垄断 -->
-    <div class="card new">
-      <div class="ctop">
-        <div class="cname">博迁新材 · MLCC镍粉垄断 "AI心脏支架"</div>
-        <span class="badge bn">首次系统推介</span>
-      </div>
-      <div class="cbody">
-        华创电新今日首次系统性推介：VR200整柜MLCC<b>60万颗</b>（GB300为44万颗，H20仅4万颗），高端MLCC需求爆发拉动镍粉。博迁新材：<b>高端镍粉市占率50%，80/120nm高端产品全球唯二，国内唯一供应商</b>，主要客户三星电机。<br><br>
-        空间测算：高端服务器镍粉市场空间超4万吨，公司市占率50%，高端镍粉单位盈利10-15万/吨，<b>可展望20-30亿业绩，当前不到10倍PE，弹性巨大。</b>类比当年锂矿在电动车中的位置，但格局更优。
-      </div>
-      <div class="chips">
-        <span class="chip p">博迁新材</span>
-        <span class="chip">国瓷材料</span>
-      </div>
-      <div class="src">华创电新 · 镍粉是MLCC上游最稀缺品种 · 今日首次专题深度</div>
-    </div>
-
-    <!-- 模拟芯片/DrMOS涨价 -->
-    <div class="card new">
-      <div class="ctop">
-        <div class="cname">DrMOS/模拟芯片涨价周期 · 缺货至2027</div>
-        <span class="badge bn">首次定量揭示</span>
-      </div>
-      <div class="cbody">
-        国联民生电子VPD专家学习笔记：<b>TI已发三次涨价函</b>，国内模拟芯片厂商涨价幅度10-20%，设备厂商优先供应数字/存储芯片，模拟芯片扩产周期长，<b>可能缺货至2027年</b>。<br><br>
-        Rubin到Rubin Ultra每个GPU的<b>DrMOS数量从80多颗增加到约100颗（+20%）</b>。电感相目前能看到涨价趋势：MPS合作铂科新材/顺络电子；英飞凌新推TLVR电感采用龙磁科技方案。未来向更高功率密度模块演进，电感/DrMOS双双通胀。
-      </div>
-      <div class="chips">
-        <span class="chip p">铂科新材</span>
-        <span class="chip p">顺络电子</span>
-        <span class="chip p">龙磁科技</span>
-        <span class="chip">圣邦股份</span>
-        <span class="chip">思瑞浦</span>
-      </div>
-      <div class="src">国联民生电子VPD专家交流 · DrMOS+TLVR双线通胀确认</div>
-    </div>
-
-    <!-- 天然气AIDC主电 -->
-    <div class="card new">
-      <div class="ctop">
-        <div class="cname">天然气发动机切入AIDC主电 · 康明斯扩产55GW</div>
-        <span class="badge bn">今日首现</span>
-      </div>
-      <div class="cbody">
-        广发机械今日披露：康明斯投资者日宣布<b>产能从35GW扩到2030年55GW</b>（+57%），数据中心收入从50亿→90亿美元以上。<b>切入AIDC主电市场</b>，开发4GW大型天然气发动机平台，2028年推出，预计2030年美国存在20-50GW未满足电力需求。<br><br>
-        核心预期差：<b>本轮不是备用电源，是主电</b>。卡特彼勒同样扩产，天然气发动机供应商（曲轴/连杆等热端件）是最直接受益环节。
-      </div>
-      <div class="chips">
-        <span class="chip p">银轮股份</span>
-        <span class="chip p">联德股份</span>
-        <span class="chip p">鹰普精密</span>
-        <span class="chip">天润工业</span>
-      </div>
-      <div class="src">广发机械 · 康明斯AnalystDay · 天然气主电vs备用电源是本轮最大预期差</div>
-    </div>
-
-    <!-- 3D打印消费电子爆发 -->
-    <div class="card new">
-      <div class="ctop">
-        <div class="cname">3D打印 · 消费电子环节明年数百亿爆发</div>
-        <span class="badge bn">今日首现</span>
-      </div>
-      <div class="cbody">
-        东北机械今日明确：<b>"从产业端了解，明年消费电子环节将有重大的产业进展，仅设备需求可能数百亿以上"</b>，核心供应商弹性非常可观，上游材料核心供应商同样爆发，建议26年重点关注。<br><br>
-        华曙高科（设备核心）、哈森股份（材料核心）是首推标的；大族激光（设备）、奥普特（机器视觉，3D打印配套）同步受益。叠加AI眼镜、折叠屏等新产品大年预期。
-      </div>
-      <div class="chips">
-        <span class="chip p">华曙高科</span>
-        <span class="chip p">哈森股份</span>
-        <span class="chip p">大族激光</span>
-        <span class="chip">奥普特</span>
-        <span class="chip">铂力特</span>
-        <span class="chip">南风股份</span>
-      </div>
-      <div class="src">东北机械 · "明年消费电子3D打印重大产业进展" · 今日措辞最强的一条新信号</div>
-    </div>
-
-    <!-- mSAP载体铜箔供需缺口 -->
-    <div class="card spread">
-      <div class="ctop">
-        <div class="cname">mSAP载体铜箔 · 27年供需缺口13%确定</div>
-        <span class="badge bs">扩散中+定量化</span>
-      </div>
-      <div class="cbody">
-        GF电子今日完整测算：<b>27年载体铜箔单月需求602万平</b>（存储357万平为最大下游），三井扩产谨慎，单月供给仅531万平，<b>供需缺口比例13%</b>。两长大幅扩产将进一步扩大缺口，价格上涨趋势确定，国产替代加速。<br><br>
-        德福科技：24年通过国内存储认证，26H1产能100万平→26H2 400万平→27年1000万平；方邦股份：26年通过两长认证，月产能可达100-120万平。
-      </div>
-      <div class="chips">
-        <span class="chip p">德福科技</span>
-        <span class="chip p">方邦股份</span>
-        <span class="chip p">宝鼎科技</span>
-        <span class="chip">铜冠铜箔</span>
-        <span class="chip">海亮股份</span>
-      </div>
-      <div class="src">GF电子详细测算 · 供需缺口13%是今日最扎实的定量数据</div>
-    </div>
-
-    <!-- SST进展实证 -->
-    <div class="card spread">
-      <div class="ctop">
-        <div class="cname">SST · 伊顿稳定运行1年+，AWS完成测试</div>
-        <span class="badge bs">产业实证升级</span>
-      </div>
-      <div class="cbody">
-        东北计算机SST深度更新：<b>伊顿在河北与世纪互联合作的1.25MW SST试点项目已稳定运行1年以上</b>（字节占比50%+，谷歌已有样机在跑，AWS已完成SST上线测试，正在考虑引入）。台达2025年与秦淮/美团合作开展试点。<br><br>
-        26年是关键窗口，27-28年渗透率逐步提升。SST=数据中心供电从"机电时代"迈向"电力电子时代"的核心入口，全链路效率98.5%+，占地减少50%+，每2MW SST对应约20万欧元价值量。
-      </div>
-      <div class="chips">
-        <span class="chip p">四方股份</span>
-        <span class="chip p">金盘科技</span>
-        <span class="chip p">新风光</span>
-        <span class="chip">京泉华</span>
-        <span class="chip">法拉电子</span>
-        <span class="chip">阳光电源</span>
-      </div>
-      <div class="src">东北计算机SST专题 · 伊顿稳定1年是今日最强产业实证</div>
-    </div>
-
+  <div class="stats-inner">
+    <div class="stat"><span class="stat-n">52</span><span class="stat-l">原始条数</span></div>
+    <div class="stat"><span class="stat-n">15</span><span class="stat-l">去重有效</span></div>
+    <div class="stat"><span class="stat-n">4</span><span class="stat-l">活跃概念</span></div>
+    <div class="stat"><span class="stat-n">1</span><span class="stat-l">首现新概念</span></div>
+    <div class="stat"><span class="stat-n">2</span><span class="stat-l">多主题共振标的</span></div>
   </div>
 </div>
 
-<!-- ══ SECTION 2 ══ -->
-<div class="section">
-  <div class="sh">
-    <span class="snum">02</span>
-    <span class="stitle">多主题共振标的</span>
-    <span class="sdesc">同时出现在 2 个及以上今日热门概念 · 橙点=主要受益 · 紫点=次要受益</span>
-  </div>
+<!-- SOURCE NOTICE -->
+<div class="source-notice">
+  <span class="src-item">华为τ定律论文（何廷波，ChinaXiv:202605.00224v1）</span>
+  <span class="src-item">东吴电子 陈海进/刘玥娇 研报</span>
+  <span class="src-item">华创计算机 祝小茜/吴鸣远 航天第九期</span>
+  <span class="src-item">高盛基金持仓报告</span>
+  <span class="src-item">花旗宏观策略</span>
+  <span class="src-item">群内转发热议（市场情绪参考）</span>
+</div>
 
-  <div class="callout">
-    <b>今日核心判断：</b>HVDC+SST+MLCC三条主线在电源/电力电子方向高度共振，麦格米特/金盘科技/四方股份是最强共振标的。存储超级周期（长鑫+719%/字节CapEx+25%）与PCB材料通胀同向强化，宏和科技/德福科技连续多日保持共振。
-  </div>
+<!-- MAIN -->
+<main class="main">
 
-  <div class="mwrap">
-    <table class="mtable">
-      <thead>
-        <tr>
-          <th class="sc">标的</th>
-          <th>HVDC/<br>SST电源</th>
-          <th>MLCC/<br>镍粉通胀</th>
-          <th>PCB材料<br>上游</th>
-          <th>存储扩产/<br>设备材料</th>
-          <th>天然气<br>主电</th>
-          <th>mSAP<br>载体铜箔</th>
-          <th>机器人/<br>物理AI</th>
-          <th>液冷/<br>散热</th>
-          <th>共振<br>数</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="snc">麦格米特<span class="code">002851</span></td>
-          <td><span class="dot dp"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot ds"></span></td>
-          <td><span class="rc">2</span></td>
-        </tr>
-        <tr>
-          <td class="snc">四方股份<span class="code">601126</span></td>
-          <td><span class="dot dp"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="rc">1</span></td>
-        </tr>
-        <tr>
-          <td class="snc">银轮股份<span class="code">002126</span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot dp"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot ds"></span></td>
-          <td><span class="dot dp"></span></td>
-          <td><span class="rc">3</span></td>
-        </tr>
-        <tr>
-          <td class="snc">德福科技<span class="code">605123</span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot dp"></span></td>
-          <td><span class="dot ds"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot dp"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="rc">3</span></td>
-        </tr>
-        <tr>
-          <td class="snc">宏和科技<span class="code">605366</span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot dp"></span></td>
-          <td><span class="dot ds"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="rc">2</span></td>
-        </tr>
-        <tr>
-          <td class="snc">鑫磊股份<span class="code">301662</span></td>
-          <td><span class="dot ds"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot dp"></span></td>
-          <td><span class="rc">2</span></td>
-        </tr>
-        <tr>
-          <td class="snc">新雷能<span class="code">300593</span></td>
-          <td><span class="dot dp"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot ds"></span></td>
-          <td><span class="rc">2</span></td>
-        </tr>
-        <tr>
-          <td class="snc">精测电子<span class="code">300567</span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot dp"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="dot de"></span></td>
-          <td><span class="rc">1</span></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="mleg">
-      <div class="mli"><span class="dot dp" style="flex-shrink:0"></span>主要受益（明确点名/首推）</div>
-      <div class="mli"><span class="dot ds" style="flex-shrink:0"></span>次要受益（产业链映射）</div>
-      <div class="mli" style="margin-left:auto;font-style:italic;">银轮股份（天然气主电+液冷+机器人）、德福科技（PCB材料+存储+mSAP）今日共振最强</div>
+<!-- ══════════════════════════════════════════════════ -->
+<!-- SECTION 01 -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="sh">
+  <span class="sh-num">SECTION 01</span>
+  <h2 class="sh-title">今日新概念雷达</h2>
+  <span class="sh-meta">4 个活跃概念</span>
+</div>
+
+<div class="card-grid">
+
+  <!-- ── CARD 1: 韬定律（全屏） ─────────────────── -->
+  <div class="cc c-hot card-full">
+    <div class="cc-header">
+      <div class="cc-name">华为韬定律（τ定律）——摩尔定律的继任者</div>
+      <div style="display:flex;gap:6px;flex-shrink:0;">
+        <span class="badge b-paper">论文首发</span>
+        <span class="badge b-hot">今日最大催化</span>
+      </div>
     </div>
+
+    <div class="catalyst">
+      华为何廷波今日于ChinaXiv发表τ定律论文：6年、381颗量产芯片实证，正式宣告几何尺寸缩放时代终结，提出以"时间（τ）"替代"空间（nm）"作为半导体技术进步的核心度量衡。
+    </div>
+
+    <!-- Paper Data Grid -->
+    <div class="paper-data">
+      <div class="pd-title">论文核心量产数据（麒麟2026 / Ascend系列）</div>
+      <div class="pd-grid">
+        <div class="pd-item">
+          <span class="pd-num">+55%</span>
+          <div class="pd-label">LogicFolding晶体管密度提升<br>155 → 238 MTr/mm²（固定节点）</div>
+        </div>
+        <div class="pd-item">
+          <span class="pd-num">+41%</span>
+          <div class="pd-label">SoC性能核心能效改善<br>同时频率+13%</div>
+        </div>
+        <div class="pd-item">
+          <span class="pd-num">500×</span>
+          <div class="pd-label">统一总线（UB）延迟降低<br>数十μs → 100ns</div>
+        </div>
+        <div class="pd-item">
+          <span class="pd-num">100×</span>
+          <div class="pd-label">AI硬件集成度预期提升<br>2026→2035年</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cc-body">
+      <strong style="color:var(--ink)">核心逻辑：</strong>τ（时间常数）被定义为跨越晶体管、电路、芯片、系统四层的统一优化目标，覆盖12个数量级（皮秒→秒）。几何缩放只是降低τ的手段之一，而非唯一方法——这直接为国产半导体绕过EUV限制、通过3D堆叠/架构优化持续迭代提供了理论根基。论文明确写道：<em>「封装工艺、内存带宽和布线设计如今所具有的战略重要性，已超越了以往仅由最先进逻辑节点所独占的地位」</em>。
+      <br><br>
+      <strong style="color:var(--ink)">产品路线图：</strong>麒麟2026（LogicFolding，3.1GHz）→ 2027（3.39GHz）→ 2028（3.71GHz）→ 2029（4GHz）。Ascend 990（2030年）将把LogicFolding引入AI加速器；到2035年，结合Hi-ONE光互联和3D折叠，AI硬件集成度预期超100倍。
+      <br><br>
+      <strong style="color:var(--ink)">EDA工具链缺口（潜在新角度）：</strong>论文明确指出「一个原生τ的工具链——将是未来十年最重要的技术支撑投资」。现有EDA工具（面积/时序/功耗独立优化）无法原生支持多层3D设计。国内EDA厂商有望受益。
+    </div>
+
+    <div class="paper-quote">
+      资本配置者认为：下一笔资金应跟随τ而非节点；企业要想保持竞争力，不再需要永远占据光刻技术的前沿地位。
+      <span class="attr">——何廷波，华为半导体，τ定律论文 §7，ChinaXiv:202605.00224v1</span>
+    </div>
+
+    <div class="chips-row" style="margin-bottom:12px;">
+      <strong style="font-size:11.5px;color:var(--ghost);margin-right:4px;">先进封装：</strong>
+      <span class="chip p">盛合晶微</span>
+      <span class="chip p">通富微电</span>
+      <span class="chip p">长电科技</span>
+      <span class="chip">甬矽电子</span>
+      &nbsp;&nbsp;
+      <strong style="font-size:11.5px;color:var(--ghost);margin-right:4px;">存储接口：</strong>
+      <span class="chip p">澜起科技</span>
+      &nbsp;&nbsp;
+      <strong style="font-size:11.5px;color:var(--ghost);margin-right:4px;">光互联：</strong>
+      <span class="chip p">盛科通信</span>
+      &nbsp;&nbsp;
+      <strong style="font-size:11.5px;color:var(--ghost);margin-right:4px;">晶圆/EDA：</strong>
+      <span class="chip">中芯国际</span>
+      <span class="chip">华虹半导体</span>
+      <span class="chip">概伦电子</span>
+      <span class="chip">华大九天</span>
+    </div>
+
+    <div class="cc-source">
+      一手来源：华为τ定律论文（何廷波，ChinaXiv:202605.00224v1，2026.05.25）&nbsp;·&nbsp; 东吴电子 陈海进/刘玥娇 研报
+    </div>
+  </div>
+
+  <!-- ── CARD 2: SpaceX ──────────────────────────── -->
+  <div class="cc c-spread">
+    <div class="cc-header">
+      <div class="cc-name">SpaceX / 国内商业航天</div>
+      <span class="badge b-spread">扩散中</span>
+    </div>
+    <div class="catalyst">
+      华创计算机第九期航天专题（今晚8点），聚焦星舰V3进展与SpaceX IPO深度解读。
+    </div>
+    <div class="cc-body">
+      SpaceX三大业务框架（Space运力 / Connectivity星链 / AI算力）持续受关注，同期华创深度报告《SpaceX商业帝国：运力、网络与算力》（20260504）作为基础材料。国内商业航天对标逻辑随IPO节奏升温。超聚变创业板简报同日发布，国产服务器/算力基础设施方向关注上会节奏。
+    </div>
+    <div class="cc-source">华创计算机 祝小茜 / 吴鸣远 &nbsp;·&nbsp; 航天专题第九期</div>
+  </div>
+
+  <!-- ── CARD 3: 存储牛熊争议 ───────────────────── -->
+  <div class="cc c-spread">
+    <div class="cc-header">
+      <div class="cc-name">存储芯片超级牛市争议</div>
+      <span class="badge b-spread">扩散中</span>
+    </div>
+    <div class="catalyst">
+      华尔街多空激辩：AI驱动是否真正改变了存储行业周期特征。
+    </div>
+    <div class="cc-body">
+      多方：AI推理侧对HBM/DRAM的需求是结构性的，本轮有别于历史周期。空方：供给端产能扩张必引过剩，萧条仍是宿命。值得注意的是，τ定律论文指出「AI系统70%以上成本用于数据存储」「供应链影响力正向内存与封装供应商倾斜」——从技术角度支持存储长期重要性，但并未否定供需周期波动风险。中芯国际（1.25万亿）对标台积电（2万亿美元）估值比较在群内热议。
+    </div>
+    <div class="cc-source">华尔街见闻 · 存储超级牛市专题</div>
+  </div>
+
+  <!-- ── CARD 4: 机构数据（全屏） ──────────────── -->
+  <div class="cc c-data card-full">
+    <div class="cc-header">
+      <div class="cc-name">机构持仓再平衡 + 花旗宏观信号</div>
+      <div style="display:flex;gap:6px;flex-shrink:0;">
+        <span class="badge b-data">数据印证</span>
+        <span class="badge b-new">首现</span>
+      </div>
+    </div>
+    <div class="cc-body" style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+      <div>
+        <strong style="color:var(--ink);display:block;margin-bottom:5px;">【高盛持仓数据】</strong>
+        基金持仓向半导体板块明显倾斜，软件板块遭减持。机构行为数据与今日韬定律引发的市场情绪形成正向共鸣——意味着本轮半导体方向资金流入具备机构支撑，而非纯粹散户情绪驱动。
+      </div>
+      <div>
+        <strong style="color:var(--ink);display:block;margin-bottom:5px;">【花旗宏观】</strong>
+        AI降本效果抑制通胀，反而给美联储创造"鸽派窗口"。AI推动的效率提升→通胀压力下降→降息空间→科技/成长板块估值修复。宏观端对半导体板块暂无压制。
+      </div>
+    </div>
+    <div class="cc-source">高盛基金持仓报告 &nbsp;·&nbsp; 花旗宏观策略 &nbsp;·&nbsp; 2026.05.25</div>
+  </div>
+
+</div><!-- end card-grid -->
+
+
+
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- SECTION 02 -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="sh">
+  <span class="sh-num">SECTION 02</span>
+  <h2 class="sh-title">多主题共振矩阵</h2>
+  <span class="sh-meta">独立来源信号 × 多主题叠加</span>
+</div>
+
+<div class="callout">
+  <div class="callout-icon">⚡</div>
+  <div class="callout-text">
+    今日为<em>单主题极端聚焦日</em>，韬定律几乎垄断全部有效信息量，跨主题共振标的仅2只。
+    <em>澜起科技</em>（先进封装+存内计算双覆盖）与<em>中芯国际</em>（国产晶圆+存储估值重估双逻辑）是今日共振优先级最高标的。
+    另：论文新提出<em>EDA工具链</em>为未来十年关键投资，概伦电子/华大九天值得前瞻布局。
   </div>
 </div>
 
-<!-- ══ SECTION 3 ══ -->
-<div class="section">
-  <div class="sh">
-    <span class="snum">03</span>
-    <span class="stitle">概念全景索引</span>
-    <span class="sdesc">今日全部13个活跃概念 · 供查询用</span>
-  </div>
-
-  <div style="border:1px solid var(--rule);border-radius:6px;overflow:hidden;">
-    <table class="itable">
-      <thead>
-        <tr>
-          <th style="width:18%">概念主题</th>
-          <th style="width:36%">今日核心逻辑</th>
-          <th style="width:46%">相关标的（橙色=主要受益）</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><div class="clbl">HVDC爆发拐点</div><div class="csub" style="color:var(--hot)">今日最大变化</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">Rubin CPX供电价值量+590%，台达已与3家云厂合作，26H2落地，ASIC电源架先行验证</td>
-          <td><div class="ci"><span class="chip p">中恒电气</span><span class="chip p">麦格米特</span><span class="chip p">盛弘股份</span><span class="chip">科士达</span><span class="chip">科华数据</span><span class="chip">锐明技术</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">SST加速落地</div><div class="csub" style="color:var(--spread)">实证升级</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">伊顿稳定运行1年+，AWS完成上线测试，谷歌样机在跑，26年关键窗口，SiC占整机40%</td>
-          <td><div class="ci"><span class="chip p">四方股份</span><span class="chip p">金盘科技</span><span class="chip p">新风光</span><span class="chip">京泉华</span><span class="chip">法拉电子</span><span class="chip">阳光电源</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">DeepSeek降价</div><div class="csub" style="color:var(--hot)">今日最大AI事件</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">API永久降至1/4，华为昇腾闭环跑通，500-700亿融资，AI应用门槛大幅降低，国产算力受益</td>
-          <td><div class="ci"><span class="chip p">寒武纪</span><span class="chip p">海光信息</span><span class="chip">禾盛新材</span><span class="chip">彩讯股份</span><span class="chip">润建股份</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">MLCC超级周期</div><div class="csub" style="color:var(--spread)">持续扩散</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">VR200整柜60万颗（H20仅4万颗），MLCC AI服务器用量26-28年CAGR 75%，村田/三星涨价确认</td>
-          <td><div class="ci"><span class="chip p">博迁新材</span><span class="chip p">三环集团</span><span class="chip p">风华高科</span><span class="chip">国瓷材料</span><span class="chip">皖维高新</span><span class="chip">天利控股</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">DrMOS/模拟芯片涨价</div><div class="csub" style="color:var(--hot-bg);color:var(--new)">今日首现</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">TI三次涨价函，每GPU DrMOS从80→100颗，缺货可能至2027，TLVR电感随之通胀</td>
-          <td><div class="ci"><span class="chip p">铂科新材</span><span class="chip p">顺络电子</span><span class="chip p">龙磁科技</span><span class="chip">圣邦股份</span><span class="chip">思瑞浦</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">天然气AIDC主电</div><div class="csub" style="color:var(--new)">今日首现</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">康明斯扩产至55GW，2028年推4GW天然气发动机平台，从备用电变为主电，卡特彼勒同步扩产</td>
-          <td><div class="ci"><span class="chip p">银轮股份</span><span class="chip p">联德股份</span><span class="chip p">鹰普精密</span><span class="chip">天润工业</span><span class="chip">潍柴动力</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">3D打印消费电子爆发</div><div class="csub" style="color:var(--new)">今日首现</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">明年消费电子3D打印重大产业进展，设备需求数百亿，核心供应商弹性可观，26年重点布局</td>
-          <td><div class="ci"><span class="chip p">华曙高科</span><span class="chip p">哈森股份</span><span class="chip">大族激光</span><span class="chip">奥普特</span><span class="chip">铂力特</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">mSAP载体铜箔</div><div class="csub" style="color:var(--spread)">定量化</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">27年供需缺口13%，存储是最大下游，德福26H2产能400万平，方邦26年通过两长认证</td>
-          <td><div class="ci"><span class="chip p">德福科技</span><span class="chip p">方邦股份</span><span class="chip p">宝鼎科技</span><span class="chip">铜冠铜箔</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">PCB材料全产业链</div><div class="csub">持续</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">VR200 PCB层数22→26层，M7→M8材料，44层中板首次引入，6月起全行业提价，东山精密目标7000亿</td>
-          <td><div class="ci"><span class="chip p">宏和科技</span><span class="chip p">东材科技</span><span class="chip p">生益科技</span><span class="chip">凌玮科技</span><span class="chip">德福科技</span><span class="chip">圣泉集团</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">存储超级周期</div><div class="csub" style="color:var(--hot)">数据验证</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">长鑫Q1 508亿（+719%），上半年盈利指引500-570亿；字节CapEx 2026年计划超2000亿（+25%）；Q2 DRAM涨58-63%</td>
-          <td><div class="ci"><span class="chip p">北方华创</span><span class="chip p">精测电子</span><span class="chip">中微公司</span><span class="chip">华海清科</span><span class="chip">创元科技</span><span class="chip">雅克科技</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">磁悬浮压缩机</div><div class="csub" style="color:var(--spread)">实证催化</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">鑫磊股权激励：26年营收15-20亿翻倍，全球需求5-6万台vs丹佛斯产能2.5万台，鑫磊可供1.5万台抢占市场</td>
-          <td><div class="ci"><span class="chip p">鑫磊股份</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">新雷能 · ASIC/G链</div><div class="csub" style="color:var(--new)">调研更新</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">G链核心ASIC客户5月送草样/8月送正样，核心GPU客户26H2发布新款；800V与台达同进度；ADI新增新雷能为VPD核心合作方，目标400亿</td>
-          <td><div class="ci"><span class="chip p">新雷能</span></div></td>
-        </tr>
-        <tr>
-          <td><div class="clbl">液冷/服务器整机</div><div class="csub">持续</div></td>
-          <td style="font-size:12px;color:var(--ink-mid);">奇鋐科技：Rubin六种Tray全液冷，2027年ASIC客户贡献超GPU，CapEx 26年150亿；Dell大涨17%创历史新高；浪潮/华勤26年各50亿利润，PE 20x低估</td>
-          <td><div class="ci"><span class="chip p">银轮股份</span><span class="chip p">浪潮信息</span><span class="chip p">华勤技术</span><span class="chip">英维克</span><span class="chip">达瑞电子</span></div></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+<div style="overflow-x:auto;">
+<table class="mtable">
+  <thead>
+    <tr>
+      <th>标的</th>
+      <th>韬定律<br>先进封装</th>
+      <th>韬定律<br>存储/互联</th>
+      <th>国产晶圆<br>估值重估</th>
+      <th>EDA<br>工具链</th>
+      <th>机构<br>超配趋势</th>
+      <th>共振数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>澜起科技</td>
+      <td><span class="dot-p"></span></td>
+      <td><span class="dot-p"></span></td>
+      <td></td>
+      <td></td>
+      <td><span class="dot-s"></span></td>
+      <td><span class="res hi">2</span></td>
+    </tr>
+    <tr>
+      <td>中芯国际</td>
+      <td><span class="dot-s"></span></td>
+      <td></td>
+      <td><span class="dot-p"></span></td>
+      <td></td>
+      <td><span class="dot-p"></span></td>
+      <td><span class="res hi">2</span></td>
+    </tr>
+    <tr>
+      <td>长电科技</td>
+      <td><span class="dot-p"></span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><span class="dot-s"></span></td>
+      <td><span class="res">1</span></td>
+    </tr>
+    <tr>
+      <td>通富微电</td>
+      <td><span class="dot-p"></span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><span class="dot-s"></span></td>
+      <td><span class="res">1</span></td>
+    </tr>
+    <tr>
+      <td>盛合晶微</td>
+      <td><span class="dot-p"></span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><span class="res">1</span></td>
+    </tr>
+    <tr>
+      <td>盛科通信</td>
+      <td></td>
+      <td><span class="dot-p"></span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><span class="res">1</span></td>
+    </tr>
+    <tr>
+      <td>华虹半导体</td>
+      <td><span class="dot-s"></span></td>
+      <td></td>
+      <td><span class="dot-s"></span></td>
+      <td></td>
+      <td></td>
+      <td><span class="res">1</span></td>
+    </tr>
+    <tr>
+      <td style="color:var(--ghost);font-style:italic;">概伦电子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><span class="dot-s"></span></td>
+      <td></td>
+      <td><span class="res" style="color:var(--ghost);">1*</span></td>
+    </tr>
+    <tr>
+      <td style="color:var(--ghost);font-style:italic;">华大九天</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><span class="dot-s"></span></td>
+      <td></td>
+      <td><span class="res" style="color:var(--ghost);">1*</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div style="margin-top:9px;font-family:'DM Mono',monospace;font-size:10px;color:var(--ghost);display:flex;gap:20px;flex-wrap:wrap;">
+  <span>● 主要受益（明确点名/论文指向）</span>
+  <span>○ 次要受益（产业链映射）</span>
+  <span>* 论文新提出方向，尚无机构明确覆盖，前瞻性参考</span>
 </div>
 
-<!-- ══ SECTION 4 ══ -->
-<div class="section">
-  <div class="sh">
-    <span class="snum">04</span>
-    <span class="stitle">新词速查</span>
-    <span class="sdesc">今日首现术语 · 已收录词汇不重复出现</span>
-  </div>
 
-  <div class="gd">
-    <div class="gc">
-      <div class="gt">HVDC / 高压直流供电 High Voltage Direct Current</div>
-      <div class="gdef">数据中心供电架构从传统交流（AC）切换为高压直流（800V DC）的方案，砍掉逆变器环节，全链路效率提升至96-98%，是SST之前的过渡方案，先于SST大规模商用。</div>
-      <div class="gwhy">为什么重要：Rubin CPX单柜供电价值量因HVDC从5.76万美元暴增至39.8万美元（+590%），是今日BOM拆解中价值量增幅最大的单一环节。台达已与3家美国云厂落地，26H2开始放量，中恒电气是国内龙头。</div>
-    </div>
-    <div class="gc">
-      <div class="gt">DrMOS / 驱动MOS一体化集成芯片</div>
-      <div class="gdef">将Gate Driver（驱动芯片）与高/低侧MOSFET集成在同一封装内的功率器件，是AI服务器供电链路中最核心的功率半导体单元，直接决定CPU/GPU的电源转换效率。</div>
-      <div class="gwhy">为什么重要：Rubin到Rubin Ultra每个GPU的DrMOS数量从80多颗增加到约100颗（+20%），TI已发三次涨价函，MPS/英飞凌/瑞萨/安森美产能均紧张。可能缺货至2027年，铂科新材/顺络电子是TLVR电感核心受益。</div>
-    </div>
-    <div class="gc">
-      <div class="gt">积层电极箔 / 粉末冶金烧结工艺</div>
-      <div class="gdef">相对于传统"减材制造"（酸碱腐蚀铝箔），新一代电极箔采用"增材制造"——将高纯度微细球形铝粉直接涂布、烧结在基材上，是铝电解电容器核心部件的下一代工艺路线。</div>
-      <div class="gwhy">为什么重要：东阳光等头部大厂正在向积层箔迁移，微细球形铝粉（博迁新材/族兴新材）是这场工艺革命最上游的卖铲人。博迁新材高端产品80/120nm全球唯二，市占率50%，可展望20-30亿业绩，当前不到10倍PE。</div>
-    </div>
-    <div class="gc">
-      <div class="gt">VPD / 垂直供电平台 Vertical Power Delivery</div>
-      <div class="gdef">将电源模块置于芯片正下方或直接集成于基板内部，缩短供电路径至毫米级，大幅降低阻抗和传输损耗。Cerebras采用Vicor方案，综合效率达96%，第二级模块高度可做到2mm以下。</div>
-      <div class="gwhy">为什么重要：ADI收购Empower后新增新雷能为核心合作方（过去ADI主要合作日系），进一步验证VPD从特种领域向AI算力加速渗透的趋势。铂科新材/顺络电子/龙磁科技是国内TLVR电感核心供应商。</div>
-    </div>
-  </div>
+<!-- ══════════════════════════════════════════════════ -->
+<!-- SECTION 03 -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="sh">
+  <span class="sh-num">SECTION 03</span>
+  <h2 class="sh-title">概念全景索引</h2>
+  <span class="sh-meta">今日全量参考</span>
 </div>
 
-<div style="height:32px"></div>
-<div class="footer">
-  <span class="fn">VOL.018 &nbsp;|&nbsp; 2026.05.25 &nbsp;|&nbsp; 概念新鲜度×共振强度框架 v1.0</span>
-  <span class="fn">数据来源：李东平私域群 &nbsp;|&nbsp; 仅供内部参考，不构成投资建议</span>
+<div class="idx-wrap">
+  <table class="idx-table">
+    <thead>
+      <tr>
+        <th style="width:160px;">概念 / 状态</th>
+        <th style="width:280px;">核心逻辑</th>
+        <th>相关标的</th>
+        <th style="width:100px;">来源</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          华为τ定律<br>
+          <span class="badge b-hot" style="margin-top:4px;">今日最大催化</span><br>
+          <span class="badge b-paper" style="margin-top:4px;">论文首发</span>
+        </td>
+        <td>以全栈时延（τ）替代摩尔定律几何缩放，通过LogicFolding/3D堆叠/统一总线/Hi-ONE四层协同实现半导体性能持续提升；不依赖EUV；封装/存储/互联战略地位全面提升；论文明确"资本应跟随τ而非节点"</td>
+        <td>
+          <span class="chip p" style="font-size:10.5px;">盛合晶微</span>
+          <span class="chip p" style="font-size:10.5px;">通富微电</span>
+          <span class="chip p" style="font-size:10.5px;">长电科技</span>
+          <span class="chip p" style="font-size:10.5px;">澜起科技</span>
+          <span class="chip p" style="font-size:10.5px;">盛科通信</span>
+          <span class="chip" style="font-size:10.5px;">甬矽电子</span>
+          <span class="chip" style="font-size:10.5px;">中芯国际</span>
+          <span class="chip" style="font-size:10.5px;">华虹</span>
+          <span class="chip" style="font-size:10.5px;">概伦电子*</span>
+          <span class="chip" style="font-size:10.5px;">华大九天*</span>
+        </td>
+        <td>何廷波 / 华为<br>东吴电子 陈海进</td>
+      </tr>
+      <tr>
+        <td>
+          SpaceX·商业航天<br>
+          <span class="badge b-spread" style="margin-top:4px;">扩散中</span>
+        </td>
+        <td>星舰V3+IPO预期双催化；华创持续跟踪（第9期），国内商业航天产业链随IPO节奏升温；超聚变创业板上会值得关注</td>
+        <td>
+          <span class="chip" style="font-size:10.5px;">超聚变（筹）</span>
+          <span class="chip" style="font-size:10.5px;">卫星互联网链</span>
+        </td>
+        <td>华创计算机<br>祝小茜/吴鸣远</td>
+      </tr>
+      <tr>
+        <td>
+          存储超级牛市争议<br>
+          <span class="badge b-spread" style="margin-top:4px;">扩散中</span>
+        </td>
+        <td>AI结构性需求 vs 供给周期过剩的分歧加剧；τ论文技术上支持存储战略地位提升，但不解决供需周期问题；中芯国际估值修复逻辑热议</td>
+        <td>
+          <span class="chip" style="font-size:10.5px;">中芯国际</span>
+          <span class="chip" style="font-size:10.5px;">华虹半导体</span>
+        </td>
+        <td>华尔街见闻</td>
+      </tr>
+      <tr>
+        <td>
+          机构持仓再平衡<br>
+          <span class="badge b-new" style="margin-top:4px;">首现数据</span>
+        </td>
+        <td>高盛持仓数据确认机构加仓半导体/减持软件；花旗：AI降本→鸽派降息窗口→成长股估值修复；宏观端无压制</td>
+        <td>
+          <span class="chip" style="font-size:10.5px;">半导体板块整体</span>
+        </td>
+        <td>高盛 · 花旗</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- SECTION 04 -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="sh">
+  <span class="sh-num">SECTION 04</span>
+  <h2 class="sh-title">新词速查</h2>
+  <span class="sh-meta">今日首现术语 · 共6条</span>
+</div>
+
+<div class="glos-grid">
+
+  <div class="glos-card">
+    <span class="glos-term">韬定律（τ定律 / Tau's Law）</span>
+    <div class="glos-def">华为提出的半导体技术进步新框架，以τ（时间常数）为统一优化指标，取代摩尔定律的晶体管尺寸缩放路线。τ被定义为跨越晶体管→电路→芯片→系统四层的分层结构，覆盖约12个数量级（皮秒至秒）。缩放因子α因应用场景而异：移动约1.3x/年，AI工作负载可达10x/年。</div>
+    <div class="glos-why"><strong>为何今日重要：</strong>这是中国被EUV卡脖子后的首个系统性技术替代理论，由华为以6年381颗量产芯片为实证。为"不依赖先进制程也能持续迭代"提供了理论基础，直接影响半导体产业的资本配置逻辑。</div>
+  </div>
+
+  <div class="glos-card">
+    <span class="glos-term">LogicFolding（逻辑折叠）</span>
+    <div class="glos-def">韬定律在芯片层的核心实现方法：将数字、模拟、存储电路垂直堆叠至多个活性层级，通过超精细间距混合键合（&lt;2μm）互连，大幅缩短关键路径导线长度，降低寄生RC效应。麒麟2026实测：晶体管密度+55%（155→238 MTr/mm²）、能效+41%、时钟频率恢复至3.1GHz——均在固定制程节点实现。</div>
+    <div class="glos-why"><strong>为何今日重要：</strong>这是韬定律已量产的核心技术，也是盛合晶微/通富微电/长电科技等A股先进封装标的的直接受益逻辑所在——混合键合（&lt;2μm间距）是LogicFolding的关键工艺。</div>
+  </div>
+
+  <div class="glos-card">
+    <span class="glos-term">Hi-ONE（近封装高密度光互联引擎）</span>
+    <div class="glos-def">华为开发的近封装光引擎产品，每模块提供8 Tb/s带宽。将SerDes信号传输距离从约100cm压缩至约5cm，消除机柜间笨重电缆，将有效传输距离从不足1米扩展至100米。采用线性设计（模拟均衡）而非高性能DSP，降低功耗和集成复杂度。</div>
+    <div class="glos-why"><strong>为何今日重要：</strong>Hi-ONE是τ定律在AI系统互联层的核心产品，对应CPO（共封装光学）产业链。它将SerDes距离大幅压缩的设计理念，为国内光互联供应链（光引擎/硅光）提供了需求方向。盛科通信被点名受益于高速光互联。</div>
+  </div>
+
+  <div class="glos-card">
+    <span class="glos-term">统一总线（Unified Bus / UB）</span>
+    <div class="glos-def">华为提出的AI集群单协议互联架构，用单一协议替代传统PCIe→NVLink→InfiniBand→TCP/IP的多层堆栈。在内存语义层实现点对点直连，采用硬件管理一致性替代软件消息传递。实测：端到端远程访问延迟从TCP/IP的数十微秒降至约100纳秒（约500倍降低），使多机架AI集群近似"单芯片系统"。</div>
+    <div class="glos-why"><strong>为何今日重要：</strong>统一总线是华为Ascend AI集群的核心互联架构，也是盛科通信被列入韬定律受益标的的根本逻辑——其以太网/智算互联产品直接服务于统一总线所需的高速无损网络。</div>
+  </div>
+
+  <div class="glos-card">
+    <span class="glos-term">扇出困境（Fan-out Dilemma）</span>
+    <div class="glos-def">2.5D AI芯片架构的根本性几何瓶颈：计算容量随芯片面积N²增长，但内存带宽、互联带宽、电源供电能力（均通过芯片边缘2.5D扇出结构实现）仅随芯片周长N线性增长。随着AI芯片越来越大，这一N²与N的差距持续扩大，导致片外带宽和供电成为性能天花板，与底层逻辑节点的先进程度无关。</div>
+    <div class="glos-why"><strong>为何今日重要：</strong>扇出困境是τ定律论文引入3D折叠（将带宽/光互联/电源从边缘迁移至表面以恢复N²扩展性）的根本动因，也解释了为何先进封装的战略地位在AI时代不可替代。</div>
+  </div>
+
+  <div class="glos-card">
+    <span class="glos-term">τ原生EDA工具链</span>
+    <div class="glos-def">τ定律论文明确指出的未来十年关键基础设施缺口：现有EDA工具（面积/时序/功耗三维独立优化）无法原生支持多层3D芯片协同设计——无法以单元粒度划分逻辑、无法对芯片间垂直互连路径做时序闭合。需要具备开放性、多物理场支持、三维原生特性的新一代工具链，华为称其为「未来十年最重要的技术支撑投资」。</div>
+    <div class="glos-why"><strong>为何今日重要：</strong>这是论文中唯一专门点出的产业生态缺口，且明确为未来关键投资方向。国内EDA厂商（概伦电子、华大九天）若能率先实现τ感知型多层3D设计支持，将获得显著先发优势。</div>
+  </div>
+
+</div><!-- end glos-grid -->
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-text">
+    产业投研日报 &nbsp;·&nbsp; VOL.019 &nbsp;·&nbsp; 2026.05.25 &nbsp;·&nbsp; AI PIPELINE &nbsp;·&nbsp; FOR INTERNAL USE ONLY
+  </div>
+</footer>
 
 </body>
 </html>
