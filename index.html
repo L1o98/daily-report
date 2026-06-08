@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>产业投研日报 VOL.029 · 2026.06.07</title>
+<title>产业投研日报 VOL.030 · 2026.06.08</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root {
+:root{
   --ink:#2c1810;--ink-light:#5a3e35;--ghost:#9e8878;
   --paper:#f7f4ef;--paper-warm:#f0ebe0;--paper-deep:#e8dfd0;--border:#d8cfc0;
   --mast:#3b1a06;--accent:#b45309;--accent-light:#f7eddb;--accent-deep:#92400e;
@@ -17,14 +17,12 @@
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-serif;font-size:13px;line-height:1.65;max-width:860px;margin:0 auto;}
 
-/* ALERT BAR */
 .alert-bar{background:#1e3a5f;padding:13px 32px;display:flex;align-items:flex-start;gap:12px;border-bottom:2px solid #3b82f6;}
 .alert-icon{font-size:18px;line-height:1;padding-top:1px;flex-shrink:0;}
 .alert-label{font-family:'DM Mono',monospace;font-size:10px;color:#93c5fd;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:4px;}
 .alert-text{color:#e0f2fe;font-size:12.5px;line-height:1.6;font-family:'Noto Serif SC',serif;}
 .alert-text em{font-style:normal;background:rgba(147,197,253,0.25);padding:0 4px;border-radius:2px;color:#bfdbfe;}
 
-/* MASTHEAD */
 .masthead{background:var(--mast);padding:26px 32px 20px;position:relative;overflow:hidden;}
 .masthead::before{content:'';position:absolute;top:0;right:0;width:220px;height:100%;background:linear-gradient(90deg,transparent,rgba(180,83,9,0.10));}
 .mast-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
@@ -34,14 +32,12 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 .mast-title em{font-style:normal;color:#fbbf24;}
 .mast-subtitle{color:rgba(253,248,240,0.50);font-size:11.5px;margin-top:6px;font-family:'DM Mono',monospace;letter-spacing:0.06em;}
 
-/* STATS BAR */
 .stats-bar{background:var(--accent);display:flex;}
 .stat-item{flex:1;padding:10px 14px;border-right:1px solid rgba(255,255,255,0.2);text-align:center;}
 .stat-item:last-child{border-right:none;}
 .stat-num{font-family:'DM Mono',monospace;font-size:20px;font-weight:500;color:#fff;display:block;line-height:1;}
 .stat-label{font-size:10px;color:rgba(255,255,255,0.72);letter-spacing:0.06em;margin-top:3px;display:block;}
 
-/* CONTEXT */
 .context-bar{background:#1c1209;padding:16px 32px;border-bottom:2px solid var(--accent);}
 .ctx-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:10px;}
 .ctx-item{display:flex;gap:12px;margin-bottom:9px;align-items:flex-start;}
@@ -50,19 +46,16 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 .ctx-text{color:rgba(253,248,240,0.78);font-size:12px;line-height:1.55;}
 .ctx-text .arrow{color:var(--accent);font-weight:700;}
 
-/* VERDICT */
 .verdict-bar{background:var(--accent);padding:14px 32px;}
 .verdict-label{font-family:'DM Mono',monospace;font-size:10px;color:rgba(255,255,255,0.60);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:6px;}
 .verdict-text{color:#fff;font-size:13.5px;line-height:1.6;font-family:'Noto Serif SC',serif;}
 .verdict-text em{font-style:normal;background:rgba(255,255,255,0.2);padding:0 4px;border-radius:2px;}
 
-/* SECTION */
 .section-hd{display:flex;align-items:center;gap:10px;padding:20px 32px 12px;}
 .section-num{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:0.1em;border:1px solid var(--accent);padding:2px 6px;border-radius:2px;}
 .section-title{font-family:'Noto Serif SC',serif;font-size:14px;font-weight:700;color:var(--ink);letter-spacing:0.04em;}
 .section-rule{flex:1;height:1px;background:var(--border);}
 
-/* HERO */
 .hero-wrap{padding:0 32px 8px;}
 .hero-card{background:var(--paper-warm);border:1px solid var(--border);border-top:4px solid var(--accent);border-radius:4px;overflow:hidden;}
 .hero-inner{padding:20px 22px 0;}
@@ -90,7 +83,6 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 .tb-label{font-family:'DM Mono',monospace;font-size:11px;color:#fcd34d;white-space:nowrap;padding-top:1px;font-weight:500;}
 .tb-text{color:#fff;font-size:13px;line-height:1.55;}
 
-/* SIGNAL */
 .sig-grid{padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .sig-card{background:var(--paper-warm);border:1px solid var(--border);border-top:3px solid var(--pill-new);border-radius:4px;overflow:hidden;}
 .sig-card.hot{border-top-color:var(--pill-hot);}
@@ -110,7 +102,6 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 .sl{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);white-space:nowrap;padding-top:1px;font-weight:500;}
 .st2{font-size:11.5px;color:var(--ink-light);line-height:1.5;}
 
-/* BG */
 .bg-grid{padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .bg-card{background:var(--paper-warm);border:1px solid var(--border);border-left:3px solid var(--border);border-radius:4px;padding:13px 14px;}
 .bg-card.accent-l{border-left-color:var(--accent);}
@@ -123,7 +114,6 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 .bg-body{font-size:11.5px;line-height:1.6;color:var(--ink-light);}
 .bg-chips{margin-top:8px;display:flex;gap:4px;flex-wrap:wrap;}
 
-/* WATCH */
 .watch-wrap{padding:0 32px;}
 .watch-table{width:100%;border-collapse:collapse;background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:12px;}
 .watch-table thead tr{background:var(--mast);}
@@ -134,10 +124,9 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 .watch-table td{padding:10px 12px;vertical-align:top;color:var(--ink-light);line-height:1.55;}
 .watch-table td:first-child{color:var(--ink);font-weight:500;font-size:12.5px;}
 .node-red{font-family:'DM Mono',monospace;font-size:10px;background:#fef2f2;color:var(--pill-hot);border:1px solid #fca5a5;padding:1px 6px;border-radius:2px;display:inline-block;}
-.node-green{font-family:'DM Mono',monospace;font-size:10px;background:#f0fdf4;color:var(--pill-green);border:1px solid #86efac;padding:1px 6px;border-radius:2px;display:inline-block;}
 .node-amber{font-family:'DM Mono',monospace;font-size:10px;background:var(--accent-light);color:var(--accent-deep);border:1px solid #fcd34d;padding:1px 6px;border-radius:2px;display:inline-block;}
+.node-green{font-family:'DM Mono',monospace;font-size:10px;background:#f0fdf4;color:var(--pill-green);border:1px solid #86efac;padding:1px 6px;border-radius:2px;display:inline-block;}
 
-/* TICKER */
 .ticker-grid{padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .ticker-card{background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;display:flex;overflow:hidden;}
 .ticker-left{background:var(--mast);padding:14px;display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:82px;}
@@ -148,7 +137,6 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 .ticker-logic{font-size:11.5px;color:var(--ink-light);line-height:1.58;margin-bottom:7px;}
 .ticker-source{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--ghost);}
 
-/* GLOSSARY */
 .gloss-wrap{padding:0 32px 32px;}
 .gloss-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
 .gc{background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;padding:12px 14px;}
@@ -157,7 +145,6 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 .gc-why{font-size:11px;color:var(--ink-light);background:var(--paper-deep);border-radius:2px;padding:5px 8px;line-height:1.55;}
 .gc-why strong{color:var(--accent);}
 
-/* FOOTER */
 .footer{background:var(--mast);padding:14px 32px;display:flex;justify-content:space-between;align-items:center;}
 .footer-brand{font-family:'Noto Serif SC',serif;font-size:12px;color:rgba(253,248,240,0.45);}
 .footer-ts{font-family:'DM Mono',monospace;font-size:10px;color:rgba(253,248,240,0.30);letter-spacing:0.06em;}
@@ -165,12 +152,12 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 </head>
 <body>
 
-<!-- ALERT BAR：徐小明操作策略 -->
+<!-- 操盘策略 -->
 <div class="alert-bar">
   <div class="alert-icon">📋</div>
   <div>
     <div class="alert-label">■ 今日操盘策略</div>
-    <div class="alert-text">周一大概率低开，<em>非AI相关个股无需恐慌抛售</em>；个股风险已大幅释放，后续大概率切换为「指数不涨个股涨」或「指数跌个股不跌」的分化格局，个股环境有望好于过去一个月。</div>
+    <div class="alert-text">低开急跌消除超短结构，序列显示<em>明天有低点</em>，当前位置止跌不急买，<em>耐心等待更确定的低点</em>再出手——市场不缺机会，缺的是耐心。</div>
   </div>
 </div>
 
@@ -178,34 +165,34 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 <div class="masthead">
   <div class="mast-top">
     <span class="mast-brand">产业投研日报</span>
-    <span class="mast-vol">VOL.029</span>
+    <span class="mast-vol">VOL.030</span>
   </div>
-  <div class="mast-title">非农冲击是<em>噪声</em>，SpaceX算力租赁与存储误读才是今日主线</div>
-  <div class="mast-subtitle">2026.06.07 SUN · 纳指-4.18% · SoCAMM降容是供给不足信号 · 中天中标15亿MPO · SpaceX-Google月租9.2亿美元</div>
+  <div class="mast-title">调整中的<em>真正预期差</em>：TLVR电感才是AI缺货核心，不是MLCC</div>
+  <div class="mast-subtitle">2026.06.08 MON · 顺络7月涨35%/高端70% · 康宁锁定亚马逊光纤 · 东材眉山6月下旬投产 · 建滔5月利润10亿环比翻倍</div>
 </div>
 
 <!-- STATS BAR -->
 <div class="stats-bar">
-  <div class="stat-item"><span class="stat-num">61</span><span class="stat-label">原始消息</span></div>
-  <div class="stat-item"><span class="stat-num">38</span><span class="stat-label">去重有效</span></div>
-  <div class="stat-item"><span class="stat-num">13</span><span class="stat-label">覆盖行业</span></div>
-  <div class="stat-item"><span class="stat-num">63</span><span class="stat-label">涉及标的</span></div>
+  <div class="stat-item"><span class="stat-num">100</span><span class="stat-label">原始消息</span></div>
+  <div class="stat-item"><span class="stat-num">90</span><span class="stat-label">去重有效</span></div>
+  <div class="stat-item"><span class="stat-num">14</span><span class="stat-label">覆盖行业</span></div>
+  <div class="stat-item"><span class="stat-num">71</span><span class="stat-label">涉及标的</span></div>
 </div>
 
 <!-- 大背景 -->
 <div class="context-bar">
-  <div class="ctx-label">■ 今日大背景 · 海外关键事件</div>
+  <div class="ctx-label">■ 今日大背景 · 产业关键动态</div>
   <div class="ctx-item">
-    <span class="ctx-who">美国非农<br>5月数据</span>
-    <span class="ctx-text">5月非农新增17.2万人，大超预期，加息预期快速升温，市场预期年内加息1次。纳指-4.18%，AI板块领跌，黄金-3.25%，白银-8.09%，全球三杀。但非农结构显示超额部分主要来自世界杯旺季前夕的餐饮业（+4.8万人），就业市场实质性韧性强于表面数字。<span class="arrow">→</span> 周一A股低开基本确定，但操盘策略明确：<strong>AI相关逻辑无变化，低开是买点而非卖点。</strong></span>
+    <span class="ctx-who">马斯克<br>唱多美光</span>
+    <span class="ctx-text">马斯克在摩根大通采访中表态："真正的瓶颈在于芯片制造能力，美光产能远不及芯片实际需求。"昨日（6月7日）美光大跌后，马斯克此言直接站在产业链一侧为存储需求背书。<span class="arrow">→</span> 继黄仁勋6月7日表示"内存短缺将持续数年"、黄仁勋与SK集团董事长合作公告后，马斯克是今日第三个级别重量的产业领袖为存储供不应求做背书，错杀逻辑进一步强化。</span>
   </div>
   <div class="ctx-item">
-    <span class="ctx-who">SpaceX<br>Google算力</span>
-    <span class="ctx-text">SpaceX招股材料披露与谷歌签署算力租赁协议：约11万块NVIDIA GPU，谷歌月付9.2亿美元，合作期至2029年6月，名义金额约303亿美元。此前已有与Anthropic每年150亿美元协议。<span class="arrow">→</span> SpaceX从训练成本中心转向算力租赁收入资产，进一步验证头部AI应用算力需求仍处高景气。商业航天板块催化在即（6月19日首飞、6月IPO），关注国内产业链。</span>
+    <span class="ctx-who">苹果WWDC<br>6月9日凌晨</span>
+    <span class="ctx-text">苹果WWDC 2026将于北京时间6月9日凌晨1点开幕，预计发布基于Gemini的全新Siri（独立APP形式，屏幕识别+跨App任务执行），并测试向第三方AI Agents开放iOS 27系统权限。iPhone 18/折叠屏+AI眼镜/桌面机器人等硬件创新将是后续催化。<span class="arrow">→</span> 关注果链标的（立讯/蓝思/鹏鼎）以及苹果AI能力升级对端侧AI整体叙事的提振效应，今晚是近期最重要的科技情绪催化节点之一。</span>
   </div>
   <div class="ctx-item">
-    <span class="ctx-who">DRAM<br>SoCAMM误读</span>
-    <span class="ctx-text">SemiAnalysis报道Vera Rubin NVL72 SoCAMM模块从192GB降至96GB，美光大跌，SK/三星跌5-8%。但韩国Meritz和中泰电子均指出：<strong>降容本质是供给不足，英伟达用减容换出货量，总出货规模反而上调10-20%</strong>，MU为唯一量产供应商更显稀缺。<span class="arrow">→</span> 存储板块下跌是错杀，Q3合约价伯恩斯坦上修至+60%环比涨幅，错杀即机会。</span>
+    <span class="ctx-who">康宁<br>亚马逊协议</span>
+    <span class="ctx-text">康宁与亚马逊达成多年期数十亿美元光纤供应协议，将扩建北卡工厂满足亚马逊数据中心需求。此前康宁已分别签署Meta、英伟达长协。三大CSP（Meta/英伟达/亚马逊）全部锁定康宁，但康宁产能已难以满足美国本土需求，缺口30-50%。<span class="arrow">→</span> 国内光纤厂（亨通/中天/长飞）承接北美缺口的逻辑持续强化，知识库显示亨通北美长协已连续6期跟踪，本次是第六次外部验证信号。</span>
   </div>
 </div>
 
@@ -213,7 +200,7 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 <div class="verdict-bar">
   <div class="verdict-label">■ 今日判断</div>
   <div class="verdict-text">
-    今天最重要的事是区分两类信号：<em>「噪声」</em>和<em>「新事实」</em>。非农数据触发的恐慌是噪声——美国餐饮业世界杯季节性就业不代表经济过热，沃什大概率不会在首次议息会议就加息。真正的新事实有三个：一是SpaceX-Google算力月租9.2亿美元落地，算力租赁从概念变成现金流；二是SoCAMM降容被误读为利空，实质是供给告急的反面信号，存储涨价路径更加确定；三是中天科技中标15亿MPO光纤跳线，国内数据中心光纤需求翻倍趋势有了具体合同数字支撑。操盘层面：周一低开后，AI产业链的核心逻辑无任何改变，错杀是加仓机会；被动元件涨价继续扩散（电感7月再涨），是与美股情绪无关的国内独立信号，可重点关注。
+    市场在调整，但调整不改变产业趋势，反而让真正的预期差更清晰。今天最重要的发现是：<em>TLVR电感才是AI服务器缺货最紧的环节，而不是被市场反复讨论的MLCC</em>。顺络电子晨会披露：7月中全系列涨价35%、高端70%+，交货期排至2028年，已通过N客户验证。而这个信息在KG数据库里此前从未出现过，是今日最纯粹的信息增量。MLCC已被讨论了超过7期（知识库确认），市场对此定价较为充分；TLVR电感紧缺程度超过MLCC但股价大幅滞涨，是今日最值得重视的位置。其次是<em>东材科技的身份升级</em>——在知识库中东材一直是PTFE方案的配角，今日眉山6月下旬投产+碳氢龙一地位确立，让东材从secondary角色升级为AI材料链主角之一。
   </div>
 </div>
 
@@ -228,40 +215,38 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
   <div class="hero-card">
     <div class="hero-inner">
       <div class="hero-pill-row">
-        <span class="pill pill-spread">▲ 逻辑反转</span>
-        <span class="pill pill-new">存储 / DRAM</span>
-        <span class="pill pill-data">错杀即机会</span>
+        <span class="pill pill-hot">▲ 最大预期差</span>
+        <span class="pill pill-new">TLVR电感</span>
+        <span class="pill pill-spread">首次出现</span>
       </div>
-      <div class="hero-title">SoCAMM降容是供不应求的信号：英伟达减容换出货量，存储总需求反而上调10-20%</div>
-      <div class="hero-source">韩国Meritz证券 · 中泰电子 · 0607</div>
+      <div class="hero-title">AI缺货核心不是MLCC，是TLVR电感：顺络7月中全系列涨35%，排单至2028年</div>
+      <div class="hero-source">顺络电子反路演晨会 · 产业深度分析 · 0608</div>
       <div class="catalyst-box">
-        SemiAnalysis报道Vera Rubin NVL72 SoCAMM从192GB降至96GB，美光大跌，SK/三星跌5-8%。但多方产业链调研确认：降容原因是MU供给不足——在内存极度紧张情况下，英伟达选择减少单机架容量以放量更多台整机。96GB模块订单量提升近6倍，64GB模块+50%，SoCAMM整体出货总量预计上调10-20%。基板规格、核心原料、后端制程均无重大变更，供应链全链条受益出货量提升。
+        顺络电子反路演晨会关键披露：①已停止接小单，分销商零库存运营；②7月中全系列产品再次涨价35%、高端产品涨价70%+，此次非成本推动，是海外需求紧缺下主动抬价；③TLVR电感交货期32-40周，排产已延伸至2028年；④已通过N客户验证，Q4开始出货；⑤钽电容进苹果，锁定二供资格约8-10亿稳定收入。
       </div>
       <div class="data-row">
-        <div class="drow-4"><span class="di-n">×6</span><span class="di-l">96GB模块订单倍增</span></div>
-        <div class="drow-4"><span class="di-n">+10~20%</span><span class="di-l">SoCAMM总出货上调</span></div>
-        <div class="drow-4"><span class="di-n">+60%</span><span class="di-l">Q3 DRAM合约价预期</span></div>
-        <div class="drow-4"><span class="di-n">唯一</span><span class="di-l">MU为SoCAMM独家量产</span></div>
+        <div class="drow-4"><span class="di-n">+420%</span><span class="di-l">Rubin机柜TLVR BOM涨幅</span></div>
+        <div class="drow-4"><span class="di-n">32~40周</span><span class="di-l">当前交货期</span></div>
+        <div class="drow-4"><span class="di-n">7倍</span><span class="di-l">单品最高涨价幅度</span></div>
+        <div class="drow-4"><span class="di-n">&lt;35%</span><span class="di-l">订单满足率</span></div>
       </div>
       <div class="hero-body">
-        <p><strong>为什么这次下跌是误读？</strong>任何财大气粗的CSP（谷歌/亚马逊/微软）不会为省80万美元而选择少装27TB内存。英伟达降容的唯一合理解释是：拿不到足够的MU产能——装满55TB只能出100台，装28TB就能出200台。在供不应求的环境下，减容是放量的手段，不是需求下降的信号。</p>
-        <p><strong>存储周期位置在哪里？</strong>韩国Meritz明确：DRAM上行周期目前处于"大腿"区间，远未到"肩部"减持时机。NAND Q2合约价+70-75%，DRAM Q2+58-63%，Q3伯恩斯坦上修至+60%环比。长鑫IPO提交注册临近，有望持续带动国内存储板块情绪。兆易创新作为长鑫核心采购方，26H1 DRAM采购额已超过25年全年。</p>
-        <p><strong>产业链受益路径。</strong>降容后96GB规格成主力，出货量大幅上升，整条产业链—基板/原料/后端制程—受益量增。下一代产品趋势：增加基板层数+升级堆叠架构+大范围低损耗材料，推动高附加值基板与高端原材料迭代。企业级SSD同样受益（减少DRAM省出预算转向NAND）。</p>
+        <p><strong>为什么TLVR比MLCC更紧缺，却被市场忽视？</strong>产业数据对比清晰：Rubin机柜TLVR电感从4800颗升至9000-11000颗（+90-130%），机柜BOM成本从3.84万美元升至20万美元（涨幅420%），是整机涨价最高元器件，单品最高涨价7倍；相比之下高端MLCC涨幅仅30-35%。市场聚焦MLCC有四大原因：MLCC可囤货炒作而TLVR锁长单、MLCC国产已量产而TLVR尚在认证、MLCC全行业通用而TLVR仅限高端AI VPD小众赛道、MLCC已有代理商发酵而TLVR机构散户认知不足。</p>
+        <p><strong>供给壁垒比MLCC高得多。</strong>全球仅乾坤、Vishay、TDK/村田三家可稳定供货Rubin；国产顺络、麦捷仅小批量供货。三重壁垒叠加：高纯羰基铁粉原料扩产需3年+、产线建设18-24个月、英伟达+电源厂双重认证6-12个月，短期无新增有效产能。反观MLCC，十余家海内外厂商量产供货，仅超高容AI型号紧缺，中低压常规产品产能过剩。</p>
+        <p><strong>下半年三大拐点触发补涨。</strong>①老一批长协集中到期，重新议价后涨价落地财报；②国产高纯羰基铁、合金磁粉新产能落地，实现原料进口替代；③国产TLVR大批量通过英伟达认证，AI营收占比快速抬升。知识库确认：MLCC已连续超过7期跟踪，市场对MLCC的定价已相当充分；而TLVR是今日数据库首次出现的全新主线。</p>
       </div>
       <div class="chip-row">
-        <span class="chip p">兆易创新</span>
-        <span class="chip p">长鑫存储</span>
-        <span class="chip p">中电港</span>
-        <span class="chip">江波龙</span>
-        <span class="chip">北京君正</span>
-        <span class="chip">澜起科技</span>
-        <span class="chip">深科技</span>
-        <span class="chip">长电科技</span>
+        <span class="chip p">顺络电子</span>
+        <span class="chip p">悦安新材</span>
+        <span class="chip p">铂科新材</span>
+        <span class="chip">麦捷科技</span>
+        <span class="chip">可立克</span>
+        <span class="chip">华锋股份</span>
       </div>
     </div>
     <div class="therefore-block">
       <span class="tb-label">→ 所以</span>
-      <span class="tb-text">周一存储板块跟随美股下跌是错杀机会，核心逻辑（供不应求+Q3继续涨价）没有任何改变，只是被市场误读强化了。兆易创新（长鑫IPO+Flash涨价+DRAM采购翻倍三重催化）是今日存储板块预期差最大的国内标的，知识库显示该逻辑已连续跟踪，本期有SoCAMM事件提供新的验证节点。</span>
+      <span class="tb-text">当市场还在讨论MLCC二轮涨价的时候，TLVR电感已经悄悄排产至2028年、7月中再涨35%。顺络电子是最直接的受益标的（全球第二、N客户Q4开始放量）；悦安新材作为羰基铁粉（TLVR核心原料）国内第一、全球第二，是上游最纯粹的卡位；铂科新材同为软磁原料龙头，共同受益原料稀缺周期。相比MLCC板块的高度拥挤，当前电感上游软磁原料是下半年被动元件的真正主线，且股价严重滞涨，性价比极高。</span>
     </div>
   </div>
 </div>
@@ -275,67 +260,75 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 
 <div class="sig-grid">
 
+  <!-- 信号1：东材眉山投产 -->
   <div class="sig-card orange">
     <div class="sig-inner">
-      <div class="hero-pill-row"><span class="pill pill-data">▲ 合同落地</span><span class="pill pill-new">光纤光缆</span></div>
-      <div class="sig-title">中天科技中标15亿MPO光纤跳线：国内数据中心光纤需求等效超4000万芯公里</div>
-      <div class="sig-source">天风通信 · 中天快评 · 0605/0607</div>
+      <div class="hero-pill-row"><span class="pill pill-hot">▲ 产能释放</span><span class="pill pill-new">碳氢树脂</span></div>
+      <div class="sig-title">东材科技眉山6月下旬投产：新增5000吨PPO/OPE+3500吨碳氢，满产可新增百亿产值</div>
+      <div class="sig-source">国联民生电子 · 0608</div>
       <div class="sig-body">
-        中天科技公告中标互联网数据中心MPO光纤跳线及配件约<strong>15.18亿元（含税）</strong>，将在未来一年交付。天风通信确认：国内数通光纤今年总需求有等效4000万芯公里以上，云厂招采规模比往年大幅提升，字节/阿里/腾讯均有明确订单预期。北美光纤市场25-27年预期1/2/4亿芯公里，康宁从今年开始自身产能已难以满足本土，国内厂商填缺口30-50%机会明确。知识库显示：亨通北美CSP长协已连续多期跟踪，此次中天订单进一步验证国内数通光纤需求规模超预期。
+        知识库显示东材科技过去仅作为PTFE背板方案secondary标的。今日重大身份升级：①碳氢树脂（BCB体系）全球龙一，多个料号独供大客户；M9使用BCB碳氢体系，东材卡位最强通胀赛道；②眉山新厂<strong>6月下旬即将落地</strong>，新增5000吨PPO/OPE+3500吨碳氢，满产可新增百亿产值；③当前Rubin CCL拉货爆发式增长，胜宏Compute单月拉货接近Q1整季度，谷歌TPU V8 2H26起量，东材同时为PCB树脂及ABF树脂供应商，谷歌敞口大；④LPU采用M9+M8混压，4Q26落地，Rubin Ultra背板/compute/switch均进入打样阶段，<strong>27年为碳氢元年</strong>。市场目前仍按Q1线性外推，Q3-Q4将呈阶梯式增长。
       </div>
     </div>
-    <div class="sig-chips"><span class="chip p">中天科技</span><span class="chip">亨通光电</span><span class="chip">长飞光纤</span><span class="chip">烽火通信</span></div>
+    <div class="sig-chips"><span class="chip p">东材科技</span></div>
     <div class="sig-therefore orange">
       <span class="sl">→ 所以</span>
-      <span class="st2">15亿MPO跳线单一合同，是光纤板块需求可见性最强的数据点之一。北美缺口加速导入国内厂商的逻辑本期再次被确认。静待亨通北美长协正式落地公告。</span>
+      <span class="st2">东材从知识库里的配角升级为AI材料链主角。6月下旬眉山投产是本月最近的产能释放节点，Q3-Q4业绩将呈阶梯式增长，而市场仍在线性外推Q1。碳氢树脂单价300-1000万/吨，是最强通胀赛道，东材是其中唯一国产龙一。</span>
     </div>
   </div>
 
+  <!-- 信号2：建滔CCL大周期 -->
   <div class="sig-card hot">
     <div class="sig-inner">
-      <div class="hero-pill-row"><span class="pill pill-hot">▲ 涨价扩散</span><span class="pill pill-new">被动元件</span></div>
-      <div class="sig-title">村田太阳诱电7月再提电感价格，三环晶振基座调价10-30%，MLCC原厂涨价周期开启</div>
-      <div class="sig-source">产业链 · 0607</div>
+      <div class="hero-pill-row"><span class="pill pill-hot">▲ 业绩超预期</span><span class="pill pill-new">CCL一体化</span></div>
+      <div class="sig-title">建滔5月利润约10亿RMB环比翻倍，CCL"类新能源一体化组件"大周期逻辑确立</div>
+      <div class="sig-source">天风电新 孙潇雅 · 0608</div>
       <div class="sig-body">
-        被动元件涨价继续向宽品类扩散：①村田、太阳诱电有望<strong>7月1日起再次对电感提价</strong>，磁珠/叠层电感已经历多轮，国内厂商有望跟进；②三环集团计划<strong>7月1日起对晶振基座调价10-30%</strong>；③MLCC：村田三星法说均表示当前MLCC供不应求景气度极高，渠道端多次上调现货价，<strong>原厂即将开启涨价大周期</strong>，预计韩系带头→台系跟涨→国内厂商跟进。本轮涨价从钽电容开始，逐步向电阻/电感/MLCC扩散，国巨（台湾）依托AI需求一年最大涨幅超400%，已登顶台湾首富，A股对标标的仍有明显折价。
+        今日关键数字：建滔集团5月单月利润约10亿RMB、<strong>环比翻倍</strong>，当前价格230-240元/张（超21年高点），预计H2继续涨价，"拥布和铜箔为王"。天风提出框架类比：当年新能源「隆晶晶天」组件一体化10X机会→现在是纵向一体化CCL大周期。选股优先级：<strong>建滔系（100%布+铜箔+树脂）＞金安（60-70%布）＞华正（布）＞宝鼎（铜箔）</strong>。特别指出CCL涨价比组件更好：下游分散+卖方市场，CCL厂商议价力更强，不会被下游压价。金安Q2业绩环比翻倍+，华正6月单月利润有望达1亿。当前建滔市值刚触1500亿RMB，看翻倍，估值仅27-28年10x+ PE。
       </div>
     </div>
-    <div class="sig-chips"><span class="chip p">三环集团</span><span class="chip p">洁美科技</span><span class="chip">风华高科</span><span class="chip">顺络电子</span><span class="chip">江海股份</span></div>
+    <div class="sig-chips">
+      <span class="chip p">建滔集团</span><span class="chip p">金安国纪</span><span class="chip">华正新材</span><span class="chip">宝鼎科技</span><span class="chip">生益科技</span>
+    </div>
     <div class="sig-therefore hot">
       <span class="sl">→ 所以</span>
-      <span class="st2">7月1日是今日最近的硬性验证节点。电感再涨+晶振调价+MLCC原厂即将行动，三者同时发生说明被动元件涨价浪潮进入加速阶段，不是局部现象。三环集团今日既是晶振涨价主体也是MLCC和SOFC受益标的，三重属性在A股被动元件中最为稀缺。</span>
+      <span class="st2">5月10亿利润环比翻倍是业绩已经发生的事实，不是预期。建滔系当前估值10x+ PE，与21年高点的历史峰值估值相比仍有翻倍空间。一体化程度是选股核心判据，建滔集团港股+建滔基层板是最强组合。</span>
     </div>
   </div>
 
+  <!-- 信号3：六氟化钨日本断供 -->
   <div class="sig-card">
     <div class="sig-inner">
-      <div class="hero-pill-row"><span class="pill pill-new">供给优化</span><span class="pill pill-spread">国产算力</span></div>
-      <div class="sig-title">寒武纪授信120亿：供给侧瓶颈破局，合同负债从611万飙至3.96亿确认需求爆炸</div>
-      <div class="sig-source">国金计算机科技 · 0607</div>
+      <div class="hero-pill-row"><span class="pill pill-spread">▲ 断供催化</span><span class="pill pill-new">六氟化钨</span></div>
+      <div class="sig-title">六氟化钨：日本或出清2900吨产能下月断供，国内价格从30-40万飙至180万/吨</div>
+      <div class="sig-source">DBDZ · 产业链 · 0608</div>
       <div class="sig-body">
-        寒武纪拟申请120亿元综合授信（36个月可循环），核心意义是<strong>提前储备供给能力</strong>——预付款由年初7.45亿激增至18.97亿，锁定上游芯片/供应链资源；合同负债从610万飙升至3.96亿，下游AI算力需求爆炸式增长确认。全球Blackwell/H100 GPU租赁价持续上涨、交付周期拉长，国产算力重要性提升。DeepSeek-V4发布当日寒武纪已完成Day 0适配，软硬件协同深度绑定国产模型生态。SpaceX算力租赁月9.2亿美元落地，全球AI算力景气度持续高企。
+        今日重要催化：日本六氟化钨原材料供应中断，或将出清2900吨产能（全球约1万吨的29%）。国内主流参考价已达180万元/吨（去年仅30-40万），出口价220万元/吨，供方惜售，下游刚需采购议价能力弱。知识库记录：中船特气已于VOL.027/028期间确认进入季度议价，三星/海力士加速导入，新产能2027Q2才释放。今日新增中巨芯（600吨产能，与中船份额四六开）：国内第二大产能供应商，长存+SMIC+海力士客户，扩产至2000吨，预计今年收入40%+增速，目标市值485亿。
       </div>
     </div>
-    <div class="sig-chips"><span class="chip p">寒武纪</span><span class="chip">海光信息</span><span class="chip">中芯国际</span><span class="chip">华虹半导体</span></div>
+    <div class="sig-chips"><span class="chip p">中船特气</span><span class="chip p">中巨芯</span></div>
     <div class="sig-therefore">
       <span class="sl">→ 所以</span>
-      <span class="st2">合同负债从611万到3.96亿是最硬核的基本面数据，不是预期是已确认的现金流。120亿授信是为大规模扩产储备子弹，供给瓶颈打通后业绩兑现速度将超市场预期。</span>
+      <span class="st2">日本断供是外部强化信号，进一步确认供给缺口逻辑。中船特气是已跟踪多期的主力标的；中巨芯是今日新发现的低估机会——485亿目标市值，当前位置胜率赔率俱佳，且与中船特气的"四六开"份额格局形成双重受益。</span>
     </div>
   </div>
 
+  <!-- 信号4：光互联调整后机构全面重申 -->
   <div class="sig-card green">
     <div class="sig-inner">
-      <div class="hero-pill-row"><span class="pill pill-data">▲ 产业调研</span><span class="pill pill-green">钠离子电池</span></div>
-      <div class="sig-title">宁德钠电：26年底电芯成本追平铁锂，满产2GWh专线，GWh级交付启动</div>
-      <div class="sig-source">工信部新闻宣传中心 钠离子电池产业调研 · 0604</div>
+      <div class="hero-pill-row"><span class="pill pill-data">▲ 机构强化</span><span class="pill pill-new">光互联</span></div>
+      <div class="sig-title">广发/中信/广发通信三家周末同日重申：光互联龙头无利空下跌，2027年出货量2-2.5亿</div>
+      <div class="sig-source">广发通信 · 中信通信 · 0608</div>
       <div class="sig-body">
-        工信部组织钠电产业调研（宁德/容百/万华/海博参会）。宁德：<strong>26年底电芯成本追平铁锂，27年通过四大路径实现系统成本对标铁锂</strong>，26年储能1条专线满产2GWh，推动GWh级交付。循环寿命1.5万次，-20℃容量保持>90%，系统3MW兼容2-4h。容百科技：26年规划30万吨钠电正极产能，成本已接近铁锂高碳酸锂时代水平。万华化学：树脂基硬碳容量340mAh/g/首效92%，规划万吨级产线。这是从实验室走向GWh级产业化的关键官方确认节点，是新能源方向今日最重要的新信号。
+        本周五光模块龙头大幅调整，成交量放大，机构周末全面复盘：<strong>广发通信：</strong>对多个传言验证均为谣传或逻辑不通，未见利空；2027年光模块+NPO出货有望达2-2.5亿，大超市场预期；NPO叙事加强，更多北美客户拟采用NPO，旭创/新易盛估值压制因素减轻。<strong>中信通信：</strong>复盘旭创过去4次大跌均非基本面原因，27年PE仅10x出头，全球AI龙头里估值最低之一（Marvell近100x，Lumentum/Coherent超30x）。<strong>核心结论：无利空快速下跌即是加仓机会。</strong>
       </div>
     </div>
-    <div class="sig-chips"><span class="chip p">宁德时代</span><span class="chip p">容百科技</span><span class="chip">万华化学</span><span class="chip">鹏辉能源</span></div>
+    <div class="sig-chips">
+      <span class="chip p">中际旭创</span><span class="chip p">新易盛</span><span class="chip p">天孚通信</span><span class="chip">源杰科技</span>
+    </div>
     <div class="sig-therefore green">
       <span class="sl">→ 所以</span>
-      <span class="st2">工信部官方背书+宁德明确时间表+26年底成本追平，是钠电产业化迄今最强的政策+产业双重确认。容百科技作为正极供应商与宁德深度绑定，是今日钠电链中最直接的A股受益标的。</span>
+      <span class="st2">三家机构同日重申且数据上修（2027年出货2-2.5亿大超预期），是"有来源的反向信号"，不是情绪安慰。旭创27年PE仅10x，在全球AI核心公司里是绝对低估。但徐小明操盘策略提示：今日位置止跌不急买，耐心等确定性低点。</span>
     </div>
   </div>
 
@@ -350,46 +343,46 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 
 <div class="bg-grid">
 
+  <div class="bg-card accent-l">
+    <div class="bg-tag">AI电源 / VPD · 中信电新 · 0608</div>
+    <div class="bg-title">AI电源三方向梳理：Rubin电源/VPD垂直供电/元器件，业绩是核心</div>
+    <div class="bg-body">中信电新系统梳理AI电源投资逻辑：①Rubin电源：HVDC元年，PSU量价提升，麦格米特/欧陆通；②VPD垂直供电：深南/中富等有保底份额，从PCB向封装演进ASP翻倍；③元器件：MLCC+钽电容最优，Rubin单W用量翻倍，涨价弹性极大，顺络/海星/万裕。核心判断：业绩是核心，消化估值需满足：EPS持续增长、市场空间快速扩张（至少年均3x）、技术迭代远期空间够大。VPD推荐中富电路，电源推荐麦格米特/欧陆通。</div>
+    <div class="bg-chips"><span class="chip p">中富电路</span><span class="chip p">麦格米特</span><span class="chip">深南电路</span><span class="chip">欧陆通</span></div>
+  </div>
+
   <div class="bg-card blue-l">
-    <div class="bg-tag">光通信公约数 · 光设备 · 0605/0607</div>
-    <div class="bg-title">光通信公约数策略：所有技术路线（NPO/CPO/OCS）共同需要的标的是核心配置</div>
-    <div class="bg-body">光互联路线争议不影响公约数标的：罗博特科（所有光通信方案公约数，CPO/NPO/OCS全覆盖）、联讯仪器（检测公约数，机构必配，中期非卖品）、天孚通信（CPO+光模块+NPO公约数，NV核心）、炬光科技（CPO/光模块/NPO/OCS公约数，业绩非线性爆发预期）。国金机械：CPO耦合设备精度达±0.3μm，科瑞技术近期进展较快；测试环节联讯仪器卡位光引擎/OE-die测试，中期非卖品。</div>
-    <div class="bg-chips"><span class="chip p">罗博特科</span><span class="chip p">联讯仪器</span><span class="chip p">炬光科技</span><span class="chip">科瑞技术</span></div>
+    <div class="bg-tag">存储设备 / 扩产 · 华西机械 · 0608</div>
+    <div class="bg-title">大陆存储扩产上修：长鑫合肥框架总包提上日程，CC四五期同步建设，设备板块20%调整基本到位</div>
+    <div class="bg-body">华西机械：一个月内大陆扩产趋势明显上修——长鑫合肥框架总包提上日程、长江存储CC四五期同步建设、JH大幅上修招标预期。存储是"印钞机"。海外参考：海力士计划30年产能翻番，彭博预计三星27年成全球最赚钱公司，当前估值不到6x。A股设备行情向来短平快，20%左右板块调整从基本面看基本到位，26年订单增速完全cover了26年股价涨幅。大市值：拓荆/长川/华创/中微；中市值：精测（弹性）/飞测/华海/华峰；小市值：骄成/京仪。</div>
+    <div class="bg-chips"><span class="chip p">拓荆科技</span><span class="chip p">华海清科</span><span class="chip">长川科技</span><span class="chip">精测电子</span></div>
   </div>
 
   <div class="bg-card accent-l">
-    <div class="bg-tag">商业航天 · 兴证商业航天 · 0602</div>
-    <div class="bg-title">商业航天H2重磅密集：星河动力6月19日首飞，SpaceX IPO估值1.75万亿美元</div>
-    <div class="bg-body">板块从5月11日已累计下跌20%+，判断空间层面回调接近尾声。H2催化密集：6月19日星河动力智神星一号首飞，6月30日致航一号首飞，7月7日长征十号乙首飞（回收验证），7月蓝箭朱雀三号第二次回收验证。SpaceX计划6月中上市，目标估值1.75-1.8万亿美元，史上最大IPO（募资750亿美元），2026Q1星链订阅用户1030万（同比+105%）。国内产业链关注：昊志机电、超捷股份（蓝箭链）；聚和材料、迈为股份（SpaceX光伏链）。</div>
-    <div class="bg-chips"><span class="chip p">昊志机电</span><span class="chip">聚和材料</span><span class="chip">迈为股份</span><span class="chip">海格通信</span></div>
+    <div class="bg-tag">玻璃基板 · 开源计算机 · 0608</div>
+    <div class="bg-title">玻璃基板商业化元年确立：Intel Glass Core+台积电CoPoS+京东方+SK Absolics美国量产</div>
+    <div class="bg-body">开源计算机深度报告：2026年是玻璃基板商业化元年，2028年大规模商用。三大技术路径：台积电CoPoS（面板级替代硅中介层）、英特尔Glass Core（玻璃芯板替代ABF载板）、CPO光电共封装。SK Absolics美国基地2026年量产。完整产业链：上游原片（力诺/旗滨/戈碧迦/彩虹）→中游加工（沃格/京东方/云天半导体）→设备材料（芯碁/帝尔/东威/天承/洪田）。注：玻璃基板已连续多期出现，本期知识库显示为成熟主线，不再做主线Hero卡。</div>
+    <div class="bg-chips"><span class="chip p">帝尔激光</span><span class="chip">沃格光电</span><span class="chip">力诺药包</span><span class="chip">东威科技</span></div>
   </div>
 
   <div class="bg-card green-l">
-    <div class="bg-tag">储能/逆变器 · 长江电新 · 0607</div>
-    <div class="bg-title">储能调整后买点：户储三季度继续环增，阳光电源欧洲大储订单翻倍预期</div>
-    <div class="bg-body">储能板块持续调整主因资金因素（欧盟贸易壁垒担忧），而非基本面。SNEC调研：不止一家企业预计三季度继续环增，不止一家上修全年目标，亚非拉/澳洲/欧洲全面向好。阳光电源：波兰工厂年底投产，泰国产能月产GWh，26年欧洲大储订单预计翻倍+。SST 7月初召开发布会，发布即可售，AIDC配储27年放量，维持27年220-250亿利润看法。当前PE明年15倍，年中催化后估值切换弹性显著。</div>
-    <div class="bg-chips"><span class="chip p">阳光电源</span><span class="chip">德业股份</span><span class="chip">锦浪科技</span><span class="chip">固德威</span></div>
+    <div class="bg-tag">机器人 · 6.13特斯拉股东大会 · 0608</div>
+    <div class="bg-title">6月13日股东大会：V3方案（微型丝杠vs腱绳）将决定机器人板块炒作顺序，V3量产爬坡节奏明确</div>
+    <div class="bg-body">V3量产节奏：7-8月周50-100台试产→9月起月产破千→Q4向3000-5000台/月靠拢。V3首发供应厂商将成V4/V5核心玩家。最新确定性：科达利（PPA回函）/斯菱智驱（定标100万谐波减速器）/恒帅股份（手部电机唯一硬模单）/福赛科技（PEEK）。绿的谐波已成产能瓶颈，产能从60万套扩至年底150万套，今年人形收入占比预计35-40%。孙正义：AI规模是互联网泡沫50倍，下一个万亿赛道是Physical AI和人形机器人。</div>
+    <div class="bg-chips"><span class="chip p">绿的谐波</span><span class="chip p">浙江荣泰</span><span class="chip">科达利</span><span class="chip">福赛科技</span><span class="chip">恒帅股份</span></div>
   </div>
 
   <div class="bg-card purple-l">
-    <div class="bg-tag">机构策略 · 陈果宏观 · 0607</div>
-    <div class="bg-title">机构分化：成长股继续缩圈至光+半导体设备，价值派坚守消费，绝对收益加仓能源</div>
-    <div class="bg-body">本周机构沟通三大阵营：①AI成长派：缩圈至通信+电子→光+半导体设备龙头，Claude被视为革命级突破，坚决不切老登资产；②价值派公募：坚守消费龙头到年底，认为硅基PB严重高估，不追硅基；③绝对收益者：开始再平衡，加仓能源/金融/电力，碳基阵营悄然扩大。宏观流动性框架：外汇脉冲成为新指标，中国出口竞争力结构性提升推动跨境资金回流，下半年海外流动性有望走出迷雾为全球资产创造机会。</div>
-    <div class="bg-chips"><span class="chip">分歧加大</span><span class="chip">关注流动性拐点</span></div>
-  </div>
-
-  <div class="bg-card blue-l">
-    <div class="bg-tag">永鼎股份 · 天风通信 · 0607</div>
-    <div class="bg-title">永鼎涨停再创新高：鼎芯光电CW光源放量，高温超导带材扩产5万公里尚未充分定价</div>
-    <div class="bg-body">天风通信6月金股。鼎芯光电全面布局EML/CW光源，CW光源放量出货产能持续爬坡，后续大客户订单量有望高于之前客户，明年出货大幅提升，同步持续大幅扩产。200mW/400mW CW及200G EML高端芯片研发突破中。光纤端：26年底光棒产能扩至1050吨，光纤3600万芯公里，MPO光纤跳线安徽六安自建，已有批量订单。子公司东部超导高温超导带材：国内少数可量产公司，计划扩产5万公里，今年有望盈利，市场尚未充分定价。</div>
-    <div class="bg-chips"><span class="chip p">永鼎股份</span></div>
+    <div class="bg-tag">宏观策略 · 东方宏观 · 0608</div>
+    <div class="bg-title">流动性内外有别：国内充裕不收水，A股调整是微观交易结构问题，风格不会切换</div>
+    <div class="bg-body">东方宏观核心判断：①下半年全球流动性易紧难松，美元不弱；②国内流动性依然充裕，央行操作只是引导资金利率回归中性，并非大幅收水；③K型分化加剧不支持风格切换，最快四季度化债政策才可能推动收敛；④继续看好债券走牛，长端利率仍将震荡下行。花旗将标普500年终目标上调至8100点，AI盈利增长是主要驱动力，"我们正处于中局阶段"。结论：全球流动性冲击下A股调整是情绪而非趋势，6.18美联储议息是关键观察节点。</div>
+    <div class="bg-chips"><span class="chip">关注6.18议息</span><span class="chip">等待国内政策催化</span></div>
   </div>
 
   <div class="bg-card red-l">
-    <div class="bg-tag">宏观/流动性 · 6月风险日历</div>
-    <div class="bg-title">6月流动性冲击日历：6.11欧央行加息，6.12 SpaceX IPO，6.16日本央行，6.18美联储</div>
-    <div class="bg-body">国泰海通宏观：6月多重流动性冲击扑面而来，美股或迎1-2个月波动期。但判断大概率不会加息——沃什AI通缩论、截尾均值PCE正在为降息提供理论基础，真正反转时机至少在一个月后。关键逻辑：美伊冲突趋于降温、本轮通胀与2022年俄乌完全不同难以形成二次效应、全球通胀下半年开始回落。操盘建议：波动加剧但不是趋势反转，等待流动性拐点信号。</div>
-    <div class="bg-chips"><span class="chip">关注6.18美联储表态</span><span class="chip">等待流动性拐点</span></div>
+    <div class="bg-tag">芳纶电子布 · 泰和新材 · 0608</div>
+    <div class="bg-title">对位芳纶：CTE更优、激光钻孔成熟，有望成为下一代高端PCB电子布首选材料</div>
+    <div class="bg-body">中信能化新发现：对位芳纶CTE比玻纤布更低，叠加轻量化+耐阻燃+耐高温，是高端电子布潜在替代方案。以往因钻孔技术不成熟未规模化，激光钻孔成熟后方案可行性提升。当前对位芳纶10万/吨加工成芳纶纸，PCB价格100-200元/米，较当前lowdk2/Q布200-400元/米具备性价比。泰和新材：1.5万吨间位+1.6万吨对位估值100亿，氨纶50亿，民士达60亿，当前仍有50%空间；若芳纶电子布打开规模，增量空间可观。另关注中化国际（芳纶+OPP树脂龙头）。</div>
+    <div class="bg-chips"><span class="chip p">泰和新材</span><span class="chip">民士达</span><span class="chip">中化国际</span></div>
   </div>
 
 </div>
@@ -413,34 +406,34 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
     </thead>
     <tbody>
       <tr>
-        <td>PTFE正交背板定案<br><small style="font-weight:400;color:#9e8878">Rubin Ultra方案</small></td>
-        <td><span class="node-red">2026年7月</span></td>
-        <td>知识库显示混压方案（PTFE30%+M9等70%）验证中，纯PTFE已毙，6月底7月初预计明确；今日电子布再度提价（7628布0.7毛），电子布涨价与PTFE方案定案无关，需求持续向好</td>
-        <td>定案→东岳集团独供确立，CCL/PCB材料链全线受益；落败→混压方案，利润弹性缩减</td>
+        <td>TLVR电感7月涨价<br><small style="font-weight:400;color:#9e8878">顺络全系列</small></td>
+        <td><span class="node-red">2026.07中旬</span></td>
+        <td>全新跟踪项。顺络晨会披露：停止接小单，7月中全系列涨35%/高端70%+，N客户验证通过，Q4开始出货</td>
+        <td>涨价落地→顺络/悦安/铂科业绩直接受益，带动市场关注度从MLCC向TLVR迁移；推迟→补涨逻辑延后但不消失，供给约束3年不变</td>
       </tr>
       <tr>
-        <td>亨通光电北美长协<br><small style="font-weight:400;color:#9e8878">G/O客户正式落地</small></td>
-        <td><span class="node-red">2026Q3</span></td>
-        <td>知识库：连续5期跟踪，基本确定合作关系，细节仍在确认中；中天今日中标15亿MPO订单进一步验证国内数通光纤需求超预期，侧面支撑北美缺口逻辑</td>
-        <td>长协落地→估值向30x+抬升，目标市值50%+空间；延迟→折价于长飞持续，但光纤涨价逻辑不变</td>
+        <td>东材科技眉山投产<br><small style="font-weight:400;color:#9e8878">碳氢树脂产能释放</small></td>
+        <td><span class="node-red">2026.06下旬</span></td>
+        <td>6月下旬即将落地，新增5000吨PPO/OPE+3500吨碳氢，满产新增百亿产值。知识库原为PTFE配角，今日升级为碳氢龙一</td>
+        <td>投产如期→Q3业绩阶梯式增长，市场线性外推预期被打破；延迟→影响Q3节奏但不改变全年逻辑</td>
+      </tr>
+      <tr>
+        <td>PTFE正交背板定案<br><small style="font-weight:400;color:#9e8878">Rubin Ultra方案</small></td>
+        <td><span class="node-red">2026年7月</span></td>
+        <td>知识库：混压方案（PTFE30%+M9等70%）验证中，6月底7月初预计明确；东材碳氢参与M9打样，若定案对东材也是利好</td>
+        <td>定案→东岳集团独供+东材M9双重受益；落败→东材影响有限（碳氢是独立业务）</td>
+      </tr>
+      <tr>
+        <td>苹果WWDC 2026<br><small style="font-weight:400;color:#9e8878">新Siri+AI生态</small></td>
+        <td><span class="node-red">2026.06.09凌晨</span></td>
+        <td>今晚发布：基于Gemini的全新Siri+iOS 27，测试向第三方AI Agent开放系统权限，iPhone 18/折叠屏/AI眼镜</td>
+        <td>超预期发布→科技情绪提振，果链（立讯/蓝思/鹏鼎）+端侧AI（AI眼镜/机器人）全面受益；低于预期→短期情绪拖累，但AI硬件主线不变</td>
       </tr>
       <tr>
         <td>美联储6月议息<br><small style="font-weight:400;color:#9e8878">沃什首次主持</small></td>
         <td><span class="node-red">2026.06.18</span></td>
-        <td>非农超预期触发加息预期升温，年内加息概率100%（9月30%）；但多数机构判断沃什不会在首次会议硬推宽松，大概率维持谨慎措辞</td>
-        <td>鸽派表态→全球流动性风险偏好快速回升，AI板块反弹；鹰派→波动延续至少一个月，继续等待拐点</td>
-      </tr>
-      <tr>
-        <td>SpaceX IPO<br><small style="font-weight:400;color:#9e8878">6月中旬上市</small></td>
-        <td><span class="node-red">2026.06.12</span></td>
-        <td>招股材料已披露Google算力协议（月租9.2亿美元），IPO估值1.75-1.8万亿美元，募资750亿为史上最大IPO；商业航天板块已回调20%+，国内产业链提前布局窗口</td>
-        <td>IPO成功定价→估值锚打开，国内商业航天板块情绪催化；定价低于预期→短期情绪压制，基本面逻辑不变</td>
-      </tr>
-      <tr>
-        <td>被动元件7月涨价<br><small style="font-weight:400;color:#9e8878">电感+晶振+MLCC</small></td>
-        <td><span class="node-red">2026.07.01</span></td>
-        <td>村田/太阳诱电7月1日电感再提价，三环晶振基座调价10-30%，MLCC原厂涨价大周期即将开启，韩系带头→台系→国内跟进路径清晰</td>
-        <td>7月1日涨价落地→三环/风华/顺络/洁美利润弹性集中释放；延迟→确认行业景气度仍强，只是时间推后</td>
+        <td>非农超预期后加息预期升温，但特朗普护盘+沃什AI通缩论+截尾PCE偏温和，多方机构预判大概率维持鸽派措辞</td>
+        <td>鸽派→全球流动性拐点确认，AI板块反弹起点；鹰派→波动延续至少一月，继续等待</td>
       </tr>
     </tbody>
   </table>
@@ -457,37 +450,61 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 
   <div class="ticker-card">
     <div class="ticker-left">
-      <div class="ticker-name">阳光电源</div>
-      <div class="ticker-count">3</div>
+      <div class="ticker-name">顺络电子</div>
+      <div class="ticker-count">4</div>
       <div class="ticker-unit">次提及</div>
     </div>
     <div class="ticker-right">
-      <div class="ticker-logic">主业低估+AIDC配储白送：26年欧洲大储订单翻倍+，泰国产能月产GWh，波兰年底投产。SST 7月初发布会，发布即可售；AIDC配储27年放量，每5GWh订单利润+20亿。27年主业200-220亿+AIDC 220-250亿，对应当前仅13-14倍PE。</div>
-      <div class="ticker-source">产业链 · 长江电新 · 0607</div>
+      <div class="ticker-logic">今日最重要的标的：TLVR电感7月中涨35%/高端70%，排单至2028年，N客户Q4放量；钽电容进苹果锁定二供资格约8-10亿稳定收入；海外竞争对手原材料供应受地缘影响，15% Q3产能缺口将向国内转移。目标市值900亿（当前约零定价TLVR+钽电容增量）。</div>
+      <div class="ticker-source">顺络电子反路演晨会 · 中信电新 · 0608</div>
     </div>
   </div>
 
   <div class="ticker-card">
     <div class="ticker-left">
-      <div class="ticker-name">三环集团</div>
+      <div class="ticker-name">东材科技</div>
       <div class="ticker-count">3</div>
       <div class="ticker-unit">次提及</div>
     </div>
     <div class="ticker-right">
-      <div class="ticker-logic">今日7月1日起晶振基座调价10-30%（自身主动涨价）；同时是MLCC涨价链最强受益标的（申万电子首推）；另有SOFC受益逻辑（Bloom供应商）。三重属性在A股被动元件中最为稀缺，今日涨价公告是直接业绩兑现信号。</div>
-      <div class="ticker-source">产业链 · 申万电子 · 0607</div>
+      <div class="ticker-logic">碳氢树脂（BCB体系）全球龙一，多个料号独供大客户；眉山6月下旬投产，新增8500吨产能，满产百亿产值；Rubin CCL拉货爆发式增长，谷歌TPU V8 H2起量；ABF BT树脂突破日系垄断，进入海外算力大客户供应链。知识库身份升级：从PTFE配角→碳氢龙一。</div>
+      <div class="ticker-source">国联民生电子 · 东北计算机 · 0608</div>
     </div>
   </div>
 
   <div class="ticker-card">
     <div class="ticker-left">
-      <div class="ticker-name">洁美科技</div>
+      <div class="ticker-name">建滔集团</div>
       <div class="ticker-count">3</div>
       <div class="ticker-unit">次提及</div>
     </div>
     <div class="ticker-right">
-      <div class="ticker-logic">MLCC离型膜全产业链龙头，本月3000万平米下月4000万平米，三环/三星下单翻倍；今日高端半导体薄膜国产化梳理再次强调：东洋纺/三井垄断80%，国产替代稀缺，TDK审厂验证中。明年乐观看50亿营收/500亿市值。</div>
-      <div class="ticker-source">申万电子 · 产业链 · 0607</div>
+      <div class="ticker-logic">5月单月利润约10亿RMB环比翻倍，当前价格230-240元/张超过21年高点。"拥布和铜箔为王"，100%一体化（布+铜箔+树脂）是行业最强格局。H2继续涨价预期明确，当前市值1500亿，天风看翻倍，27-28年仅10x+ PE。</div>
+      <div class="ticker-source">天风电新 · 0608</div>
+    </div>
+  </div>
+
+  <div class="ticker-card">
+    <div class="ticker-left">
+      <div class="ticker-name">帝尔激光</div>
+      <div class="ticker-count">3</div>
+      <div class="ticker-unit">次提及</div>
+    </div>
+    <div class="ticker-right">
+      <div class="ticker-logic">TGV激光设备锁定玻璃基板量产关键工艺，面板级方案支持310×310mm以上基板，理论极限孔径3-5μm。本周玻璃基板产业化再次获多报告确认（开源/东吴/中泰），帝尔是最纯粹的"铲子股"。BC主业（爱旭11GW改造）消除需求质疑，三重驱动叠加。</div>
+      <div class="ticker-source">中泰机械 · 开源计算机 · ZX机械 · 0608</div>
+    </div>
+  </div>
+
+  <div class="ticker-card">
+    <div class="ticker-left">
+      <div class="ticker-name">中际旭创</div>
+      <div class="ticker-count">3</div>
+      <div class="ticker-unit">次提及</div>
+    </div>
+    <div class="ticker-right">
+      <div class="ticker-logic">广发通信：2027年光模块+NPO出货2-2.5亿，大超预期，NPO叙事加强，估值压制减轻。中信通信：27年PE仅10x，全球AI核心公司中估值最低之一，四次大跌均非基本面。无利空快速下跌=加仓时间点，机构一致结论。</div>
+      <div class="ticker-source">广发通信 · 中信通信 · 0608</div>
     </div>
   </div>
 
@@ -498,32 +515,8 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
       <div class="ticker-unit">次提及</div>
     </div>
     <div class="ticker-right">
-      <div class="ticker-logic">创历史新高。谐波已成为人形机器人产能瓶颈，产能从60万套扩至26年底150万套/年，明年继续储备3-5倍。今年人形收入占比预计35-40%，是全市场人形收入占比最高的核心部件上市公司。市场定价不再局限于台数。</div>
-      <div class="ticker-source">广发机械 · 0605</div>
-    </div>
-  </div>
-
-  <div class="ticker-card">
-    <div class="ticker-left">
-      <div class="ticker-name">中天科技</div>
-      <div class="ticker-count">2</div>
-      <div class="ticker-unit">次提及</div>
-    </div>
-    <div class="ticker-right">
-      <div class="ticker-logic">今日公告中标15.18亿元MPO光纤跳线及配件，未来一年交付。棒线缆一体化优势，北美整体缺货背景下积极接触CSP和布线厂，静待北美突破。国内数通需求有等效4000万芯公里以上，光通信涨价带动利润弹性显著提升。</div>
-      <div class="ticker-source">天风通信 · 公告 · 0607</div>
-    </div>
-  </div>
-
-  <div class="ticker-card">
-    <div class="ticker-left">
-      <div class="ticker-name">工程机械<br>板块</div>
-      <div class="ticker-count">3</div>
-      <div class="ticker-unit">次提及</div>
-    </div>
-    <div class="ticker-right">
-      <div class="ticker-logic">5月挖掘机销量24794台，同比+36.2%；国内+38.6%超预期，出口+34.2%。1-5月累计同比+24.7%。三一/徐工7月起起重机涨价2-5%已落地。周期反转三部曲推进，Q2汇兑影响逐步减弱，板块估值仍处低位。</div>
-      <div class="ticker-source">中国工程机械工业协会 · 0607</div>
+      <div class="ticker-logic">创历史新高持续。谐波已成人形机器人产能瓶颈，产能60万套→年底150万套，今年人形收入占比35-40%。Serenity海外大V专文推荐，高盛与Harmonic会后明显更积极。6.13特斯拉股东大会是近期最重要催化，V3方案定案将进一步确认谐波地位。</div>
+      <div class="ticker-source">广发机械 · Serenity · 0608</div>
     </div>
   </div>
 
@@ -532,7 +525,7 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 <!-- GLOSSARY -->
 <div class="section-hd">
   <span class="section-num">GLOSSARY</span>
-  <span class="section-title">新词速查 · VOL.029首现术语</span>
+  <span class="section-title">新词速查 · VOL.030首现术语</span>
   <div class="section-rule"></div>
 </div>
 
@@ -540,27 +533,27 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
   <div class="gloss-grid">
 
     <div class="gc">
-      <span class="gc-term">SoCAMM（Small Outline Compression Attached Memory Module）</span>
-      <div class="gc-def">英伟达为AI服务器设计的新型内存模块规格，采用LPDDR5X存储颗粒，体积小于标准DIMM，通过压缩附着方式连接主板，实现更高带宽密度。在Vera Rubin NVL72中承担CPU侧缓存和KV cache存储职责。目前由美光（Micron）独家量产供应，是整个存储产业链中供给最紧张的环节。</div>
-      <div class="gc-why"><strong>为何今日重要：</strong>SoCAMM从192GB降至96GB的新闻引发市场误读导致存储板块大跌，但实质是供给不足→降容放量→总出货量反升10-20%的正面信号，是今日最值得关注的预期差所在。</div>
+      <span class="gc-term">TLVR电感（Transient Loadline Voltage Regulator电感）</span>
+      <div class="gc-def">AI服务器VPD（垂直供电）架构中的核心无源元件，用于GPU/CPU旁路去耦和瞬态电流抑制。Rubin架构下单机柜用量从4800颗升至9000-11000颗，BOM成本从3.84万升至20万美元（+420%），是整机涨价幅度最高的元器件。全球仅乾坤、Vishay、TDK/村田三家能稳定供货，原料（羰基铁粉）扩产需3年+，产线建设18-24个月，NV+电源厂双重认证6-12个月。</div>
+      <div class="gc-why"><strong>为何今日重要：</strong>顺络电子晨会披露7月中全系列涨35%/高端70%+，排单至2028年，这是知识库首次出现的新主线。TLVR紧缺程度全面超过MLCC但股价大幅滞涨，是今日最大预期差所在。</div>
     </div>
 
     <div class="gc">
-      <span class="gc-term">MPO光纤跳线（Multi-fiber Push On）</span>
-      <div class="gc-def">一种高密度多芯光纤连接器，单个接口可同时连接12、24或更多芯光纤，比传统LC/SC连接器大幅提升数据中心布线密度和速度。在AIDC Scale-out架构中用于机架间高速互联，是今日AI数据中心光纤需求最直接的终端产品形态之一。</div>
-      <div class="gc-why"><strong>为何今日重要：</strong>中天科技中标15.18亿元MPO光纤跳线合同，是国内数据中心光纤需求翻倍趋势首次以具体合同金额落地，验证了光纤板块的量价齐升逻辑。</div>
+      <span class="gc-term">羰基铁粉（Carbonyl Iron Powder，CIP）</span>
+      <div class="gc-def">TLVR电感磁芯的核心原料，通过羰基铁分解工艺制备，颗粒尺寸1-10μm，具备高磁导率、低矫顽力和低涡流损耗特性，是AI服务器VPD电感的不可替代原材料。成本占电感总成本55-65%。全球主要供应商为德国巴斯夫（全球第一）和国内悦安新材（全球第二）。扩产周期长达3年以上，形成极高供给壁垒。</div>
+      <div class="gc-why"><strong>为何今日重要：</strong>TLVR电感上游最核心原料，悦安新材是台达核心供应商同时供货三星电机/TDK，深度绑定头部供应链，受益于TLVR超级紧缺周期的上游最纯粹标的。</div>
     </div>
 
     <div class="gc">
-      <span class="gc-term">外汇脉冲（FX Impulse）</span>
-      <div class="gc-def">国泰海通宏观构建的新流动性指标，用于捕捉跨境资金流入带来的"高能流动性"变化。传统信用指标（社融增速/信贷脉冲）在当前阶段与股市背离，原因是流动性主要通过外汇渠道而非信用渠道投放。中国出口竞争力提升→贸易顺差扩大→结汇资金回流→股债汇三牛，是外汇脉冲指标的核心传导路径。</div>
-      <div class="gc-why"><strong>为何今日重要：</strong>理解这个框架有助于解释为何A股在信用收缩期仍能走强，以及为何中美权益市场联动性上升——中国资产对美元和美债利率的敏感度同步上升，非农数据冲击的传导路径由此可解。</div>
+      <span class="gc-term">Glass Core（英特尔玻璃芯板技术）</span>
+      <div class="gc-def">英特尔推出的玻璃基板技术路线，以玻璃芯板替代传统ABF有机载板的芯层（Core层），保留有机积层结构，在尺寸稳定性、布线精度和大尺寸封装方面优于有机基板，适用于HPC大规模芯片需求。与台积电CoPoS路线（面板级封装替代硅中介层）并列为玻璃基板两大主流技术路径。英特尔计划将新墨西哥州里奥兰乔工厂改造为全球首个Glass Core量产基地。</div>
+      <div class="gc-why"><strong>为何今日重要：</strong>今日开源计算机深度报告系统梳理了台积电CoPoS与英特尔Glass Core并列的技术路径，进一步确认玻璃基板商业化2026年元年的判断，两种路线都对TGV激光加工（帝尔激光）和上游原片（力诺/旗滨）形成需求拉动。</div>
     </div>
 
     <div class="gc">
-      <span class="gc-term">硬碳负极（Hard Carbon Anode）</span>
-      <div class="gc-def">钠离子电池最主流的负极材料，由椰壳、树脂或煤炭在高温下碳化制成，具有无序的乱层结构，能够储存钠离子。相比石墨负极（锂电池专用），硬碳对钠离子的嵌入/脱嵌更友好。核心性能指标：可逆容量（340mAh/g为先进水平）和首效（92%为优异水平）。资源端：椰壳硬碳仅能支撑50-60GWh需求，万华化学等已转向树脂基/煤基路线。</div>
-      <div class="gc-why"><strong>为何今日重要：</strong>宁德明确26年底钠电电芯成本追平铁锂，硬碳负极的降本路线（从椰壳向树脂基/煤基转型）是实现这一目标的核心技术路径，万华化学等国内企业的提前布局值得关注。</div>
+      <span class="gc-term">芳纶电子布（Aramid Electronic Fabric）</span>
+      <div class="gc-def">以对位芳纶（Para-Aramid，PPTA）纤维制成的高端PCB增强材料，热膨胀系数（CTE）约-4ppm/℃，远低于E玻纤（约6ppm/℃），在高频高速信号传输中介电损耗更低、尺寸稳定性更好，同时具备轻量化、阻燃、耐高温特性。此前因激光钻孔技术不成熟而未能规模化，随AI服务器对超低损耗基材需求提升，正成为下一代高端PCB电子布的潜在首选。</div>
+      <div class="gc-why"><strong>为何今日重要：</strong>泰和新材作为国内对位芳纶龙头（1.6万吨产能），若芳纶电子布方案打开规模将带来重大增量，且当前估值仍有50%空间；中化国际（芳纶+OPP树脂）是配套受益标的。</div>
     </div>
 
   </div>
@@ -568,8 +561,8 @@ body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-se
 
 <!-- FOOTER -->
 <div class="footer">
-  <span class="footer-brand">产业投研日报 VOL.029</span>
-  <span class="footer-ts">2026.06.07 SUN · 内部参考，不构成投资建议</span>
+  <span class="footer-brand">产业投研日报 VOL.030</span>
+  <span class="footer-ts">2026.06.08 MON · 内部参考，不构成投资建议</span>
 </div>
 
 </body>
