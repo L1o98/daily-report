@@ -15,62 +15,42 @@
   --pill-hot:#dc2626; --pill-new:#1d4ed8; --pill-spread:#7c3aed; --pill-data:#0f766e; --pill-green:#15803d;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{
-  background:var(--paper); color:var(--ink);
-  font-family:"Noto Sans SC",sans-serif; font-size:14px; line-height:1.75;
-  max-width:920px; margin:0 auto; padding-bottom:60px;
-  -webkit-font-smoothing:antialiased;
-}
-.mono{font-family:"DM Mono",monospace}
+body{background:var(--paper);color:var(--ink);font-family:"Noto Sans SC",sans-serif;font-size:14px;line-height:1.75;max-width:920px;margin:0 auto;padding-bottom:60px;-webkit-font-smoothing:antialiased}
 strong{color:var(--accent-deep);font-weight:700}
 em{font-style:normal;background:rgba(147,197,253,0.25);padding:0 4px;border-radius:3px;color:#dbeafe}
-
-/* Alert Bar */
 .alert-bar{background:#1e3a5f;border-bottom:2px solid #3b82f6;padding:16px 26px;display:flex;gap:14px;align-items:flex-start}
 .alert-icon{font-size:20px;line-height:1.4}
 .alert-label{font-family:"DM Mono",monospace;color:#93c5fd;font-size:12px;letter-spacing:1px;margin-bottom:5px}
 .alert-text{color:#e0f2fe;font-size:13.5px;line-height:1.7}
 .alert-text em{background:rgba(147,197,253,0.28);color:#fff}
-
-/* Masthead */
 .masthead{background:var(--mast);color:#f5ede0;padding:30px 26px 24px}
 .mast-kicker{font-family:"DM Mono",monospace;font-size:11px;letter-spacing:3px;color:#d6a766;margin-bottom:10px}
 .mast-brand{font-family:"Noto Serif SC",serif;font-weight:900;font-size:34px;letter-spacing:2px;line-height:1.1}
 .mast-sub{margin-top:12px;font-size:12.5px;color:#cbb79c;font-family:"DM Mono",monospace;border-top:1px solid rgba(214,167,102,0.25);padding-top:10px}
-
-/* Stats Bar */
 .stats-bar{display:flex;flex-wrap:wrap;background:var(--paper-warm);border-bottom:1px solid var(--border)}
 .stat-item{flex:1;min-width:90px;text-align:center;padding:14px 8px;border-right:1px solid var(--border)}
 .stat-item:last-child{border-right:none}
 .stat-num{font-family:"DM Mono",monospace;font-size:22px;font-weight:500;color:var(--accent-deep)}
 .stat-label{font-size:11px;color:var(--ghost);margin-top:2px}
-
-/* Context Bar */
 .context-bar{background:#1a1410;color:#e8dccb;padding:20px 26px}
 .ctx-label{font-family:"DM Mono",monospace;font-size:12px;letter-spacing:2px;color:#d6a766;margin-bottom:14px}
 .ctx-item{margin-bottom:13px;padding-left:14px;border-left:2px solid #6b4a28}
 .ctx-item:last-child{margin-bottom:0}
 .ctx-who{font-weight:700;color:#f0c98a;font-size:13px;font-family:"Noto Serif SC",serif}
 .ctx-text{font-size:12.5px;color:#cdbfa9;line-height:1.7;margin-top:2px}
-
-/* Verdict Bar */
 .verdict-bar{background:var(--accent);color:#fff;padding:18px 26px}
 .verdict-label{font-family:"DM Mono",monospace;font-size:12px;letter-spacing:2px;color:#ffe9c9;margin-bottom:7px}
 .verdict-text{font-size:14px;line-height:1.8}
 .verdict-text em{background:rgba(255,255,255,0.22);color:#fff}
-
-/* Section heading */
 .section-hd{padding:26px 26px 4px;display:flex;align-items:baseline;gap:12px}
 .section-num{font-family:"DM Mono",monospace;font-size:12px;font-weight:500;color:#fff;background:var(--accent-deep);padding:3px 9px;border-radius:3px;letter-spacing:1px;white-space:nowrap}
 .section-title{font-family:"Noto Serif SC",serif;font-weight:700;font-size:17px;color:var(--ink)}
-
-/* Hero */
 .hero-wrap{padding:10px 26px 4px}
 .hero-card{background:#fff;border:1px solid var(--border);border-top:4px solid var(--pill-hot);border-radius:6px;padding:24px 24px 20px;box-shadow:0 2px 10px rgba(60,40,20,0.06)}
 .hero-pill-row{display:flex;gap:7px;margin-bottom:12px;flex-wrap:wrap}
 .pill{font-family:"DM Mono",monospace;font-size:10.5px;color:#fff;padding:2px 9px;border-radius:10px;letter-spacing:.5px}
-.pill-hot{background:var(--pill-hot)} .pill-new{background:var(--pill-new)} .pill-spread{background:var(--pill-spread)}
-.pill-data{background:var(--pill-data)} .pill-green{background:var(--pill-green)} .pill-l1{background:var(--accent-deep)}
+.pill-hot{background:var(--pill-hot)}.pill-new{background:var(--pill-new)}.pill-spread{background:var(--pill-spread)}
+.pill-data{background:var(--pill-data)}.pill-green{background:var(--pill-green)}.pill-l1{background:var(--accent-deep)}
 .hero-title{font-family:"Noto Serif SC",serif;font-weight:900;font-size:25px;line-height:1.35;color:var(--ink);margin-bottom:8px}
 .hero-source{font-family:"DM Mono",monospace;font-size:11.5px;color:var(--ghost);margin-bottom:16px}
 .catalyst-box{background:var(--accent-light);border-left:4px solid var(--accent);padding:12px 16px;border-radius:0 4px 4px 0;font-size:13.5px;line-height:1.7;color:var(--ink-light);margin-bottom:18px}
@@ -86,52 +66,40 @@ em{font-style:normal;background:rgba(147,197,253,0.25);padding:0 4px;border-radi
 .therefore-block{background:#fff7ec;border:1px dashed var(--accent);border-radius:5px;padding:12px 15px;margin-top:14px;display:flex;gap:10px}
 .tb-label{font-family:"DM Mono",monospace;color:var(--accent-deep);font-weight:500;white-space:nowrap;font-size:13px}
 .tb-text{font-size:13px;line-height:1.75;color:var(--ink-light)}
-
-/* 传导链条 */
 .flow-wrap{padding:6px 26px 4px}
-.flow-strip{display:flex;align-items:stretch;gap:0;background:#fff;border:1px solid var(--border);border-radius:6px;overflow:hidden;flex-wrap:wrap}
+.flow-strip{display:flex;background:#fff;border:1px solid var(--border);border-radius:6px;overflow:hidden;flex-wrap:wrap}
 .flow-node{flex:1;min-width:150px;padding:13px 14px;border-right:1px solid var(--border)}
 .flow-node:last-child{border-right:none}
 .flow-stage{font-family:"DM Mono",monospace;font-size:10.5px;color:var(--ghost);letter-spacing:1px;margin-bottom:5px}
 .flow-name{font-family:"Noto Serif SC",serif;font-weight:700;font-size:14px;color:var(--ink);margin-bottom:4px}
 .flow-desc{font-size:11.5px;color:var(--ink-light);line-height:1.6}
 .flow-node.mid{background:var(--accent-light)}
-
-/* Signals */
 .sig-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:10px 26px 4px}
 .sig-card{background:#fff;border:1px solid var(--border);border-top:3px solid var(--pill-new);border-radius:6px;padding:18px 18px 15px}
-.sig-card.hot{border-top-color:var(--pill-hot)}
-.sig-card.orange{border-top-color:var(--accent)}
-.sig-card.green{border-top-color:var(--pill-green)}
-.sig-card.purple{border-top-color:var(--pill-spread)}
+.sig-card.hot{border-top-color:var(--pill-hot)}.sig-card.orange{border-top-color:var(--accent)}
+.sig-card.green{border-top-color:var(--pill-green)}.sig-card.purple{border-top-color:var(--pill-spread)}
 .sig-title{font-family:"Noto Serif SC",serif;font-weight:700;font-size:16.5px;line-height:1.4;margin:8px 0 5px;color:var(--ink)}
 .sig-source{font-family:"DM Mono",monospace;font-size:11px;color:var(--ghost);margin-bottom:11px}
 .sig-data{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:11px}
 .sig-data span{font-family:"DM Mono",monospace;font-size:11px;background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;padding:3px 8px;color:var(--accent-deep)}
 .sig-body{font-size:13px;line-height:1.75;color:var(--ink-light)}
 .sig-therefore{background:#fff7ec;border-radius:5px;padding:10px 13px;margin-top:12px;display:flex;gap:9px;align-items:flex-start}
-.sig-therefore.orange{background:#fdf0e2} .sig-therefore.hot{background:#fdeeee}
-.sig-therefore.green{background:#eef7ef} .sig-therefore.purple{background:#f4eefb}
+.sig-therefore.orange{background:#fdf0e2}.sig-therefore.hot{background:#fdeeee}
+.sig-therefore.green{background:#eef7ef}.sig-therefore.purple{background:#f4eefb}
 .sl{font-family:"DM Mono",monospace;color:var(--accent-deep);font-weight:500;white-space:nowrap;font-size:12.5px}
 .st2{font-size:12.5px;line-height:1.7;color:var(--ink-light)}
-
-/* Background */
 .bg-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:10px 26px 4px}
 .bg-card{background:#fff;border:1px solid var(--border);border-left:3px solid var(--ghost);border-radius:5px;padding:14px 16px}
 .bg-tag{font-family:"DM Mono",monospace;font-size:10.5px;color:var(--ghost);margin-bottom:5px}
 .bg-title{font-family:"Noto Serif SC",serif;font-weight:700;font-size:14.5px;color:var(--ink);margin-bottom:6px}
 .bg-body{font-size:12.5px;line-height:1.7;color:var(--ink-light)}
-
-/* Watch table */
 .watch-wrap{padding:10px 26px 4px;overflow-x:auto}
 .watch-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border);font-size:12.5px}
 .watch-table th{background:var(--mast);color:#f0c98a;font-family:"DM Mono",monospace;font-weight:500;font-size:11.5px;padding:10px 12px;text-align:left;letter-spacing:.5px}
 .watch-table td{padding:11px 12px;border-top:1px solid var(--border);vertical-align:top;line-height:1.6}
 .watch-table tbody tr:nth-child(even){background:var(--paper-warm)}
 .wv{font-weight:700;color:var(--ink)}
-.t-hot{color:var(--pill-hot);font-weight:700} .t-mid{color:var(--accent);font-weight:700} .t-far{color:var(--pill-green);font-weight:700}
-
-/* Ticker grid */
+.t-hot{color:var(--pill-hot);font-weight:700}.t-mid{color:var(--accent);font-weight:700}.t-far{color:var(--pill-green);font-weight:700}
 .ticker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:10px 26px 4px}
 .ticker-card{background:#fff;border:1px solid var(--border);border-radius:5px;padding:12px}
 .ticker-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:5px}
@@ -139,22 +107,13 @@ em{font-style:normal;background:rgba(147,197,253,0.25);padding:0 4px;border-radi
 .ticker-count{font-family:"DM Mono",monospace;font-size:12px;color:#fff;background:var(--pill-hot);border-radius:9px;padding:1px 7px}
 .ticker-logic{font-size:11.5px;color:var(--ink-light);line-height:1.55;margin-bottom:4px}
 .ticker-source{font-family:"DM Mono",monospace;font-size:10px;color:var(--ghost)}
-
-/* Glossary */
 .gloss-wrap{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:10px 26px 16px}
 .gc{background:var(--paper-warm);border:1px solid var(--border);border-radius:5px;padding:13px 15px}
 .gc-term{font-family:"DM Mono",monospace;font-weight:500;font-size:13.5px;color:var(--accent-deep)}
 .gc-def{font-size:12.5px;line-height:1.65;color:var(--ink-light);margin-top:5px}
 .gc-why{font-size:12px;line-height:1.6;color:var(--ink);margin-top:6px;border-top:1px dashed var(--border);padding-top:6px}
-
-/* Footer */
 .footer{padding:26px;text-align:center;color:var(--ghost);font-size:11.5px;font-family:"DM Mono",monospace;line-height:1.8;border-top:1px solid var(--border);margin-top:20px}
-
-@media(max-width:680px){
-  .sig-grid,.bg-grid,.gloss-wrap{grid-template-columns:1fr}
-  .ticker-grid{grid-template-columns:repeat(2,1fr)}
-  .mast-brand{font-size:27px}
-}
+@media(max-width:680px){.sig-grid,.bg-grid,.gloss-wrap{grid-template-columns:1fr}.ticker-grid{grid-template-columns:repeat(2,1fr)}.mast-brand{font-size:27px}}
 </style>
 </head>
 <body>
@@ -172,38 +131,38 @@ em{font-style:normal;background:rgba(147,197,253,0.25);padding:0 4px;border-radi
 <div class="masthead">
   <div class="mast-kicker">AI 产业链 · 涨价缺货 · 供给断裂追踪</div>
   <div class="mast-brand">产业投研日报</div>
-  <div class="mast-sub">VOL.039 · 2026年6月21日 星期六 &nbsp;|&nbsp; 操盘:宽幅震荡，仓位可进取、预期勿高 &nbsp;|&nbsp; 今日主线:存储「内存税」全线涨价</div>
+  <div class="mast-sub">VOL.039 · 2026年6月21日 星期六（全日合并版）&nbsp;|&nbsp; 操盘:宽幅震荡，仓位可进取、预期勿高 &nbsp;|&nbsp; 今日主线:存储内存税升格宏观事件</div>
 </div>
 
 <div class="stats-bar">
-  <div class="stat-item"><div class="stat-num">65</div><div class="stat-label">有效纪要</div></div>
+  <div class="stat-item"><div class="stat-num">85</div><div class="stat-label">有效纪要</div></div>
   <div class="stat-item"><div class="stat-num">1</div><div class="stat-label">今日主线</div></div>
   <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">今日信号</div></div>
-  <div class="stat-item"><div class="stat-num">8</div><div class="stat-label">背景扩散</div></div>
-  <div class="stat-item"><div class="stat-num">14</div><div class="stat-label">缺口台账</div></div>
-  <div class="stat-item"><div class="stat-num">12</div><div class="stat-label">高频标的</div></div>
+  <div class="stat-item"><div class="stat-num">10</div><div class="stat-label">背景扩散</div></div>
+  <div class="stat-item"><div class="stat-num">24</div><div class="stat-label">缺口台账</div></div>
+  <div class="stat-item"><div class="stat-num">16</div><div class="stat-label">高频标的</div></div>
 </div>
 
 <div class="context-bar">
   <div class="ctx-label">■ 今日大背景 · 科技领袖动态</div>
   <div class="ctx-item">
-    <div class="ctx-who">陈立武 / Intel CEO · 0618访谈</div>
-    <div class="ctx-text">将投注重心转向先进封装(EMIB)、玻璃基板，以及氮化镓、碳化硅、磷化铟、人工合成钻石等新材料，喊出"5至10年内实现10倍回报"。→ 把"先进封装+新材料"从国内题材抬升为全球巨头的明牌路线，为今日玻璃基板、磷化铟、金刚石散热多点共振提供了产业锚。</div>
+    <div class="ctx-who">陈立武 / Intel CEO · 0618-0621访谈</div>
+    <div class="ctx-text">将投注重心转向先进封装(EMIB)、玻璃基板，以及金刚石、磷化铟、氮化镓等新材料，喊出"5至10年内10倍回报"。→ 与今日台积电"glass core"载板进展、京东方TGV全流程形成海内外共振，先进封装+新材料从国内题材升格为全球巨头明牌路线。</div>
   </div>
   <div class="ctx-item">
     <div class="ctx-who">SK海力士 · 0618</div>
-    <div class="ctx-text">向客户供应12层HBM4E堆叠样品，引脚速率最高16Gbps、能效提升20%以上。→ HBM4E节点提前，原厂成熟制程持续向HBM倾斜，等于把通用DRAM/NAND的供给挤得更紧——存储"内存税"叙事再添硬证据。</div>
+    <div class="ctx-text">向客户供应12层HBM4E堆叠样品，引脚速率最高16Gbps、能效提升20%+。→ HBM4E节点提前，原厂成熟制程持续向HBM倾斜，把通用DRAM/NAND供给挤得更紧，"内存税"叙事再添硬证据。</div>
   </div>
   <div class="ctx-item">
-    <div class="ctx-who">AMD · 0616</div>
-    <div class="ctx-text">收购内存优化创企MEXT，用AI把不常访问的数据从DRAM搬到NAND、让NAND对操作系统"扮演"DRAM以扩容降本。→ 连巨头都在用软件手段省内存，反向印证DRAM稀缺与涨价已逼到系统架构层面。</div>
+    <div class="ctx-who">Jim Chanos / 著名做空者 · 0621</div>
+    <div class="ctx-text">称当前AI产业链存在巨大"财务不匹配"、"AI云"实为租赁中介，并看空SpaceX。→ 高位多空分歧放大，提醒算力租赁/AI capex叙事须以"真实订单与现金流"证伪，与群内"产业比资本市场更看重真实"口径正好对照。</div>
   </div>
 </div>
 
 <div class="verdict-bar">
   <div class="verdict-label">■ 今日判断</div>
   <div class="verdict-text">
-    今天单一最重要的事，是存储从"周期涨价"升格为"宏观资产事件"——<em>SK海力士、美光市值同日反超比特币</em>，投行把美光目标价从550直接拍到1500美元。但真正的预期差不在已被反复演绎的DRAM现货价，而在更上游、更少人盯的"断供"环节：<em>对日钨品出口断崖</em>让六氟化钨、PCB钨棒被动国产替代，<em>氧化钇管制把氮化铝陶瓷基板订单堵到了2028年</em>。当"涨价"变成"断供"，定价逻辑就从弹性变成了不可逆——这是今天最该重新审视的地方。
+    今天单一最重要的事，是存储从"周期涨价"升格为"宏观资产事件"——<em>SK海力士、美光市值同日反超比特币</em>，投行把美光目标价从550直接拍到1500美元。晚间纪要又把这条涨价主线向外推了一圈：<em>光纤开始用价格说话</em>(藤仓提价30%、全年指引一次上修46.8%)，国产算力的<em>FAB成熟制程涨价</em>是比任何采购传闻都硬的供给信号。真正的预期差，仍在更上游、更少人盯的"断供"环节——钨/六氟化钨、氮化铝陶瓷把"涨价"变成了"不可逆"。
   </div>
 </div>
 
@@ -231,13 +190,13 @@ em{font-style:normal;background:rgba(147,197,253,0.25);padding:0 4px;border-radi
       <div class="drow-4"><div class="di-n">550→1500</div><div class="di-l">美光目标价(美元)</div></div>
     </div>
     <div class="hero-body">
-      <p><strong>供需错配的根因。</strong>三星、SK海力士、美光把大量成熟制程产能转向AI服务器刚需的HBM与企业级SSD，面向消费电子的通用型DRAM/NAND产能被大幅挤压；需求端除AI数据中心外，云厂锁长单、游戏主机加速消耗剩余产能。成本端上游晶圆合约价持续攀升，渠道端经销商与模组厂囤货，已形成"涨价→囤货→更涨"的正反馈。</p>
-      <p><strong>从周期走向成长。</strong>这一轮的不同在于"确定性提高"：闪迪、三星与客户签订多份长协，把高毛利与高可见度长期锁定；TrendForce预测26H1 NOR Flash/SLC NAND合约价累计涨幅100-150%、DRAM环比58-63%；机构判断高价周期或延续至2028年。这把存储从"周期股"重定价为"成长股"。</p>
-      <p><strong>设计公司的双弹性正在兑现。</strong>利基型存储涨价25Q4后半段刚落地，26年有望贯穿全年——设计公司是"营收↑ × 利润率↑"的双重弹性。二季度业绩前瞻(纪要)：兆易创新约50亿(其中经营性40亿)、普冉股份约5亿(全年30亿含SkyHigh并表、目前仅持51%股权待增厚)、东芯股份约5亿、北京君正大几亿。模组公司则刚进入利润释放期，库存逐季走高印证强拿货能力。</p>
+      <p><strong>供需错配的根因。</strong>三星、SK海力士、美光把大量成熟制程产能转向AI服务器刚需的HBM与企业级SSD，面向消费电子的通用型DRAM/NAND产能被大幅挤压；需求端云厂锁长单、游戏主机加速消耗剩余产能。成本端晶圆合约价攀升、渠道端经销商与模组厂囤货，已形成"涨价→囤货→更涨"的正反馈。SK海力士12层HBM4E样品提前，等于把通用产能挤得更紧。</p>
+      <p><strong>从周期走向成长。</strong>这一轮的不同在于"确定性提高"：闪迪、三星与客户签多份长协，把高毛利与高可见度长期锁定；TrendForce预测26H1 NOR Flash/SLC NAND合约价累计涨幅100-150%、DRAM环比58-63%，机构判断高价周期或延续至2028年。这把存储从"周期股"重定价为"成长股"。</p>
+      <p><strong>设计公司的双弹性正在兑现。</strong>利基型存储涨价25Q4后段刚落地、26年有望贯穿全年——设计公司是"营收↑×利润率↑"的双重弹性。二季度业绩前瞻(纪要)：兆易创新约50亿(经营性40亿)、普冉股份约5亿(全年30亿含SkyHigh并表)、东芯股份约5亿、北京君正大几亿。模组公司刚进入利润释放期、库存逐季走高印证强拿货能力。</p>
     </div>
     <div class="chip-row">
       <span class="chip p">兆易创新</span><span class="chip p">普冉股份</span><span class="chip p">东芯股份</span><span class="chip p">北京君正</span><span class="chip p">飞凯材料</span>
-      <span class="chip">佰维存储</span><span class="chip">江波龙</span><span class="chip">德明利</span><span class="chip">香农芯创</span><span class="chip">国科微</span><span class="chip">屹唐股份·设备</span>
+      <span class="chip">佰维存储</span><span class="chip">江波龙</span><span class="chip">德明利</span><span class="chip">香农芯创</span><span class="chip">大普微</span><span class="chip">屹唐股份·设备</span>
     </div>
     <div class="therefore-block">
       <span class="tb-label">→ 所以</span>
@@ -249,114 +208,128 @@ em{font-style:normal;background:rgba(147,197,253,0.25);padding:0 4px;border-radi
 <div class="section-hd"><span class="section-num">传导链条</span><span class="section-title">存储涨价的上下游传导</span></div>
 <div class="flow-wrap">
   <div class="flow-strip">
-    <div class="flow-node"><div class="flow-stage">上游 · 封装材料</div><div class="flow-name">球形硅微粉 / 环氧塑封料</div><div class="flow-desc">飞凯材料EMC过SK海力士认证、GMC球形硅微粉Q2量产，2月对封装材料提价10-50%、库存仅4周。</div></div>
-    <div class="flow-node mid"><div class="flow-stage">本环节 · 原厂转产</div><div class="flow-name">DRAM / NAND / HBM</div><div class="flow-desc">成熟制程转向HBM与企业级SSD，通用产能挤压；HBM4E 12层样品提前，供给进一步收紧。</div></div>
+    <div class="flow-node"><div class="flow-stage">上游 · 封装材料</div><div class="flow-name">球形硅微粉 / 环氧塑封料</div><div class="flow-desc">飞凯EMC过SK海力士认证、GMC球形硅微粉Q2量产，2月对封装材料提价10-50%、库存仅4周。</div></div>
+    <div class="flow-node mid"><div class="flow-stage">本环节 · 原厂转产</div><div class="flow-name">DRAM / NAND / HBM</div><div class="flow-desc">成熟制程转向HBM与企业级SSD，通用产能挤压；HBM4E 12层样品提前、供给再收紧。</div></div>
     <div class="flow-node"><div class="flow-stage">下游 · 承接放量</div><div class="flow-name">模组 / BT载板</div><div class="flow-desc">模组(佰维/江波龙)进利润释放期；BT载板景气看存储，年初4400→5700、7月或破6700。</div></div>
   </div>
 </div>
 
-<div class="section-hd"><span class="section-num">第二层 · 信号</span><span class="section-title">雷达下的高确定性缺口</span></div>
+<div class="section-hd"><span class="section-num">第二层 · 信号</span><span class="section-title">有新事实支撑的高确定性信号</span></div>
 <div class="sig-grid">
+
+  <div class="sig-card hot">
+    <div class="hero-pill-row"><span class="pill pill-hot">涨价实锤</span><span class="pill pill-data">缺货断供</span></div>
+    <div class="sig-title">北美光纤AI涨价逻辑来临 + MPO缺货量价齐升</div>
+    <div class="sig-source">光纤产业纪要 · 0620 · 招商通信 / 长芯博创纪要 · 0621</div>
+    <div class="sig-data"><span>藤仓DCI +30%</span><span>藤仓指引 +46.8%</span><span>长飞北美 10→15美金</span><span>MPO交期 60+天</span></div>
+    <div class="sig-body">藤仓想明白"扩不出产能就涨价"，DCI互联光缆(200um A1)提价30%、把27FY净利指引由1560亿日元上修至2290亿(+46.8%)，连续涨停；康宁26Q2指引孱弱、5月宣布专供NV扩产、调价在路上。<strong>长飞北美交付价已由10涨到15美金、且当前最低(涨价弹性最大)、北美卡位最好</strong>，长飞H被视为超级低估。MPO缺货交期拉至60+天，16芯400+/32芯1200+元(配800G/1.6T)，26年1千万→27年2千万条+，Meta已下27年200+万条大单。</div>
+    <div class="sig-chips"><span class="chip p">长飞光纤</span><span class="chip p">长芯博创</span><span class="chip p">中际旭创</span><span class="chip">太辰光</span><span class="chip">新易盛</span></div>
+    <div class="sig-therefore hot"><span class="sl">→ 所以</span><span class="st2">光互联从"需求展望"切到"价格兑现"，比订单传闻更硬。弹性看交付价最低的长飞，缺口看交期与16/32芯放量的MPO龙头；核心验证是康宁是否跟进调价。</span></div>
+  </div>
 
   <div class="sig-card hot">
     <div class="hero-pill-row"><span class="pill pill-hot">缺货断供</span><span class="pill pill-data">对日管制</span></div>
     <div class="sig-title">钨·六氟化钨对日断供："AI金属之王"国产替代</div>
-    <div class="sig-source">国金计算机&金属 郑元昊/吴晋恺 · 0621 · 产业链交叉验证</div>
-    <div class="sig-data"><span>对日钨铁 5月48吨(断崖)</span><span>日系WF₆停产 ~25%产能</span><span>三菱超硬 +200%</span><span>65%黑钨 52.5万/标吨</span></div>
-    <div class="sig-body">自2026年1月对日两用物项禁令以来，对日钨品出口断崖、5月连未列清单的钨铁也降至48吨，通道接近关闭。六氟化钨是14nm以下先进制程金属互连CVD刚需特气，日系关东电化+中央硝子(约25%全球产能/2200吨)因高纯钨粉断料预计7月停产；中船特气产能全球第一(约2200吨)、已进台积/美光/中芯/长存，是最大承接方。PCB钨棒(M9钻针原料)国产已完成0.3mm替代，0.2mm及以下高长径比棒材测试中(目标性能逼近住友80-90%)，棒材采购=钻针耗用1.5x、长鞭效应放大需求。</div>
+    <div class="sig-source">国金计算机&金属 郑元昊/吴晋恺 · ZX机械 · 0621</div>
+    <div class="sig-data"><span>对日钨铁 5月48吨</span><span>日系WF₆停产 ~25%产能</span><span>三菱超硬 +200%</span><span>高阶钻针 1/3产能=2/3利润</span></div>
+    <div class="sig-body">对日钨品出口断崖、5月钨铁降至48吨、通道接近关闭。六氟化钨是14nm以下先进制程CVD刚需特气，日系关东电化+中央硝子(约25%全球产能)因高纯钨粉断料预计7月停产；中船特气产能全球第一、已进台积/美光/中芯/长存，是最大承接方。PCB钨棒(M9钻针原料)国产已完成0.3mm替代，Rubin架构后高阶1/3稀缺钻针产能贡献2/3以上利润、长径比更重要，紧缺由PCB延伸至基板。</div>
     <div class="sig-chips"><span class="chip p">中船特气</span><span class="chip p">中钨高新</span><span class="chip p">江钨装备</span><span class="chip">厦门钨业</span><span class="chip">翔鹭钨业</span></div>
-    <div class="sig-therefore hot"><span class="sl">→ 所以</span><span class="st2">"涨价→断供"的不可逆典型，确定性高于多数涨价故事：六氟化钨看认证承接(中船特气)，钨棒看AIPCB认证落地节奏，钨价中枢中长期上移托底矿端龙头。</span></div>
+    <div class="sig-therefore hot"><span class="sl">→ 所以</span><span class="st2">"涨价→断供"的不可逆典型，确定性高于多数涨价故事：六氟化钨看认证承接(中船特气)，钨棒看AIPCB认证节奏，一体化厂商价值重估。</span></div>
   </div>
 
   <div class="sig-card orange">
-    <div class="hero-pill-row"><span class="pill pill-hot">超预期涨价</span><span class="pill pill-spread">订单排到2028</span></div>
-    <div class="sig-title">氮化铝陶瓷基板：氧化钇管制把订单堵到2028</div>
-    <div class="sig-source">国泰海通电新 徐强/任苒威 · 0621 · 产业反馈</div>
-    <div class="sig-data"><span>粉体 20万→28-32万/吨</span><span>京瓷减产 30%</span><span>德山交期 12周→24周</span><span>需求 1100吨→3000吨(28)</span></div>
-    <div class="sig-body">氧化钇是氮化铝粉体/氧化锆烧结的唯一刚需稳定剂、无替代材料，全球93%产能在中国；对日管制后东曹停供氧化锆、京瓷+德山减产约30%、部分小厂停产，海外氧化钇价格暴涨10倍以上。1.6T光模块今年拉动氮化铝陶瓷基板约400吨、AI服务器散热约700吨，整体约1100吨需求，28年有望接近3000吨；订单已排到2028，国内新建产线爬坡需2年、交货周期半年以上。</div>
-    <div class="sig-chips"><span class="chip p">旭光电子</span><span class="chip p">中瓷电子</span><span class="chip">国瓷材料</span><span class="chip">金博股份</span><span class="chip">楚江新材·烧结设备</span></div>
-    <div class="sig-therefore orange"><span class="sl">→ 所以</span><span class="st2">当前雷达下、跨期提及偏少但幅度极大的缺口——基板+粉体双线涨价；核心看京瓷减产是否进一步扩大与国产产线爬坡速度。</span></div>
+    <div class="hero-pill-row"><span class="pill pill-hot">主升启动</span><span class="pill pill-data">FAB涨价</span></div>
+    <div class="sig-title">国产算力Q3主升：FAB涨价是最硬的供给信号</div>
+    <div class="sig-source">东方通信 舒迪/段笑南 · 财通 唐佳 · CZJ算租纪要 · 0621</div>
+    <div class="sig-data"><span>B300八卡 800万+</span><span>字节IDC招标 5-6GW</span><span>2027算力capex ~5000亿</span><span>昇腾/寒武纪 已涨价</span></div>
+    <div class="sig-body">需求端：字节火山云大会起，Q3 GLM-5.5、微信/支付宝Agent密集催化；CSP 2027 AI capex或提前至2026Q3，国产算力芯片capex有望同比50%+。供给端：中芯/华虹2026H2开启国产N+2扩产，<strong>成熟、先进制程均进入涨价周期</strong>——FAB是算力供应核心瓶颈。产品端：昇腾8192卡950DT超节点内部测试、寒武纪万卡690集群大客户部署，昇腾/寒武纪产品已率先涨价。B300八卡服务器现货价已到800万+。</div>
+    <div class="sig-chips"><span class="chip p">寒武纪</span><span class="chip p">海光信息</span><span class="chip p">芯原股份</span><span class="chip">中芯国际</span><span class="chip">禾盛新材</span></div>
+    <div class="sig-therefore orange"><span class="sl">→ 所以</span><span class="st2">抓"真实"：FAB与昇腾/寒武纪涨价是已落地的供给侧硬信号，比采购传闻可靠；ASIC看二季度末订单业绩验证，GPU二线弹性或不输一线。</span></div>
   </div>
 
   <div class="sig-card">
-    <div class="hero-pill-row"><span class="pill pill-new">新工艺</span><span class="pill pill-spread">预期差</span></div>
-    <div class="sig-title">玻璃基板CoPoS：被忽略的高价值环节是PVD金属化</div>
-    <div class="sig-source">东北计算机 · 0621 · 汇成真空调研纪要</div>
-    <div class="sig-data"><span>PVD占整线 ~40%</span><span>进口3-4kw/国产1.5kw</span><span>孔径比 12-13</span><span>云天合作 26年</span></div>
-    <div class="sig-body">CoPoS核心是Glass Core(载板结构ABF+ABF-GCP+Glass Core+ABF-GCP+ABF)；玻璃化学惰性须先PVD沉积金属种子层才能电镀，PVD贯穿前后道金属化、价值量占整线设备投入近40%，高于通孔设备。汇成真空前瞻布局TGV专用流片式PVD(孔径比12-13、孔径20-30μm)，已向三叠纪交付两条产线(约3kw)，客户覆盖京东方/云天半导体。另一破局点ABF-GCP(玻璃与树脂粘结介质)，圣泉+SYL正全力突破核心树脂。</div>
-    <div class="sig-chips"><span class="chip p">汇成真空</span><span class="chip p">奥来德·PSPI</span><span class="chip p">生益科技·ABF</span><span class="chip">圣泉集团</span><span class="chip">三孚新科</span><span class="chip">沃格光电</span></div>
-    <div class="sig-therefore"><span class="sl">→ 所以</span><span class="st2">市场盯激光通孔，PVD金属化与ABF-GCP才是更大预期差；关注汇成真空与云天26年实质合作、ABF-GCP核心树脂突破进度。</span></div>
-  </div>
-
-  <div class="sig-card green">
-    <div class="hero-pill-row"><span class="pill pill-green">送样确认</span><span class="pill pill-data">ASP跃迁</span></div>
-    <div class="sig-title">电连技术 NV Pogopin：单价10倍的隐藏弹性</div>
-    <div class="sig-source">Aph专家纪要 · 0621 · 送样进度交叉验证</div>
-    <div class="sig-data"><span>ASP ~20元(传统1-2元)</span><span>=预期10倍</span><span>远期10万柜×10万根</span><span>或千亿市场</span></div>
-    <div class="sig-body">公司给富士康送样Rubin Ultra正交背板Pogopin测试顺利、不存在出局；112G/224G信号传输Pogopin专家口径均价约20元，远高于传统3C产品(1-2元)。(测算)按远期10万柜、单柜10万根、ASP20元，对应或为千亿级市场——意味着这块市场可能是此前预期的10倍。公司正积极筹备产能，有望成为主力供应商。</div>
-    <div class="sig-chips"><span class="chip p">电连技术</span></div>
-    <div class="sig-therefore green"><span class="sl">→ 所以</span><span class="st2">典型"跨期低提及 + ASP大跃迁"的雷达标的；核心验证是Rubin Pogopin份额与产能落地，卖方测算须以富士康量产订单为准。</span></div>
+    <div class="hero-pill-row"><span class="pill pill-new">路线收敛</span><span class="pill pill-spread">海内外共振</span></div>
+    <div class="sig-title">玻璃基板glass core路线确认 + 全流程国产卡位</div>
+    <div class="sig-source">中泰电子 王芳 · 广发机械 · 东北计算机 · 0621</div>
+    <div class="sig-data"><span>台积电 glass core 确认</span><span>京东方 10:1深宽比</span><span>PVD占整线 ~40%</span><span>28年量产/渗透30%</span></div>
+    <div class="sig-body">台积电6.11 JPCAShow正式宣布与Ibiden+群创合作开发glass core载板，样品翘曲&电性能优于有机载板，<strong>路线已收敛到载板core层</strong>；SK 26年底量产、三星27H2、Intel 28-30年。京东方为A股唯一布局TGV通孔/填充/高多层RDL全流程厂商(10:1深宽比、8μm线宽)，28年渗透率30%、与康宁签合作(7.2投资者日详谈)。被市场忽略的高价值环节是PVD金属化(占整线设备投入近40%，汇成真空TGV专用流片式PVD)与ABF-GCP核心树脂(圣泉+SYL在攻)。设备端TGV龙头帝尔激光。</div>
+    <div class="sig-chips"><span class="chip p">京东方</span><span class="chip p">帝尔激光</span><span class="chip p">汇成真空</span><span class="chip">奥来德·PSPI</span><span class="chip">东威科技</span><span class="chip">生益科技</span></div>
+    <div class="sig-therefore"><span class="sl">→ 所以</span><span class="st2">从"概念"到"路线确认"是关键一跃，未来半年到一年催化不断；A股稀缺卡位在TGV全流程(京东方)、TGV/PVD设备(帝尔/汇成)，盯量产时间是否超预期。</span></div>
   </div>
 
 </div>
 
-<div class="section-hd"><span class="section-num">第三层 · 背景</span><span class="section-title">持续跟踪与扩散信息</span></div>
+<div class="section-hd"><span class="section-num">第三层 · 背景</span><span class="section-title">持续跟踪与扩散信息（全日合并）</span></div>
 <div class="bg-grid">
 
   <div class="bg-card">
-    <div class="bg-tag">天风电新 孙潇雅 · 0621</div>
-    <div class="bg-title">CCL / 载板 / 铜箔涨价接力</div>
-    <div class="bg-body">ABF载板年初4.7-4.8万→6.5万/平米(+38%)、26Q3再+30%→年底8.5万；BT载板4400→5700(+20%)、7月或→6700；建滔CCL不含税235→年底300、5月纯CCL利润80元/张超专家预期。打法：向上布局铜箔(方邦/海亮)、向下提前布局载板(深南/兴森)、上游华正新材(CCL+ABF膜共振)。</div>
-    <div class="bg-chips"><span class="chip">华正新材</span><span class="chip">金安国纪</span><span class="chip">方邦股份</span><span class="chip">深南电路</span><span class="chip">兴森科技</span></div>
+    <div class="bg-tag">天风电新&电子 · 0620-0621</div>
+    <div class="bg-title">载板BT/ABF双线涨价(全年或70%)</div>
+    <div class="bg-body">预计7月BT再涨20-25%、9-10月ABF再涨30-35%，全年两类有望涨70%。ABF：4.7-4.8万→6.5万/㎡，味之素垄断ABF膜+日东纺T-Glass紧缺、进入"保量不保价"、海外交期12-18个月。BT：4400→5700(+20%)、稳态毛利率36%、IDM委外产能向国内转移。深南电路(27年利润占比26%)、兴森科技(70%+)、华正新材、方邦股份、新锐股份(铣刀)。</div>
+    <div class="bg-chips"><span class="chip">深南电路</span><span class="chip">兴森科技</span><span class="chip">华正新材</span><span class="chip">方邦股份</span></div>
   </div>
 
   <div class="bg-card">
-    <div class="bg-tag">天风通信 · 国泰海通通信 · 0621</div>
-    <div class="bg-title">光通信光纤价值量通胀</div>
-    <div class="bg-body">800G/1.6T需求持续上修，scale-up释放光互联增量；CSP大厂锁光纤产能、光纤直出北美，DCI/CPO拉动G654、空心光纤、保偏光纤价值量大幅通胀。5月光模块海关数据：四川出口环比+37%、上海+162%。飞凯材料光纤涂覆Q1扣非+74%。</div>
-    <div class="bg-chips"><span class="chip">中际旭创</span><span class="chip">新易盛</span><span class="chip">天孚通信</span><span class="chip">中天科技</span><span class="chip">飞凯材料</span></div>
+    <div class="bg-tag">天风电新 孙潇雅/张童童 · 0621</div>
+    <div class="bg-title">CCL利润弹性超预期 + 电子布织布机瓶颈</div>
+    <div class="bg-body">建滔均价235→27年300元(+27%)、电子布市场价10元，核心标的仍有翻倍空间。而AI PCB涨价最凶环节在电子布、扩产瓶颈在织布机——海外丰田垄断，泰坦股份(今年+541%)与永冠新材签TT-816V采购、订单约150台，国产替代黄金窗口。</div>
+    <div class="bg-chips"><span class="chip">建滔积层板</span><span class="chip">华正新材</span><span class="chip">泰坦股份</span><span class="chip">永冠新材</span></div>
   </div>
 
   <div class="bg-card">
-    <div class="bg-tag">东北计算机 · 0621 · 周更新</div>
-    <div class="bg-title">AIDC液冷材料迭代</div>
-    <div class="bg-body">远东股份与NV联合开发液态金属、630最新版本送北美，结构区别于原供应商、方案性能领先；CDU产品下周与阿里技术沟通，国内另有三家按需求完成产品保供。三花智控为全球热管理零部件龙头，AIDC液冷+仿生机器人打开空间。</div>
-    <div class="bg-chips"><span class="chip">远东股份</span><span class="chip">三花智控</span></div>
+    <div class="bg-tag">国泰海通电新 徐强 · 0621</div>
+    <div class="bg-title">AI陶瓷/氮化铝氧化钇断供</div>
+    <div class="bg-body">东曹因氧化钇断供、齿科氧化锆产线全面停产；氧化钇无替代、全球93%产能在中国，海外暴涨10倍以上。京瓷+德山减产约30%、部分小厂停产，陶瓷基板快速上涨；通信级氮化铝粉体20万→28-32万/吨、订单排到2028。1.6T陶瓷材料市场85亿(26H2)→340亿+(27)。旭光电子(核心)、中瓷电子、国瓷材料、金博股份。</div>
+    <div class="bg-chips"><span class="chip">旭光电子</span><span class="chip">中瓷电子</span><span class="chip">国瓷材料</span><span class="chip">金博股份</span></div>
   </div>
 
   <div class="bg-card">
-    <div class="bg-tag">东吴/DW电子 · 0621 · 周思考</div>
-    <div class="bg-title">国产算力情绪重塑</div>
-    <div class="bg-body">Claude5被禁+国产GPU涨价重塑国产算力信心；字节向国内GPU厂商加量采购传闻再起(寒武纪否认大量供货)。催化：6/23-24火山引擎Force大会、7/17-20 WAIC。盛科通信斩获头部CSP订单、新一轮行情启动。科创板第五套标准已扩至AI大模型企业。</div>
-    <div class="bg-chips"><span class="chip">寒武纪</span><span class="chip">海光信息</span><span class="chip">芯原股份</span><span class="chip">盛科通信</span></div>
+    <div class="bg-tag">天风电新 孙潇雅/吴佩琳 · ZX机械 · 0621</div>
+    <div class="bg-title">AIDC缺电 + 液冷代工链</div>
+    <div class="bg-body">28年电力需求达140GW+被低估，<strong>高温合金叶片产能是限制海外燃机扩产最重要因素</strong>。首推柴发+气发+SOFC潍柴动力、海外燃机配套联德股份、北美供电Tier1杰瑞股份。液冷Q2先看出利润代工链(不锈钢波纹管+Manifold)：金富科技(Q2首个兑现、客户富士康/台达)、五洋自控(与NV联合开发Switch tray液冷、有望拿RVL CODE，8-9万/柜)。</div>
+    <div class="bg-chips"><span class="chip">潍柴动力</span><span class="chip">联德股份</span><span class="chip">金富科技</span><span class="chip">五洋自控</span></div>
   </div>
 
   <div class="bg-card">
-    <div class="bg-tag">国海/华西计算机 · 0621</div>
-    <div class="bg-title">磷化铟·先进材料</div>
-    <div class="bg-body">Intel陈立武明确押注磷化铟(InP)、玻璃基板、GaN/SiC与人工钻石；Coherent宣布获美国商务部高5000万美元、扩建德州6英寸磷化铟工厂并已破土。InP为光通信激光器与先进材料关键衬底，国产高纯铟/高纯磷链条受益。</div>
-    <div class="bg-chips"><span class="chip">高纯铟·链</span><span class="chip">高纯磷·链</span></div>
+    <div class="bg-tag">东北计算机 · 李东平纪要 · 0621</div>
+    <div class="bg-title">AIDC液冷材料迭代(远东)</div>
+    <div class="bg-body">远东股份与NV联合开发液态金属、630最新版本送北美，结构区别于原供应商、方案性能领先；CDU产品下周与阿里技术沟通，国内另有三家按需求保供。三花智控为全球热管理零部件龙头，AIDC液冷+仿生机器人打开空间。</div>
+    <div class="bg-chips"><span class="chip">远东股份</span><span class="chip">三花智控</span><span class="chip">飞龙股份</span></div>
   </div>
 
   <div class="bg-card">
-    <div class="bg-tag">天风通信 · 0621</div>
-    <div class="bg-title">金刚石芯片散热</div>
-    <div class="bg-body">陈立武"5-10年10倍"背书先进封装与新材料，金刚石被定义为芯片散热终极材料，并在PCD钻针、半导体耗材潜力大。团队去年Q3即提出该板块出5-10倍牛股逻辑，单一制程微缩遇瓶颈→转向先进封装+先进材料。</div>
-    <div class="bg-chips"><span class="chip">国机精工</span><span class="chip">四方达</span><span class="chip">沃尔德</span><span class="chip">共达电声</span></div>
+    <div class="bg-tag">天准科技 · 广发机械 · 0621</div>
+    <div class="bg-title">光/半导体检测设备扩产</div>
+    <div class="bg-body">天准CPO光纤端面检测上市公司独家、AOI价值量10-30万→100-300万元，CPO设备2026年7-8月或首批批量订单；半导体量测国产化率<5%(除光刻机外最低)、TB2000(28nm)出货跻身第一梯队。广发：27年NPO出货上修2-3kw、2.4T NPO设备需求较1.6T增50%+。</div>
+    <div class="bg-chips"><span class="chip">天准科技</span><span class="chip">罗博特科</span><span class="chip">联讯仪器</span><span class="chip">长川科技</span></div>
   </div>
 
   <div class="bg-card">
-    <div class="bg-tag">产业反馈 · 伯恩斯坦 · 0621</div>
-    <div class="bg-title">AIDC供电瓶颈与储能</div>
-    <div class="bg-body">电力供给已成机柜部署核心约束，5月机柜交付量环比-11%~12%、为25年以来首次月度回落；亚太电力capex预计2030年达8000亿美元。伯恩斯坦上调今年储能需求至1023GWh、储能电池产能利用率94%满产满销。思格新能AIDC光储协同+800V架构、26年底推SST样机。</div>
-    <div class="bg-chips"><span class="chip">思格新能</span><span class="chip">宁德时代</span><span class="chip">阳光电源</span></div>
+    <div class="bg-tag">李东平 · 天风通信 · 0621</div>
+    <div class="bg-title">先进封装弹性(Pogopin/NPO)</div>
+    <div class="bg-body">电连技术给富士康送样Rubin Ultra正交背板Pogopin测试顺利，112G/224G单价约20元(传统3C的10倍)，远期或千亿市场。华懋科技为核心NPO上游：富创优越PCBA 800G利润3.5-4美元/只，28年NPO 6000-7000万只、整体看800-1000亿。</div>
+    <div class="bg-chips"><span class="chip">电连技术</span><span class="chip">华懋科技</span></div>
+  </div>
+
+  <div class="bg-card">
+    <div class="bg-tag">国海/华西计算机 · 天风通信 · 0621</div>
+    <div class="bg-title">磷化铟/金刚石/碳化硅新材料</div>
+    <div class="bg-body">Intel陈立武押注磷化铟(InP)、金刚石、GaN/SiC；Coherent获商务部5000万美元扩建6英寸InP工厂。金刚石被定义为芯片散热终极材料(国机精工/四方达/沃尔德)；800V算力电源拉动8英寸SiC衬底紧缺(楚江/顶立卖铲人)。</div>
+    <div class="bg-chips"><span class="chip">国机精工</span><span class="chip">四方达</span><span class="chip">楚江新材</span></div>
+  </div>
+
+  <div class="bg-card">
+    <div class="bg-tag">东北计算机 · 中金有色 · 0621</div>
+    <div class="bg-title">电容通胀开端 + 稀土磁材上行</div>
+    <div class="bg-body">尼吉康铝电解电容开始涨价、关注电容通胀的开始(江海股份/三环风华/嘉德利)。稀土：氧化镝139万元/吨周环比+8.6%、氧化铽+4.1%、氧化镨钕+3.6%，稀土价格上行、下游磁材需求恢复，"通胀链"自下而上持续扩散。</div>
+    <div class="bg-chips"><span class="chip">江海股份</span><span class="chip">三环风华</span><span class="chip">稀土磁材·链</span></div>
   </div>
 
   <div class="bg-card">
     <div class="bg-tag">商务部等八部门 · 0618</div>
     <div class="bg-title">端侧AI / AI+消费政策</div>
-    <div class="bg-body">八部门联合印发《AI+消费》17条实施意见，供需两端同时发力——扩大智能终端供给、推动消费电子从功能型向智能型转变、打造"人车家"全场景生态。把端侧AI提升到国家级消费基础设施层面，消费电子从"量稳价跌"切向"量价齐升"拐点。</div>
-    <div class="bg-chips"><span class="chip">端侧AI</span><span class="chip">消费电子</span></div>
+    <div class="bg-body">八部门联合印发《AI+消费》17条，供需两端发力——扩大智能终端供给、推动消费电子从功能型向智能型转变、打造"人车家"全场景生态，把端侧AI提升到国家级消费基础设施层面，消费电子从"量稳价跌"切向"量价齐升"拐点。MLCC离型膜(斯迪克)等上游同步受益。</div>
+    <div class="bg-chips"><span class="chip">端侧AI</span><span class="chip">斯迪克·离型膜</span></div>
   </div>
 
 </div>
@@ -366,82 +339,72 @@ em{font-style:normal;background:rgba(147,197,253,0.25);padding:0 4px;border-radi
   <table class="watch-table">
     <thead><tr><th>跟踪变量</th><th>验证节点</th><th>当前状态</th><th>结果影响</th></tr></thead>
     <tbody>
-      <tr>
-        <td><span class="wv">日系六氟化钨7月停产后</span><br>国产承接份额与价格</td>
-        <td class="t-hot">2026Q3</td>
-        <td>关东电化+中央硝子约25%全球产能(2200吨)预计7月停产，中船特气产能全球第一并已进四大存储/代工厂。</td>
-        <td>承接顺利→国产WF₆份额与价格双升；日系恢复或认证慢→缺口证伪。</td>
-      </tr>
-      <tr>
-        <td><span class="wv">ABF载板26Q3涨价</span><br>能否兑现30%+</td>
-        <td class="t-mid">2026Q3</td>
-        <td>年初4.7-4.8万→周五6.5万/平米，预计26Q3再+30%、年底8.5万；CPU chiplet消耗量更大。</td>
-        <td>兑现→载板链利润中枢上移；GPU/CPU备货放缓→涨价节奏延后。</td>
-      </tr>
-      <tr>
-        <td><span class="wv">氮化铝陶瓷基板</span><br>涨价与交期演变</td>
-        <td class="t-far">2026Q4</td>
-        <td>粉体20万→28-32万/吨，京瓷减产30%、德山交期12周→24周，订单排到2028。</td>
-        <td>京瓷进一步减产→缺口扩大；氧化钇管制松动或海外扩产→证伪。</td>
-      </tr>
-      <tr>
-        <td><span class="wv">PTFE正交背板</span><br>7月是否定案</td>
-        <td class="t-mid">2026Q3</td>
-        <td>NV-Rubin服务器PCB送样表现突出，27年正交背板对PTFE树脂需求4000-5000吨、东岳唯一供应。</td>
-        <td>定案→东岳切入生益NV链成核心供应商；混压方案胜出→逻辑弱化。</td>
-      </tr>
-      <tr>
-        <td><span class="wv">字节国产GPU采购</span><br>传闻真实性</td>
-        <td class="t-hot">2026Q3</td>
-        <td>传向天数智芯采购≥5万颗推理芯片，寒武纪否认大量供货；6/23火山引擎、7月WAIC将催化。</td>
-        <td>证实→国产算力持续性行情；证伪("小作文")→情绪退潮。</td>
-      </tr>
+      <tr><td><span class="wv">康宁是否跟进调价</span></td><td class="t-hot">2026Q3</td><td>藤仓DCI涨价30%、上调指引46.8%并涨停；康宁26Q2指引孱弱、调价在路上。</td><td>跟进→北美光纤AI涨价逻辑全面成立、长飞弹性最大；靠扩产保供不涨→板块涨价证伪。</td></tr>
+      <tr><td><span class="wv">日系六氟化钨7月停产后</span>国产承接份额</td><td class="t-hot">2026Q3</td><td>关东电化+中央硝子约25%全球产能预计7月停产，中船特气产能全球第一。</td><td>承接顺利→国产WF₆份额与价格双升；日系恢复或认证慢→缺口证伪。</td></tr>
+      <tr><td><span class="wv">ABF载板26Q3再涨30-35%</span></td><td class="t-mid">2026Q3</td><td>年初4.7-4.8万→6.5万/㎡，味之素垄断+T-Glass紧缺、保量不保价。</td><td>全年涨70%兑现+国产20层FCBGA切入；GPU/CPU备货放缓→节奏延后。</td></tr>
+      <tr><td><span class="wv">氮化铝陶瓷基板涨价与交期</span></td><td class="t-far">2026Q4</td><td>粉体20万→28-32万/吨，京瓷减产30%、德山交期12周→24周，订单排到2028。</td><td>京瓷进一步减产→缺口扩大；氧化钇管制松动→证伪。</td></tr>
+      <tr><td><span class="wv">FAB成熟制程涨价与N+2扩产</span></td><td class="t-far">2026H2</td><td>中芯/华虹2026H2开启N+2扩产，成熟先进均进入涨价周期。</td><td>涨价兑现+订单景气、2027算力capex 5000亿；扩产致价格回落。</td></tr>
+      <tr><td><span class="wv">字节国产GPU采购真实性</span></td><td class="t-hot">2026Q3</td><td>传向天数智芯采购≥5万颗推理芯片，寒武纪否认大量供货；6/23火山引擎、7/WAIC催化。</td><td>证实→国产算力持续性行情；证伪("小作文")→情绪退潮。</td></tr>
     </tbody>
   </table>
 </div>
 
-<div class="section-hd"><span class="section-num">高频速览</span><span class="section-title">今日被反复提及的标的（≥2次）</span></div>
+<div class="section-hd"><span class="section-num">高频速览</span><span class="section-title">今日被反复提及的标的（全日合并）</span></div>
 <div class="ticker-grid">
-  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">中际旭创</span><span class="ticker-count">10</span></div><div class="ticker-logic">AI光互联全球龙头，800G/1.6T持续上修</div><div class="ticker-source">天风通信·0621</div></div>
-  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">新易盛</span><span class="ticker-count">8</span></div><div class="ticker-logic">四川光模块出口环比+37%，1.6T弹性</div><div class="ticker-source">国泰海通·0621</div></div>
-  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">中天科技</span><span class="ticker-count">7</span></div><div class="ticker-logic">CSP MPO大订单，光纤直出北美</div><div class="ticker-source">天风通信·0621</div></div>
-  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">兆易创新</span><span class="ticker-count">6</span></div><div class="ticker-logic">Q2约50亿，利基存储涨价贯穿全年</div><div class="ticker-source">国金电子·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">中际旭创</span><span class="ticker-count">11</span></div><div class="ticker-logic">AI光互联全球龙头，800G/1.6T持续上修</div><div class="ticker-source">天风通信·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">新易盛</span><span class="ticker-count">9</span></div><div class="ticker-logic">四川出口美国+203%，1.6T弹性</div><div class="ticker-source">招商/天风·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">兆易创新</span><span class="ticker-count">7</span></div><div class="ticker-logic">Q2约50亿，利基存储涨价贯穿全年</div><div class="ticker-source">国金电子·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">华正新材</span><span class="ticker-count">9</span></div><div class="ticker-logic">CCL+ABF膜共振，载板上游</div><div class="ticker-source">天风电新·0621</div></div>
   <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">建滔积层板</span><span class="ticker-count">6</span></div><div class="ticker-logic">5月纯CCL利润80元/张超预期</div><div class="ticker-source">天风电新·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">寒武纪</span><span class="ticker-count">10</span></div><div class="ticker-logic">万卡690集群部署，产品率先涨价</div><div class="ticker-source">东方通信·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">长飞光纤</span><span class="ticker-count">5</span></div><div class="ticker-logic">北美交付价最低、涨价弹性最大</div><div class="ticker-source">光纤纪要·0620</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">长芯博创</span><span class="ticker-count">4</span></div><div class="ticker-logic">MPO缺货交期60+天，Meta大单</div><div class="ticker-source">长芯博创·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">中钨高新</span><span class="ticker-count">6</span></div><div class="ticker-logic">六氟化钨/PCB高阶钻针对日替代</div><div class="ticker-source">国金/ZX·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">汇成真空</span><span class="ticker-count">7</span></div><div class="ticker-logic">玻璃基PVD金属化，占整线投入40%</div><div class="ticker-source">东北/广发·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">京东方</span><span class="ticker-count">5</span></div><div class="ticker-logic">A股唯一TGV全流程，28年渗透30%</div><div class="ticker-source">中泰电子·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">深南电路</span><span class="ticker-count">4</span></div><div class="ticker-logic">载板大票，BT/ABF双线涨价</div><div class="ticker-source">天风电新·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">方邦股份</span><span class="ticker-count">4</span></div><div class="ticker-logic">载体铜箔龙一，库存极速下降涨价在即</div><div class="ticker-source">天风电新·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">旭光电子</span><span class="ticker-count">5</span></div><div class="ticker-logic">AI陶瓷核心，京瓷减产30%受益</div><div class="ticker-source">国泰海通·0621</div></div>
   <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">飞凯材料</span><span class="ticker-count">5</span></div><div class="ticker-logic">HBM/DRAM封装材料，2月提价10-50%</div><div class="ticker-source">国泰海通·0621</div></div>
-  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">生益科技</span><span class="ticker-count">5</span></div><div class="ticker-logic">SYL的ABF破局NV，PTFE正交背板送样突出</div><div class="ticker-source">中信建投·0621</div></div>
-  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">天孚通信</span><span class="ticker-count">5</span></div><div class="ticker-logic">光器件配套，约0.5个新易盛</div><div class="ticker-source">天风通信·0621</div></div>
-  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">寒武纪</span><span class="ticker-count">5</span></div><div class="ticker-logic">字节采购传闻，盘中创新高(市值9656亿)</div><div class="ticker-source">DW电子·0621</div></div>
-  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">楚江新材</span><span class="ticker-count">5</span></div><div class="ticker-logic">顶立科技氮化铝+SiC热工装备卖铲人</div><div class="ticker-source">产业·0621</div></div>
-  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">华正新材</span><span class="ticker-count">4</span></div><div class="ticker-logic">CCL+ABF膜共振，FR4涨价利润弹性</div><div class="ticker-source">天风电新·0621</div></div>
-  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">汇成真空</span><span class="ticker-count">4</span></div><div class="ticker-logic">TGV专用PVD，占整线设备投入40%</div><div class="ticker-source">东北计算机·0621</div></div>
+  <div class="ticker-card"><div class="ticker-head"><span class="ticker-name">帝尔激光</span><span class="ticker-count">3</span></div><div class="ticker-logic">TGV龙头，glass core路线确认</div><div class="ticker-source">ZX/广发·0621</div></div>
 </div>
 
-<div class="section-hd"><span class="section-num">新词速查</span><span class="section-title">今日首现术语</span></div>
+<div class="section-hd"><span class="section-num">新词速查</span><span class="section-title">今日首现术语（全日合并）</span></div>
 <div class="gloss-wrap">
   <div class="gc">
+    <span class="gc-term">MPO光纤跳线（16/32芯）</span>
+    <div class="gc-def">多芯并行光纤连接器，16芯配套800G、32芯配套1.6T光模块；32芯价值量约为16芯的3倍(1200+元/条)，当前缺货交期拉至60+天。</div>
+    <div class="gc-why"><strong>为何今日重要：</strong>光模块集群布线落地、MPO进入订单集中兑现期，是北美光纤涨价逻辑的高密度延伸。</div>
+  </div>
+  <div class="gc">
+    <span class="gc-term">Glass Core 载板</span>
+    <div class="gc-def">用玻璃芯替代有机Core的封装载板；台积电联合Ibiden+群创验证，翘曲控制与电性能优于有机载板，CoPoS/玻璃基路线已收敛至此。</div>
+    <div class="gc-why"><strong>为何今日重要：</strong>从"概念"到"路线确认"的关键一跃，海内外强共振，A股稀缺卡位在TGV全流程与TGV/PVD设备。</div>
+  </div>
+  <div class="gc">
     <span class="gc-term">AMT（仲钨酸铵）</span>
-    <div class="gc-def">钨深加工的关键中间品(Ammonium Metatungstate)，是高纯钨粉与六氟化钨的上游原料，江钨为唯一AMT供应商、设计产能5000吨。</div>
+    <div class="gc-def">钨深加工关键中间品，是高纯钨粉与六氟化钨的上游原料；江钨为唯一AMT供应商、设计产能5000吨。</div>
     <div class="gc-why"><strong>为何今日重要：</strong>对日断供后，"AMT→高纯钨粉→六氟化钨/钨棒"整条国产链同步受益，AMT是卡位最上游的稀缺环节。</div>
   </div>
   <div class="gc">
     <span class="gc-term">ABF-GCP</span>
-    <div class="gc-def">玻璃基载板中玻璃与树脂的粘结介质(海外称"底漆")，含特殊树脂配方、单独用于玻璃基与树脂结合；无此层玻璃基只能做双面。</div>
-    <div class="gc-why"><strong>为何今日重要：</strong>国产CoPoS落地的隐藏卡点——除玻璃原片外，ABF-GCP核心树脂(圣泉+SYL在攻)是破局关键，决定能否做多层玻璃基。</div>
+    <div class="gc-def">玻璃基载板中玻璃与树脂的粘结介质(海外称"底漆")，含特殊树脂配方；无此层玻璃基只能做双面。</div>
+    <div class="gc-why"><strong>为何今日重要：</strong>国产glass core落地的隐藏卡点——ABF-GCP核心树脂(圣泉+SYL在攻)决定能否做多层玻璃基。</div>
   </div>
   <div class="gc">
-    <span class="gc-term">Pogopin（弹簧探针连接器）</span>
-    <div class="gc-def">用于NV Rubin正交背板的信号传输弹簧针连接器，112G/224G高速版本ASP约20元，是传统3C产品(1-2元)的约10倍。</div>
-    <div class="gc-why"><strong>为何今日重要：</strong>电连技术送样富士康Rubin Ultra测试顺利，单价10倍跃迁把一个不起眼环节抬升为潜在千亿市场。</div>
+    <span class="gc-term">Switch tray 液冷系统</span>
+    <div class="gc-def">用于交换机托盘的液冷方案，与NV联合开发、价值量约8-9万元/柜，需取得RVL CODE及专利方可供货。</div>
+    <div class="gc-why"><strong>为何今日重要：</strong>液冷从冷板向交换机环节延伸，五洋自控等代工链有望拿到NV验证码，是Q2-Q3兑现增量。</div>
   </div>
   <div class="gc">
-    <span class="gc-term">HBM4E（12层堆叠）</span>
-    <div class="gc-def">HBM4的增强版本，SK海力士已供12层堆叠样品，引脚速率最高16Gbps、能效提升20%+，用于AI训练与推理的高带宽内存。</div>
-    <div class="gc-why"><strong>为何今日重要：</strong>HBM4E节点提前=原厂成熟制程更多转向HBM，进一步收紧通用DRAM/NAND供给，强化"内存税"逻辑。</div>
+    <span class="gc-term">高温合金叶片</span>
+    <div class="gc-def">燃气轮机热端核心部件，其产能是限制海外燃机扩产最重要的因素，间接制约AIDC自备电力供给。</div>
+    <div class="gc-why"><strong>为何今日重要：</strong>AIDC缺电的真瓶颈不在主电源而在叶片产能，决定28-30年缺电缺口能否缓解。</div>
   </div>
 </div>
 
 <div class="footer">
-  产业投研日报 · VOL.039 · 2026年6月21日<br>
+  产业投研日报 · VOL.039 · 2026年6月21日（全日合并版：上午RTF + 晚间增补）<br>
   本报基于当日产业链纪要整理，所列标的为信息梳理、非投资建议；卖方目标价/测算已标注，据此投资风险自担。
 </div>
 
