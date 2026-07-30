@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>产业投研日报 VOL.067 · 2026.07.29</title>
+<title>产业投研日报 VOL.068 · 2026.07.30</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -85,6 +85,24 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
 .tb-label{font-family:'DM Mono',monospace;font-size:11px;color:#fcd34d;white-space:nowrap;padding-top:1px;font-weight:500;}
 .tb-text{color:#fff;font-size:13px;line-height:1.55;}
 
+.chain-wrap{padding:4px 32px 8px;}
+.chain-cap{font-family:'DM Mono',monospace;font-size:10px;color:var(--ghost);letter-spacing:0.08em;margin-bottom:2px;}
+.chain-flow{display:flex;align-items:stretch;margin:8px 0 4px;font-family:'Noto Sans SC',sans-serif;}
+.cf-zone{flex:1;display:flex;flex-direction:column;gap:8px;min-width:0;}
+.cf-zlabel{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--ghost);text-transform:uppercase;text-align:center;}
+.cf-node{background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;padding:8px 10px;}
+.cf-node.focus{border:2px solid var(--accent);background:var(--accent-light);}
+.cf-name{font-family:'Noto Serif SC',serif;font-size:13px;font-weight:700;color:var(--ink);line-height:1.3;}
+.cf-badge{display:inline-block;font-family:'DM Mono',monospace;font-size:9px;padding:1px 6px;border-radius:2px;margin-top:4px;}
+.cf-badge.hot{background:#fef2f2;color:var(--pill-hot);border:1px solid #fca5a5;}
+.cf-badge.warm{background:#fff;color:var(--accent-deep);border:1px solid #fcd34d;}
+.cf-meta{font-size:10px;color:var(--ghost);margin-top:3px;}
+.cf-chips{margin-top:5px;display:flex;gap:3px;flex-wrap:wrap;}
+.cf-chip{font-family:'DM Mono',monospace;font-size:9px;background:var(--paper-deep);border:1px solid var(--border);color:var(--ink-light);padding:1px 5px;border-radius:2px;}
+.cf-arrow{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 6px;}
+.cf-arrow .a{color:var(--accent);font-size:20px;line-height:1;}
+.cf-arrow .l{font-family:'DM Mono',monospace;font-size:8px;color:var(--ghost);margin-top:2px;white-space:nowrap;}
+
 .sig-grid{padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .sig-card{background:var(--paper-warm);border:1px solid var(--border);border-top:3px solid var(--pill-new);border-radius:4px;overflow:hidden;}
 .sig-card.hot{border-top-color:var(--pill-hot);}
@@ -130,6 +148,7 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
 .watch-table td:first-child{color:var(--ink);font-weight:500;font-size:12.5px;}
 .node-red{font-family:'DM Mono',monospace;font-size:10px;background:#fef2f2;color:var(--pill-hot);border:1px solid #fca5a5;padding:1px 6px;border-radius:2px;display:inline-block;}
 .node-amber{font-family:'DM Mono',monospace;font-size:10px;background:var(--accent-light);color:var(--accent-deep);border:1px solid #fcd34d;padding:1px 6px;border-radius:2px;display:inline-block;}
+.node-green{font-family:'DM Mono',monospace;font-size:10px;background:#f0fdf4;color:var(--pill-green);border:1px solid #86efac;padding:1px 6px;border-radius:2px;display:inline-block;}
 
 .ticker-grid{padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .ticker-card{background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;display:flex;overflow:hidden;}
@@ -159,7 +178,7 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
   <div class="alert-icon">📋</div>
   <div>
     <div class="alert-label">■ 今日操盘策略</div>
-    <div class="alert-text">今天市场出现反弹，力度并不大，但<em>反弹的意义在于降速</em>——降速可以找到一个趋势的衰退，从鼎盛期进入衰退期，代表这个趋势即将被终结。浪型上可以看作走了一个日线级别的大ABC结构：指数高点在近期，但<em>大多数个股的高点在年初</em>，至今跌了一个完整的ABC，看全A中位指数尤其明显——第一波跌到3月底、然后反弹、5月又开始一轮下跌。如果只是A浪低点，不确定后面还有没有C浪，倒不急于找低点；但这里走完了完整的ABC，<em>就要激进一点</em>，走完ABC之后容易形成全部调整周期的结束。即便假设浪型不是ABC而是12345、把ABC看作其中的123浪，<em>3浪低点的风险收益率也很高</em>——时间上可能还差三分之一，但空间上已经完成十之八九。更重要的一点：<em>交易不是完美的，不用选最低点</em>，追求完美会很痛苦；你知道这里安全度很高，能在C浪末期买进去、能逢低买进去，这就成了一半。</div>
+    <div class="alert-text">今天指数跌多涨少，六大指数只有上证50红盘，上证指数跌0.62%。<em>量化标准是3764点</em>——明天和下周要重点关注这个点位，它决定了是否有分钟线的底部结构。今天虽然继续下跌，但速度依旧不快，<em>市场继续降速</em>；降速的过程就是衰退的过程，从一个趋势的鼎盛时期进入到衰退时期，通常代表这个趋势即将被终结。但要对这个过程有一个量化标准，主要看周期的收盘价格：比方说<em>120分钟收盘低于3764点，120分钟才可能有底部钝化</em>。今天最低点是3767点，也就是说到目前为止<em>并没有出现底部钝化</em>——没有钝化就没有结构，没有结构就没有低点的确定性。等这么久就是想找一个低点的确定性：个股因为弱分化了几个月，风险早已大幅释放，如果能找到确定性强的指数低点、指数和个股共振，安全度就会大幅提高，收益风险比进入到最佳。交易不是完美的，<em>不用非得找最低点</em>，你知道3764点，就好比心里有了一把尺子，可以在附近先买一部分，等有钝化出结构了再买一部分。<em>防守周期已过，策略上现在进攻要大于防守</em>。</div>
   </div>
 </div>
 
@@ -167,30 +186,30 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
 <div class="masthead">
   <div class="mast-top">
     <span class="mast-brand">产业投研日报</span>
-    <span class="mast-vol">VOL.067</span>
+    <span class="mast-vol">VOL.068</span>
   </div>
-  <div class="mast-title">创纪录的76%利润率，<em>输给了自己签的十份五年长约</em>：存储的定价权换成了能见度</div>
-  <div class="mast-subtitle">2026.07.29 WED · 操盘:今天出现反弹力度不大,但反弹的意义在于降速-降速可以找到趋势的衰退、从鼎盛期进入衰退期;浪型上是日线级别的大ABC,指数高点在近期而大多数个股高点在年初、全A中位指数尤其明显(第一波跌到3月底→反弹→5月再跌);走完完整ABC就要激进一点,即便按12345浪看、把ABC当作123浪,3浪低点风险收益率也很高(时间差三分之一、空间已完成十之八九);交易不必选最低点,能在C浪末期逢低买进就成了一半 &nbsp;|&nbsp; 主线:存储龙头26Q2营业利润率76%、毛利率83%双创历史新高,营收与营业利润却双双低于一致预期约5-6%——原因不是需求塌了,是HBM按年度议价加上已签约10份五年期长约(含保证金)把现货暴涨挡在了报表之外,DRAM ASP环比+30%而市场预期+41%、出货量则完全达标 &nbsp;|&nbsp; 信号:①被动元件的涨价函回来了-三星电机8月1日起全线MLCC统一上调30%(正式函),太阳诱电9月1日二次调价并明示无法保证按原定交期供货②AI现场供电兑现为订单-INNIO单季新签23亿美元同比+316%、在手订单66亿美元同比+279%创纪录,燃料电池龙头单季营收首破10亿美元、全年指引上调至39-42亿③载板的缺口写在每颗芯片上-同代芯片对应的载板价值量Rubin是Hopper的3.8倍、Rubin Ultra达8.4倍,需求年复合22%对供给12%、2027年产能利用率破100%④韩股这一跌是杠杆机制不是基本面-个股双倍杠杆产品规模20-25万亿韩元其中存储龙头占六成,杠杆ETF已从82万亿缩至36.9万亿</div>
+  <div class="mast-title">整柜只多装了三成多元件，<em>价值量却多出近两倍</em>：这一轮涨价的钱藏在料号里</div>
+  <div class="mast-subtitle">2026.07.30 THU · 操盘:指数跌多涨少、六大指数只有上证50红盘,上证跌0.62%;量化标准3764点-120分钟收盘低于它才可能有底部钝化,今天最低3767点故尚未钝化、没有钝化就没有结构、没有结构就没有低点的确定性;市场继续降速而降速即衰退、趋势临近终结;个股弱分化数月风险已大幅释放,等的就是指数低点与个股共振;交易不必找最低点,3764是心里的尺子-附近先买一部分、出结构再买一部分;防守周期已过,进攻大于防守 &nbsp;|&nbsp; 主线:被动元件是当日讨论最集中的一条线-整机架用量只从44万颗增到约60万颗(+36%),单柜价值量却从1530美元跳到4320美元(+182%),增量的四分之三来自高容料号占比从约10%提到约35%而非多塞元件;同时定价方式换轨-大客户7月23日以公告形式锁定覆盖2027全年的跨年长约、一个月内两笔合计约7450亿韩元 &nbsp;|&nbsp; 信号:①上游材料按等级分家-M8/M9高阶覆铜板挤占传统产能,光模块用M-Sub类载板成为新紧缺点②数据中心建设方式换代-工厂预制把单个白空间模块的现场施工从最多15周压到2-3周、50MW项目端到端周期快约36%③需求侧金额还在上修但现金流被吃空-单季资本开支同比增82.7%、自由现金流降到8亿美元④硬件叙事的两根支柱同时松动,而创业板本月回撤26.91%已是近十年单月第一</div>
 </div>
 
 <!-- STATS BAR -->
 <div class="stats-bar">
-  <div class="stat-item"><span class="stat-num">124</span><span class="stat-label">原始消息</span></div>
-  <div class="stat-item"><span class="stat-num">85</span><span class="stat-label">去重有效</span></div>
-  <div class="stat-item"><span class="stat-num">16</span><span class="stat-label">覆盖行业</span></div>
-  <div class="stat-item"><span class="stat-num">145+</span><span class="stat-label">涉及标的</span></div>
+  <div class="stat-item"><span class="stat-num">94</span><span class="stat-label">原始消息</span></div>
+  <div class="stat-item"><span class="stat-num">43</span><span class="stat-label">去重有效</span></div>
+  <div class="stat-item"><span class="stat-num">19</span><span class="stat-label">覆盖行业</span></div>
+  <div class="stat-item"><span class="stat-num">148+</span><span class="stat-label">涉及标的</span></div>
 </div>
 
 <!-- 大背景 -->
 <div class="context-bar">
   <div class="ctx-label">■ 今日大背景 · 产业关键动态</div>
   <div class="ctx-item">
-    <span class="ctx-who">黄仁勋</span>
-    <span class="ctx-text">本周在华盛顿密集会见美国官员与议员，包括商务部长与参议院情报委员会民主党首席议员，背景是有报道称其受出口管制的处理器被用于训练中国的先进AI模型；会后他公开表态<em>开放权重模型对AI安全落地是必要的</em>。此前一天他在专访中给出更长的判断：为服务一个由自主机器而非人类用户主导的计算世界，<em>半导体产业未来十年需要扩张约十倍</em>（彭博）。<span class="arrow">→</span> 这两件事指向同一个约束：算力的天花板正在从技术转向<em>合规与地缘</em>。今天算力租赁一侧的争论也落在这里——出口管制的外延究竟会不会落到实处。</span>
+    <span class="ctx-who">扎克伯格</span>
+    <span class="ctx-text">Meta 26Q2财报当日发布：收入608.01亿美元同比增28%符合预期，净利润158.48亿美元同比降41%、低于预期；单季资本开支310.8亿美元<em>同比增82.7%</em>，全年资本开支区间的下限被上调到1300亿美元、上限维持1450亿。公司称2026与2027年的目标是<em>产能最大化</em>，2028年及以后才保留灵活性；同时提到算力紧缺、近期收到的算力出售报价非常好。代价写在现金流量表上：经营现金流318.62亿美元几乎被资本开支吃完，<em>自由现金流降至8亿美元</em>，环比减少116亿。<span class="arrow">→</span> 需求侧的绝对金额还在上修，但支撑这种采购的现金流已经被压到接近归零——这恰好是宏观一侧"债务融资担忧"的财务原形，也是今天硬件叙事被质疑的真正来源。</span>
   </div>
   <div class="ctx-item">
     <span class="ctx-who">奥尔特曼</span>
-    <span class="ctx-text">7月28日公开表示，或许到了给AI发展<em>"控速"</em>的时候——需要"给社会足够时间围绕这些新能力形成防护"，同时要避免监管俘获与前沿实验室之间的合谋（TechCrunch）。此前数日他还说人类"已经处在奇点之中"，但强调那是一种复利式推进的"温和奇点"。<span class="arrow">→</span> 值得注意的不是观点本身，而是<em>说这话的是算力需求侧最重要的买家之一</em>。当资本开支的叙事正在被质疑，最应该踩油门的人开始谈刹车，这本身就是一条需要计入定价的信息。</span>
+    <span class="ctx-text">OpenAI首席财务官披露：公司<em>7月单月的年化经常性收入已超过整个二季度</em>，到7月底年化经常性收入接近600亿美元，增长主要由GPT-5.6、ChatGPT Work与Codex驱动。同日另一侧，xAI发布Grok 4.5，定价为每百万输出Token 6美元、输入2美元。<span class="arrow">→</span> 一边是收入曲线在加速，一边是Token单价在往下走——这两件事同时成立，就是宏观所说"智能走向商品化"的具体形态。对硬件而言，它意味着需求的总量不用担心，需要担心的是<em>谁在这条链上收得到钱</em>。</span>
   </div>
 </div>
 
@@ -198,7 +217,7 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
 <div class="verdict-bar">
   <div class="verdict-label">■ 今日判断</div>
   <div class="verdict-text">
-    今天最重要的一件事，是存储的赚钱方式被改写了：一家营业利润率做到76%的公司还是低于预期，原因不在需求，而在它自己签下的<em>十份五年期长约</em>——量全部达标，价被锁住。这意味着存储正在从"跟着现货价跳舞的周期股"变成"用弹性换能见度的合约资产"，估值口径要跟着换。至于全球存储资产今天的跌幅，<em>看清楚是杠杆产品在平仓，不是订单在消失</em>。降速本身就是信息：产业在降价格弹性的速，市场在降杠杆的速，最该踩油门的人开始谈刹车——三件事同一天发生，值得当成一个节点看待。
+    今天指数继续跌、创业板本月回撤26.91%已是近十年单月第一，但真正值得记下来的是另一件事：在"AI涨价叙事被打碎"的当口，唯一逆势走强的那条线，恰好是<em>唯一能把涨价的钱说清楚来源</em>的那条——不是多塞元件，是同样一个机柜里的料号变贵了。这个区别很重要：靠数量的涨价，需求一降就没了；靠<em>结构升级</em>的涨价，只要下一代平台按期出货就还在。所以今天该做的不是判断AI行情有没有结束，而是把手上每一条涨价逻辑重新过一遍，问它一句：<em>涨的是量，还是等级</em>。
   </div>
 </div>
 
@@ -213,42 +232,49 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
   <div class="hero-card">
     <div class="hero-inner">
       <div class="hero-pill-row">
-        <span class="pill pill-data">创纪录却低于预期</span>
-        <span class="pill pill-new">定价机制切换</span>
-        <span class="pill pill-hot">量达标价被锁</span>
+        <span class="pill pill-hot">第二轮调价启动</span>
+        <span class="pill pill-new">跨年长约锁量</span>
+        <span class="pill pill-data">用量与价值量背离</span>
       </div>
-      <div class="hero-title">76%的营业利润率仍然不及预期：把现货暴涨挡在报表外的，是十份五年期长约</div>
-      <div class="hero-source">招商电子 鄢凡/谌薇/王焱仟/汤云鹏 · 0729 ｜ 兴证电子 · 0729 ｜ 国泰海通海外科技 · 0729 ｜ 中泰电子 王芳/杨旭/丁贝渝/张心阳 · 0729 ｜ 中信证券前瞻研究团队 业绩交流会纪要 · 0729 ｜ 国海海外 陈梦竹/林臻/辛心然 · 0729</div>
-      <div class="catalyst-box">一份把毛利率做到83%、营业利润率做到76%的财报，同时是一份"低于预期"的财报——差额不在需求，在合同。</div>
+      <div class="hero-title">用量只多三成多，价值量多出近两倍：被动元件的增量藏在料号结构里</div>
+      <div class="hero-source">天风电新 MLCC全产业链调研纪要 · 0730 ｜ 财通电子与新科技 · 0730 ｜ 天风汽车 孙潇雅/李俊漾 · 0729 ｜ 摩根士丹利 Vera Rubin整机架BOM拆解 · 0522 ｜ 原厂调价通知与交易所供货合同公告 · 交叉核实</div>
+      <div class="catalyst-box">同一个机柜，元件只多装了三成多，付出去的钱却多了近两倍——差额不在数量，在等级。</div>
       <div class="data-row">
-        <div class="drow-4"><span class="di-n">76%</span><span class="di-l">26Q2营业利润率<br>连续第5季创新高</span></div>
-        <div class="drow-4"><span class="di-n">+30% vs +41%</span><span class="di-l">DRAM实际ASP环比<br>对市场预期</span></div>
-        <div class="drow-4"><span class="di-n">10份</span><span class="di-l">已完成谈判的长约<br>通常5年期、含保证金</span></div>
-        <div class="drow-4"><span class="di-n">-5.4%</span><span class="di-l">营收低于一致预期<br>营业利润低5.7%</span></div>
+        <div class="drow-4"><span class="di-n">+182%</span><span class="di-l">单柜价值量<br>1530→4320美元</span></div>
+        <div class="drow-4"><span class="di-n">+36%</span><span class="di-l">整柜用量<br>44万→约60万颗</span></div>
+        <div class="drow-4"><span class="di-n">7450亿韩元</span><span class="di-l">一个月两笔长约<br>完整覆盖2027年</span></div>
+        <div class="drow-4"><span class="di-n">约43%</span><span class="di-l">2028年缺口<br>需求7000亿vs供给4000亿颗</span></div>
       </div>
       <div class="hero-body">
-        <p><strong>先看这份财报到底有多强。</strong>26Q2营收79.32万亿韩元，同比增257%、环比增51%；营业利润60.54万亿韩元，同比增557%、环比增61%；毛利率83%、营业利润率76%、EBITDA利润率81%均续创历史新高，营业利润已经<em>连续第五个季度刷新纪录</em>。净利润93.92万亿韩元同比增1242%，其中包含约63万亿韩元的投资收益，来自持有股权的处置与重估——这部分不构成经营性判断。就是这样一份财报，营收比一致预期低5.4%、营业利润低5.7%。</p>
-        <p><strong>差在哪里：量全部达标，价没跟上。</strong>拆开看，DRAM收入57.90万亿韩元、占比73%，比特出货环比增长高个位数<em>与预期基本一致</em>，ASP环比增约30%、而市场预期是增41%——收入不及预期的全部原因在ASP这一格。NAND反而超预期：收入21.42万亿韩元、占比从上季的21%抬到27%，ASP环比增约53%、比特出货环比增约14%。换句话说，市场对需求的判断没有错，错在对<em>公司能拿到多少涨价</em>的判断。</p>
-        <p><strong>第一个原因是产品结构：HBM按年议价，跑不赢通用DRAM的季度涨价。</strong>公司HBM在收入中占比高，而HBM采用年度定价，涨幅天然低于通用DRAM的季度合约涨幅。管理层在交流会上把这层关系说得很直接：常规DRAM价格近几个月大幅攀升，这种市场环境<em>对HBM的定价讨论会产生积极影响</em>，但HBM定价并非完全由常规DRAM价格决定——它同时受行业供需、专属生产成本与技术复杂度影响。这意味着HBM的提价是"迟到"而不是"缺席"，但它落在2027年的议价桌上，不落在这一季的报表里。</p>
-        <p><strong>第二个原因更结构性：公司已经把十份五年期长约签了出去。</strong>公司披露已完成约<em>10项长期供货协议（LTA）谈判</em>，合作方包含核心客户，仍在与其他主要客户继续磋商。三个细节值得记下来：一是合约周期<em>通常为5年</em>，条款按客户与产品差异化定制；二是首次明确提到<em>针对价格波动设计的定价结构</em>，用多元化定价方案对冲短期价格波动；三是配套了<em>保证金等履约财务机制</em>，用来提升需求的确定性、降低行业周期冲击。这是本轮周期里第一次出现"报表增速慢于现货涨幅"的结构性背离——不是需求没来，是公司主动用价格弹性换走了需求能见度。</p>
-        <p><strong>换来的能见度，正在变成资本开支。</strong>2026年资本开支将达到40万亿韩元的高位区间、同比增长40%以上，M15X提前进入大规模量产，龙仁一号晶圆厂的产能扩张<em>提前到2027年初</em>；中长期还将分阶段投向先进封装、NAND新基地以及新建半导体集群。产品节奏同步给到：HBM4已在26Q2开始出货、下半年全面爬坡，基于1cnm的HBM4E上半年已向核心客户送样、计划2027年量产；1cnm的SOCAMM2已全面供货；NAND 321层已成为产量最大的组成部分，目标年底占到韩国本土产能约50%。26Q3指引是DRAM出货环比增约10%、NAND增低个位数，全年DRAM需求比特增速中20%区间、NAND高十几个百分点。</p>
-        <p><strong>→ 对读者真正的含义：估值口径要换。</strong>过去给存储估值，锚是"现货价还能涨几个季度"；现在这个锚被拆成两半——涨价的上限被长约压住，但需求的下限被长约和保证金托住。同一天还有两条信息落在这条线上：国产供给侧，第三方口径给出年末月产能超30万张、接近头部厂商水平的判断，但制程仍落后两到三代、单片比特产出差距明显；而在设备与封装一侧，测试机与热压键合的订单正在同步超预期。这三件事拼起来是同一句话：<em>这一轮存储的钱，正在从"价格弹性"挪到"产能与能见度"上</em>。</p>
+        <p><strong>先把最反直觉的一组数字摆出来。</strong>按下一代平台整机架的物料清单拆解，VR200相比GB300，<em>整柜被动元件用量从44万颗增至约60万颗，只多了36%</em>；但同一个机柜里，这部分的价值量<em>从1530美元跳到4320美元，多了182%</em>。同期整机架物料总成本从399.5万美元增至780.3万美元、增95%——也就是说，<strong>这个环节的价值量增速接近整机的两倍</strong>。差额的来源写得很清楚：高容料号在其中的占比<em>从约10%提升到约35%</em>，典型如0805规格47微法的用量从约1378颗增至约4928颗、100微法从近乎不用增到约250颗。单个计算托盘的用量约12000颗，较上一代翻倍。</p>
+        <p><strong>这意味着跟踪口径要换。</strong>过去看这个环节，习惯问"AI服务器出多少台、每台装多少颗"；现在这个问法会系统性低估。真正决定业绩弹性的是<strong>高容料号占收入的比重</strong>，因为高容料的单价与毛利弹性显著高于通用料。产业侧的数据也在同一个方向：全球总需求约4.5-5万亿颗每年，2025年AI相关需求占比只有1%，但2026至2028年AI侧用量分别为1700、3400、7200亿颗、年化翻倍，到2028年占总需求比重升到10%。<em>占比从1%到10%的过程，全部发生在最贵的那一档料号上</em>。</p>
+        <p><strong>第二件事更硬：定价方式换轨了。</strong>7月23日，全球AI服务器高容份额领先的一家原厂向交易所提交单一销售供货合同公告——签约金额<em>2951.2亿韩元</em>、约占其上年营收2.6%，用途明确为客户的AI服务器与数据中心用高性能被动元件，而<em>合同期间是2027年1月1日至12月31日，完整覆盖下一个年度</em>。叠加6月约4500亿韩元的一笔，<strong>一个月内两笔长约合计约7450亿韩元</strong>。这个动作的分量在于：这个品类历来以短单和季度议价为主，大客户提前一年锁定供给，说明高端产能的紧缺<em>已经从渠道预期进入客户的采购制度</em>。</p>
+        <p><strong>第三件事是调价的第二轮已经开始。</strong>日系一家原厂7月23日发函，<em>自9月1日出货分起再度上调价格</em>，并明确表示即使调价之后，现有产能亦无法保证符合客户交期——这已是其一个月内的第二次调价。韩系一家原厂通知销售合作方，<em>自8月1日出货分起，经其深圳法人供货的全品项较原价上调30%</em>，理由是供应链压力已超出可承受水平。台系一家在7月首轮全面调价后，近期改用拍卖式竞价的隐性方式继续加价。国内一侧，头部厂商高容料号累计涨幅已达40%-50%，8月将跟随日韩继续调价；另一家截至7月已累计调价三次，但只有6月那一次落进了二季度报表。</p>
+        <p><strong>供给为什么补不上：这是物理约束，不是意愿问题。</strong>一条高端产线从规划到稳定量产需要1.5-2年，其中<em>设备交期就占12-16个月</em>，产能爬坡与良率提升还要半年。更关键的是转产不是平移：靠既有工厂改线扩产的<em>效率只有1比4到1比5</em>——原本能产4-5颗消费级产品的产能，改线后只能产1颗高容产品。这解释了一个反直觉的现象：行业名义总有效供给超过6万亿颗，看起来远大于AI侧的几千亿颗需求，但AI高容的有效供给增速远低于名义产能。日韩三家占全球总产能60%，而<em>AI服务器高容这一细分赛道，日韩市占超过96%、其中一家独占60%</em>。</p>
+        <p><strong>把扩产时间表铺开，缺口是扩大的。</strong>日系龙头2025年的投资将于2026年四季度释放30亿颗每月，2026年5月追加的扩产一期2027年底落地、2028年才稳定量产，二期要到2029年释放、2030年满产；韩系靠天津工厂改线2026年四季度落地15亿颗每月，菲律宾新厂60亿颗每月2027年落地；另一家日系新增30亿颗每月2027年投放。<em>把所有已规划的产能全部算进去，2028年年有效供给接近4000亿颗，而当年AI相关需求将超过7000亿颗</em>——缺口约43%，且日韩厂商的资本开支策略明确保守、不会因短期涨价盲目扩产。这是3-5年维度的中长期紧平衡，不是一两个季度的错配。</p>
+        <p><strong>→ 落到今天的股价上。</strong>该板块的概念指数自7月1日高点一度回撤超过40%，今天出现明显反弹——国内头部一家涨停，另两家分别一度涨9%和7%以上。值得注意的是位置：<em>产业端的第二轮涨价、跨年长协与业绩兑现才刚刚开始，而股价已经从高点回撤了四成</em>。三季度被行业普遍定义为首个完整体现涨价红利的季度，因为二季度只吃到6月那一次调价的一个月。</p>
       </div>
       <div class="chip-row">
-        <span class="chip p">北方华创</span>
-        <span class="chip p">中微公司</span>
-        <span class="chip">拓荆科技</span>
-        <span class="chip">华海清科</span>
-        <span class="chip">江丰电子</span>
-        <span class="chip">兆易创新</span>
-        <span class="chip">中芯国际</span>
+        <span class="chip p">三环集团</span>
+        <span class="chip p">风华高科</span>
+        <span class="chip">昀冢科技</span>
+        <span class="chip">博迁新材</span>
+        <span class="chip">洁美科技</span>
+        <span class="chip">国瓷材料</span>
+        <span class="chip">火炬电子</span>
       </div>
     </div>
     <div class="therefore-block">
       <span class="tb-label">→ 所以</span>
-      <span class="tb-text">别再用"现货价涨多少"给存储定价了，这个变量已经被十份五年长约削掉一半。接下来只盯两个可验证的量：一是<strong>26Q3/Q4合约价落地后，报表ASP涨幅与现货涨幅的缺口是收窄还是继续扩大</strong>——收窄说明长约条款里的价格调节机制真的能跟涨；二是<strong>2027年HBM议价的落地价</strong>，那才是这一季"被推迟的涨价"到底还在不在的答案。资本开支同比增40%以上是明牌，产能与设备这一侧的确定性反而比价格更高。</span>
+      <span class="tb-text">跟这条线，别再盯"出货多少颗"，盯两个能核对的东西：一是<strong>高容料号占收入的比重</strong>，这是价值量与用量之间那道182%对36%的差额的唯一来源；二是<strong>三季度报表里真正落地的调价次数</strong>——二季度只吃到一次、只有一个月，八九月的两轮若如期兑现，三季度就是量价结构三重共振的第一个完整季度。至于扩产，把时间表铺开看就明白了：设备交期12-16个月加改线效率只有1比4，<strong>供给端在2028年之前没有任何一条路径能把这个缺口填上</strong>。</span>
     </div>
   </div>
+</div>
+
+<!-- 传导链条 -->
+<div class="chain-wrap">
+  <div class="chain-cap">■ 传导链条 · 上游供给 → 本环节 → 下游需求</div>
+  <div class="chain-flow"><div class="cf-zone"><div class="cf-zlabel">上游供给</div><div class="cf-node"><div class="cf-name">陶瓷粉体</div><div class="cf-badge hot">涨价+缺货</div><div class="cf-chips"><span class="cf-chip">国瓷材料</span><span class="cf-chip">博迁新材</span></div></div><div class="cf-node"><div class="cf-name">氧化镝</div><div class="cf-badge hot">涨价+缺货</div><div class="cf-chips"><span class="cf-chip">国瓷材料</span><span class="cf-chip">中国稀土</span></div></div><div class="cf-node"><div class="cf-name">离型膜</div><div class="cf-badge hot">涨价+缺货</div><div class="cf-chips"><span class="cf-chip">洁美科技</span><span class="cf-chip">斯迪克</span></div></div></div><div class="cf-arrow"><span class="a">▸</span><span class="l">供给</span></div><div class="cf-zone"><div class="cf-zlabel">本环节</div><div class="cf-node focus"><div class="cf-name">高容被动元件 🔴</div><div class="cf-badge warm">涨价 · 高容料号累计40-50%，8月与9月两轮在途</div><div class="cf-meta">L4 · 被动元件 · 2028年缺口约43%</div><div class="cf-chips"><span class="cf-chip">三环集团</span><span class="cf-chip">风华高科</span><span class="cf-chip">昀冢科技</span><span class="cf-chip">火炬电子</span></div></div></div><div class="cf-arrow"><span class="a">▸</span><span class="l">供给</span></div><div class="cf-zone"><div class="cf-zlabel">下游需求</div><div class="cf-node"><div class="cf-name">AI训练服务器</div><div class="cf-chips"><span class="cf-chip">浪潮信息</span><span class="cf-chip">工业富联</span></div></div><div class="cf-node"><div class="cf-name">AI推理服务器</div><div class="cf-chips"><span class="cf-chip">中科曙光</span><span class="cf-chip">紫光股份</span></div></div></div></div>
 </div>
 
 <!-- LAYER 02 -->
@@ -260,71 +286,73 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
 
 <div class="sig-grid">
 
-  <div class="sig-card hot">
+  <div class="sig-card orange">
     <div class="sig-inner">
-      <div class="sig-title">被动元件的涨价函回来了：一份正式函，比十条渠道传闻更值钱</div>
-      <div class="sig-source">天风汽车 孙潇雅/李俊漾 · 0729 ｜ 原厂涨价通知（三星电机、太阳诱电、国巨）· 0728 交叉核实</div>
+      <div class="sig-title">上游材料正在按等级分家：同一个"缺货"，说的已经不是同一件事</div>
+      <div class="sig-source">长江研究 大化工对话电子 · PCB产业链投资机会会议纪要 · 0730</div>
       <div class="sig-body">
-        <p><strong>先说最硬的一条。</strong>三星电机已发出正式涨价通知：<em>自2026年8月1日起出货的订单，旗下所有MLCC产品统一上调30%</em>。这是原厂全线调价，不是渠道行为——本轮周期里原厂长期以隐性方式提价、传统靠涨价函跟踪景气的办法一度失效，这份函意味着<strong>跟踪工具重新可用</strong>。</p>
-        <p><strong>第二条藏在交期里。</strong>太阳诱电确认<em>9月1日起二次调价</em>，距其上一轮仅四个月，公开口径未披露幅度；但同时明示<em>即便调价后也无法保证完全按原定交期供货</em>——在缺货周期里，交期失守比任何一个百分数都更能说明供需。台系一侧，国巨7月1日已对全系列电容发出调价函，首次把EMS与OEM直客纳入，合约价与现货价齐升，整体平均涨幅50%、普通消费类MLCC上调20-40%，近期更改用拍卖式竞价的隐性方式继续加价。</p>
-        <p><strong>供给侧的机制没变。</strong>Q3全行业在AI侧几乎<em>没有批量新产能投放</em>，而下一代平台的备货已经在Q3启动，缺口处在放大而非收敛的阶段。国内一侧，头部厂商渠道出厂价已完成二次上调20-30%、渠道端累计涨幅达50-60%，高容料号的调价明显快于中低容。</p>
+        <p><strong>先看这条链上正在发生的分裂。</strong>PCB的传统下游结构是消费电子35%、通信30%、服务器10%、汽车15%、工控医疗10%，覆铜板占其成本约40%。今天两端在同时走：AI服务器用板需要M7至M9等级、对应聚苯醚、碳氢、BT等树脂体系，而传统消费电子用的是酚醛与环氧树脂——<em>两者的价值量和结构差异显著，不是同一个产品的高低配</em>。结果是<em>M8、M9等级需求增长最快，反过来挤占传统等级的产能</em>，上游材料整体供不应求。</p>
+        <p><strong>另一端被存储压着。</strong>2025年二季度到2026年二季度，存储价格<em>累计上涨4倍</em>，消费电子出货量已明显下修，对PCB及上游需求形成负面影响。所以2027年的测算里，中性与悲观的差别几乎全部来自消费电子这一格：中性假设下滑25%对应市场规模约962亿美元、增7%；悲观假设下滑50%则约880亿美元、降2%。而AI服务器一侧2027年增速接近180%。</p>
+        <p><strong>价格能不能传下去，已经有答案了。</strong>PCB成本在终端产品中占比只有个位数，<em>即使是需求最差的消费电子，PCB也已经实现20%-30%的成本传导</em>，终端客户与组装厂已接受涨价——这意味着覆铜板后续仍有涨价空间。上游空间侧，高阶覆铜板市场从2026年的100亿量级向300亿扩张，更高阶的碳氢树脂需求到2028年约1.2万吨、接近4倍。</p>
+        <p><strong>今天新冒出来的紧缺点在光模块那一侧。</strong>1.6T光模块所用的M-Sub类载板当前产能紧张、价格上行，据券商调研，其<em>盈利水平高于传统PCB、也高于AI服务器用PCB</em>——这个相对排序此前没有出现过。</p>
       </div>
     </div>
-    <div class="sig-chips"><span class="chip p">三环集团</span><span class="chip">风华高科</span></div>
-    <div class="sig-therefore hot">
+    <div class="sig-chips"><span class="chip p">生益科技</span><span class="chip">东材科技</span><span class="chip">圣泉集团</span><span class="chip">华海诚科</span><span class="chip">鹏鼎控股</span><span class="chip">景旺电子</span></div>
+    <div class="sig-therefore orange">
       <span class="sl">→ 所以</span>
-      <span class="st2">这一轮跟踪MLCC，把重心从"传了多少幅度"换到两个可核对的东西：<strong>原厂正式函</strong>与<strong>交期</strong>。八九月是这两件事同时兑现的窗口，落地则Q3业绩加速成立，落不了则说明中低容仍被消费需求拖住。</span>
+      <span class="st2">这条链上再看到"覆铜板缺货"四个字，先问是<strong>哪一档</strong>——M8/M9在挤占传统等级，传统等级的缺货是被挤出来的、不是需求变好。真正值得新增关注的是<strong>光模块用M-Sub类载板</strong>：它在这条链上第一次出现独立的紧缺点，且盈利排序高于AI服务器板。</span>
+    </div>
+  </div>
+
+  <div class="sig-card">
+    <div class="sig-inner">
+      <div class="sig-title">数据中心开始像造车一样造：现场施工被压缩掉，瓶颈搬进了工厂</div>
+      <div class="sig-source">财通建筑 模块化数据中心行业情况 · 0730 ｜ SemiAnalysis 模块化数据中心专题及追踪库</div>
+      <div class="sig-body">
+        <p><strong>两个层级的数字，必须分开读。</strong>模块级：某北美云厂商代号SAMDC的模块化设计，把<em>单个白空间模块的现场施工从最多约15周压缩到约2-3周</em>，每个模块可省去5万小时以上的现场电工工时。项目级：以50MW参考机房计，模块化把端到端建设窗口压到约<em>12-18个月、较纯现场施工快约36%</em>，全成本低约110万美元每兆瓦、对应不到8%的降幅。这两个数不是同一件事，也不能互相印证。</p>
+        <p><strong>做法本身很朴素。</strong>供配电、制冷等核心系统在工厂完成预制、安装与测试，现场只做模块吊装与系统联调，施工协调工作大幅减少、交付确定性提升。另一家北美云厂商则走"帐篷式"路线，一年多前转向该策略并在全美快速落地，<em>2026年上半年已签约超过5GW的容量</em>（该口径为云与托管的外部签约，不含其自建项目）。</p>
+        <p><strong>渗透率怎么看。</strong>据SemiAnalysis的模块化容量追踪，当前在建与在运的模块化容量已超61GW、覆盖1000多个站点；该机构进一步预测，到2028年底模块化<em>占总投运容量的比例将超过30%</em>——注意后半句是预测，不是已投运的容量。</p>
+        <p><strong>对制造端的含义是转移而非消失。</strong>现场工时被压缩掉的部分，变成了工厂里的预制模块订单——机电模块、钢结构、供配电与制冷集成，需求形态从现场工程量变成了<em>标准化模块的排产量</em>。</p>
+      </div>
+    </div>
+    <div class="sig-chips"><span class="chip p">中集集团</span><span class="chip">柏诚股份</span><span class="chip">鸿路钢构</span><span class="chip">精工钢构</span><span class="chip">中国能建</span></div>
+    <div class="sig-therefore">
+      <span class="sl">→ 所以</span>
+      <span class="st2">AIDC这条线该换个指标了：过去看开工面积和土建进度，现在看<strong>预制模块的排产与交付节奏</strong>。谁能把供配电与制冷做成可批量出厂、出厂即完成测试的标准模块，谁就吃到这部分被从现场转移出来的工作量——这比争论渗透率能不能到30%更可操作。</span>
     </div>
   </div>
 
   <div class="sig-card green">
     <div class="sig-inner">
-      <div class="sig-title">AI现场供电兑现成订单簿：单季新签同比增316%，在手订单超15GW</div>
-      <div class="sig-source">INNIO 26Q2业绩新闻稿 · 0728 ｜ Bloom Energy 26Q2财报及电话会 · 0728 ｜ 国金电新 姚遥/唐雪琪 · 0729 ｜ 国联民生海外 孔蓉/樊程安吉/赵志远 · 0729</div>
+      <div class="sig-title">资本开支还在上修，自由现金流已经被吃到8亿美元</div>
+      <div class="sig-source">Meta 26Q2财报及电话会 · 0730 ｜ 微软 26Q4财报 · 0730 ｜ 小熊团队业绩快评 · 0730</div>
       <div class="sig-body">
-        <p><strong>先看订单，不看故事。</strong>全球往复式燃气内燃机龙头INNIO 26Q2设备新签订单<em>23亿美元、同比增316%</em>，相当于同期营收的4倍；在手订单<em>66亿美元、同比增279%</em>创纪录，对应超过15GW；驱动来自一笔1.1GW的数据中心主电源大单，以及一份约1.25GW产能的三年期气体发动机框架协议。公司26-27年产能已排满，计划把产能从3.5GW扩到10GW。</p>
-        <p><strong>燃料电池一侧同步兑现。</strong>Bloom Energy 26Q2营收10.65亿美元、同比增166%，<em>单季首破10亿美元</em>；产品收入9.35亿美元同比增215%，经营现金流2.26亿美元连续两季为正；全年营收指引从34-38亿上调至<em>39-42亿美元</em>，中值同比翻倍。融资侧，Brookfield对其AI电力项目的融资框架上限6月已从50亿扩至<em>250亿美元</em>——注意这是框架额度，不是订单，也不是已投放资金。公司在电话会上称，本季已有客户把原本订好的燃机方案取消、转向燃料电池。</p>
-        <p><strong>真正的瓶颈可能不在产能，在一种以吨计量的副产品。</strong>固体氧化物燃料电池的电解质离不开钪，而按美国地质调查局的口径，<em>全球氧化钪年消费量只有30-60吨、2024年全球产能约80吨/年</em>；钪没有独立矿山，100%是钛白粉工艺、红土镍矿浸出与尾矿回收的副产品，扩产受制于宿主工艺的产量，中国是最大生产国。</p>
+        <p><strong>先看还在加码的部分。</strong>Meta 26Q2资本开支310.8亿美元、<em>同比增82.7%、环比增56.7%</em>，全年区间下限从1250亿上调至1300亿、上限维持1450亿；公司明确2026与2027年的目标是<em>产能最大化</em>，2028年及以后才保留灵活性。微软26Q4营收900.1亿美元同比增18%，<em>Azure云收入首次突破1000亿美元</em>，并指引2027财年资本支出达1750亿美元。</p>
+        <p><strong>再看代价落在哪里。</strong>Meta本季经营现金流318.62亿美元、资本开支310.8亿美元，<em>自由现金流降至8亿美元</em>，同比减少78亿、环比减少116亿。收入端并没有问题：26Q2收入608.01亿美元同比增28%、广告收入593.63亿美元同比增27%均符合预期；净利润同比降41%主要来自24亿美元诉讼费用与11.8亿美元遣散费这类一次性项目。</p>
+        <p><strong>还有一条容易被忽略的表述。</strong>管理层在电话会上提到，算力紧缺、公司<em>近期收到的算力出售报价非常好</em>，同时也在购买新的算力资源用于内部用途。另与资管机构合作，在德州建设1GW数据中心，其算力很大一部分用于训练自有模型。</p>
       </div>
     </div>
-    <div class="sig-chips"><span class="chip p">振华股份</span><span class="chip p">潍柴动力</span><span class="chip">三环集团</span><span class="chip">京泉华</span><span class="chip">银轮股份</span></div>
+    <div class="sig-chips"><span class="chip">工业富联</span><span class="chip">沪电股份</span><span class="chip">生益科技</span></div>
     <div class="sig-therefore green">
       <span class="sl">→ 所以</span>
-      <span class="st2">供电这条线的订单已经不需要再论证了，该换问题了：<strong>一种年产量以吨计的副产品，能不能撑起以GW计的装机</strong>。谁掌握钪、铬这类稀缺副产品的稳定供给，谁才是这轮供电扩张里真正卡位的环节——比主机厂更值得盯。</span>
-    </div>
-  </div>
-
-  <div class="sig-card orange">
-    <div class="sig-inner">
-      <div class="sig-title">载板的缺口写在每一颗芯片上：同代升级带来的面积翻倍，比出货量更快</div>
-      <div class="sig-source">电子布板块观点更新 · 0729 ｜ 伯恩斯坦 ABF载板供需测算 ｜ 高盛/摩根士丹利 载板需求预测 · 交叉核实</div>
-      <div class="sig-body">
-        <p><strong>先把口径摆正。</strong>ABF载板的需求增长，行业口径是<em>2025-2028年年复合22%、而供给端只有12%</em>，产能利用率将从2025年的80-85%在<em>2027年推到100%以上</em>，正式进入供不应求。真正跳级的不是行业总量，而是<strong>单颗芯片吃掉的载板面积</strong>：按代际测算，Blackwell对应的载板价值量约为Hopper的1.9倍，<em>Rubin是3.8倍、Rubin Ultra达8.4倍</em>——所以缺的不是芯片颗数，是每颗芯片的载板面积。</p>
-        <p><strong>高端电子布是这条链上最不敏感的成本项。</strong>特种电子布在单块载板的成本占比很小，终端对它的涨价几乎不敏感；叠加载板需求本身在跳台阶，涨价的可持续性来自下游增长而不是议价博弈。紧缺程度的排序也很清楚：T布最紧、二代Low-Dk布次之、普通E布再次。</p>
-        <p><strong>调研给出的框架比数字更有用。</strong>下半年选股难度提高，市场的选择会<em>从"确定性+通胀线"切换到"确定性+扩产线"</em>——即从"谁在涨价"转向"谁的产能在明后年真正落地"。落到电子布：即便完全不考虑涨价，在算力迭代（板层数翻倍、面积大幅增长）与国产替代从零到一的双重推动下，绝对需求量的增长确定性极高，而<em>国内多数厂商的产能释放都排在明后年</em>。</p>
-      </div>
-    </div>
-    <div class="sig-chips"><span class="chip p">宏和科技</span><span class="chip">中材科技</span><span class="chip">中国巨石</span></div>
-    <div class="sig-therefore orange">
-      <span class="sl">→ 所以</span>
-      <span class="st2">这条线接下来该看的不是报价单，是<strong>2027年载板产能利用率能不能真的破100%</strong>，以及国内高端布产能落地的具体时点。在科技板块杀估值的阶段，有产能时间表的标的比只有涨价故事的标的更抗跌。</span>
+      <span class="st2">"云厂商砍单"的担忧今天没有得到数据支持——金额还在上修、产能还在最大化。真正被数据支持的是另一件事：<strong>支撑这轮采购的自由现金流已经接近归零</strong>。所以接下来要盯的不是资本开支指引，而是这些公司用什么方式融资、以及融资成本怎么走。</span>
     </div>
   </div>
 
   <div class="sig-card purple">
     <div class="sig-inner">
-      <div class="sig-title">全球存储资产今天这一跌，跌的是杠杆产品，不是订单</div>
-      <div class="sig-source">华创非银 徐康团队 首尔现场交流 · 0729 ｜ 韩股杠杆风险跟踪 · 0729</div>
+      <div class="sig-title">被打碎的是"涨价瓶颈"这个叙事，不是涨价这件事</div>
+      <div class="sig-source">宏观策略 周君芝/蒋佳秀 · 0730 ｜ 传统电力设备板块观点更新 · 0730</div>
       <div class="sig-body">
-        <p><strong>机制先于叙事。</strong>当日KOSPI下跌5.99%，三星电子跌5.23%、存储龙头跌9.61%。现场交流给出的主因不是基本面，而是<em>个股双倍杠杆产品的强制去杠杆</em>：这类产品共14只、总规模20-25万亿韩元，其中<em>存储龙头一家占约60%</em>——因其股价高、散户直接买入门槛高，杠杆产品成了主要通道，一旦下跌就形成机械性负反馈。</p>
-        <p><strong>出清进度已经可以量化。</strong>券商融资余额从高点38.6万亿韩元降至33.2万亿（收缩14%）；全球相关杠杆ETF规模从高点<em>82.0万亿韩元回落至36.9万亿、收缩55%</em>；7月28日强平金额138.9亿韩元、占交易欠款比例<em>1.3%，而7月9日高点是10.2%</em>。指数RSI已降至31.4、逼近超卖。资金面上当日散户净卖出2.4万亿韩元、外资净卖出0.9万亿，<em>本土机构净买入3.3万亿</em>——卖的和买的不是同一类人。</p>
-        <p><strong>政策变量已经出现。</strong>该国财政部长当日就此类产品的审慎性公开致歉，政府正在酝酿禁止普通个人购买个股双倍杠杆产品、仅限机构与超高净值客户，具体方案待定；总统府方面则表示尚未到启动股市平准基金的阶段。</p>
+        <p><strong>先把这轮回调的解释摆清楚。</strong>宏观一侧给出的框架是：今年以来硬件的超额收益建立在两个支柱上——<em>供给瓶颈带来的涨价权</em>，和<em>下游不计回报的采购意愿</em>。当前三个因素叠加打碎了前者：债务融资担忧、中国大模型竞争力提升、国产设备突围；再加上去杠杆，全球AI交易迎来广泛回调。市场层面的印证很直接：<em>创业板7月峰值回撤26.91%，已是近十年单月最大回撤第一名</em>，超过2016年1月熔断期的26.53%。</p>
+        <p><strong>但结论并不是终结。</strong>该框架同时给出两句话：一是凡可被标准化的硬件环节，最终难以吃掉行业大部分利润，掌握规模优势与用户入口的下游应用反而享受利润大头；二是<em>AI基建层的行情调整不等于科技大行情终结</em>——若价格与需求渐成匹配、智能走向商品化，中国在制造、电力、替代链与场景四个维度具备产业链纵深优势。</p>
+        <p><strong>资金的另一头有个具体去处。</strong>传统电力设备一侧给出的是明牌逻辑："十五五"期间国网规划固定资产投资<em>4万亿元、较"十四五"实际完成额增长40%</em>，而"十四五"本身较最初规划超额30%完成；上半年国网完成投资超3100亿元同比增13%，南网893亿元同比增15%。特高压侧更直接：<em>上半年国网特高压采购规模293亿元，已超过2025年全年的221亿元</em>，年内还有约2次招标。</p>
       </div>
     </div>
-    <div class="sig-chips"></div>
+    <div class="sig-chips"><span class="chip p">国电南瑞</span><span class="chip">平高电气</span><span class="chip">许继电气</span><span class="chip">特变电工</span><span class="chip">华明装备</span></div>
     <div class="sig-therefore purple">
       <span class="sl">→ 所以</span>
-      <span class="st2">把"海外存储大跌"直接翻译成"AI需求见顶"是接错了线。但也别急着当利好：<strong>禁令如果落地，过渡期可能引发存量杠杆产品的集中赎回</strong>，形成第二轮机械性抛压。真正该盯的是强平占比会不会再度抬头。</span>
+      <span class="st2">把"AI行情结束了吗"这个问题拆成两问会更有用：<strong>涨价权还在不在</strong>（今天主线那条线给的答案是在，且来源是料号等级不是数量），<strong>采购意愿还在不在</strong>（今天的财报给的答案是在，但现金流基础在变薄）。至于回调期的资金去处，电网这条线容量大、筹码以长线资金为主、逻辑不依赖AI资本开支——是少数能同时满足这三条的板块。</span>
     </div>
   </div>
 
@@ -340,59 +368,43 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
 <div class="bg-grid">
 
   <div class="bg-card accent-l">
-    <div class="bg-tag">国产算力 · 国金计算机 陈芷婧/鲍淑娴/刘高畅 0729 ｜ 西部计算机 郑宏达/谢忱/李想/王朗 0729</div>
-    <div class="bg-title">算力租赁从故事进到利润：Q2业绩预告集体爆发</div>
-    <div class="bg-body">这条线今年第一次有报表可看：算力租赁侧的<em>利通电子、智微智能、行云科技、协创数据</em>Q2业绩预告利润均实现爆发式增长，国产机柜与国产交换机环节的Q2利润同步加速释放。被归因的风眼是国产模型能力跨过可用临界点——代表性国产模型的编程与智能体能力持续提升，调用量与年度经常性收入进入指数级增长，带动算力需求加速。供给端，海外高端算力卡仍旧紧缺、部分卡以历史存量交易为主，主要卡种<em>租赁价格较6月仍有上行</em>，国产卡租赁价格维持稳定；数据中心现货及招投标价格已出现上涨。对近期压制板块的出口管制传闻，两家券商判断影响被高估：业务涉及运营主体、部署地域、下游客户多层关系，实际识别与执行难度大，短期无实际动作。另有一条容易被忽略的判断：<strong>推理时代服务器CPU价值有望重估</strong>——海外服务器CPU已在涨价、交期拉长。</div>
-    <div class="bg-chips"><span class="chip">利通电子</span><span class="chip">协创数据</span><span class="chip">智微智能</span><span class="chip">浪潮信息</span><span class="chip">锐捷网络</span></div>
+    <div class="bg-tag">材料 · 电子布 ｜ 中信主题策略 刘易/田鹏 · 0730</div>
+    <div class="bg-title">特种电子布另起一档：普通玻纤布已经满足不了高频高速</div>
+    <div class="bg-body">覆铜板向高频高速方向持续升级后，普通玻纤布难以满足介电性能要求，带来低介电、低热膨胀系列特种电子布的新增需求。相关公司依托全资子公司全面布局该品类，在手高端织机充裕、争取到的新订额度可观，特种电子纱自供能力快速提升，日韩、中国台湾及大陆头部客户同步拓展中；同日公告上市以来首次股权激励，拟授予股票期权及限制性股票合计600万股、占总股本2.49%。<strong>需要注意的是，谈"电子布涨价"必须先说清是哪一档</strong>——最主流的基布按元每米计，高端特种布按百元每米计，幅度差两个数量级。</div>
+    <div class="bg-chips"><span class="chip p">平安电工</span><span class="chip">宏和科技</span><span class="chip">中材科技</span></div>
   </div>
 
   <div class="bg-card blue-l">
-    <div class="bg-tag">国产芯片 · 国泰海通计算机 杨林 0729 ｜ 国金计算机&amp;科技 0729 ｜ 天风计算机 缪欣君/刘鉴 0729</div>
-    <div class="bg-title">把三年收入曲线写进合同：26-28累计1000亿元的考核</div>
-    <div class="bg-body">国产AI芯片龙头发布2026年限制性股票激励计划，拟授予500万股（占总股本0.80%），<em>授予价格750元/股、为7月28日收盘价1128元的66%</em>，首次授予覆盖945人、占在职员工总数<em>85.37%</em>。考核以营业收入为核心：2026年不低于135亿元（触发值108亿），2026-2027年累计不低于405亿元，<em>2026-2028年累计不低于1000亿元</em>（触发值800亿），对应三年分别为135亿/270亿/595亿。6名高管另需满足利润条件：2027、2028年扣除股份支付影响后的净利润较2025年分别增长不低于300%、500%，对应约91.9亿、137.8亿元。总股份支付费用约19.14亿元、四年分期摊销。对照2025年营收64.97亿元，这份考核把"国产算力能不能放量"从判断题变成了<strong>有触发值、有时间表的合同题</strong>。</div>
-    <div class="bg-chips"><span class="chip p">寒武纪</span></div>
+    <div class="bg-tag">算力 · 国产 ｜ 国金计算机 陈芷婧/鲍淑娴/刘高畅 · 0730</div>
+    <div class="bg-title">国产算力的关注点从单卡指标搬到了整机交付</div>
+    <div class="bg-body">市场焦点已从技术发布转向规模化交付和生态构建，<strong>以系统级创新弥补单卡差距的路径形成共识</strong>，投资重心从单一芯片向具备整机集成、高速互联和液冷综合方案能力的系统厂商倾斜。算力租赁一侧同日给出业绩验证：多家相关公司Q2业绩预告利润实现爆发增长。对出口管制外延的担忧被认为反应过度——业务涉及运营主体、部署地域、下游客户等多层关系，实际识别与执行难度较大。另有两条附带线索：推理时代CPU价值有望重估，海外服务器CPU涨价、交期拉长；IDC现货及招投标价格已出现上涨。</div>
+    <div class="bg-chips"><span class="chip p">中科曙光</span><span class="chip">海光信息</span><span class="chip">浪潮信息</span><span class="chip">紫光股份</span><span class="chip">利通电子</span></div>
   </div>
 
   <div class="bg-card green-l">
-    <div class="bg-tag">半导体设备 · ASMPT 26Q2业绩 0729 ｜ 广发机械 孙柏阳/汪家豪/王宁/许贝尔 0729</div>
-    <div class="bg-title">封装与测试同日两路超预期：热压键合已经排到明年一季度</div>
-    <div class="bg-body">封装设备一侧：ASMPT 26Q2收入6.30亿美元（同比增52.1%、环比增24.4%）超指引上限，<em>新增订单9.04亿美元、同比增97.6%</em>，调整后毛利率升至42.5%；7月拿到某封测客户<em>超50台C2S热压键合设备批量订单</em>，大部分于2027年一季度交付，另在先进CPU侧拿到C2W批量订单，设备已用于HBM4量产，并与关键存储客户开展主要面向下一代HBM的独家联合评估。硅光侧，上半年可插拔光模块相关收入约7500万美元、接近上年同期3倍，但公司判断共封装光学的设备需求拐点在2027-2028年、更可能于2028年实质放量。测试设备一侧：泰瑞达26Q2收入13.3亿美元、同比增104%，营业利润同比增373%，并称2030年全球测试机市场规模有望达200亿美元；爱德万26Q2净利润同比增93.8%，<em>全年收入预测上修21%、净利润预测上修42%</em>。一条反向信息值得记：部分材料交期拉长、先进封装设备制造周期长，<strong>订单转收入的周期已延长到约6-9个月</strong>。</div>
-    <div class="bg-chips"><span class="chip">长川科技</span><span class="chip">华峰测控</span><span class="chip">精测电子</span><span class="chip">中科飞测</span><span class="chip">微导纳米</span></div>
-  </div>
-
-  <div class="bg-card gray-l">
-    <div class="bg-tag">存储供给 · 第三方产能追踪整理 0729 ｜ 当日复盘 0728</div>
-    <div class="bg-title">国产DRAM的追赶被量化：产能接近，比特产出还差两三代</div>
-    <div class="bg-body">第三方机构给出可比数字：26Q1全球DRAM市占率为三星38%、SK海力士29%、美光22%、长鑫科技<em>8%（去年同期约3%）</em>；分析师判断其月产能到年末将超30万张、接近美光水平。另有投行预测其2023-2028五年间将增强每月38.8万张的DRAM产能，中国大陆企业整体市占率将从2023年约18%提升至2028年约23%。但技术代差被同时讲清：其制造技术较最尖端企业<em>落后2-3代、时间上落后约3年</em>，三家海外巨头均已采用1c工艺，国产厂商仍处在1a向最新型过渡的阶段，<strong>单片晶圆的比特产出量差距仍大</strong>。能否追上微细化的关键变量是极紫外光刻设备，在出口管制下取决于制造设备国产化的进度。该公司将于8月10日纳入MSCI中国全股票指数。</div>
-    <div class="bg-chips"><span class="chip">中船特气</span><span class="chip">江丰电子</span><span class="chip">鼎龙股份</span></div>
-  </div>
-
-  <div class="bg-card red-l">
-    <div class="bg-tag">海外风险 · 长江海外算力研究整理 0728 ｜ 美股波动因素梳理 0729</div>
-    <div class="bg-title">风险定价从股价挪到信用：龙头CDS单日跳涨14个基点</div>
-    <div class="bg-body">本轮海外调整多了一个观测维度。市场传出某GPU龙头拟为一家模型公司的10GW数据中心项目提供最高2500亿美元融资担保，消息后其<em>五年期信用违约互换单日跳涨14个基点至82bp，创历史最大盘中升幅</em>，多家科技巨头CDS创新高。同期的循环融资样本还包括：对一家新成立AI实验室的50亿美元现金战略投资、与某韩国集团超5000亿美元的合作、以及最高500亿美元的德州数据中心长期租赁协议（锁定稀缺电力、建成后或对外转租算力）。外资对美半导体下跌的三点归因是：对财报数据的反应疲软、对循环融资的担忧、对云服务商削减资本开支的焦虑。当日还流传一个可操作的见顶顺序框架：<strong>自由现金流减少 → 资本开支增速下滑而需求仍上行 → 营收增速与净资产收益率同时见顶 → 资本开支仍增但营收增速跑输 → 毛利率走平</strong>。目前只走到第一二步。</div>
-    <div class="bg-chips"></div>
-  </div>
-
-  <div class="bg-card accent-l">
-    <div class="bg-tag">光通信 · 长江通信 黄天佑 0729 ｜ 天风通信 王奕红/余芳沁/曾庆亮/王振铭/唐海清 0729 ｜ 广发通信 0729 ｜ 国金通信 0729</div>
-    <div class="bg-title">降价传闻的证伪进到第二天：龙头用40-80亿回购把话说死</div>
-    <div class="bg-body">承接前一日的低价传闻，今天多了两层。资本动作一侧：光模块龙头公告董事长兼总裁提议以自有资金<em>回购40亿-80亿元A股</em>，价格上限为董事会审议前30个交易日均价的150%，股份用于股权激励或员工持股、未使用部分三年内注销。产业口径一侧，四家券商同日给出同方向补充：2027年1.6T实际报价远高于传闻数字，<em>单一型号报价无法代表行业加权ASP</em>（不同客户、传输距离及不同技术路线价差极大）；几乎所有客户均已下达2027年订单、<em>部分已明确到每月交付数量</em>；部分重点客户已给出2028年2.4T与近封装光学产品的具体需求指引，即需求增长的二阶导在26-28年为正。物料侧，核心芯片下半年环比缓解、跳票逐季转好，27-28年缺口进一步收窄但依然缺货，龙头通过长协、预付款、导入新供应商及对核心供应商股权投资来锁料。市场同日也存在<strong>"回购是用嘴维护股价"的对立质疑</strong>，这条线上分歧尚未消除。</div>
-    <div class="bg-chips"><span class="chip p">中际旭创</span><span class="chip">新易盛</span><span class="chip">天孚通信</span><span class="chip">源杰科技</span><span class="chip">东山精密</span></div>
+    <div class="bg-tag">材料 · 氟化工 ｜ 长江化工 · 0730</div>
+    <div class="bg-title">在最差的需求环境里涨了43.8%，这本身就是议价权的证据</div>
+    <div class="bg-body">上半年制冷剂经历了一轮完整的需求压力测试：空调与汽车终端表现不佳、出口回落、海外去库存。在这种状况下，R22、R32、R134a、R124<strong>分别上涨43.8%、2.4%、10.3%、14.6%</strong>，主要依靠维修市场的年度正常增长与高行业集中度支撑；三季度企业大幅提升R32长协报价，进一步印证议价权。当前库存已至低位，2029年配额进一步减量有望加速涨价斜率。氟材料一侧则直接对接半导体与AI：输送湿电子化学品的超纯全氟烷氧基树脂、半导体用冷却液（全氟胺与全氟聚醚）、电子级氢氟酸、以及M10等级板材测试所用的聚四氟乙烯。</div>
+    <div class="bg-chips"><span class="chip p">巨化股份</span><span class="chip">三美股份</span><span class="chip">永和股份</span><span class="chip">昊华科技</span></div>
   </div>
 
   <div class="bg-card purple-l">
-    <div class="bg-tag">AI应用 · 协议升级点评 0729</div>
-    <div class="bg-title">智能体协议转向无状态：流量第一次变得可计量、可路由</div>
-    <div class="bg-body">连接大模型与外部工具的主流协议发布新版本，被评价为面世以来最重大的一次更新，核心是协议层<em>从有状态转向无状态</em>——每个请求自带版本、身份与能力，可以随意负载均衡到无服务器架构与边缘节点实现快速扩容。三个产业含义：一是智能体流量进入<em>可计量、可网关化、可变现</em>的阶段，能直接部署在云服务、无服务器与边缘节点上，内容分发网络与边缘节点由此获得AI叙事的第二曲线，主流云厂商已在发布当日全面支持；二是智能体调用被正式纳入企业身份与授权体系，每次工具调用都是一次带身份的接口调用，<strong>企业级部署的合规与可观测门槛实质性降低</strong>，可直接复用既有的负载均衡、接口网关与身份治理设施；三是伴随智能体规模化进入生产，将持续拉动存储、CPU、推理算力的资源需求。该协议月度开发包下载量已突破4亿次、多版本累计超10亿次。</div>
-    <div class="bg-chips"></div>
+    <div class="bg-tag">宏观 · 政策 ｜ 会议解读 · 0730</div>
+    <div class="bg-title">政治局会议：货币中性偏宽，财政强调"用好存量"</div>
+    <div class="bg-body">中共中央政治局召开会议，决定召开二十届五中全会。三条定调：货币政策强调"综合运用并适时调整货币政策工具"，边际中性偏宽——当下可调整的方向<strong>只可能是放松而非收紧</strong>；财政政策强调"加快财政支出和债券资金使用进度"，落点在存量而非增量；产业政策提到实施"人工智能+"行动，但表述较"科技自立自强"等偏弱。对债市而言利多是方向性的、利空是结构性的：加快财政支出与发行可能提前供给节奏，但三季度供给本就是明牌，定价影响约3个基点已是极限。市场反应相对克制，股债在14:30与14:45分别出现两波反向走势。</div>
+  </div>
+
+  <div class="bg-card red-l">
+    <div class="bg-tag">海外 · 资金面 ｜ 华创非银 徐康团队 · 0730</div>
+    <div class="bg-title">韩国收紧个股杠杆ETF：六项措施带执行时点</div>
+    <div class="bg-body">随着大量散户资金流入单一个股杠杆ETF，原本直接配置存储龙头普通股的散户资金明显减少，承接外资卖压的力量减弱，<strong>韩国股市对外资资金流动的敏感度进一步提升</strong>。监管公布后资金流入已有降温迹象、ETF成交占比开始回落，但成交占比仍处高位、换手率仍明显高于现股。六项措施及执行节点：7月31日起基本保证金从1000万韩元提至3000万韩元且不再接受代用证券；11月起单次最低交易数量从1股提至20股；暂停新的单一个股杠杆产品上市；禁止相关促销与营销；8月起将跟踪误差管理标准从3%收紧至2%；7至8月新增投资者教育时数与资格测试要求。</div>
   </div>
 
   <div class="bg-card gray-l">
-    <div class="bg-tag">非AI · 招商电新 0728 ｜ 电解液添加剂跟踪 0729 ｜ 东吴电新 0729</div>
-    <div class="bg-title">两条不在AI线上的供给约束：电解液添加剂与逆变器新规</div>
-    <div class="bg-body">一是<strong>锂电添加剂涨到了主升浪</strong>：碳酸亚乙烯酯第三方报价从17-20万元/吨跳涨到20-25万元/吨，最新报价<em>21.5万元/吨、较月初上涨40%</em>；5月以来自12.5-13.5万元/吨持续上扬、6月下旬后加速。行业产能已全部满产、头部企业扩产持续推迟，下半年几乎无新增供给，部分企业还遇到环保检查；需求侧8月电池排产环比增9%（其中铁锂排产环比增10%、同比增81%），下游主要靠库存和减量维持。二是<strong>美国把电力逆变器纳入受限清单</strong>：7月28日发布的措施同时禁止进口中国新型人形机器人、四足机器人与联网电力逆变器，但文件明确限制<em>仅适用于寻求新授权的产品型号</em>，不影响已获授权产品，且可申请豁免；受限定义需<em>同时满足"电力双向转换"与"包含远程通信组件"</em>——仅具基础逆变功能、不含无线通信模块的产品理论上不落入该定义，"物理断网"的架构反而成了合规优势。</div>
-    <div class="bg-chips"><span class="chip">华盛锂电</span><span class="chip">永太科技</span><span class="chip">新宙邦</span><span class="chip">阳光电源</span></div>
+    <div class="bg-tag">消费 · 新型烟草 ｜ 浙商轻工/申万轻工 · 0730</div>
+    <div class="bg-title">加热卷烟国标进入征求意见，同期烟具招标结果落地</div>
+    <div class="bg-body">7月28日国家烟草专卖局发布《加热卷烟》强制性国家标准征求意见稿，反馈截止9月26日，<strong>拟在标准发布后6个月正式实施</strong>。核心条款：烟草基质须来自烟叶、复烤烟叶、再造烟叶或烟丝，草本添加烟碱产品被排除；发热体表面温度不高于380摄氏度、唇部接触温度不高于55摄氏度、平均每口烟碱释放不高于0.2毫克；烟具须具备防儿童启动与防意外启动功能；中心加热、外围加热及烟支内置发热体等技术路线均有空间。产业订单同步落地：江苏中烟公示2026-2028年加热烟具项目中标候选人，三类烟具的第一中标候选人含税报价分别为68.93、111.87、224.87元每套。价值量口径：转向加热卷烟后，再造薄片单支用量为传统的5-8倍、香精香料达10倍、卷烟纸价值量提升2倍以上。</div>
+    <div class="bg-chips"><span class="chip">恒丰纸业</span><span class="chip">昆船智能</span></div>
   </div>
 
 </div>
@@ -406,37 +418,39 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
 
 <div class="watch-wrap">
   <table class="watch-table">
-    <thead><tr><th>跟踪变量</th><th>验证节点</th><th>当前状态</th><th>结果影响</th></tr></thead>
+    <thead>
+      <tr><th>跟踪变量</th><th>验证节点</th><th>当前状态</th><th>结果影响</th></tr>
+    </thead>
     <tbody>
       <tr>
-        <td>存储报表ASP涨幅与现货涨幅的<br>缺口是收窄还是继续扩大</td>
-        <td><span class="node-red">2026Q4</span></td>
-        <td>26Q2 DRAM实际ASP环比增30%、市场预期增41%；已完成约10份五年期长约，条款含价格波动调节机制与保证金</td>
-        <td>缺口收窄→长约能跟涨，存储从周期股向能见度资产重估；缺口继续扩大→涨价周期让渡弹性而跌价周期未必受保护，估值需按"不再享受价格弹性"重算</td>
+        <td>被动元件第二轮调价的落地率<br><span style="font-weight:400;color:var(--ink-light);font-size:11.5px;">8月与9月的两轮，有几轮真正进了三季度报表</span></td>
+        <td><span class="node-red">2026Q3报表</span></td>
+        <td>第一轮6月启动、7月行业普调，高容料号累计涨幅40%-50%；但6月那次落进二季度报表的时间只有1个月，贡献有限</td>
+        <td>落地则三季度是量、价、结构三重共振的第一个完整季度；落不了则说明通用料号仍被消费需求拖住，涨价只停留在高容那一档</td>
       </tr>
       <tr>
-        <td>八九月MLCC原厂调价<br>能否在成交价上真正落地</td>
-        <td><span class="node-red">2026Q3</span></td>
-        <td>三星电机8月1日起全线上调30%已发正式函；太阳诱电9月1日二次调价、并明示无法保证按原定交期供货；Q3在AI侧几乎无批量新产能投放</td>
-        <td>落地→Q3被动元件业绩明确加速，高容占比高的原厂弹性最大；停留在函件与渠道价→中低容被消费需求拖住，板块性涨价证伪</td>
+        <td>2028年高容缺口是否按测算路径扩大<br><span style="font-weight:400;color:var(--ink-light);font-size:11.5px;">规划产能全落地约4000亿颗 vs 需求超7000亿颗</span></td>
+        <td><span class="node-amber">2027Q2</span></td>
+        <td>各家扩产时点已公开：日系龙头一期2027年底落地、2028年稳定量产；韩系菲律宾新厂2027年落地；另一家日系2027年投放</td>
+        <td>缺口成立则这是3-5年维度的紧平衡；若AI服务器出货节奏低于预期、或转产效率高于1比4的假设，供给补位会快于测算</td>
       </tr>
       <tr>
-        <td>年产量以吨计的钪<br>能否支撑以GW计的燃料电池装机</td>
-        <td><span class="node-amber">2026Q4</span></td>
-        <td>全球氧化钪年消费量30-60吨、年产能约80吨，全部为钛白粉工艺与镍矿浸出的副产品，扩产受宿主工艺约束；主机厂在手订单已按GW计</td>
-        <td>副产品产能同步扩张→供电替代逻辑成立，铬、钪等稀缺环节量价齐升；扩不出来→交付节奏被材料卡住，订单与收入之间出现明显时滞</td>
-      </tr>
-      <tr>
-        <td>韩股杠杆出清是否结束<br>强平占比会不会二次抬头</td>
-        <td><span class="node-red">2026Q3</span></td>
-        <td>杠杆ETF规模已从82.0万亿韩元缩至36.9万亿（-55%），强平占交易欠款比例从10.2%降至1.3%，指数RSI降至31.4；禁止个人买入双倍杠杆产品的方案仍在酝酿</td>
-        <td>不再抬头→技术性抛压出清，存储股价与创纪录盈利重新收敛；禁令过渡期引发存量集中赎回→第二轮机械性抛压，与海外信用担忧共振</td>
-      </tr>
-      <tr>
-        <td>2027年ABF载板产能利用率<br>能否真的推到100%以上</td>
+        <td>PCB下游的两分化能否被AI增量对冲<br><span style="font-weight:400;color:var(--ink-light);font-size:11.5px;">2027年AI服务器增速近180% 对 消费电子中性降25%</span></td>
         <td><span class="node-amber">2027Q1</span></td>
-        <td>需求2025-2028年复合22%对供给12%，2025年利用率80-85%；单颗芯片对应载板价值量按代际跳升（Rubin为Hopper的3.8倍）；国内高端电子布产能多排在明后年</td>
-        <td>推到100%以上→缺口从载板传导至上游高端布，涨价跨年；利用率不达→说明面积增长被出货量放缓抵消，扩产线标的的时间表要重排</td>
+        <td>2026年PCB整体市场基数900亿美元；2027年中性约962亿、增7%，悲观约880亿、降2%，差额几乎全部来自消费电子假设</td>
+        <td>若消费电子按悲观降50%落地，PCB整体2027年同比转负，分层会从结构性机会变成总量拖累，弹性只留给纯AI敞口</td>
+      </tr>
+      <tr>
+        <td>云厂商的现金流基础怎么走<br><span style="font-weight:400;color:var(--ink-light);font-size:11.5px;">自由现金流已降到8亿美元，靠什么继续加码</span></td>
+        <td><span class="node-red">2026Q3财报</span></td>
+        <td>单季资本开支同比增82.7%，全年区间下限被上调；经营现金流318.62亿美元几乎被资本开支吃完</td>
+        <td>若下季继续以经营现金流硬扛，说明采购意愿真实；若转向债务融资且成本抬升，宏观侧的"债务融资担忧"就从叙事变成事实</td>
+      </tr>
+      <tr>
+        <td>模块化数据中心的渗透路径<br><span style="font-weight:400;color:var(--ink-light);font-size:11.5px;">追踪容量超61GW，2028年底能否超30%</span></td>
+        <td><span class="node-green">2027Q4</span></td>
+        <td>两家头部北美云厂商分别推进模块化与帐篷式路线，其中一家上半年已签约超5GW外部容量；61GW为已追踪到的在建与在运容量，30%则是对2028年底的预测</td>
+        <td>渗透率若兑现，预制模块与钢结构从工程量变成排产量；若卡在电力并网而非制造产能，天花板会被电网侧而不是工厂侧决定</td>
       </tr>
     </tbody>
   </table>
@@ -445,51 +459,51 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
 <!-- 高频标的 -->
 <div class="section-hd">
   <span class="section-num">TICKER</span>
-  <span class="section-title">高频标的速览 · 提及≥2次</span>
+  <span class="section-title">高频标的速览 · 今日提及≥2次</span>
   <div class="section-rule"></div>
 </div>
 
 <div class="ticker-grid">
   <div class="ticker-card">
-    <div class="ticker-left"><div class="ticker-name">SK海力士</div><div class="ticker-count">13</div><div class="ticker-unit">MENTIONS</div></div>
+    <div class="ticker-left"><div class="ticker-name">三环集团</div><div class="ticker-count">4</div><div class="ticker-unit">次提及</div></div>
     <div class="ticker-right">
-      <div class="ticker-logic">26Q2营业利润率76%、毛利率83%双创新高，营收与营业利润仍低于一致预期约5-6%；DRAM出货量达标而ASP环比增30%（预期增41%），差额来自HBM年度议价与约10份五年期长约锁价。</div>
-      <div class="ticker-source">招商电子/兴证电子/国泰海通海外科技/中泰电子/中信证券前瞻 · 0729</div>
+      <div class="ticker-logic">高容占比2025年60%、2026年提至70%以上；2025年月产能500亿颗、2026年扩至700亿颗（其中高容300亿颗），产能利用率接近90%基本满产；上游陶瓷粉体浆料自主供应，2025年行业低迷期毛利率仍达40%。6月与7月已两次调价，高容涨幅40%-50%。第二增长曲线的陶瓷隔膜片二季度出货1100多万片、收入近2.8亿元、环比增50%-60%，全年出货指引从1.5GW上调至2GW。</div>
+      <div class="ticker-source">天风电新 · 财通电子 · 天风汽车</div>
     </div>
   </div>
   <div class="ticker-card">
-    <div class="ticker-left"><div class="ticker-name">中际旭创</div><div class="ticker-count">6</div><div class="ticker-unit">MENTIONS</div></div>
+    <div class="ticker-left"><div class="ticker-name">风华高科</div><div class="ticker-count">4</div><div class="ticker-unit">次提及</div></div>
     <div class="ticker-right">
-      <div class="ticker-logic">董事长兼总裁提议以自有资金回购40亿-80亿元A股，价格上限为前30个交易日均价的150%；同时明确2027年1.6T实际报价远高于市场传闻，几乎所有客户已下2027年订单、部分明确到月度交付量。</div>
-      <div class="ticker-source">公司公告 · 0728 ｜ 长江通信/天风通信/国金通信 · 0729</div>
+      <div class="ticker-logic">当日涨停。2026年上半年高容收入占比从2025年的20%多提升至接近40%，高容毛利率超30%，二季度整体毛利率环比提升7-8个百分点；<strong>在手订单金额同比增长70%-80%，客户交期拉长至3个月</strong>，已规划重启二期产能建设。截至7月已累计调价三次，但只有6月那次落进二季度报表，剩余两次将在三季度逐步落地。</div>
+      <div class="ticker-source">天风电新 · MLCC板块点评 · 财通电子</div>
     </div>
   </div>
   <div class="ticker-card">
-    <div class="ticker-left"><div class="ticker-name">三环集团</div><div class="ticker-count">4</div><div class="ticker-unit">MENTIONS</div></div>
+    <div class="ticker-left"><div class="ticker-name">昀冢科技</div><div class="ticker-count">3</div><div class="ticker-unit">次提及</div></div>
     <div class="ticker-right">
-      <div class="ticker-logic">被两条独立线索同日点到：MLCC侧高容部分已完成一轮调价、中低容8月排入调价计划，AI侧进展快且高容占比高；同时是固体氧化物燃料电池电解质隔膜的供应商。</div>
-      <div class="ticker-source">天风汽车 孙潇雅/李俊漾 · 0729 ｜ 国金电新 姚遥/唐雪琪 · 0729</div>
+      <div class="ticker-logic">通用与中高容料号为主，直接受益于头部厂商把产能切向高容与车规后通用料号供给被挤出。国产化率已提升至90%以上，核心设备成本较早期进口设备大幅下降。6月正式提价后毛利已转正，三季度是涨价兑现的第一个完整季度；月出货从3-4月的50-60亿颗提升至6-7月约70亿颗，目标10月后约120亿颗每月。</div>
+      <div class="ticker-source">公司近况交流 · 天风汽车</div>
     </div>
   </div>
   <div class="ticker-card">
-    <div class="ticker-left"><div class="ticker-name">寒武纪</div><div class="ticker-count">3</div><div class="ticker-unit">MENTIONS</div></div>
+    <div class="ticker-left"><div class="ticker-name">生益科技</div><div class="ticker-count">2</div><div class="ticker-unit">次提及</div></div>
     <div class="ticker-right">
-      <div class="ticker-logic">股权激励授予价750元/股、为前一日收盘价的66%，覆盖945人占员工总数85.37%；营收考核2026年135亿元、2026-2028年累计1000亿元，高管另有净利润增长300%/500%的约束。</div>
-      <div class="ticker-source">国泰海通计算机 杨林 · 0729 ｜ 国金计算机&amp;科技 · 0729 ｜ 天风计算机 缪欣君/刘鉴 · 0729</div>
+      <div class="ticker-logic">覆铜板龙头，被点名为兼具AI成长趋势与涨价利润弹性的标的。M8、M9等级需求增长最快且对传统等级产能形成挤占，而PCB厂商已开始向下游顺价、终端客户与组装厂已接受涨价，覆铜板后续仍有涨价空间。高阶覆铜板市场从2026年的100亿量级向300亿扩张。</div>
+      <div class="ticker-source">长江研究 大化工对话电子</div>
     </div>
   </div>
   <div class="ticker-card">
-    <div class="ticker-left"><div class="ticker-name">利通电子</div><div class="ticker-count">3</div><div class="ticker-unit">MENTIONS</div></div>
+    <div class="ticker-left"><div class="ticker-name">圣泉集团</div><div class="ticker-count">2</div><div class="ticker-unit">次提及</div></div>
     <div class="ticker-right">
-      <div class="ticker-logic">算力租赁侧Q2业绩超预期、Q3有望继续显著加速，被两家券商同日列为业绩加速落地的首位标的；同期海外高端卡租赁价格较6月仍有上行、国产卡价格稳定。</div>
-      <div class="ticker-source">国金计算机 陈芷婧/鲍淑娴/刘高畅 · 0729 ｜ 西部计算机 郑宏达/谢忱 · 0729</div>
+      <div class="ticker-logic">高频高速树脂体系供应商，同时出现在代糖产业链的生物质化工梳理中。被点名估值已跌至2027年预期业绩的20倍水平，300亿市值以下属底部区间。AI服务器用板所需的聚苯醚、碳氢、BT树脂体系与传统消费电子用的酚醛、环氧树脂形成产品分层，提前布局者具备先发优势。</div>
+      <div class="ticker-source">长江研究 大化工对话电子</div>
     </div>
   </div>
   <div class="ticker-card">
-    <div class="ticker-left"><div class="ticker-name">中船特气</div><div class="ticker-count">3</div><div class="ticker-unit">MENTIONS</div></div>
+    <div class="ticker-left"><div class="ticker-name">博迁新材</div><div class="ticker-count">2</div><div class="ticker-unit">次提及</div></div>
     <div class="ticker-right">
-      <div class="ticker-logic">六氟化钨现有产能2000吨/年（6N级）已开满，邯郸1000吨预计2027年投产、上海1000吨项目环评已受理，扩产后达4000吨；下游3D NAND扩产与国产存储扩产同步拉动需求。</div>
-      <div class="ticker-source">国金电子 中船特气近况更新 · 0729 ｜ 公司公告及上海项目环评公示</div>
+      <div class="ticker-logic">上游超细镍粉供应商，受益于高容料号放量带来的镍粉需求增长与自身扩产，当日一度涨7%以上。位置在传导链条的最上游一格：高容料号占比提升会同时抬高单位镍粉用量与等级要求，是价值量增速快于用量增速这一结构的直接受益环节。</div>
+      <div class="ticker-source">MLCC板块点评 · 0730</div>
     </div>
   </div>
 </div>
@@ -497,39 +511,38 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
 <!-- 新词速查 -->
 <div class="section-hd">
   <span class="section-num">GLOSSARY</span>
-  <span class="section-title">新词速查</span>
+  <span class="section-title">新词速查 · 今日首现</span>
   <div class="section-rule"></div>
 </div>
 
 <div class="gloss-wrap">
   <div class="gloss-grid">
     <div class="gc">
-      <span class="gc-term">比特产出量（Bit Output）</span>
-      <div class="gc-def">衡量单片晶圆能产出多少存储容量的指标，等于晶圆产能乘以单片比特密度。评估一家存储厂的真实供给能力时，晶圆月产能只是分母，比特产出才是有效供给——制程每落后一代，同样一片晶圆能切出的存储容量就明显更少。</div>
-      <div class="gc-why"><strong>为何今日重要：</strong>国产DRAM厂商的月产能到年末将接近头部厂商水平，但制程仍落后2-3代、仍在从1a向最新型过渡，而三家海外巨头都已用上1c工艺。判断国产供给对全球价格的压制强度，必须看比特产出而不是晶圆片数——这两个数字今天第一次被并排给出。</div>
+      <span class="gc-term">料号结构升级（用量与价值量背离）</span>
+      <div class="gc-def">在被动元件的需求测算里，用量（颗数）与价值量（金额）是两条会明显背离的曲线。按整机架物料清单拆解，下一代平台相比上一代，整柜用量从44万颗增至约60万颗（增36%），单柜价值量却从1530美元增至4320美元（增182%）——差额来自高容料号占比从约10%提升到约35%，典型如0805规格47微法从约1378颗增至约4928颗。</div>
+      <div class="gc-why"><strong>为何今日重要：</strong>这是今天主线的全部支点。它意味着判断这类厂商的业绩弹性，不能看出货颗数，必须看<strong>高容料号占收入的比重</strong>；也意味着这一轮涨价即使在下游出货量持平的情况下依然能继续，因为涨的是等级不是数量。</div>
     </div>
     <div class="gc">
-      <span class="gc-term">扩产线 与 通胀线（两种选股口径）</span>
-      <div class="gc-def">通胀线是找正在涨价、价格弹性最大的环节；扩产线是找明后年产能真正落地、增量可被验证的环节。前者赚的是价差，后者赚的是量增。两者在缺口扩大期同向，但在杀估值阶段会分道：涨价故事的估值溢价先被压缩，而有产能时间表的公司因为盈利可验证而更抗跌。</div>
-      <div class="gc-why"><strong>为何今日重要：</strong>今天的调研直接提出"市场的选择会从确定性加通胀线，切换到确定性加扩产线"。这不是某个板块的看法，而是一个可迁移的筛选口径——它同时解释了为什么高端电子布这类"绝对需求量增长确定、但产能排在明后年"的环节值得单独看。</div>
+      <span class="gc-term">挤出型涨价</span>
+      <div class="gc-def">涨价的成因不是该产品自身需求变好，而是<strong>供给被更高毛利的产品线抽走</strong>。当前通用与中高容料号即属此类：头部厂商把产能切向高容、车规与AI等高端料号，通用料号供给被挤出，因此在消费电子需求明显疲软的背景下，渠道价反而从春节后开始上涨、6月后加速。同一机制也出现在M8/M9等级覆铜板对传统等级产能的挤占上。</div>
+      <div class="gc-why"><strong>为何今日重要：</strong>它给出一个判断持续性的口径——挤出型涨价的持续性取决于<strong>高端料号对产能的占用是否松动</strong>，而不取决于该料号自身的终端需求是否恢复。看到"消费电子需求差，为什么它还在涨"时，这就是答案。</div>
     </div>
     <div class="gc">
-      <span class="gc-term">钪（燃料电池电解质的副产品瓶颈）</span>
-      <div class="gc-def">一种稀土元素，氧化钪是固体氧化物燃料电池电解质的关键掺杂材料。它的特殊之处在于全球没有独立的钪矿山——产量100%来自钛白粉工艺、红土镍矿浸出液和尾矿回收的副产品，因此扩产受制于宿主工艺本身的产量，无法靠单独投资钪产能来放量。按美国地质调查局口径，全球氧化钪年消费量仅30-60吨、年产能约80吨。</div>
-      <div class="gc-why"><strong>为何今日重要：</strong>燃料电池与内燃机主机厂的在手订单已经按GW计量、单笔数据中心大单就是1.1GW。当供电方案的订单簿以吉瓦为单位增长，而关键材料的全球年产量以吨为单位，真正的瓶颈就从主机产能转到了这类副产品上——这是这条产业链上最少被讨论、却最难绕开的约束。</div>
+      <span class="gc-term">改线效率比（1比4至1比5）</span>
+      <div class="gc-def">被动元件厂商把既有消费级产线改造为高容或AI级产线时的产能折算比例。靠工厂改线扩产的效率仅为1比4到1比5，即原本能产4-5颗消费级产品的产能，改线后只能产1颗高容产品。此外，一条全新高端产线从规划到稳定量产需1.5-2年，其中设备交期就占12-16个月。</div>
+      <div class="gc-why"><strong>为何今日重要：</strong>它解释了一个反直觉的现象——行业名义总有效供给超过6万亿颗，看起来远大于AI侧的几千亿颗需求，但AI高容的<strong>有效供给增速远低于名义产能</strong>。转产不是平移，是打折；这是缺口在2028年之前填不上的物理原因。</div>
     </div>
     <div class="gc">
-      <span class="gc-term">CDS（信用违约互换）作为AI风险温度计</span>
-      <div class="gc-def">为债券违约风险提供保护的衍生品，报价以基点计，基点越高代表市场认为违约风险越大。它反映的是债权人的判断，而股价反映的是股东的判断——当一家公司通过相互投资、供应商融资、租赁担保等方式把资产负债表向外延伸时，信用市场往往比权益市场更早给这些结构定价。</div>
-      <div class="gc-why"><strong>为何今日重要：</strong>某GPU龙头的五年期CDS单日跳涨14个基点至82bp、创历史最大盘中升幅，多家科技巨头CDS同步创新高。这是本轮回调与5、6月那几次最实质的不同：担忧第一次从股价传导到了信用定价，意味着市场开始怀疑的不只是估值倍数，还有资金链条本身。</div>
+      <span class="gc-term">模块化数据中心（模块级与项目级两套口径）</span>
+      <div class="gc-def">把供配电、制冷等核心系统在工厂完成预制、安装与测试，现场只做模块吊装与系统联调的建设方式。读这类数字必须先分清层级：<strong>模块级</strong>指单个白空间模块的现场施工，从最多约15周压到约2-3周；<strong>项目级</strong>指端到端建设窗口，50兆瓦参考机房压到约12-18个月、快约36%，全成本低约110万美元每兆瓦。两者不是同一件事，也不能互相印证。</div>
+      <div class="gc-why"><strong>为何今日重要：</strong>它把AIDC的瓶颈从现场土建工时搬进了工厂。需求形态随之改变——机电、钢结构、供配电与制冷从现场工程量变成<strong>标准化模块的排产量</strong>，跟踪指标也要跟着从开工面积换成模块交付节奏。</div>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <div class="footer-brand">产业投研日报 · VOL.067</div>
-  <div class="footer-ts">2026.07.29 · 收盘后复盘</div>
+  <div class="footer-brand">产业投研日报 · VOL.068</div>
+  <div class="footer-ts">2026.07.30 THU</div>
 </div>
-
 </body>
 </html>
