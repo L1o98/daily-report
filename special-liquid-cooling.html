@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>产业专题 VOL.SP01 · 液冷 · 2026.08.03-09.02</title>
+<title>产业专题 VOL.SP01 · 液冷行业深度 · 2026.09.03</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -228,6 +228,37 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
   .numbox,.seg,.pos,.note{margin-left:18px;margin-right:18px;}
   .mast-title{font-size:20px;}
 }
+/* ===== 深度报告体例（SP01 v4） ===== */
+.abs{margin:0;padding:20px 32px 6px;background:#fffdf9;border-bottom:1px solid var(--border);}
+.abs-h{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:0.16em;margin-bottom:12px;}
+.abs-i{display:flex;gap:11px;margin-bottom:13px;align-items:flex-start;}
+.abs-n{font-family:'DM Mono',monospace;font-size:11px;color:#fff;background:var(--accent);min-width:19px;height:19px;
+  border-radius:2px;text-align:center;line-height:19px;flex-shrink:0;margin-top:2px;}
+.abs-b{font-size:12.4px;line-height:1.75;flex:1;}
+.abs-b b{color:var(--mast);}
+.toc{padding:16px 32px;background:var(--paper-warm);border-bottom:1px solid var(--border);}
+.toc-h{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:0.16em;margin-bottom:9px;}
+.toc-i{display:flex;font-size:11.8px;line-height:1.9;color:var(--ink);}
+.toc-i b{color:var(--mast);min-width:22px;}
+.toc-s{padding-left:24px;color:var(--ink-light);font-size:11px;line-height:1.8;}
+.fig{margin:16px 32px;padding:12px 14px 9px;background:#fff;border:1px solid var(--border);}
+.fig-t{font-size:11.5px;font-weight:700;color:var(--mast);margin-bottom:9px;line-height:1.45;font-family:'Noto Serif SC',serif;}
+.fig-s{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--ghost);margin-top:7px;
+  padding-top:6px;border-top:1px dotted var(--border);line-height:1.5;}
+.ch{background:var(--mast);padding:14px 32px;margin-top:10px;}
+.ch-n{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:0.14em;display:block;margin-bottom:4px;}
+.ch-t{color:#fdf8f0;font-family:'Noto Serif SC',serif;font-size:16.5px;font-weight:900;line-height:1.35;}
+.h2{font-family:'Noto Serif SC',serif;font-size:13.5px;font-weight:700;color:var(--mast);
+  margin:16px 32px 7px;line-height:1.45;padding-left:9px;border-left:3px solid var(--accent);}
+.tx{margin:0 32px 9px;font-size:12.4px;line-height:1.78;}
+.tx b{color:var(--mast);}
+.risk{margin:12px 32px;}
+.risk-i{padding:9px 0;border-bottom:1px dotted var(--border);font-size:12.2px;line-height:1.7;}
+.risk-i:last-child{border-bottom:none;}
+.risk-i b{color:var(--accent-deep);}
+@media(max-width:600px){.abs,.toc,.ch,.h2,.tx{padding-left:18px;padding-right:18px;}
+  .h2,.tx,.risk{margin-left:18px;margin-right:18px;} .fig{margin-left:12px;margin-right:12px;}}
+
 </style>
 </head>
 <body>
@@ -237,227 +268,310 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
     <span class="mast-brand">怀新投研 · 产业专题</span>
     <span class="mast-vol">VOL.SP01</span>
   </div>
-  <div class="mast-title">液冷已进入订单确认阶段，<em>泵与 CDU 领先，冷板格局未定</em></div>
-  <div class="mast-subtitle">2026.08.03 - 09.02 · 一手纪要与公开资料交叉核对</div>
+  <div class="mast-title">从可选到必选：液冷进入订单确认期，<em>价值量向二次侧集中</em></div>
+  <div class="mast-subtitle">液冷行业深度报告 · 2026.09.03 · 覆盖区间 2026.08.03 - 09.02</div>
 </div>
 
-<div class="verdict-bar">
-  <div class="verdict-label">全篇结论</div>
-  <div class="verdict-text">泵与 CDU 已把订单写进定期报告，是当前证据最硬的两个环节；CDU 另有一层供给能力缺口，冷板厂普遍做不了、须外找代工。冷板需求确定但至少两家跨界者已官宣产能，格局未定。<em>订单集中在下游，利润却在向上游迁移</em>。</div>
+<div class="abs">
+  <div class="abs-h">核心观点</div>
+  <div class="abs-i"><span class="abs-n">1</span><div class="abs-b"><b>功率越界使液冷从可选变为必选，架构侧的确定性已经落定。</b>ASHRAE 建议每机柜功率超过 20kW 即改用液冷，工程实务拐点在 40 至 50kW，而当前主流 AI 机柜功率已达 190 至 230kW，为该拐点的三倍以上。芯片侧同步推进，加速器功耗由 100W 级升至超过 1000W，新一代单芯片 TDP 达 2300W，已越过铜 300 W/cm² 的热流承载上限。液冷渗透率按 AI 芯片口径 2024 年 14%、2025 年 33%、<b>2026 年 53%</b>、2027 年接近 60%，其中 2026 年这一数字在九个月内由 47% 上修至 53%。新一代机柜已于 8 月 22 日进入全面量产爬坡并采用 100% 全液冷，出货前提由此确定。</div></div>
+  <div class="abs-i"><span class="abs-n">2</span><div class="abs-b"><b>单柜液冷价值量约 68 万元，二次侧占七成以上，自下而上与自上而下测算收敛。</b>整柜拆解显示冷板每柜约 117 块、单价 200 至 300 美元，合计 17 至 25 万元；加计 CDU、分水器、快接头与管路后二次侧约 36 万元，再加一次侧全套约 68 万元。按全球年液冷机柜量 3.5 万台测算，<b>2025 年全球市场约 33.5 亿美元</b>，较自上而下的 30 亿美元高 12%，两者相互印证；由后者反推的隐含机柜量为 3.1 万台，与产业口径一致。代际上，液冷散热组件单柜价值量由 49,860 美元升至 55,710 美元，提升约 11.7%。</div></div>
+  <div class="abs-i"><span class="abs-n">3</span><div class="abs-b"><b>八个环节兑现进度分化，泵与 CDU 领先，CDU 另有一层供给能力缺口。</b>泵是全链唯一走完卖方预测、公司自述到定期报告三级跳的环节，半年报披露终端客户订单超 5 万台、130 余个项目在推进。CDU 的关键变化不在需求而在供给：<b>冷板厂普遍不具备 CDU 生产能力，须外找代工</b>，卡位由此溢出至温控出身的厂商，这是能力缺口而非产能缺口，追平难度更高。冷板需求最确定但格局最不确定，本月至少两家跨界者官宣产能，且均从加工工艺端而非材料端切入。</div></div>
+  <div class="abs-i"><span class="abs-n">4</span><div class="abs-b"><b>订单集中在下游，利润正在向上游迁移，国产供应链沿三条路径突破。</b>一线系统厂上半年营收增长 17.2%，归母净利下滑 14.3%，毛利率回落 1.2 个百分点，同期上游精密设备与部件订单高增。需求侧最早的第三方验证来自台系散热三家 7 月营收同比 57.4%、116.7% 与 91.0%。国产厂商的三条路径分别是海外链代工、云厂商直供与本土算力链直客，<b>盈利空间依次抬升</b>。</div></div>
+  <div class="abs-i"><span class="abs-n">5</span><div class="abs-b"><b>未来三到六个月的验证锚点是毛利率、CDU 代工订单与定期报告口径。</b>冷板环节看毛利率而非订单，跨界产能集中在四季度至明年上半年落地，价格拐点会先出现在毛利率上；CDU 看代工关系是否固化为长期协议；泵看四季度能否由订单转为收入。反向信号是液冷渗透率停滞、跨界者产能集中释放压低冷板毛利、以及云厂商资本开支节奏放缓。</div></div>
 </div>
 
-<div class="lead">
-<p>八月上旬，液冷的讨论对象还是渗透率与市场空间；下旬转为在手订单台数、交付周期、验厂进度与量产爬坡。分界点在 8 月 20 日，一家泵企在半年报中披露液冷泵订单超 5 万台。</p>
-<p>本报告分三部分：产业逻辑、八个环节的兑现进度、A 股卡位表。外部公开资料与自有一手纪要各占约一半，出处均在正文标明。</p>
+<div class="toc">
+  <div class="toc-h">目录</div>
+  <div class="toc-i"><b>一、</b>需求：功率越过风冷边界，液冷从可选变为必选</div>
+  <div class="toc-s">1.1 功率与热流密度双双越界　1.2 渗透率过半且被上修　1.3 全液冷成为出货前提</div>
+  <div class="toc-i"><b>二、</b>空间：单柜价值量 68 万元，两种测算路径相互印证</div>
+  <div class="toc-s">2.1 单柜价值量分解　2.2 关键假设　2.3 测算结果与交叉验证　2.4 各机构口径对照与中国市场</div>
+  <div class="toc-i"><b>三、</b>环节：价值量集中在二次侧，八个环节兑现进度分化</div>
+  <div class="toc-s">3.1 兑现进度总览　3.2 CDU　3.3 液冷泵　3.4 冷板　3.5 快接头与波纹管　3.6 机柜结构件　3.7 光模块液冷 Cage　3.8 一次侧　3.9 上游材料</div>
+  <div class="toc-i"><b>四、</b>格局：三条商业模式路径决定国产厂商的盈利空间</div>
+  <div class="toc-s">4.1 技术路线分工　4.2 三条突破路径　4.3 产业链与卡位表</div>
+  <div class="toc-i"><b>五、</b>产业含义：议价位置的迁移比份额更值得跟踪</div>
+  <div class="toc-i"><b>六、</b>风险提示</div>
+  <div class="toc-h" style="margin-top:12px">图表目录</div>
+  <div class="toc-s">图表1 风冷门槛与机柜功率　图表2 四代机柜功率　图表3 加速器 TDP　图表4 液冷渗透率　图表5 单柜功率公开口径　图表6 单柜价值量分解　图表7 代际价值量提升　图表8 关键假设　图表9 单位价值量分解　图表10 测算结果　图表11 交叉验证　图表12 全球市场各机构口径　图表13 中国液冷服务器　图表14 三条技术路线对比　图表15 台系三家营收　图表16 利润分布　图表17 八环节兑现进度总览　图表18 波纹管用量　图表19 线束盒订单指引　图表20 产业链结构　图表21 算力散热用铜　图表22 陶瓷价值量　图表23 三条突破路径　图表24 卡位表　图表25 跟踪清单</div>
 </div>
 
-<div class="part-hd">
-  <span class="part-num">PART 1 / 3</span>
-  <div class="part-title">产业逻辑：功率、渗透率与市场规模</div>
-  <div class="part-sub">数字均标注来源机构与统计边界</div>
-</div>
+<div class="ch"><span class="ch-n">CHAPTER 1</span>
+<div class="ch-t">一、需求：功率越过风冷边界，液冷从可选变为必选</div></div>
 
-<div class="sub">
-  <div class="sub-h">1.1　功率已越过风冷的工程边界</div>
-  <div class="sub-b">
-  <p>ASHRAE 建议每机柜功率超过 20kW 即改用液冷，工程实务上的拐点在 40 至 50kW。<em>当前主流 AI 机柜功率约为该拐点的三倍</em>。</p>
-  <p>芯片侧的推力更直接。加速器功耗已从 100W 级升至超过 1000W，云厂商预计 2030 年前单机柜机器学习负载将超过 500kW，追踪机构预计 2029 年前沿 GPU 的 TDP 将超过 4000W。在这一量级上，液冷是设备运行的前提而非能效选项。</p>
-  <div class="src-line">来源：ASHRAE TC 9.9 建议｜Google Cloud Blog 2025-04-30｜Dell'Oro Group 2026-01-08</div>
-  </div>
+<div class="h2">1.1　功率与热流密度双双越过风冷的承载区间</div>
+<p class="tx">液冷的必要性来自两条同时抬升的曲线：机柜级功率密度与芯片级热流密度。二者分别越过风冷在系统层面与单点层面的承载上限，共同把液冷由能效选项推为运行前提。</p>
+<p class="tx"><b>机柜层面，风冷的临界是一段区间而非一个点。</b>ASHRAE 建议每机柜功率超过 20kW 即改用液冷，这是面向标准的保守门槛；工程实务上的拐点在 40 至 50kW，再往上并非不可行，而是风量、噪声与占地的代价陡升。设备厂商白皮书的口径与后者接近，称越来越多机房机柜功率超过 20kW、许多机构正在部署 50kW 以上机柜。当前主流 AI 机柜功率已达 190 至 230kW，为工程拐点的三倍以上。</p><div class="fig">
+<div class="fig-t">图表1：风冷的建议门槛与工程拐点均已被当前机柜功率越过</div>
+<svg viewBox="0 0 640 208" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><text x="162" y="36" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">ASHRAE 建议改用液冷门槛</text><rect x="170.0" y="25" width="13.5" height="16" fill="#a16207" rx="2"/><text x="190.53846153846155" y="37" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">20kW</text><text x="162" y="68" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">风冷工程实务拐点</text><rect x="183.5" y="57" width="20.3" height="16" fill="#b45309" rx="2"/><text x="210.84615384615384" y="69" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">40–50kW</text><text x="162" y="100" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">上上代旗舰机柜 NVL72</text><rect x="244.5" y="89" width="13.5" height="16" fill="#1d4ed8" rx="2"/><text x="265.0" y="101" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">120kW</text><text x="162" y="132" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">当前这一代（测算）</text><rect x="298.6" y="121" width="27.1" height="16" fill="#92400e" rx="2"/><text x="332.6923076923077" y="133" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">190–230kW</text><text x="162" y="164" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">远期高密方案 NVL576</text><rect x="569.4" y="153" width="13.5" height="16" fill="#dc2626" rx="2"/><text x="589.9230769230769" y="165" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">600kW</text><text x="170" y="204" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">横轴为单机柜功率（kW）。当前主流 AI 机柜已达风冷工程拐点的三倍以上</text></svg>
+<div class="fig-s">资料来源：ASHRAE TC 9.9 建议、行业综述、NVIDIA 产品页与供应链测算，怀新投研整理</div>
+</div><div class="fig">
+<div class="fig-t">图表2：四代机柜功率抬升，全液冷自当前这一代起成为出货前提</div>
+<svg viewBox="0 0 640 210" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="84.5" y="144.6" width="72.0" height="23.4" fill="#1d4ed8" rx="2"/><text x="120.5" y="137.61016949152543" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">120</text><text x="120.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">上上代</text><text x="120.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">NVL72</text><rect x="217.5" y="141.3" width="72.0" height="26.7" fill="#1d4ed8" rx="2"/><text x="253.5" y="134.29661016949152" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">132–142</text><text x="253.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">上一代</text><text x="253.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">旗舰机柜</text><rect x="350.5" y="127.1" width="72.0" height="40.9" fill="#b45309" rx="2"/><text x="386.5" y="120.0677966101695" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">190–230</text><text x="386.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">当前这一代</text><text x="386.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">（测算）</text><rect x="345.5" y="103.1" width="82.0" height="68.9" fill="none" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2" rx="3"/><rect x="483.5" y="51.1" width="72.0" height="116.9" fill="#dc2626" rx="2"/><text x="519.5" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">600</text><text x="519.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">远期</text><text x="519.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">NVL576</text><text x="40" y="206" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">单位 kW。当前这一代厂商未公布官方规格，取供应链测算区间中值作图</text></svg>
+<div class="fig-s">资料来源：NVIDIA 产品页、GTC 2025、第三方部署方与 SemiAnalysis 等供应链测算，怀新投研整理</div>
 </div>
+<p class="tx"><b>芯片层面，热流密度的越界比功率更早发生。</b>加速器功耗已由 100W 级升至超过 1000W，新一代单芯片 TDP 达 2300W。铜的导热率为 390 至 400 W/(m·K)、铝为 237，二者热流承载普遍低于 300 W/cm²。当单点热流超过这一区间，问题不再是把热量搬走的效率，而是热量能否从裸片扩散出来。这正是金刚石一类高导热材料进入讨论的物理起点，也是它与液冷分工的边界：<b>金刚石解决芯片级热点扩散，液冷解决系统级排热，两者互补而非替代</b>。</p><div class="fig">
+<div class="fig-t">图表3：加速器功耗四年跨越一个数量级，越过铜的热流承载上限</div>
+<svg viewBox="0 0 640 210" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="84.5" y="165.1" width="72.0" height="2.9" fill="#1d4ed8" rx="2"/><text x="120.5" y="158.07627118644066" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">100</text><text x="120.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">上一代</text><text x="120.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">加速器</text><rect x="217.5" y="138.8" width="72.0" height="29.2" fill="#b45309" rx="2"/><text x="253.5" y="131.76271186440678" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">1000+</text><text x="253.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">当前</text><text x="253.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">主流</text><rect x="350.5" y="100.8" width="72.0" height="67.2" fill="#92400e" rx="2"/><text x="386.5" y="93.7542372881356" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">2300</text><text x="386.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">新一代</text><text x="386.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">单芯片</text><rect x="483.5" y="51.1" width="72.0" height="116.9" fill="#dc2626" rx="2"/><text x="519.5" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">4000+</text><text x="519.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2029E</text><text x="519.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">前沿 GPU</text><text x="40" y="206" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">单位 W。铜的热流承载普遍低于 300 W/cm²，2300W 已越过其单点扩散能力</text></svg>
+<div class="fig-s">资料来源：Google Cloud Blog 2025-04-30、Dell'Oro Group 2026-01-08、产业调研，怀新投研整理</div>
+</div>
+<p class="tx">云厂商预计 2030 年前单机柜机器学习负载将超过 500kW，追踪机构预计 2029 年前沿 GPU 的 TDP 将超过 4000W。两条曲线都没有转向的迹象。</p>
+
+<div class="h2">1.2　渗透率 2026 年过半，且该预测在九个月内被上修</div>
+<p class="tx">按 AI 芯片口径，液冷渗透率 2024 年 14%、2025 年约 33%、2026 年 53%、2027 年接近 60%。需要注意分母是 AI 芯片，不是机柜数或机房面积。</p>
+<p class="tx"><b>预测的修正方向同样构成证据。</b>同一机构 2025 年 11 月对 2026 年的预测为 47%，九个月后上修至 53%。渗透率预测的上修意味着实际部署跑在了模型前面，这是需求超出预期最直接的证据形态。云厂商侧可确认的部署规模为吉瓦级、覆盖 2000 个以上 TPU Pod，液冷机队七年可用性约 99.999%，自 2018 年的 TPU v3 起持续部署。</p><div class="fig">
+<div class="fig-t">图表4：液冷渗透率 2026 年过半，该预测在九个月内被上修 6 个百分点</div>
+<svg viewBox="0 0 640 210" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="84.5" y="140.7" width="72.0" height="27.3" fill="#1d4ed8" rx="2"/><text x="120.5" y="133.71186440677965" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">14%</text><text x="120.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2024</text><rect x="217.5" y="103.7" width="72.0" height="64.3" fill="#1d4ed8" rx="2"/><text x="253.5" y="96.6779661016949" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">33%</text><text x="253.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2025</text><rect x="350.5" y="64.7" width="72.0" height="103.3" fill="#b45309" rx="2"/><text x="386.5" y="57.69491525423729" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">53%</text><text x="386.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2026E</text><rect x="345.5" y="40.7" width="82.0" height="131.3" fill="none" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2" rx="3"/><rect x="483.5" y="51.1" width="72.0" height="116.9" fill="#92400e" rx="2"/><text x="519.5" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">接近60%</text><text x="519.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2027E</text><text x="40" y="206" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">按 AI 芯片口径。2026 年预测由 2025 年 11 月的 47% 上修至 53%</text></svg>
+<div class="fig-s">资料来源：TrendForce 官方新闻稿 2025-08-21 / 2026-08-17、TrendForce Consulting 2025-11-27</div>
+</div>
+<div class="h2">1.3　架构确定性已经落定：全液冷成为出货前提</div>
+<p class="tx">公开流传的机柜功率数字多数没有厂商背书，官方规格只有两个。</p>
 
 <div class="numbox">
-  <div class="numbox-h">单柜功率 · 已公开的规格与测算</div>
+  <div class="numbox-h">图表5：单柜功率的公开口径，官方规格仅两档</div>
   <table>
-    <tr><th style="width:30%">平台</th><th style="width:22%">单柜功率</th><th>来源</th></tr>
-    <tr><td>上上代旗舰机柜（NVL72）</td><td class="n">标称 120kW</td><td>芯片厂商产品页，官方规格</td></tr>
+    <tr><th style="width:30%">平台</th><th style="width:22%">单柜功率</th><th>来源性质</th></tr>
+    <tr><td>上上代旗舰机柜（NVL72）</td><td class="n">标称 120kW</td><td>芯片厂商产品页，<strong>官方规格</strong></td></tr>
     <tr><td>上一代旗舰机柜</td><td class="n">132–142kW</td><td>第三方部署方与分析机构</td></tr>
     <tr><td>当前这一代</td><td class="n">190–230kW</td><td>供应链测算，厂商未公布官方规格</td></tr>
-    <tr><td>远期高密方案（NVL576）</td><td class="n">600kW</td><td>厂商 2025 年技术大会，官方</td></tr>
+    <tr><td>远期高密方案（NVL576）</td><td class="n">600kW</td><td>厂商 2025 年技术大会，<strong>官方规格</strong></td></tr>
   </table>
+  <div class="fig-s">资料来源：NVIDIA 产品页与 GTC 2025、第三方部署方、SemiAnalysis 等供应链测算，怀新投研整理</div>
 </div>
 
-<div class="sub">
-  <div class="sub-b">
-  <p>两处易错点：当前这一代平台的品牌名已由 NVL144 改为 NVL72；芯片厂商推的 800VDC 与云厂商推的 ±400VDC 不是同一方案，后者正负极间总压差为 800V。</p>
-  <p>比功率数字更具约束力的是厂商已确认的工程特征：45℃ 液冷、液冷母排、100% 液冷计算托盘、无风扇全液冷设计。该平台机柜已于 8 月 22 日进入全面量产爬坡，<em>全液冷成为出货前提</em>，这决定了下游各环节的时间表。</p>
-  <div class="src-line">来源：NVIDIA 产品页与 2025-10-13 官方博文｜NVIDIA GTC 2025（经 The Register 转述）｜Google Cloud Blog 2025-04-30｜SemiAnalysis 等供应链测算</div>
-  </div>
+<p class="tx"><b>对产业链更具约束力的是工程特征而非功率数字。</b>厂商已确认新一代平台采用 45℃ 液冷、液冷母排、100% 液冷计算托盘与无风扇全液冷设计。该平台机柜已于 8 月 22 日进入全面量产爬坡，全液冷由此成为出货前提，而非配置选项。工程特征直接决定哪些零件必须存在，这是下游各环节时间表的锚点。</p>
+<p class="tx">引用相关规格时有两处易错：当前这一代平台的品牌名已由 NVL144 改为 NVL72；芯片厂商推的 800VDC 与云厂商推的 ±400VDC 不是同一方案，后者正负极间总压差为 800V。</p>
+
+<div class="ch"><span class="ch-n">CHAPTER 2</span>
+<div class="ch-t">二、空间：单柜价值量 68 万元，两种测算路径相互印证</div></div>
+
+<p class="tx">市场规模的机构口径相差可达 2.2 倍，直接引用任何一家都无法判断其边界。本章从单柜价值量出发自下而上搭一遍，再与自上而下的第三方口径交叉验证，全部假设与来源逐条列明，读者可自行复算。</p>
+
+<div class="h2">2.1　单柜价值量分解：二次侧占七成以上</div>
+<p class="tx">整柜拆解给出的结构是清楚的。冷板每柜约 117 块、单价 200 至 300 美元，合计 17 至 25 万元；加计 CDU、分水器、快接头与全套管路后，二次侧合计约 36 万元；再加一次侧的冷源、干冷器与冷却塔，全套约 68 万元。行业口径下一次侧占 25% 至 30%、二次侧占 70% 至 75%，与该分解一致。</p><div class="fig">
+<div class="fig-t">图表6：单柜全套液冷价值量约 68 万元，二次侧占七成以上</div>
+<svg viewBox="0 0 640 107" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><rect x="20.0" y="14" width="185.3" height="30" fill="#b45309"/><text x="112.6470588235294" y="33" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">17–25 万</text><rect x="205.3" y="14" width="229.4" height="30" fill="#92400e"/><text x="320.0" y="33" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">约 26 万</text><rect x="434.7" y="14" width="185.3" height="30" fill="#1d4ed8"/><text x="527.3529411764706" y="33" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">约 21 万</text><text x="20" y="60" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">合计 约 68 万元/柜</text><rect x="20" y="66" width="10" height="10" fill="#b45309" rx="1"/><text x="36" y="74" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">冷板（117 块 × 200–300 美元）　17–25 万</text><rect x="20" y="85" width="10" height="10" fill="#92400e" rx="1"/><text x="36" y="93" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">CDU、分水器、快接头与管路　约 26 万</text><rect x="20" y="104" width="10" height="10" fill="#1d4ed8" rx="1"/><text x="36" y="112" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">一次侧（冷源、干冷器、冷却塔）　约 21 万</text><text x="20" y="104" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">仅计二次侧散热组件时约 36 万元；一次侧占 25%–30%、二次侧占 70%–75%</text></svg>
+<div class="fig-s">资料来源：整柜拆解、摩根士丹利液冷散热组件测算、行业一二次侧占比口径，怀新投研整理</div>
+</div>
+<p class="tx"><b>二次侧内部，CDU 是单体价值量最大的部件。</b>它位于一次侧与二次侧之间，负责将机房冷源的冷量分配至机柜内的冷板回路，技术集成度最高。冷板用量最大但标准化程度也最高，快接头与分水器单价低、但具备消耗品属性。这一分布决定了后文各环节的排序。</p>
+<p class="tx">代际上，液冷散热组件的单柜价值量由上一代的 49,860 美元升至下一代的 55,710 美元，提升约 11.7%。价值量的增长慢于功率的增长，说明单位散热能力的成本在下降，这与冷板环节标准化、供给增员的判断相互印证。</p><div class="fig">
+<div class="fig-t">图表7：液冷散热组件代际价值量提升约 11.7%</div>
+<svg viewBox="0 0 640 210" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="151.0" y="63.3" width="72.0" height="104.7" fill="#1d4ed8" rx="2"/><text x="187.0" y="56.33145313655157" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">49,860</text><text x="187.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">上一代</text><text x="187.0" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">旗舰机柜</text><rect x="417.0" y="51.1" width="72.0" height="116.9" fill="#b45309" rx="2"/><text x="453.0" y="44.05084745762713" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">55,710</text><text x="453.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">下一代</text><text x="453.0" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">机柜</text><text x="40" y="206" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">单位：美元/柜，指液冷散热组件，不含一次侧</text></svg>
+<div class="fig-s">资料来源：摩根士丹利测算，怀新投研整理</div>
+</div>
+<div class="h2">2.2　关键假设</div>
+<p class="tx">下表为测算所用的全部参数。每条注明来源性质，区分行业口径、第三方测算与我们的假设。</p>
+
+<div class="numbox">
+  <div class="numbox-h">图表8：关键假设与来源</div>
+  <table>
+    <tr><th style="width:26%">参数</th><th style="width:20%">取值</th><th>来源性质</th></tr>
+    <tr><td>全球年液冷机柜量</td><td class="n">3.5 万台</td><td>产业口径</td></tr>
+    <tr><td>单柜液冷价值量（全口径）</td><td class="n">68 万元</td><td>整柜拆解，见图表 9</td></tr>
+    <tr><td>单柜液冷价值量（仅二次侧）</td><td class="n">36 万元</td><td>整柜拆解，见图表 9</td></tr>
+    <tr><td>一次侧价值量占比</td><td class="n">25%–30%</td><td>行业口径</td></tr>
+    <tr><td>二次侧价值量占比</td><td class="n">70%–75%</td><td>行业口径</td></tr>
+    <tr><td>冷板单柜用量</td><td class="n">117 块</td><td>整柜拆解</td></tr>
+    <tr><td>冷板单价</td><td class="n">200–300 美元</td><td>整柜拆解</td></tr>
+    <tr><td>美元兑人民币</td><td class="n">7.1</td><td>我们的假设，用于口径换算</td></tr>
+    <tr><td>液冷渗透率（AI 芯片口径）</td><td class="n">2026 年 53%</td><td>第三方机构预测</td></tr>
+  </table>
+  <div class="fig-s">资料来源：整柜拆解、行业调研、TrendForce 2026-08-17，怀新投研整理</div>
 </div>
 
-<div class="sub">
-  <div class="sub-h">1.2　渗透率 2026 年 53%，且被上修过</div>
-  <div class="sub-b">
-  <p>按 AI 芯片口径，液冷渗透率 2024 年 14%、2025 年约 33%、2026 年 53%、2027 年接近 60%。</p>
-  <p>同一机构 2025 年 11 月对 2026 年的预测为 47%，九个月后上修至 53%。<em>上修幅度本身即是需求超出预期的证据</em>。</p>
-  <p>云厂商侧可确认的部署规模为吉瓦级、覆盖 2000 个以上 TPU Pod，液冷机队七年可用性约 99.999%，自 2018 年的 TPU v3 起持续部署。</p>
-  <div class="src-line">来源：TrendForce 官方新闻稿 2025-08-21 / 2026-08-17，TrendForce Consulting 2025-11-27｜Google Cloud Blog 2025-04-30 及 2025-11</div>
-  </div>
-</div>
+<div class="h2">2.3　测算结果与交叉验证</div>
 
-<div class="sub">
-  <div class="sub-h">1.3　市场规模：口径边界决定数字大小</div>
-  <div class="sub-b">
-  <p>各机构对全球液冷市场的测算相差可达 2.2 倍，差异来自是否将工程安装与机房改造计入。</p>
-  </div>
+<div class="numbox">
+  <div class="numbox-h">图表9：单柜价值量分解（自下而上的核心）</div>
+  <table>
+    <tr><th style="width:34%">环节</th><th style="width:20%">单柜价值量</th><th style="width:16%">占全口径</th><th>说明</th></tr>
+    <tr><td>冷板</td><td class="n">17–25 万元</td><td class="n">约 31%</td><td>117 块 × 200–300 美元</td></tr>
+    <tr><td>CDU、分水器、快接头与管路</td><td class="n">约 26 万元</td><td class="n">约 38%</td><td>CDU 为其中单体价值量最大项</td></tr>
+    <tr><td><strong>二次侧小计</strong></td><td class="n"><strong>约 36 万元</strong></td><td class="n"><strong>约 70%</strong></td><td>与行业口径 70%–75% 一致</td></tr>
+    <tr><td>一次侧（冷源、干冷器、冷却塔）</td><td class="n">约 21 万元</td><td class="n">约 30%</td><td>按机房配置，非随柜出货</td></tr>
+    <tr><td><strong>全口径合计</strong></td><td class="n"><strong>约 68 万元</strong></td><td class="n"><strong>100%</strong></td><td>—</td></tr>
+  </table>
+  <div class="fig-s">资料来源：整柜拆解与行业占比口径，怀新投研测算</div>
 </div>
 
 <div class="numbox">
-  <div class="numbox-h">全球液冷市场规模 · 各机构口径原样并列</div>
+  <div class="numbox-h">图表10：2025 年全球液冷市场规模测算结果</div>
   <table>
-    <tr><th style="width:24%">机构</th><th style="width:19%">基准年</th><th style="width:19%">目标年</th><th>统计边界</th></tr>
-    <tr><td>Dell'Oro Group</td><td class="n">2025 约 30 亿美元</td><td class="n">2029 约 70 亿美元</td><td>厂商侧出货收入，不含工程安装与机房改造</td></tr>
-    <tr><td>Grand View Research</td><td class="n">2025 约 66.5 亿美元</td><td class="n">2033 约 294.6 亿美元</td><td>方案与服务全包</td></tr>
-    <tr><td>Global Market Insights</td><td class="n">2025 约 48 亿美元</td><td class="n">2035 约 271 亿美元</td><td>CAGR 18.2%</td></tr>
-    <tr><td>MarkNtel Advisors</td><td class="n">2025 约 55.1 亿美元</td><td class="n">2030 约 190.3 亿美元</td><td>CAGR 约 22.95%</td></tr>
-    <tr><td>ResearchAndMarkets</td><td class="n">2024 约 8.7 亿美元</td><td class="n">2030 约 107 亿美元</td><td>CAGR 51.93%</td></tr>
+    <tr><th style="width:30%">路径</th><th style="width:24%">计算式</th><th style="width:20%">结果</th><th>口径</th></tr>
+    <tr><td>自下而上·仅二次侧</td><td class="n">3.5 万柜 × 36 万元</td><td class="n">126 亿元<br>≈ 17.7 亿美元</td><td>散热组件</td></tr>
+    <tr><td>自下而上·全口径</td><td class="n">3.5 万柜 × 68 万元</td><td class="n">238 亿元<br>≈ 33.5 亿美元</td><td>含一次侧</td></tr>
+    <tr><td>自上而下·第三方</td><td class="n">—</td><td class="n">约 30 亿美元</td><td>厂商出货收入</td></tr>
+    <tr><td><strong>差异</strong></td><td class="n">33.5 / 30.0</td><td class="n"><strong>+12%</strong></td><td>全口径对照</td></tr>
+    <tr><td>由第三方口径反推机柜量</td><td class="n">30 亿美元 ÷ 68 万元</td><td class="n">约 3.1 万台</td><td>对照假设 3.5 万台</td></tr>
   </table>
+  <div class="fig-s">资料来源：怀新投研测算；对照口径为 Dell'Oro Group 2026-01-08</div>
+</div><div class="fig">
+<div class="fig-t">图表11：自下而上与自上而下测算收敛，差异 12%</div>
+<svg viewBox="0 0 640 150" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><text x="147" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">自下而上·仅二次侧</text><rect x="155" y="25" width="208.7" height="17" fill="#1d4ed8" rx="2"/><text x="370.70149253731347" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">17.7 亿美元</text><text x="147" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">自下而上·全口径</text><rect x="155" y="59" width="395.0" height="17" fill="#b45309" rx="2"/><text x="557.0" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">33.5 亿美元</text><text x="147" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">Dell&#x27;Oro 自上而下</text><rect x="155" y="93" width="353.7" height="17" fill="#92400e" rx="2"/><text x="515.7313432835821" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">30.0 亿美元</text><text x="155" y="146" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">2025 年全球液冷市场。全口径自下而上结果较 Dell&#x27;Oro 高 12%，两者相互印证</text></svg>
+<div class="fig-s">资料来源：怀新投研测算；对照口径为 Dell'Oro Group 2026-01-08</div>
 </div>
+<p class="tx"><b>两条路径收敛，误差在可接受区间。</b>全口径自下而上得到 33.5 亿美元，较第三方的 30 亿美元高 12%；反向由第三方口径推算的隐含机柜量为 3.1 万台，与产业口径的 3.5 万台相差 11%。两个方向的偏差幅度一致且互为镜像，说明差异主要来自机柜量与单柜价值量的估计区间，而非结构性口径错配。</p>
+<p class="tx">仅计二次侧的 17.7 亿美元显著低于第三方的 30 亿美元，这一差距恰好印证第三方口径包含一次侧。<b>引用任何液冷市场规模数字之前，先确认它是否包含一次侧</b>，这是本节测算最直接的用处。</p>
 
-<div class="sub">
-  <div class="sub-b">
-  <p>本报告以厂商出货收入口径为基线，即 2025 年约 30 亿美元、2029 年约 70 亿美元。该口径同期披露的季度实测增速为直接到芯片液冷 2025 年二季度同比增 156%。跨机构取平均没有意义，边界不同的数字不可合并。</p>
-  <p>国内市场以整机出货计，2024 年中国液冷服务器 23.7 亿美元、同比增 67.0%，出货超 23 万台；2029 年 162 亿美元，五年复合增速 46.8%。三家主要服务器厂商合计约七成份额，互联网、电信运营商、政府三个行业占约九成采购量。</p>
-  <div class="src-line">来源：Dell'Oro Group 2026-01-08｜Grand View Research 2025/2026｜Global Market Insights 2025｜MarkNtel Advisors 2025｜ResearchAndMarkets 2026-01-20｜IDC 中国 2025-04-08</div>
-  </div>
+<div class="h2">2.4　各机构口径对照与中国市场</div>
+<p class="tx">同为 2025 年的全球规模，最低的 30 亿美元与最高的 66.5 亿美元相差 2.2 倍，差异来自是否将工程安装、管路与机房改造计入。同为 2030 年前后的终值，给 107 亿美元的机构配了 51.93% 的复合增速，给 190.3 亿美元的机构却只配 22.95%，规模较小的一家增速反而更高，两者定义的并非同一对象。</p><div class="fig">
+<div class="fig-t">图表12：全球液冷市场的机构口径相差 2.2 倍，差异来自是否计入工程与服务</div>
+<svg viewBox="0 0 640 184" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><text x="177" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">Dell&#x27;Oro（厂商出货收入）</text><rect x="185" y="25" width="164.7" height="17" fill="#b45309" rx="2"/><text x="356.6616541353384" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">30 亿美元</text><text x="177" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">Global Market Insights</text><rect x="185" y="59" width="263.5" height="17" fill="#1d4ed8" rx="2"/><text x="455.45864661654133" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">48 亿美元</text><text x="177" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">MarkNtel Advisors</text><rect x="185" y="93" width="302.4" height="17" fill="#1d4ed8" rx="2"/><text x="494.42857142857144" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">55.1 亿美元</text><text x="177" y="139" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">Grand View（含方案与服务）</text><rect x="185" y="127" width="365.0" height="17" fill="#92400e" rx="2"/><text x="557.0" y="140" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">66.5 亿美元</text><text x="185" y="180" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">均为 2025 年基准规模。口径边界不同，不可合并或取平均</text></svg>
+<div class="fig-s">资料来源：Dell'Oro Group、Grand View Research、Global Market Insights、MarkNtel Advisors，怀新投研整理</div>
 </div>
+<p class="tx">本报告以厂商出货收入口径为基线，即 2025 年约 30 亿美元、2029 年约 70 亿美元；该口径同期披露的季度实测增速为直接到芯片液冷 2025 年二季度同比增 156%。跨机构取平均没有意义，边界不同的数字不可合并。</p>
+<p class="tx">国内市场以整机出货计，2024 年中国液冷服务器 23.7 亿美元、同比增 67.0%，出货超 23 万台；2029 年 162 亿美元，五年复合增速 46.8%。三家主要服务器厂商合计约七成份额，互联网、电信运营商、政府三个行业占约九成采购量。<b>集中度高意味着液冷部件厂商的客户结构同样集中</b>，这是后文格局判断的前提。</p><div class="fig">
+<div class="fig-t">图表13：中国液冷服务器五年复合增速 46.8%</div>
+<svg viewBox="0 0 640 210" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="151.0" y="150.9" width="72.0" height="17.1" fill="#1d4ed8" rx="2"/><text x="187.0" y="143.89077212806026" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">23.7</text><text x="187.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2024</text><rect x="417.0" y="51.1" width="72.0" height="116.9" fill="#b45309" rx="2"/><text x="453.0" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">162</text><text x="453.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2029E</text><text x="40" y="206" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">单位：亿美元，整机出货口径。2024 年同比增 67.0%，全年出货超 23 万台</text></svg>
+<div class="fig-s">资料来源：IDC 中国 2025-04-08，怀新投研整理</div>
+</div>
+<div class="ch"><span class="ch-n">CHAPTER 3</span>
+<div class="ch-t">三、环节：价值量集中在二次侧，八个环节兑现进度分化</div></div>
 
-<div class="sub">
-  <div class="sub-h">1.4　冷板式是主流路线，浸没受四重约束</div>
-  <div class="sub-b">
-  <p>冷板式（单相直接液冷）主导当前部署，原因是改造成本低、与既有风冷机房兼容、可平滑过渡。其局限在于仍需保留部分风冷处理内存、电源、网卡等非芯片器件。当前这一代平台已把冷板路线推至无风扇形态。</p>
-  <p>单相浸没在能效上更优，噪声与风机功耗归零，但受机房承重、工质成本、运维体系不兼容、器件认证四项约束。两相浸没理论能效最优，另多一层 PFAS 环保监管风险，其扩张需待芯片 TDP 继续上升。</p>
-  <p>过渡节奏上，液到风为当前主流方案，液到液预计自 2027 年起放量。</p>
-  <div class="src-line">来源：Dell'Oro Group 2026-01-08｜IDC 中国 2025-04-08｜TrendForce 2025-08-21</div>
-  </div>
-</div>
+<p class="tx">本章按证据强度而非价值量排序。同一条景气度在八个环节上的兑现程度差异极大，有的已进定期报告，有的仍停在方向性判断，混为一谈会得出错误结论。</p>
 
-<div class="part-hd">
-  <span class="part-num">PART 2 / 3</span>
-  <div class="part-title">结构：八个环节的兑现进度</div>
-  <div class="part-sub">按证据强度排列，每节给出环节定位、关键数据与结论</div>
+<div class="h2">3.1　兑现进度总览</div>
+<div class="numbox">
+  <div class="numbox-h">图表17：八个环节的兑现进度与确定性分级</div>
+  <table>
+    <tr><th style="width:15%">环节</th><th style="width:15%">最硬的证据</th><th style="width:11%">确定性</th><th>关键变量</th></tr>
+    <tr><td><strong>CDU</strong></td><td>供给能力缺口<br>参考验证名录</td><td><span class="mk mk-y">高</span></td><td>代工关系能否固化为长期协议</td></tr>
+    <tr><td><strong>液冷泵</strong></td><td>半年报订单<br>超 5 万台</td><td><span class="mk mk-y">高</span></td><td>四季度能否由订单转为收入</td></tr>
+    <tr><td><strong>冷板</strong></td><td>两家跨界者<br>官宣产能</td><td><span class="mk mk-o">中</span></td><td>毛利率，而非订单</td></tr>
+    <tr><td>快接头与波纹管</td><td>用量随架构<br>放大</td><td><span class="mk mk-o">中</span></td><td>八卡服务器占比爬升节奏</td></tr>
+    <tr><td>机柜结构件</td><td>订单指引<br>上修三分之一</td><td><span class="mk mk-o">中</span></td><td>单一客户集中度</td></tr>
+    <tr><td>光模块液冷 Cage</td><td>股权动作<br>方向性判断</td><td><span class="mk mk-s">中低</span></td><td>1.6T 出货节奏</td></tr>
+    <tr><td>一次侧</td><td>交付峰期<br>已至</td><td><span class="mk mk-s">低</span></td><td>机房项目披露有限</td></tr>
+    <tr><td>上游材料</td><td>铜有销量<br>其余分化</td><td><span class="mk mk-o">分化</span></td><td>四条线需分开判断</td></tr>
+  </table>
+  <div class="fig-s">资料来源：公司公告与定期报告、投资者关系活动记录表、产业调研，怀新投研整理</div>
 </div>
+<p class="tx">确定性分级的判据是证据形态：<b>高</b>指结论已由定期报告或公告承载；<b>中</b>指有公司自述或可验证的产能与订单动作；<b>中低与低</b>指仅有方向性判断或单一时点信息。</p>
 
-<div class="sub">
-  <div class="sub-b">
-  <p>三个贯穿全部环节的基准数据。</p>
-  <p><strong>价值量。</strong>整柜全套液冷 BOM 约 36 至 68 万元，含 CDU 与全套管路时取上限。某外资机构测算液冷散热组件上一代为 49,860 美元、下一代为 55,710 美元，<em>代际提升约 11.7%</em>。冷板每柜约 117 块、单价 200 至 300 美元，合计 17 至 25 万元。</p>
-  <p><strong>需求验证。</strong>台系散热三家 7 月营收同比分别为 57.4%、116.7% 与 91.0%。同期法说会指引三季度优于二季度、四季度液冷大规模出货，国内设备端排单已至四季度。</p>
-  <p><strong>利润分布。</strong>一线系统厂上半年营收增长 17.2%，归母净利下滑 14.3%，毛利率回落 1.2 个百分点；同期上游精密设备与部件订单高增。<em>订单集中在下游，利润在向上游迁移</em>。</p>
-  </div>
-</div>
+<div class="h2">3.2　CDU：本月唯一的供给能力缺口</div>
+<p class="tx"><b>CDU 的关键变化不在需求侧而在供给侧。</b>冷量分配单元位于一次侧与二次侧之间，是液冷系统中技术集成度最高、单体价值量最大的部件，分机架内与机房级两种形态。新一代平台标配液冷带动其空间较 2025 年数倍提升，这是需求侧背景。结构性信号出现在供给侧：<b>冷板厂普遍不具备 CDU 生产能力，须外找代工</b>。</p>
+<p class="tx">这一句的产业含义在于，液冷一级供应商的能力边界并不完整。冷板与 CDU 虽同属二次侧，但前者是精密加工与焊接问题，后者是换热效率、防泄漏与精密控制的系统集成问题，工艺谱系不同。卡位由此溢出至温控出身的厂商，这类厂商原本做的是机房级温控，具备流体系统集成经验。一家国内厂商的 1MW CDU 已进入芯片厂商参考验证名录并送样赴美测试，另一家云厂商的新一代 CDU 进入下单窗口。</p>
+<p class="tx">产品线宽度是能力缺口的另一面。能完整覆盖 CDU、分水器、预制化管路、室外干冷器、集成冷站与浸没箱体的公司，在 A 股属少数，多数标的只覆盖其中一两项。<b>能力缺口比产能缺口更难追平</b>，前者需要工程经验积累，后者只需资本开支，这是 CDU 确定性最高的原因。</p>
+<div class="chip-row"><span class="chip p">英维克</span><span class="chip p">同飞股份</span><span class="chip p">申菱环境</span><span class="chip">依米康</span><span class="chip">高澜股份</span><span class="chip">冰轮环境</span></div>
 
-<div class="seg">
-  <div class="seg-h"><span class="seg-n">01</span><span class="seg-t">CDU：供给能力缺口</span><span class="seg-r">兑现度 · 高</span></div>
-  <div class="seg-b">
-  <p><span class="tag tag-x">环节</span>冷量分配单元位于一次侧与二次侧之间，将机房冷源的冷量分配至机柜内冷板回路，是液冷系统中技术集成度最高、单体价值量最大的部件，分机架内与机房级两种形态。</p>
-  <p><span class="tag tag-o">一手</span>冷板厂普遍不具备 CDU 生产能力，须外找代工，卡位由此溢出至温控出身的厂商。一家国内厂商的 1MW CDU 已进入芯片厂商参考验证名录并送样赴美测试，另一家云厂商的新一代 CDU 进入下单窗口。新一代平台标配液冷，带动 CDU 空间较 2025 年数倍提升。</p>
-  <p><span class="tag tag-o">一手</span>能完整覆盖 CDU、分水器、预制化管路、室外干冷器、集成冷站与浸没箱体的公司，在 A 股属少数，多数标的只覆盖其中一两项。</p>
-  <p>CDU 是本月唯一从需求增长升级为供给能力受限的环节。能力缺口属工程经验积累问题，追平难度高于产能缺口，确定性在八个环节中最高。</p>
-  <div class="chip-row"><span class="chip p">英维克</span><span class="chip p">同飞股份</span><span class="chip p">申菱环境</span><span class="chip">依米康</span><span class="chip">高澜股份</span><span class="chip">冰轮环境</span></div>
-  </div>
-</div>
+<div class="h2">3.3　液冷泵：全链唯一走完三级跳的环节</div>
+<p class="tx">泵是 CDU 内部的动力源，按功率分两档，分别对应机架内与机房级 CDU。它是 CDU 中少数可独立定价、独立出货的部件，因而最早出现订单数据。</p>
+<p class="tx"><b>证据链的完整度在八个环节中最高。</b>一家泵企半年报披露液冷泵终端客户订单超 5 万台、130 余个项目在推进，9 月 2 日订单首次进入财报；另一家泵企 1 至 15kW 产品上半年累计交付约 2 万台，新增日产 200 台产线于 9 月初完成，产品覆盖 22kW 与 37kW 并储备 55kW。从卖方预测到公司自述再到定期报告，只有这一个环节走完了全程。</p>
+<p class="tx"><b>但完整的是订单证据，不是业绩证据。</b>前者自述该业务收入占比仍较低，后者同期归母净利同比下滑 68.7%。产能爬坡期的折旧与良率成本前置，收入确认滞后于订单，兑现窗口指向四季度及 2027 年。把订单数据直接当作业绩拐点会误判时点。</p>
+<div class="chip-row"><span class="chip p">飞龙股份</span><span class="chip">大元泵业</span></div>
 
-<div class="seg">
-  <div class="seg-h"><span class="seg-n">02</span><span class="seg-t">液冷泵：订单已进定期报告</span><span class="seg-r">兑现度 · 高</span></div>
-  <div class="seg-b">
-  <p><span class="tag tag-x">环节</span>CDU 内部的动力源，按功率分两档，分别对应机架内与机房级 CDU。它是 CDU 中少数可独立定价、独立出货的部件，因而最早出现订单数据。</p>
-  <p><span class="tag tag-o">一手</span>一家泵企半年报披露液冷泵终端客户订单超 5 万台、130 余个项目在推进，9 月 2 日订单首次进入财报。<em>这是全链唯一走完卖方预测、公司自述到定期报告三级跳的环节</em>。另一家泵企 1 至 15kW 产品上半年累计交付约 2 万台，新增日产 200 台产线于 9 月初完成，产品覆盖 22kW 与 37kW 并储备 55kW。</p>
-  <p><span class="tag tag-o">一手</span>前者自述该业务收入占比仍较低，后者同期归母净利同比下滑 68.7%。</p>
-  <p>泵的订单证据完整，业绩证据尚未出现。两家公司当期利润均在下滑，兑现窗口指向四季度及 2027 年。</p>
-  <div class="chip-row"><span class="chip p">飞龙股份</span><span class="chip">大元泵业</span></div>
-  </div>
-</div>
+<div class="h2">3.4　冷板：需求最确定，格局最不确定</div>
+<p class="tx">冷板直接贴合芯片，单柜用量约 117 块，是液冷中用量最大、标准化程度最高的部件。正因标准化，其门槛不在材料而在加工效率、良率与一致性。</p>
+<p class="tx"><b>本月的变化集中在供给侧。</b>一家精密制造企业规划大批量生产冷板式散热模组、客户以国产算力链为主，样品已送多家测试，预计四季度小批量供货；一家轴承保持架企业于 8 月 29 日公告在山东与广州两地投资合计 4.26 亿元建设液冷部件产线，年产 1500 万件套，产品为液冷板与汇流排，以冷锻冲压与金属注射成型替代传统数控加工。</p>
+<p class="tx">两家跨界者<b>均从加工工艺端而非材料端切入</b>，这反过来印证了该环节的真实门槛所在：谁能把单位工时和良率做到更优，谁就能拿到份额。工艺替代同时意味着成本曲线可能下移，这是冷板与其他环节最大的不同。</p>
+<p class="tx">供给增员通常领先于价格见顶。跨界产能集中在四季度至明年上半年落地，<b>该环节的领先指标是毛利率而非订单</b>——需求确定的前提下，价格与份额的博弈会先反映在毛利率上。</p>
+<div class="chip-row"><span class="chip p">领益智造</span><span class="chip p">鸿富瀚</span><span class="chip">中石科技</span><span class="chip">银轮股份</span><span class="chip">思泉新材</span><span class="chip">飞荣达</span><span class="chip">达瑞电子</span><span class="chip">金帝股份</span><span class="chip">飞亚达</span></div>
 
-<div class="seg">
-  <div class="seg-h"><span class="seg-n">03</span><span class="seg-t">冷板：需求确定，格局未定</span><span class="seg-r">兑现度 · 中</span></div>
-  <div class="seg-b">
-  <p><span class="tag tag-x">环节</span>直接贴合芯片的换热部件，单柜用量约 117 块，是液冷中用量最大、标准化程度最高的部件。门槛不在材料，而在加工效率、良率与一致性。</p>
-  <p><span class="tag tag-o">一手</span>本月变化集中在供给侧。一家精密制造企业规划大批量生产冷板式散热模组、客户以国产算力链为主，样品已送多家测试，预计四季度小批量供货。一家轴承保持架企业于 8 月 29 日公告在山东与广州两地投资合计 4.26 亿元建设液冷部件产线，年产 1500 万件套，产品为液冷板与汇流排，以冷锻冲压与金属注射成型替代传统数控加工。</p>
-  <p><span class="tag tag-o">一手</span>两家跨界者<em>均从加工工艺端而非材料端切入</em>，印证了该环节的真实门槛。后者的液冷业务尚处已公告投项目、未披露客户与收入的阶段。</p>
-  <p>供给增员领先于价格见顶。本月至少两家跨界者官宣产能，落地时点集中在四季度至明年上半年，该环节的领先指标是毛利率而非订单。</p>
-  <div class="chip-row"><span class="chip p">领益智造</span><span class="chip p">鸿富瀚</span><span class="chip">中石科技</span><span class="chip">银轮股份</span><span class="chip">思泉新材</span><span class="chip">飞荣达</span><span class="chip">达瑞电子</span><span class="chip">金帝股份</span><span class="chip">飞亚达</span></div>
-  </div>
+<div class="h2">3.5　快接头与波纹管：全链唯一具备重复采购属性</div>
+<p class="tx">快接头负责机柜与管路的可插拔连接，波纹管负责柔性连接与位移补偿，分水器负责将冷量分配至各节点。三者单价低，但用量随架构升级同步放大。</p>
+<p class="tx">八卡服务器占比预计由当前 10% 至 15% 升至 2027 年的 20% 至 25%，8U 风冷转向 2U 与 4U 液冷架构后每个 GPU 配备两个波纹管，机柜内外另需波纹管连接分水器以取代盲插，新一代机柜引入内置分水器后再增加两个。</p><div class="fig">
+<div class="fig-t">图表18：架构升级同步放大波纹管用量，且该部件具备重复采购属性</div>
+<svg viewBox="0 0 640 150" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><text x="142" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">每 GPU 配备</text><rect x="150" y="25" width="307.7" height="17" fill="#b45309" rx="2"/><text x="464.6923076923077" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">2 个</text><text x="142" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">机柜内外连接分水器</text><rect x="150" y="59" width="307.7" height="17" fill="#1d4ed8" rx="2"/><text x="464.6923076923077" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">额外增加</text><text x="142" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">新一代内置分水器</text><rect x="150" y="93" width="307.7" height="17" fill="#92400e" rx="2"/><text x="464.6923076923077" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">再增 2 个</text><text x="150" y="146" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">八卡服务器占比预计由当前 10%–15% 升至 2027 年 20%–25%；波纹管更换周期约三到五年</text></svg>
+<div class="fig-s">资料来源：产业调研，怀新投研整理</div>
 </div>
+<p class="tx"><b>更关键的是波纹管属半消耗品，更换周期约三到五年。</b>这使它成为全链少有的具备重复采购属性的部件，装机量会沉淀为后续的存量替换需求，收入结构因而不同于一次性交付的环节。一家该环节公司以收购公告控股了一家液冷技术公司，并说明现阶段产品产能与订单需求存在缺口、扩建正在推进。</p>
+<div class="chip-row"><span class="chip p">五洋自控</span><span class="chip">三花智控</span><span class="chip">永贵电器</span></div>
 
-<div class="seg">
-  <div class="seg-h"><span class="seg-n">04</span><span class="seg-t">快接头、波纹管与分水器：具备消耗品属性</span><span class="seg-r">兑现度 · 中</span></div>
-  <div class="seg-b">
-  <p><span class="tag tag-x">环节</span>流体连接与分配部件。快接头负责机柜与管路的可插拔连接，波纹管负责柔性连接与位移补偿，分水器负责将冷量分配至各节点。</p>
-  <p><span class="tag tag-o">一手</span>用量随架构升级放大：八卡服务器占比预计由当前 10% 至 15% 升至 2027 年的 20% 至 25%，8U 风冷转向 2U 与 4U 液冷架构后每个 GPU 配备两个波纹管，机柜内外另需波纹管连接分水器以取代盲插，新一代机柜引入内置分水器后再增加两个。<em>波纹管属半消耗品，更换周期约三到五年</em>，是全链少有的具备重复采购属性的部件。</p>
-  <p><span class="tag tag-o">一手</span>一家该环节公司以收购公告控股了一家液冷技术公司，并说明现阶段产品产能与订单需求存在缺口、扩建正在推进。</p>
-  <p>三到五年的更换周期意味着装机量将沉淀为存量替换需求，这是该环节区别于其余环节之处。可跟踪的指标是用量逻辑而非单价弹性。</p>
-  <div class="chip-row"><span class="chip p">五洋自控</span><span class="chip">三花智控</span><span class="chip">永贵电器</span></div>
-  </div>
+<div class="h2">3.6　机柜结构件：架构变化带出的配套增量</div>
+<p class="tx">液冷架构改变柜内空间布局，风扇位置腾出、管路占位增加，支撑、走线与连接结构需重新设计。机柜线束盒客户上调订单指引，仅单一客户月出货量已增至 7 万只、年化有望超过 80 万只，此前市场预期为今年 30 万只以上、明年 60 万只。</p><div class="fig">
+<div class="fig-t">图表19：机柜线束盒订单指引上修约三分之一</div>
+<svg viewBox="0 0 640 210" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="106.7" y="124.1" width="72.0" height="43.9" fill="#1d4ed8" rx="2"/><text x="142.66666666666669" y="117.14406779661016" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">30 万只</text><text x="142.66666666666669" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">原预期</text><text x="142.66666666666669" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">今年</text><rect x="284.0" y="80.3" width="72.0" height="87.7" fill="#1d4ed8" rx="2"/><text x="320.0" y="73.28813559322033" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">60 万只</text><text x="320.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">原预期</text><text x="320.0" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">明年</text><rect x="461.3" y="51.1" width="72.0" height="116.9" fill="#b45309" rx="2"/><text x="497.33333333333337" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">80 万只+</text><text x="497.33333333333337" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">单一客户</text><text x="497.33333333333337" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">年化实际</text><text x="40" y="206" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">单一客户月出货量已增至 7 万只。该口径仅覆盖一个客户，集中度风险对称</text></svg>
+<div class="fig-s">资料来源：产业调研，怀新投研整理</div>
 </div>
+<p class="tx">架构侧同步放大用量：新一代交换托盘由 9 层翻倍至 18 层、PCB 由 26 层升至 30 层，托盘数量翻倍带动液冷金属波纹管用量。<b>结构件的增量多由架构变化带出，而非自身涨价</b>，因此跟踪对象应是架构迭代节奏而非该环节的价格。风险来自单一客户集中度，指引上修与下修的速度对称。</p>
+<div class="chip-row"><span class="chip">恒林股份</span></div>
 
-<div class="seg">
-  <div class="seg-h"><span class="seg-n">05</span><span class="seg-t">机柜结构件与线束盒：订单指引上修</span><span class="seg-r">兑现度 · 中</span></div>
-  <div class="seg-b">
-  <p><span class="tag tag-x">环节</span>机柜内的支撑、走线与连接结构。液冷架构改变柜内空间布局，风扇位置腾出、管路占位增加，结构件需重新设计。</p>
-  <p><span class="tag tag-o">一手</span>机柜线束盒客户上调订单指引，仅单一客户月出货量已增至 7 万只、年化有望超过 80 万只，此前市场预期为今年 30 万只以上、明年 60 万只。该公司同时在洽谈搭载滑轨的液冷柜。</p>
-  <p><span class="tag tag-o">一手</span>架构侧同步放大用量：新一代交换托盘由 9 层翻倍至 18 层、PCB 由 26 层升至 30 层，托盘数量翻倍带动液冷金属波纹管用量。</p>
-  <p>该类配套件单价低，但订单指引的上修幅度在本月各环节中居前。风险来自单一客户集中度，指引上修与下修的速度对称。</p>
-  <div class="chip-row"><span class="chip">恒林股份</span></div>
-  </div>
-</div>
+<div class="h2">3.7　光模块液冷 Cage：产业逻辑成立，兑现度居后</div>
+<p class="tx">速率向 1.6T 与 3.2T 迭代后功耗密度抬升，光模块外部散热由鼠笼加散热器的风冷方案转向鼠笼加液冷板方案；内部以导热界面材料与均热板降低热阻，两环互补并存。该环节渗透率与价值量较 800G 风冷时明显上升，链主为国内厂商、格局集中。</p>
+<p class="tx">8 月 13 日晚一家光模块龙头公告拟斥资 17.47 亿元协议受让一家散热材料公司 10.47% 股权，受让价较当日收盘价折价 0.77%，承诺 12 个月不减持；公告写明预计产生较强协同效应，未披露供货协议或锁量条款。<b>股权绑定先于供货绑定，说明该环节仍处在卡位阶段而非放量阶段。</b></p>
+<p class="tx">这里有一处需要厘清的身份问题：<b>光模块厂商是液冷需求的产生方，不是液冷部件的供应方</b>。该卡位的承接方是有多年 Cage 业务积累、近两年切入液冷的连接器企业。市面名单常将两者混列，若不先厘清，整个环节的标的映射都会出错。</p>
+<div class="chip-row"><span class="chip p">奕东电子</span><span class="chip">意华股份</span></div>
 
-<div class="seg">
-  <div class="seg-h"><span class="seg-n">06</span><span class="seg-t">光模块液冷 Cage：格局集中，链主在国内</span><span class="seg-r">兑现度 · 中低</span></div>
-  <div class="seg-b">
-  <p><span class="tag tag-x">环节</span>光模块的外部散热结构。速率向 1.6T 与 3.2T 迭代后功耗密度抬升，外部散热由鼠笼加散热器的风冷方案转向鼠笼加液冷板方案；内部以导热界面材料与均热板降低热阻，两环互补并存。</p>
-  <p><span class="tag tag-o">一手</span>该环节渗透率与价值量较 800G 风冷时明显上升，链主为国内厂商、格局集中。8 月 13 日晚一家光模块龙头公告拟斥资 17.47 亿元协议受让一家散热材料公司 10.47% 股权，受让价较当日收盘价折价 0.77%，承诺 12 个月不减持；公告写明预计产生较强协同效应，未披露供货协议或锁量条款。</p>
-  <p><span class="tag tag-o">一手</span><strong>光模块厂商是液冷需求的产生方，不是液冷部件的供应方。</strong>该卡位的承接方是有多年 Cage 业务积累、近两年切入液冷的连接器企业。市面名单常将两者混列。</p>
-  <p>产业逻辑成立，但当前仅有股权动作与方向性判断，订单与收入层面尚无公开数据，兑现度在八个环节中居后。</p>
-  <div class="chip-row"><span class="chip p">奕东电子</span><span class="chip">意华股份</span></div>
-  </div>
-</div>
+<div class="h2">3.8　一次侧：单值最大，但披露最少</div>
+<p class="tx">一次侧含冷水机组、干冷器、冷却塔与方舱，不随机柜出货而按机房配置，单值大、交付周期长、受土建进度约束。可确认的是交付节奏：相关公司自述海外算力基础建设景气度上升，旗下品牌的北美与东南亚基地自 6 月起进入交付峰期。</p>
+<p class="tx"><b>该环节的结构性特征是项目制交付，由数据中心业主与运营商主导。</b>这决定了两件事：一是收入确认节奏跟随机房建设周期而非机柜出货周期；二是保密条款使公司披露受限，本月未出现可用的订单或收入数据，判断只能停在交付节奏层面。两处流传较广的数据需要修正：某公司 1 至 7 月累计新接订单 90 亿元实为一份意向框架协议而非已签订单；某海外温控龙头当期在手订单 150 亿美元系其 2025 年末的订单储备，该公司自 2026 年二季度起已停止披露这一指标，最后一次披露为 2025 年二季度的 85 亿美元。</p>
+<div class="chip-row"><span class="chip">冰轮环境</span><span class="chip">申菱环境</span><span class="chip">银轮股份</span></div>
 
-<div class="seg">
-  <div class="seg-h"><span class="seg-n">07</span><span class="seg-t">一次侧：交付峰期已至</span><span class="seg-r">兑现度 · 低</span></div>
-  <div class="seg-b">
-  <p><span class="tag tag-x">环节</span>机房侧冷源设备，含冷水机组、干冷器、冷却塔与方舱。不随机柜出货而按机房配置，单值大、交付周期长、受土建进度约束。</p>
-  <p><span class="tag tag-o">一手</span>可确认的是交付节奏：相关公司自述海外算力基础建设景气度上升，旗下品牌的北美与东南亚基地自 6 月起进入交付峰期。一次侧与二次侧方舱的价值量随液冷渗透提升。</p>
-  <p><span class="tag tag-o">一手</span>两处流传较广的数据需要修正：某公司 1 至 7 月累计新接订单 90 亿元，实为一份意向框架协议而非已签订单；某海外温控龙头当期在手订单 150 亿美元，系其 2025 年末的订单储备，该公司自 2026 年二季度起已停止披露这一指标，最后一次披露为 2025 年二季度的 85 亿美元。</p>
-  <p>该环节单值最大，但机房项目的保密条款使公司披露有限，本月未出现可用的订单或收入数据。判断只能停在交付节奏层面。</p>
-  <div class="chip-row"><span class="chip">冰轮环境</span><span class="chip">申菱环境</span><span class="chip">银轮股份</span></div>
-  </div>
+<div class="h2">3.9　上游材料：四条线层级不同，须分开判断</div>
+<p class="tx"><b>铜是唯一有销量数据的一条线。</b>算力散热用铜基材上半年销量 1.27 万吨、同比增 68%，机架母线同比增 94%；另有企业 2025 年芯片半导体铜材销量 4.1 万吨，其中算力散热 1.41 万吨、同比增 55%，并拟在海外新建 3 万吨液冷及母线用高精密铜排产能。销量口径较金额口径更难修饰。</p><div class="fig">
+<div class="fig-t">图表21：算力散热用铜量高增，是上游材料中唯一有销量数据的一条线</div>
+<svg viewBox="0 0 640 150" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><text x="157" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">算力散热用铜基材</text><rect x="165" y="25" width="278.5" height="17" fill="#b45309" rx="2"/><text x="450.51063829787233" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">1.27 万吨，同比 +68%</text><text x="157" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">机架母线</text><rect x="165" y="59" width="385.0" height="17" fill="#92400e" rx="2"/><text x="557.0" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">同比 +94%</text><text x="157" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">某企业算力散热铜材</text><rect x="165" y="93" width="225.3" height="17" fill="#1d4ed8" rx="2"/><text x="397.2659574468085" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">1.41 万吨，同比 +55%</text><text x="165" y="146" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">横轴为同比增速（%）。前两项为 2026 年上半年，第三项为 2025 年全年</text></svg>
+<div class="fig-s">资料来源：公司 2026 年半年报与经营数据公告，怀新投研整理</div>
 </div>
+<p class="tx"><b>陶瓷基板的价值量随速率升级抬升。</b>光模块速率由 800G 升至 1.6T 时，单只氮化铝陶瓷价值量由约 17 美元升至约 22 美元。稀土管制传导至日系陶瓷材料，国内 500 吨连续化产线投产获得验证窗口。粉体环节为双寡头格局，另一家常被提及的日本公司是制品与基板厂而非粉体厂。</p><div class="fig">
+<div class="fig-t">图表22：光模块速率升级带动单只陶瓷价值量提升约三成</div>
+<svg viewBox="0 0 640 210" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="151.0" y="77.6" width="72.0" height="90.4" fill="#1d4ed8" rx="2"/><text x="187.0" y="70.6302003081664" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">17</text><text x="187.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">800G</text><rect x="417.0" y="51.1" width="72.0" height="116.9" fill="#b45309" rx="2"/><text x="453.0" y="44.0508474576271" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">22</text><text x="453.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">1.6T</text><text x="40" y="206" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">单位：美元/只，指氮化铝陶瓷基板</text></svg>
+<div class="fig-s">资料来源：产业调研，怀新投研整理</div>
+</div>
+<p class="tx"><b>金刚石的趋势确立而规模未起。</b>新一代架构已确认采用金刚石铜复合导热界面，中国金刚石产能占全球九成以上。它在物理层级上是芯片级的直接散热与均热层，与冷板不属同一层级，亦非替代关系。</p>
+<p class="tx"><b>导热界面材料需与冷板分开。</b>它是芯片与散热器之间的填充层，与液冷回路不在同一层。多家被列入冷板环节的公司，其自述业务实为导热界面材料，主要面向光模块与器件散热。四条线的兑现度分别是有销量、有价值量、有趋势无规模、常被归错环节，打包讨论会得出错误结论。</p>
+<div class="chip-row"><span class="chip p">金田股份</span><span class="chip">旭光电子</span><span class="chip">科创新源</span><span class="chip">阿莱德</span><span class="chip">四方达</span><span class="chip">中兵红箭</span></div>
 
-<div class="seg">
-  <div class="seg-h"><span class="seg-n">08</span><span class="seg-t">上游材料：四条线兑现度分化</span><span class="seg-r">兑现度 · 分化</span></div>
-  <div class="seg-b">
-  <p><span class="tag tag-x">环节</span>四条彼此独立的材料线，在链条上的层级不同，不宜打包讨论。</p>
-  <p><span class="tag tag-o">一手</span><strong>铜，唯一有销量数据的一条。</strong>算力散热用铜基材上半年销量 1.27 万吨、同比增 68%，机架母线同比增 94%。另有企业 2025 年芯片半导体铜材销量 4.1 万吨，其中算力散热 1.41 万吨、同比增 55%，并拟在海外新建 3 万吨液冷及母线用高精密铜排产能。</p>
-  <p><span class="tag tag-o">一手</span><strong>陶瓷基板，价值量随速率升级。</strong>光模块速率由 800G 升至 1.6T 时，单只陶瓷价值量由约 17 美元升至约 22 美元。稀土管制传导至日系陶瓷材料，国内 500 吨连续化产线投产获得验证窗口。</p>
-  <p><span class="tag tag-o">一手</span><strong>金刚石，趋势确立、规模未起。</strong>新一代单芯片 TDP 已达 2300W，铜的导热率为 390 至 400 W/(m·K)、铝为 237，二者热流承载普遍低于 300 W/cm²。新一代架构已确认采用金刚石铜复合导热界面，中国金刚石产能占全球九成以上。<strong>金刚石解决芯片级热点扩散，液冷解决系统级排热，两者互补而非替代</strong>。</p>
-  <p><span class="tag tag-o">一手</span><strong>导热界面材料，与冷板不同层级。</strong>它是芯片与散热器之间的填充层，与液冷回路不在同一层。多家被列入冷板环节的公司，其自述业务实为导热界面材料，主要面向光模块与器件散热。</p>
-  <p>铜有销量、陶瓷有价值量、金刚石有趋势无规模、导热界面常被归错环节。四条线需分开判断。</p>
-  <div class="chip-row"><span class="chip p">金田股份</span><span class="chip">旭光电子</span><span class="chip">科创新源</span><span class="chip">阿莱德</span><span class="chip">四方达</span><span class="chip">中兵红箭</span></div>
-  </div>
-</div>
+<div class="ch"><span class="ch-n">CHAPTER 4</span>
+<div class="ch-t">四、格局：三条商业模式路径决定国产厂商的盈利空间</div></div>
 
-<div class="seg">
-  <div class="seg-h"><span class="seg-n">附</span><span class="seg-t">制造设备</span><span class="seg-r">兑现度 · 低</span></div>
-  <div class="seg-b">
-  <p><span class="tag tag-o">一手</span>液冷与光模块结构件的加工需求推动通用机床新签订单高增，日本机床协会 7 月新签订单同比增 50.4%、1 至 7 月累计同比增 38%，国内反馈数控系统普遍缺货。有企业披露液冷相关接单已排至 10 月、全年预计超 20 亿元。</p>
-  <p>设备环节的需求真实，但多为一次性资本开支、设备寿命在十年以上，不构成持续性收入，估值方式与零部件环节不同。</p>
-  <div class="chip-row"><span class="chip">创世纪</span><span class="chip">科德数控</span></div>
-  </div>
+<div class="h2">4.1　技术路线分工已经清晰</div>
+<div class="numbox">
+  <div class="numbox-h">图表14：三条技术路线的分工与约束</div>
+  <table>
+    <tr><th style="width:16%">维度</th><th style="width:28%">冷板式（单相直接液冷）</th><th style="width:28%">单相浸没</th><th>两相浸没</th></tr>
+    <tr><td>当前地位</td><td><strong>主导部署</strong></td><td>选择性采用</td><td>非主流</td></tr>
+    <tr><td>核心优势</td><td>改造成本低，与既有风冷机房兼容，可平滑过渡</td><td>能效更优，噪声与风机功耗归零</td><td>理论能效最优</td></tr>
+    <tr><td>主要约束</td><td>仍需保留部分风冷处理内存、电源、网卡</td><td>机房承重、工质成本、运维体系不兼容、器件认证</td><td>在单相浸没基础上多一层 PFAS 环保监管</td></tr>
+    <tr><td>演进方向</td><td>当前这一代已推至无风扇形态</td><td>受制于机房改造成本</td><td>需待芯片 TDP 继续上升</td></tr>
+  </table>
+  <div class="fig-s">资料来源：Dell'Oro Group 2026-01-08、IDC 中国 2025-04-08，怀新投研整理</div>
 </div>
+<p class="tx">过渡节奏上，液到风为当前主流方案，液到液预计自 2027 年起放量。冷板路线在当前这一代已被推至无风扇、液冷母排、100% 液冷计算托盘的形态，进一步的能效提升需要换路线而非改良，这是两相与浸没方案的机会窗口所在。</p>
 
-<div class="part-hd">
-  <span class="part-num">PART 3 / 3</span>
-  <div class="part-title">个股：按环节的卡位表</div>
-  <div class="part-sub">仅列 A 股，卡位描述取公司自身表述，代码经行情接口逐个反查</div>
+<div class="h2">4.2　需求侧验证与利润分布</div>
+<p class="tx">需求侧最早、也最难修饰的第三方验证来自台系散热三家的月度营收：7 月同比分别为 57.4%、116.7% 与 91.0%。月度营收属交易所强制披露口径，它把需求判断转为三条可独立查证的曲线。同期法说会指引三季度优于二季度、四季度液冷大规模出货，国内设备端排单已至四季度。</p><div class="fig">
+<div class="fig-t">图表15：台系散热三家 7 月营收同比全部高增，是需求侧最早的第三方验证</div>
+<svg viewBox="0 0 640 210" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="106.7" y="110.5" width="72.0" height="57.5" fill="#b45309" rx="2"/><text x="142.66666666666669" y="103.47745196287744" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">+57.4%</text><text x="142.66666666666669" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">散热厂 A</text><rect x="284.0" y="51.1" width="72.0" height="116.9" fill="#92400e" rx="2"/><text x="320.0" y="44.0508474576271" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">+116.7%</text><text x="320.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">散热厂 B</text><rect x="461.3" y="76.8" width="72.0" height="91.2" fill="#b45309" rx="2"/><text x="497.33333333333337" y="69.805716526513" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">+91.0%</text><text x="497.33333333333337" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">散热厂 C</text><text x="40" y="206" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">2026 年 7 月营收同比。月度营收属交易所强制披露口径</text></svg>
+<div class="fig-s">资料来源：台湾证券交易所月度营收公告，怀新投研整理</div>
 </div>
+<p class="tx"><b>但景气度在链条上的分配并不均匀。</b>一线系统厂上半年营收增长 17.2%，归母净利下滑 14.3%，毛利率回落 1.2 个百分点；同期上游精密设备与部件订单高增。</p><div class="fig">
+<div class="fig-t">图表16：一线系统厂营收增长而净利下滑，利润正在向上游迁移</div>
+<svg viewBox="0 0 640 154" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="370.0" y1="14" x2="370.0" y2="120" stroke="#d8cfc0" stroke-width="1"/><text x="370.0" y="11" font-size="9.5" fill="#9e8878" text-anchor="middle" font-weight="400" font-family="DM Mono, monospace">0</text><text x="132" y="39" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">营业收入 同比</text><rect x="370.0" y="27" width="184.0" height="17" fill="#b45309" rx="2"/><text x="561.0" y="40" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+17.2%</text><text x="132" y="73" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">归母净利润 同比</text><rect x="217.0" y="61" width="153.0" height="17" fill="#dc2626" rx="2"/><text x="210.02325581395348" y="74" font-size="11" fill="#dc2626" text-anchor="end" font-weight="500" font-family="DM Mono, monospace">−14.3%</text><text x="132" y="107" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">毛利率 变动</text><rect x="357.2" y="95" width="12.8" height="17" fill="#dc2626" rx="2"/><text x="350.16279069767444" y="108" font-size="11" fill="#dc2626" text-anchor="end" font-weight="500" font-family="DM Mono, monospace">−1.2pct</text><text x="20" y="150" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">同期上游精密设备与部件订单高增，景气度在链条上分配不均</text></svg>
+<div class="fig-s">资料来源：公司 2026 年半年报，怀新投研整理</div>
+</div>
+<p class="tx">这一背离的成因是议价结构：系统厂面对的是集中度极高的下游客户，而其上游的精密部件与设备环节供给相对分散、且部分环节存在能力缺口。<b>订单集中在下游，利润却在向上游迁移</b>，这决定了同一条景气度在不同环节上的财务表现会持续分化。</p>
 
-<div class="sub">
-  <div class="sub-b">
-  <p>表中每一行的卡位描述均取自公司自身表述，来源为定期报告、公告、投资者关系活动记录表与互动易问答。<strong>公告级披露</strong>一列标记的七家，其液冷业务见于公告、中标公告、收购公告或投资者关系活动记录表；未标记者的表述来自互动易等平台。</p>
-  <p>一个覆盖全表的事实：<em>无一家披露单列的液冷业务收入</em>。全表唯一带金额的公司自述为某零部件厂 2025 年数字能源营收近 15 亿元，该口径含储能、属事业部层面，不是数据中心液冷收入。板块目前尚无可比的收入口径。</p>
-  </div>
+<div class="h2">4.3　三条突破路径与产业链卡位</div>
+<div class="numbox">
+  <div class="numbox-h">图表23：国产厂商的三条突破路径，盈利空间依次抬升</div>
+  <table>
+    <tr><th style="width:18%">路径</th><th style="width:26%">供应关系</th><th style="width:20%">国产厂商角色</th><th>盈利空间</th></tr>
+    <tr><td>海外算力链</td><td>欧美与台系厂商主导并包圆供应链</td><td>以柜内部件代工为主</td><td><span class="mk mk-s">有限</span>　代工定价，议价能力弱</td></tr>
+    <tr><td>云厂商直供</td><td>终端客户采取直供模式</td><td>可直接进入合格供应商名录</td><td><span class="mk mk-o">中等</span>　突破节奏快于海外链</td></tr>
+    <tr><td>本土算力链</td><td>本土厂商主导</td><td>直客项目，参与方案设计</td><td><span class="mk mk-y">较大</span>　直客定价</td></tr>
+  </table>
+  <div class="fig-s">资料来源：产业调研与公司公开表述，怀新投研整理</div>
 </div>
+<p class="tx">三条路径的差别不在技术而在议价位置。海外链的供应体系已经成型，国产厂商多以代工身份进入，价值量虽可观但毛利受限；云厂商直供绕开了台系一级供应商，是当前突破最快的一条；本土算力链的定价空间最大，但受制于国内液冷渗透率仍低于海外。</p>
+
+
+<div class="numbox">
+  <div class="numbox-h">图表20：液冷产业链结构，价值量集中在二次侧</div>
+  <table>
+    <tr><th style="width:15%">层级</th><th style="width:30%">环节</th><th style="width:20%">单柜价值量</th><th>格局特征</th></tr>
+    <tr><td class="n">芯片／界面级</td><td>导热界面材料、金刚石热沉、陶瓷基板</td><td class="n">随速率升级</td><td>与风冷路线共用，不属液冷回路</td></tr>
+    <tr><td class="n">模组级<br><strong>二次侧</strong></td><td>冷板、快接头、波纹管、分水器</td><td class="n">约 21 万元</td><td>冷板标准化、跨界者进入；快接头具消耗品属性</td></tr>
+    <tr><td class="n">机柜级<br><strong>二次侧</strong></td><td>CDU、液冷泵、机柜结构件、线束盒</td><td class="n">约 26 万元</td><td>CDU 单体价值量最大且存在能力缺口</td></tr>
+    <tr><td class="n">机房级<br><strong>一次侧</strong></td><td>冷水机组、干冷器、冷却塔、方舱</td><td class="n">约 21 万元</td><td>项目制交付，业主与运营商主导</td></tr>
+  </table>
+  <div class="fig-s">资料来源：整柜拆解、行业占比口径与产业调研，怀新投研整理</div>
+</div>
+<div class="h2">4.4　卡位表</div>
+<p class="tx">下表每一行的卡位描述均取自公司自身表述，来源为定期报告、公告、投资者关系活动记录表与互动易问答。<b>公告级披露</b>一列标记的七家，其液冷业务见于公告、中标公告、收购公告或投资者关系活动记录表。</p>
+<p class="tx">一个覆盖全表的事实：<em>无一家披露单列的液冷业务收入</em>。全表唯一带金额的公司自述为某零部件厂 2025 年数字能源营收近 15 亿元，该口径含储能、属事业部层面，不是数据中心液冷收入。板块目前尚无可比的收入口径，这意味着<b>短期内只能以订单、产能与认证进展作为跟踪变量</b>。</p>
+<div class="fig-t" style="margin:16px 32px 6px">图表24：A股液冷卡位表，按环节与公告级披露分档</div>
 <div class="pos">
 <table>
 <tr><th style="width:14%">环节</th><th style="width:13%">公司</th><th>卡位（取公司自述口径）</th><th style="width:9%">公告级披露</th><th style="width:11%">信号日期</th></tr>
@@ -497,13 +611,44 @@ em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radi
 
 </table>
 </div>
-
 <div class="note">
 <b>两处常见的错配：</b>光模块厂商（中际旭创、新易盛、天孚通信、联特科技）是液冷需求的产生方，不供应液冷部件，四家均未自述液冷业务；科创新源与阿莱德的卡位是导热界面材料，与冷板不在同一层级。
 </div>
 
+<div class="ch"><span class="ch-n">CHAPTER 5</span>
+<div class="ch-t">五、产业含义：议价位置的迁移比份额更值得跟踪</div></div>
+
+<p class="tx">液冷的争论点已经不在会不会用，而在各环节的兑现节奏与利润归属。基于前四章，未来三到六个月有五个可验证的锚点。</p>
+
+<div class="numbox">
+  <div class="numbox-h">图表25：跟踪清单，看什么变量、什么信号代表兑现或证伪</div>
+  <table>
+    <tr><th style="width:14%">环节</th><th style="width:22%">跟踪变量</th><th style="width:30%">兑现信号</th><th>证伪信号</th></tr>
+    <tr><td>冷板</td><td><strong>毛利率</strong>，而非订单</td><td>跨界产能落地后毛利率维持稳定，说明需求消化了新增供给</td><td>四季度至明年上半年毛利率回落，说明供给增速快于需求</td></tr>
+    <tr><td>CDU</td><td>代工关系是否固化</td><td>代工转为长期协议或合资，能力缺口转化为稳定份额</td><td>冷板厂自建 CDU 产能并通过验证，缺口被自行填平</td></tr>
+    <tr><td>液冷泵</td><td>订单转收入的节奏</td><td>四季度报表出现液冷泵收入并带动毛利率上行</td><td>订单持续增长但收入确认与利润改善继续滞后</td></tr>
+    <tr><td>结构件</td><td>客户结构是否分散</td><td>新增第二、第三客户，降低单一客户依赖</td><td>指引下修，或单一客户订单节奏放缓</td></tr>
+    <tr><td>全行业</td><td>渗透率预测的修正方向</td><td>2027 年渗透率预测继续上修，需求跑在模型前面</td><td>渗透率预测停滞或下修，云厂商资本开支节奏放缓</td></tr>
+  </table>
+  <div class="fig-s">资料来源：怀新投研整理</div>
+</div>
+
+<p class="tx"><b>三条结构性判断可以贯穿更长时间。</b>其一，能力缺口比产能缺口更难追平，CDU 的卡位溢出不是短期现象；其二，冷板的门槛在工艺而非材料，工艺替代会持续压低成本曲线，该环节的长期毛利中枢低于其他环节；其三，波纹管一类半消耗品的存量替换需求会在装机量沉淀后显现，收入结构与一次性交付环节不同，这一差异目前尚未被充分定价。</p>
+<p class="tx">对国产供应链而言，最值得关注的不是份额而是<b>议价位置的迁移</b>。当前多数国产厂商停留在海外链的代工位置，盈利受限；云厂商直供与本土直客是抬升盈利空间的两条通道，二者的进展节奏决定了这一轮液冷景气度最终能有多少沉淀为国产厂商的利润。</p>
+
+<div class="ch"><span class="ch-n">CHAPTER 6</span>
+<div class="ch-t">六、风险提示</div></div>
+
+<div class="risk">
+<div class="risk-i"><b>一、AI 算力资本开支不及预期。</b>液冷需求直接派生于 AI 机柜出货量。若云厂商资本开支节奏放缓或算力芯片供给受限导致机柜出货低于预期，液冷各环节的订单与产能规划将同步下修，其中一次侧因项目制交付、周期最长，受影响幅度可能最大。</div>
+<div class="risk-i"><b>二、液冷渗透率提升不及预期。</b>本报告的空间测算以渗透率持续上行为前提。若机房改造成本、运维体系适配或电力配套进度制约实际部署，渗透率可能低于 2026 年 53% 的预测值，届时单柜价值量的提升无法转化为总量增长。</div>
+<div class="risk-i"><b>三、客户认证与产品导入不及预期。</b>液冷部件对密封性、可靠性与批量一致性要求高，需经历较长的客户验证与良率爬坡。若国产厂商在合格供应商名录的导入进度、或代工关系向长期协议的转化慢于预期，订单与收入之间的时滞将进一步拉长。</div>
+<div class="risk-i"><b>四、冷板环节竞争加剧压低毛利。</b>冷板标准化程度高、门槛在加工工艺，本月已有至少两家跨界者官宣产能，落地时点集中在四季度至明年上半年。若新增供给的释放速度快于需求增长，该环节可能先于其他环节出现价格与毛利率下行。</div>
+<div class="risk-i"><b>五、技术路线迭代超出预期。</b>本报告以冷板式为主导路线展开。若两相冷板或浸没方案的成熟速度快于预期，现有冷板与快接头的产品形态、材料体系与供应格局都可能重构，既有产能与认证积累的价值将被削弱。</div>
+</div>
+
 <div class="footer">
-  <div class="footer-brand">怀新投研 · 产业专题 VOL.SP01</div>
+  <div class="footer-brand">怀新投研 · 产业专题 VOL.SP01 · 液冷行业深度</div>
   <div class="footer-ts">2026.09.03 · 覆盖区间 2026.08.03 - 09.02</div>
 </div>
 </body>
