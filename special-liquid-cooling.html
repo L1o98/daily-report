@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产业专题 VOL.SP01 · 液冷 · 2026.08.03-09.02</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#2c1810;--ink-light:#5a3e35;--ghost:#9e8878;
+  --paper:#f7f4ef;--paper-warm:#f0ebe0;--paper-deep:#e8dfd0;--border:#d8cfc0;
+  --mast:#3b1a06;--accent:#b45309;--accent-light:#f7eddb;--accent-deep:#92400e;
+  --pill-hot:#dc2626;--pill-new:#1d4ed8;--pill-spread:#7c3aed;--pill-data:#0f766e;--pill-green:#15803d;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-serif;font-size:13px;line-height:1.65;max-width:860px;margin:0 auto;}
+em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radius:3px;color:#1e40af;font-weight:500;}
+
+.alert-bar{background:#1e3a5f;padding:13px 32px;display:flex;align-items:flex-start;gap:12px;border-bottom:2px solid #3b82f6;}
+.alert-icon{font-size:18px;line-height:1;padding-top:1px;flex-shrink:0;}
+.alert-label{font-family:'DM Mono',monospace;font-size:10px;color:#93c5fd;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:4px;}
+.alert-text{color:#e0f2fe;font-size:12.5px;line-height:1.6;font-family:'Noto Serif SC',serif;}
+.alert-text em{background:rgba(147,197,253,0.28);color:#fff;}
+
+.masthead{background:var(--mast);padding:26px 32px 20px;position:relative;overflow:hidden;}
+.masthead::before{content:'';position:absolute;top:0;right:0;width:220px;height:100%;background:linear-gradient(90deg,transparent,rgba(180,83,9,0.10));}
+.mast-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
+.mast-brand{color:#f7eddb;font-family:'Noto Serif SC',serif;font-size:11px;letter-spacing:0.12em;opacity:0.7;}
+.mast-vol{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);letter-spacing:0.08em;}
+.mast-title{color:#fdf8f0;font-family:'Noto Serif SC',serif;font-size:25px;font-weight:900;line-height:1.25;}
+.mast-title em{font-style:normal;color:#fbbf24;background:none;padding:0;}
+.mast-subtitle{color:rgba(253,248,240,0.50);font-size:11.5px;margin-top:6px;font-family:'DM Mono',monospace;letter-spacing:0.06em;}
+
+.stats-bar{background:var(--accent);display:flex;}
+.stat-item{flex:1;padding:10px 14px;border-right:1px solid rgba(255,255,255,0.2);text-align:center;}
+.stat-item:last-child{border-right:none;}
+.stat-num{font-family:'DM Mono',monospace;font-size:20px;font-weight:500;color:#fff;display:block;line-height:1;}
+.stat-label{font-size:10px;color:rgba(255,255,255,0.72);letter-spacing:0.06em;margin-top:3px;display:block;}
+
+.context-bar{background:#1c1209;padding:16px 32px;border-bottom:2px solid var(--accent);}
+.ctx-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:10px;}
+.ctx-item{display:flex;gap:12px;margin-bottom:9px;align-items:flex-start;}
+.ctx-item:last-child{margin-bottom:0;}
+.ctx-who{font-family:'DM Mono',monospace;font-size:10px;color:#fbbf24;white-space:nowrap;padding-top:2px;min-width:80px;}
+.ctx-text{color:rgba(253,248,240,0.78);font-size:12px;line-height:1.55;}
+.ctx-text em{background:rgba(147,197,253,0.28);color:#fff;}
+.ctx-text .arrow{color:var(--accent);font-weight:700;}
+
+.verdict-bar{background:var(--accent);padding:14px 32px;}
+.verdict-label{font-family:'DM Mono',monospace;font-size:10px;color:rgba(255,255,255,0.60);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:6px;}
+.verdict-text{color:#fff;font-size:13.5px;line-height:1.6;font-family:'Noto Serif SC',serif;}
+.verdict-text em{background:rgba(255,255,255,0.22);color:#fff;}
+
+.section-hd{display:flex;align-items:center;gap:10px;padding:20px 32px 12px;}
+.section-num{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:0.1em;border:1px solid var(--accent);padding:2px 6px;border-radius:2px;}
+.section-title{font-family:'Noto Serif SC',serif;font-size:14px;font-weight:700;color:var(--ink);letter-spacing:0.04em;}
+.section-rule{flex:1;height:1px;background:var(--border);}
+
+.hero-wrap{padding:0 32px 8px;}
+.hero-card{background:var(--paper-warm);border:1px solid var(--border);border-top:4px solid var(--accent);border-radius:4px;overflow:hidden;}
+.hero-inner{padding:20px 22px 0;}
+.hero-pill-row{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;}
+.pill{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:2px;font-weight:500;}
+.pill-hot{background:#fef2f2;color:var(--pill-hot);border:1px solid #fca5a5;}
+.pill-new{background:#eff6ff;color:var(--pill-new);border:1px solid #93c5fd;}
+.pill-data{background:#f0fdf4;color:var(--pill-data);border:1px solid #86efac;}
+.pill-spread{background:#faf5ff;color:var(--pill-spread);border:1px solid #d8b4fe;}
+.hero-title{font-family:'Noto Serif SC',serif;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:8px;}
+.hero-source{font-family:'DM Mono',monospace;font-size:10px;color:var(--ghost);margin-bottom:14px;}
+.catalyst-box{background:#fff;border-left:3px solid var(--accent);padding:9px 12px;margin-bottom:14px;font-size:12.5px;color:var(--ink);font-style:italic;}
+.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px;}
+.drow-4{background:var(--paper-deep);border-radius:3px;padding:10px 8px 8px;text-align:center;}
+.di-n{font-family:'DM Mono',monospace;font-size:17px;font-weight:500;color:var(--accent);display:block;line-height:1.1;}
+.di-l{font-size:10px;color:var(--ghost);margin-top:3px;display:block;}
+.hero-body{font-size:13px;line-height:1.7;color:var(--ink-light);padding-bottom:16px;}
+.hero-body p{margin-bottom:8px;}
+.hero-body strong{color:var(--ink);font-weight:700;}
+.chip-row{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 16px;}
+.chip{font-family:'DM Mono',monospace;font-size:10px;background:var(--paper-deep);border:1px solid var(--border);color:var(--ink-light);padding:3px 8px;border-radius:3px;}
+.chip.p{background:var(--accent-light);border-color:#fcd34d;color:var(--accent-deep);font-weight:500;}
+.chip.p::before{content:'★ ';font-size:9px;}
+.therefore-block{background:var(--accent);padding:12px 22px;display:flex;gap:10px;align-items:flex-start;}
+.tb-label{font-family:'DM Mono',monospace;font-size:11px;color:#fcd34d;white-space:nowrap;padding-top:1px;font-weight:500;}
+.tb-text{color:#fff;font-size:13px;line-height:1.55;}
+
+.chain-wrap{padding:4px 32px 8px;}
+.chain-cap{font-family:'DM Mono',monospace;font-size:10px;color:var(--ghost);letter-spacing:0.08em;margin-bottom:2px;}
+.chain-flow{display:flex;align-items:stretch;margin:8px 0 4px;font-family:'Noto Sans SC',sans-serif;}
+.cf-zone{flex:1;display:flex;flex-direction:column;gap:8px;min-width:0;}
+.cf-zlabel{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--ghost);text-transform:uppercase;text-align:center;}
+.cf-node{background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;padding:8px 10px;}
+.cf-node.focus{border:2px solid var(--accent);background:var(--accent-light);}
+.cf-name{font-family:'Noto Serif SC',serif;font-size:13px;font-weight:700;color:var(--ink);line-height:1.3;}
+.cf-badge{display:inline-block;font-family:'DM Mono',monospace;font-size:9px;padding:1px 6px;border-radius:2px;margin-top:4px;}
+.cf-badge.hot{background:#fef2f2;color:var(--pill-hot);border:1px solid #fca5a5;}
+.cf-badge.warm{background:#fff;color:var(--accent-deep);border:1px solid #fcd34d;}
+.cf-meta{font-size:10px;color:var(--ghost);margin-top:3px;}
+.cf-chips{margin-top:5px;display:flex;gap:3px;flex-wrap:wrap;}
+.cf-chip{font-family:'DM Mono',monospace;font-size:9px;background:var(--paper-deep);border:1px solid var(--border);color:var(--ink-light);padding:1px 5px;border-radius:2px;}
+.cf-arrow{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 6px;}
+.cf-arrow .a{color:var(--accent);font-size:20px;line-height:1;}
+.cf-arrow .l{font-family:'DM Mono',monospace;font-size:8px;color:var(--ghost);margin-top:2px;white-space:nowrap;}
+
+.sig-grid{padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.sig-card{background:var(--paper-warm);border:1px solid var(--border);border-top:3px solid var(--pill-new);border-radius:4px;overflow:hidden;}
+.sig-card.hot{border-top-color:var(--pill-hot);}
+.sig-card.orange{border-top-color:var(--accent);}
+.sig-card.green{border-top-color:var(--pill-green);}
+.sig-card.purple{border-top-color:var(--pill-spread);}
+.sig-inner{padding:14px 14px 0;}
+.sig-title{font-family:'Noto Serif SC',serif;font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:6px;line-height:1.35;}
+.sig-source{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--ghost);margin-bottom:9px;}
+.sig-body{font-size:12px;line-height:1.65;color:var(--ink-light);padding-bottom:11px;}
+.sig-body strong{color:var(--ink);}
+.sig-body p{margin-bottom:7px;}
+.sig-chips{padding:0 14px 10px;display:flex;gap:5px;flex-wrap:wrap;}
+.sig-therefore{display:flex;gap:8px;padding:9px 14px;background:var(--paper-deep);align-items:flex-start;}
+.sig-therefore.orange{background:var(--accent-light);}
+.sig-therefore.hot{background:#fef2f2;}
+.sig-therefore.green{background:#f0fdf4;}
+.sig-therefore.purple{background:#faf5ff;}
+.sl{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);white-space:nowrap;padding-top:1px;font-weight:500;}
+.st2{font-size:11.5px;color:var(--ink-light);line-height:1.5;}
+
+.bg-grid{padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.bg-card{background:var(--paper-warm);border:1px solid var(--border);border-left:3px solid var(--border);border-radius:4px;padding:13px 14px;}
+.bg-card.accent-l{border-left-color:var(--accent);}
+.bg-card.blue-l{border-left-color:var(--pill-new);}
+.bg-card.green-l{border-left-color:var(--pill-green);}
+.bg-card.purple-l{border-left-color:var(--pill-spread);}
+.bg-card.red-l{border-left-color:var(--pill-hot);}
+.bg-card.gray-l{border-left-color:var(--ghost);}
+.bg-tag{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--ghost);margin-bottom:5px;}
+.bg-title{font-family:'Noto Serif SC',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:6px;line-height:1.35;}
+.bg-body{font-size:11.5px;line-height:1.6;color:var(--ink-light);}
+.bg-chips{margin-top:8px;display:flex;gap:4px;flex-wrap:wrap;}
+
+.watch-wrap{padding:0 32px;}
+.watch-table{width:100%;border-collapse:collapse;background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:12px;}
+.watch-table thead tr{background:var(--mast);}
+.watch-table thead th{color:rgba(253,248,240,0.65);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.08em;padding:9px 12px;text-align:left;font-weight:400;}
+.watch-table tbody tr{border-bottom:1px solid var(--border);}
+.watch-table tbody tr:last-child{border-bottom:none;}
+.watch-table tbody tr:hover{background:var(--paper-deep);}
+.watch-table td{padding:10px 12px;vertical-align:top;color:var(--ink-light);line-height:1.55;}
+.watch-table td:first-child{color:var(--ink);font-weight:500;font-size:12.5px;}
+.node-red{font-family:'DM Mono',monospace;font-size:10px;background:#fef2f2;color:var(--pill-hot);border:1px solid #fca5a5;padding:1px 6px;border-radius:2px;display:inline-block;}
+.node-amber{font-family:'DM Mono',monospace;font-size:10px;background:var(--accent-light);color:var(--accent-deep);border:1px solid #fcd34d;padding:1px 6px;border-radius:2px;display:inline-block;}
+.node-green{font-family:'DM Mono',monospace;font-size:10px;background:#f0fdf4;color:var(--pill-green);border:1px solid #86efac;padding:1px 6px;border-radius:2px;display:inline-block;}
+
+.ticker-grid{padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.ticker-card{background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;display:flex;overflow:hidden;}
+.ticker-left{background:var(--mast);padding:14px;display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:82px;}
+.ticker-name{font-family:'Noto Sans SC',sans-serif;font-size:13px;font-weight:700;color:#fdf8f0;text-align:center;line-height:1.3;margin-bottom:6px;}
+.ticker-count{font-family:'DM Mono',monospace;font-size:30px;font-weight:500;color:var(--accent);line-height:1;}
+.ticker-unit{font-family:'DM Mono',monospace;font-size:9px;color:rgba(253,248,240,0.40);margin-top:2px;}
+.ticker-right{padding:12px 13px;flex:1;}
+.ticker-logic{font-size:11.5px;color:var(--ink-light);line-height:1.58;margin-bottom:7px;}
+.ticker-source{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--ghost);}
+
+.gloss-wrap{padding:0 32px 32px;}
+.gloss-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.gc{background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;padding:12px 14px;}
+.gc-term{font-family:'DM Mono',monospace;font-size:12px;color:var(--accent-deep);font-weight:500;display:block;margin-bottom:5px;}
+.gc-def{font-size:11.5px;color:var(--ink-light);line-height:1.6;margin-bottom:6px;}
+.gc-why{font-size:11px;color:var(--ink-light);background:var(--paper-deep);border-radius:2px;padding:5px 8px;line-height:1.55;}
+.gc-why strong{color:var(--accent);}
+
+.footer{background:var(--mast);padding:14px 32px;display:flex;justify-content:space-between;align-items:center;}
+.footer-brand{font-family:'Noto Serif SC',serif;font-size:12px;color:rgba(253,248,240,0.45);}
+.footer-ts{font-family:'DM Mono',monospace;font-size:10px;color:rgba(253,248,240,0.30);letter-spacing:0.06em;}
+/* ===== 专题特有（SP 序列） ===== */
+.lead{padding:18px 32px 4px;font-family:'Noto Serif SC',serif;font-size:13.5px;line-height:1.85;color:var(--ink);}
+.lead p{margin-bottom:11px;}
+.part-hd{background:var(--mast);padding:15px 32px;margin-top:8px;}
+.part-num{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:0.16em;display:block;margin-bottom:5px;}
+.part-title{color:#fdf8f0;font-family:'Noto Serif SC',serif;font-size:18px;font-weight:900;line-height:1.3;}
+.part-sub{color:rgba(253,248,240,0.52);font-size:11px;margin-top:5px;font-family:'DM Mono',monospace;letter-spacing:0.04em;}
+
+.sub{padding:16px 32px 2px;}
+.sub-h{font-family:'Noto Serif SC',serif;font-size:14.5px;font-weight:700;color:var(--mast);margin-bottom:8px;line-height:1.4;}
+.sub-b{font-size:12.8px;line-height:1.78;color:var(--ink);}
+.sub-b p{margin-bottom:9px;}
+.sub-b p:last-child{margin-bottom:0;}
+
+.src{font-family:'DM Mono',monospace;font-size:10px;color:var(--ghost);letter-spacing:0.02em;}
+.src-line{font-family:'DM Mono',monospace;font-size:10px;color:var(--ghost);margin-top:7px;padding-top:6px;border-top:1px dotted var(--border);line-height:1.6;}
+
+.numbox{margin:12px 32px;border:1px solid var(--border);background:#fffdf9;}
+.numbox-h{background:var(--paper-warm);padding:7px 14px;font-family:'DM Mono',monospace;font-size:10px;color:var(--accent-deep);letter-spacing:0.1em;border-bottom:1px solid var(--border);}
+.numbox table{width:100%;border-collapse:collapse;font-size:11.5px;}
+.numbox th{background:#fbf8f2;text-align:left;padding:7px 12px;font-weight:500;color:var(--ink-light);border-bottom:1px solid var(--border);font-size:10.5px;letter-spacing:0.03em;}
+.numbox td{padding:7px 12px;border-bottom:1px solid #eee6d8;vertical-align:top;line-height:1.55;}
+.numbox tr:last-child td{border-bottom:none;}
+.numbox td.n{font-family:'DM Mono',monospace;color:var(--accent-deep);white-space:nowrap;}
+
+.tl{margin:6px 32px 14px;}
+.tl-i{display:flex;gap:14px;padding:9px 0;border-bottom:1px dotted var(--border);align-items:flex-start;}
+.tl-i:last-child{border-bottom:none;}
+.tl-d{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);white-space:nowrap;padding-top:2px;min-width:44px;font-weight:500;}
+.tl-c{flex:1;font-size:12.3px;line-height:1.65;}
+.tl-t{font-weight:700;color:var(--mast);}
+.mk{font-family:'DM Mono',monospace;font-size:9.5px;padding:1px 5px;border-radius:2px;white-space:nowrap;margin-left:6px;vertical-align:1px;}
+.mk-y{background:#dcfce7;color:#15803d;border:1px solid #86efac;}
+.mk-s{background:#fef3c7;color:#a16207;border:1px solid #fcd34d;}
+.mk-n{background:#fee2e2;color:#b91c1c;border:1px solid #fca5a5;}
+.mk-o{background:#e0e7ff;color:#3730a3;border:1px solid #a5b4fc;}
+
+.seg{margin:14px 32px;border:1px solid var(--border);background:#fff;}
+.seg-h{background:var(--paper-warm);padding:10px 16px;border-bottom:1px solid var(--border);display:flex;align-items:baseline;gap:10px;}
+.seg-n{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);font-weight:500;}
+.seg-t{font-family:'Noto Serif SC',serif;font-size:14px;font-weight:700;color:var(--mast);}
+.seg-r{font-size:10.5px;color:var(--ghost);margin-left:auto;font-family:'DM Mono',monospace;}
+.seg-b{padding:12px 16px;font-size:12.3px;line-height:1.72;}
+.seg-b p{margin-bottom:8px;}
+.seg-b p:last-child{margin-bottom:0;}
+.tag{display:inline-block;font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:0.08em;padding:1px 6px;border-radius:2px;margin-right:6px;vertical-align:1px;}
+.tag-x{background:#eef2ff;color:#4338ca;border:1px solid #c7d2fe;}
+.tag-o{background:var(--accent-light);color:var(--accent-deep);border:1px solid #f0d5a8;}
+
+.pos{margin:14px 32px;}
+.pos table{width:100%;border-collapse:collapse;font-size:11.5px;background:#fff;border:1px solid var(--border);}
+.pos th{background:var(--mast);color:#fdf8f0;text-align:left;padding:8px 11px;font-weight:500;font-size:10.5px;letter-spacing:0.06em;}
+.pos td{padding:8px 11px;border-bottom:1px solid #eee6d8;vertical-align:top;line-height:1.55;}
+.pos tr:last-child td{border-bottom:none;}
+.pos td.seg-c{font-family:'DM Mono',monospace;font-size:10.5px;color:var(--accent-deep);white-space:nowrap;background:#fdfaf4;}
+.pos td.d{font-family:'DM Mono',monospace;font-size:10px;color:var(--ghost);white-space:nowrap;}
+.note{margin:12px 32px;padding:11px 15px;background:var(--accent-light);border-left:3px solid var(--accent);font-size:12px;line-height:1.7;}
+.note b{color:var(--accent-deep);}
+@media(max-width:600px){
+  .lead,.sub,.part-hd{padding-left:18px;padding-right:18px;}
+  .numbox,.tl,.seg,.pos,.note{margin-left:18px;margin-right:18px;}
+  .mast-title{font-size:20px;}
+}
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="mast-top">
+    <span class="mast-brand">怀新投研 · 产业专题</span>
+    <span class="mast-vol">VOL.SP01</span>
+  </div>
+  <div class="mast-title">液冷在这一个月里完成了从渗透率叙事到<em>订单进财报</em>的切换</div>
+  <div class="mast-subtitle">2026.08.03 - 09.02 · 覆盖 21 个交易日 · 一手纪要 + 公开资料交叉核对</div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat-item"><span class="stat-num">21</span><span class="stat-label">覆盖交易日</span></div>
+  <div class="stat-item"><span class="stat-num">20</span><span class="stat-label">出现液冷的日子</span></div>
+  <div class="stat-item"><span class="stat-num">13</span><span class="stat-label">结构化供需缺口</span></div>
+  <div class="stat-item"><span class="stat-num">9</span><span class="stat-label">经独立口径核验</span></div>
+</div>
+
+<div class="verdict-bar">
+  <div class="verdict-label">全篇结论</div>
+  <div class="verdict-text">液冷的争论点已经不是渗透率，而是<em>谁的订单进了财报、谁的没有</em>。八月里泵和 CDU 两个环节先一步拿到可查证的在手订单，冷板与结构件仍在扩产能与验厂阶段，而涨价幅度最大的几个说法恰恰是最经不起独立核验的。</div>
+</div>
+
+<div class="lead">
+<p>过去一个月，液冷几乎每天都出现在我们的日报里，21 个交易日中有 20 天命中，其中 8 天是当日的主线级讨论。这样的密度本身说明不了什么，热门主题都能做到。真正值得单独做一份专题的原因是：这一个月里，液冷的<strong>论证方式变了</strong>。</p>
+<p>八月上旬讨论的还是渗透率会到多少、市场空间有多大，全部是预测口径；到下旬，讨论对象换成了在手订单台数、交付周期、验厂进度和量产爬坡，这些是可以拿公告和财报去对的东西。中间的分水岭大约在 8 月 20 日前后。</p>
+<p>本篇分三层：<strong>第一层讲产业逻辑</strong>，为什么风冷到此为止，市场规模的各家口径分别是多少；<strong>第二层讲结构</strong>，把液冷拆成八个环节，逐个说清楚缺口在哪、谁在供、兑现到了哪一步；<strong>第三层讲个股</strong>，按环节列卡位表。三层之前先放一条本月时间轴，用来说明上面那个转折是怎么一天天发生的。外部公开资料与我们自己的一手纪要各占一半，两者的出处都在正文里标明。这一点在本篇里格外重要，因为下面会看到，同一个数字在不同来源那里能差出一个数量级。</p>
+</div>
+
+<div class="section-hd"><span class="section-num">TIMELINE</span><span class="section-title">时间轴 · 本月怎么走过来的</span><div class="section-rule"></div></div>
+
+<div class="note"><b>怎么读：</b>每条后面的标记是我们对该数字做过的独立核验结果。<span class="mk mk-y">已核实</span> 有公告或财报原文可对；<span class="mk mk-s">单一口径</span> 只有一家来源、未找到第二家；<span class="mk mk-n">不成立</span> 与独立口径矛盾，本篇按正确口径改写；<span class="mk mk-o">架构事实</span> 属技术路线确认，不涉及数字争议。</div>
+
+<div class="tl">
+<div class="tl-i"><div class="tl-d">08/05</div><div class="tl-c"><span class="tl-t">「Q3 进入订单兑现」的提法第一次出现。</span>四大云厂商财报把 AI 资本开支再次上修，卖方由此推出下一代平台标配液冷、CDU 空间较 2025 年数倍提升的判断。此时全部是预测口径，没有任何可对的量。</div></div>
+<div class="tl-i"><div class="tl-d">08/10</div><div class="tl-c"><span class="tl-t">承诺开始写进考核条款。</span>一家温控厂第三期股权激励把 2027 年营收考核定在 84.18 亿元，较 2025 年翻倍；同期另一家零部件厂通过台系一级供应商的液冷最终验厂。<span class="mk mk-y">已核实</span> 这是本月第一次出现「公司自己拿业绩指标背书」。</div></div>
+<div class="tl-i"><div class="tl-d">08/12</div><div class="tl-c"><span class="tl-t">台系三家 7 月营收给出第一个可验证的量。</span>奇鋐同比 +57.4%、双鸿 +116.7%、健策 +91.0%。月度营收是交易所强制披露、无法修饰的口径，它把「需求很好」这句话变成了三条独立可查的曲线。</div></div>
+<div class="tl-i"><div class="tl-d">08/13</div><div class="tl-c"><span class="tl-t">单柜功率的四代路线图被拉出来。</span>145kW → 330kW → 570kW → 柜内原生 800VDC、逼近 1MW。<span class="mk mk-s">单一口径</span> 需要说明的是：这是产业界流传的代际框架，不是厂商规格。芯片厂商官方只公布过两个单柜功率：上上代机柜 120kW、远期高密方案 600kW；当前这一代至今没有官方数字，供应链测算区间是 190–230kW，与框架里的 330kW 有明显距离。框架的方向可用，具体千瓦数不能当规格引。真正无争议的含义是：54VDC 柜内配电只撑得到第二代，散热与配电必须同步换代。</div></div>
+<div class="tl-i"><div class="tl-d">08/16</div><div class="tl-c"><span class="tl-t">台系法说会把放量窗口指到 Q4。</span>指引 Q3 优于 Q2、Q4 液冷大规模出货；国内设备端反馈排单已排到四季度。同日另有材料称海外制冷龙头数据中心订单连续三个季度同比增 300%–500%。</div></div>
+<div class="tl-i"><div class="tl-d">08/17</div><div class="tl-c"><span class="tl-t">渗透率数字落地，但口径需要纠正。</span>TrendForce 给出 2026 年 53%。<span class="mk mk-y">已核实</span> 回到官方新闻稿原文，这个 53% 的分母是 AI 芯片，2027 年的表述是「接近 60%」而非「达到 60%」，两处都被卖方转述时放大过。同日的冷水机组订单说法则出了问题，见本篇末节。</div></div>
+<div class="tl-i"><div class="tl-d">08/18</div><div class="tl-c"><span class="tl-t">论证重心从「会不会用」转向「用什么材料」。</span>新一代单芯片 TDP 达 2300W，铜（390–400 W/m·K）与铝（237）的热流承载普遍低于 300 W/cm²，金刚石类材料由此进入讨论。<span class="mk mk-o">架构事实</span></div></div>
+<div class="tl-i"><div class="tl-d">08/20</div><div class="tl-c"><span class="tl-t">分水岭：第一份可查证的在手订单。</span>一家泵企在半年报里披露机架内 CDU 液冷泵终端客户订单超 5 万台、130 余个项目在推进。<span class="mk mk-y">已核实</span> 台数与项目数是半年报原文；但同期卖方转述的「累计订单近 10 亿元」在半年报全文中不存在，属倒推，本篇不采用。</div></div>
+<div class="tl-i"><div class="tl-d">08/22</div><div class="tl-c"><span class="tl-t">新一代机柜进入全面量产爬坡，且是 100% 全液冷。</span><span class="mk mk-o">架构事实</span> 这一条决定了后面所有环节的时间表。从这天起，液冷不再是配置选项，而是出货前提。</div></div>
+<div class="tl-i"><div class="tl-d">08/25</div><div class="tl-c"><span class="tl-t">同一景气度在链条上分配不均，开始显形。</span>一线系统厂 H1 营收 +17.2% 但归母净利 −14.3%、毛利率回落 1.2 个百分点；同期上游精密设备与部件订单高增。<em>景气度到了，利润没有同步到一线</em>，这是本月最容易被忽略的一条。</div></div>
+<div class="tl-i"><div class="tl-d">08/26</div><div class="tl-c"><span class="tl-t">泵环节出现了颗粒度极细的交付节奏说法。</span>海外大客户在手 1 万台、交付周期约 3 个月，四季度逐月放量至 2028 年，并给到"当前单班月产 3000–5000 个"这样的车间级数字。<span class="mk mk-s">单一口径</span> 这类颗粒度通常来自专家座谈，而该公司已于 8 月 11 日公开声明从未对外委派专家开展座谈交流、一切以公告与定期报告为准。<em>本篇因此只采用半年报原文的台数与项目数</em>，上述交付节奏数字作为背景参考、不进任何结论。</div></div>
+<div class="tl-i"><div class="tl-d">08/27</div><div class="tl-c"><span class="tl-t">冷板环节开始进新玩家。</span>精密制造企业规划大批量生产冷板式散热模组、客户以国产算力链为主，年底完成厂房产能配置；另有整机厂液冷柜已交付国内算力租赁客户。供给增员通常领先于价格见顶。</div></div>
+<div class="tl-i"><div class="tl-d">09/01</div><div class="tl-c"><span class="tl-t">CDU 代工缺口浮出水面。</span>冷板厂普遍不具备 CDU 生产能力，被迫外找代工，卡位溢出给温控出身的厂商；同期一家国内厂商 1MW CDU 进入芯片厂商参考验证名录、样机送美测试，另一家云厂商新一代 CDU 进入下单窗口。</div></div>
+<div class="tl-i"><div class="tl-d">09/02</div><div class="tl-c"><span class="tl-t">液冷泵订单首次在财报里披露。</span>至此，本月完成从「卖方预测」到「公司自述」再到「定期报告」的三级跳，只有泵和 CDU 两个环节走完了全程。</div></div>
+</div>
+
+<div class="part-hd">
+  <span class="part-num">PART 1 / 3</span>
+  <div class="part-title">产业逻辑：风冷的边界，和一个没有公认口径的市场</div>
+  <div class="part-sub">本部分以公开资料为主 · 每个数字标注来源机构与口径边界</div>
+</div>
+
+<div class="sub">
+  <div class="sub-h">1.1　风冷的临界不是一个点，是一段区间</div>
+  <div class="sub-b">
+  <p>关于"风冷到多少千瓦就不行了"，市面上流传着好几个互相打架的数字。回到原始出处会发现它们并不冲突，只是在定义不同的东西。行业标准侧，ASHRAE 的建议门槛是<strong>每机柜 20kW</strong>，超过即建议改用液冷；工程实务侧，业内综述给出的拐点在<strong>40–50kW</strong>，再往上并非做不到，只是风量、噪声和占地的代价陡升。设备厂商的白皮书口径与此接近，称"越来越多机房机柜功率超过 20kW、许多机构正在部署 50kW 以上机柜"。</p>
+  <p>把这两个门槛和现实放在一起，问题就清楚了：当前主流 AI 机柜的功率已经是工程拐点的三倍左右。用三个数字之间的距离说明问题，比争论哪个才是"真上限"有意义得多。</p>
+  <p>中文材料里流传很广的"风冷硬上限 41.3kW"和"风冷热流密度上限 50 W/cm²"，这一轮回溯不到任何原始推导或工程文献，前者出自一家商业博客。本篇不采用。</p>
+  <p>芯片侧的临界点则是硬的。云厂商官方博客明确写加速器已从 100W 级走到"超过 1000W"，并预计 2030 年前单机柜机器学习负载将超过 500kW；追踪机构预计到 2029 年前沿 GPU 的 TDP 将超过 4000W。到了这个量级，液冷不再是效率账，而是能不能开机的问题。</p>
+  <div class="src-line">来源：ASHRAE TC 9.9 建议（经行业媒体转述，2025）｜Vertiv《Understanding Data Center Liquid Cooling Options》白皮书（厂商口径，该公司是液冷设备卖方）｜Schneider Electric 液冷与风冷资本开支对比白皮书｜Google Cloud Blog 2025-04-30｜Dell'Oro Group 2026-01-08</div>
+  </div>
+</div>
+
+<div class="sub">
+  <div class="sub-h">1.2　单柜功率：官方数字只有两个，其余都是测算</div>
+  <div class="sub-b">
+  <p>这是本专题里最容易出错的一节，因为公开流传的机柜功率数字大部分没有厂商背书。把有官方出处的和没有的分开列，情况一目了然。</p>
+  </div>
+</div>
+
+<div class="numbox">
+  <div class="numbox-h">单柜功率的公开口径 · 按确定性分档</div>
+  <table>
+    <tr><th style="width:26%">平台</th><th style="width:20%">单柜功率</th><th>来源性质</th></tr>
+    <tr><td>上上代旗舰机柜（NVL72）</td><td class="n">标称 120kW</td><td>芯片厂商产品页标称规格，<strong>官方</strong></td></tr>
+    <tr><td>上一代旗舰机柜</td><td class="n">132–142kW</td><td>第三方部署方与分析机构口径，非官方</td></tr>
+    <tr><td>当前这一代</td><td class="n">无官方数字</td><td>供应链测算区间 190–230kW，另有 120–130kW 与 190kW 两种流传口径，<strong>彼此差距接近一倍</strong></td></tr>
+    <tr><td>远期高密方案（NVL576）</td><td class="n">600kW</td><td>厂商在 2025 年技术大会上明确公布，<strong>官方</strong></td></tr>
+    <tr><td>1MW 机柜</td><td class="n">仅有供电架构背书</td><td>芯片厂商推 800VDC、云厂商推 ±400VDC 并称可把机柜从 100kW 拉到 1MW；具体时点属媒体外推</td></tr>
+  </table>
+</div>
+
+<div class="sub">
+  <div class="sub-b">
+  <p>三个使用上的注意事项。其一，当前这一代平台的品牌名已由 NVL144 改为 NVL72，继续用旧名会显得没跟上。其二，芯片厂商的 800VDC 与云厂商的 ±400VDC 不是同一个方案（后者正负极间总压差为 800V），不要混称，也不要把云厂商的 1MW 目标说成芯片厂商的路线图。其三，也是最要紧的一条：<em>凡是给出当前这一代确切千瓦数的材料，都是测算</em>，厂商至今未公布。</p>
+  <p>厂商官方确认的是工程特征而非功率：45℃ 液冷、液冷母排、100% 液冷计算托盘、无风扇全液冷设计。对产业链而言，这些特征比一个千瓦数更有约束力，它们直接决定了哪些零件必须存在。</p>
+  <div class="src-line">来源：NVIDIA 产品页与 2025-10-13 官方博文（含 NVL144→NVL72 更名编者注）｜NVIDIA GTC 2025（经 The Register 转述）｜Google Cloud Blog 2025-04-30｜TrendForce 2025-08-21｜SemiAnalysis 等供应链测算</div>
+  </div>
+</div>
+
+<div class="sub">
+  <div class="sub-h">1.3　渗透率：只有一家给出连续序列，而它上修过一次</div>
+  <div class="sub-b">
+  <p>液冷渗透率是本轮最常被引用的数字，但真正给出连续年度序列的机构只有一家。按 AI 芯片口径：2024 年 14%、2025 年约 33%、2026 年 53%、2027 年接近 60%。</p>
+  <p>有两处细节在中文转述里经常走样。第一，53% 的分母是 AI 芯片，不是机柜数、也不是机房面积；该机构新闻稿标题写的是"高端 AI 基础设施"，正文用的是芯片口径，两者被混为一谈。第二，2027 年的原文表述是"接近 60%"而非"达到 60%"。</p>
+  <p>更值得注意的是数字本身的变化过程：同一家机构在 2025 年 11 月给 2026 年的预测是 47%，九个月后上修到 53%。<em>上修这个动作比 53% 这个数本身信息量更大</em>，它说明需求跑在了预测前面。这也是我们在 8 月 17 日当天记录下这条时的判断。</p>
+  <p>还有一条需要降级处理。"某云厂商已在超过 80% 的 AI 服务器中导入液冷"这个说法，出处确实存在，但<strong>只出自上述同一篇新闻稿</strong>，属第三方估算，该云厂商自己从未公布过任何百分比。其官方口径是另一套完全不同的说法：液冷按吉瓦级部署、覆盖 2000 个以上 TPU Pod、七年可用性约 99.999%、自 2018 年的 TPU v3 起就在部署。本篇采用官方口径，八成这个数不作为独立论据。</p>
+  <div class="src-line">来源：TrendForce 官方新闻稿 2025-08-21 / 2026-08-17，TrendForce Consulting 2025-11-27｜Google Cloud Blog 2025-04-30 及 2025-11｜Dell'Oro Group 2026-01-08（不给渗透率百分比，定性判断为"大规模 AI 部署的功能性前提，而非可选的效率升级"）</div>
+  </div>
+</div>
+
+<div class="sub">
+  <div class="sub-h">1.4　市场规模：机构之间的分歧比增长本身更值得看</div>
+  <div class="sub-b">
+  <p>如果只想要一个"液冷市场有多大"的数字，这一节会让人失望：没有公认口径。但把各家原样并排放在一起，反而能看出真问题在哪。</p>
+  </div>
+</div>
+
+<div class="numbox">
+  <div class="numbox-h">全球液冷市场规模 · 各机构口径原样并列（不做平均、不做合并）</div>
+  <table>
+    <tr><th style="width:24%">机构</th><th style="width:19%">基准年</th><th style="width:19%">目标年</th><th>口径边界</th></tr>
+    <tr><td>Dell'Oro Group</td><td class="n">2025 约 30 亿美元</td><td class="n">2029 约 70 亿美元</td><td>明确写厂商侧出货收入，不含工程安装、管路与机房改造</td></tr>
+    <tr><td>Grand View Research</td><td class="n">2025 约 66.5 亿美元</td><td class="n">2033 约 294.6 亿美元</td><td>方案与服务全包口径</td></tr>
+    <tr><td>Global Market Insights</td><td class="n">2025 约 48 亿美元</td><td class="n">2035 约 271 亿美元</td><td>CAGR 18.2%</td></tr>
+    <tr><td>MarkNtel Advisors</td><td class="n">2025 约 55.1 亿美元</td><td class="n">2030 约 190.3 亿美元</td><td>CAGR 约 22.95%</td></tr>
+    <tr><td>ResearchAndMarkets</td><td class="n">2024 约 8.7 亿美元</td><td class="n">2030 约 107 亿美元</td><td>CAGR 51.93%</td></tr>
+  </table>
+</div>
+
+<div class="sub">
+  <div class="sub-b">
+  <p>两组对照说明了问题。同为 2025 年的全球规模，最低的 30 亿美元与最高的 66.5 亿美元<em>相差 2.2 倍</em>；同为 2030 年前后的终值，给 107 亿美元的那家配了 51.93% 的复合增速，给 190.3 亿美元的那家却只配 22.95%，规模更小的一家增速反而更高。这只能说明两边定义的根本不是同一个东西。</p>
+  <p><strong>本篇在需要单一基线时采用哪家。</strong>取厂商出货收入口径的那条序列作基线，理由有三：它明确写清了统计边界，不含工程与服务；它同时披露季度实测增速（直接到芯片液冷 2025 年二季度同比增 156%）与竞争格局，有可交叉验证的落点，不是纯建模；它是被产业界与媒体反复引用的追踪型机构，而并列表里另外几家属于批量产出市场报告的售卖方，在同一赛道上常年给出彼此矛盾的数字。要讲"含工程与服务的总盘子"可以引用更大的那个口径，但必须注明边界不同，两者不能混用，更不能取平均。</p>
+  <p>国内口径里最扎实的是统计机构给出的整机出货：2024 年中国液冷服务器市场 23.7 亿美元、同比增 67.0%，全年出货超 23 万台；到 2029 年 162 亿美元，五年复合增速 46.8%。结构上，三家主要服务器厂商合计约七成份额，互联网、电信运营商、政府三个行业吃掉约九成采购量。</p>
+  <p>有两类国内数字本篇不采用。一是某咨询机构"2025 年超千亿元"的说法，那是 2020 至 2021 年做的五年预测，与今天的实际盘子无法对照；二是国内批量报告站流传的一组规模数字，彼此矛盾且找不到原始方法论。还有一处技术性的坑：中文搜索摘要普遍把"亿元"误译为 billion，本篇所有数字均已回溯原文核对。</p>
+  <div class="src-line">来源：Dell'Oro Group 2026-01-08｜Grand View Research 2025/2026｜Global Market Insights 2025｜MarkNtel Advisors 2025｜ResearchAndMarkets 2026-01-20｜IDC 中国 2025-04-08</div>
+  </div>
+</div>
+
+<div class="sub">
+  <div class="sub-h">1.5　三条技术路线：分工清楚，但支撑它的量化数据并不硬</div>
+  <div class="sub-b">
+  <p><strong>冷板式（单相直接液冷）是当前主导路线。</strong>追踪机构与统计机构都这么定性，理由一致：改造成本低、与既有风冷机房兼容、可以平滑过渡。它的瓶颈是仍需保留部分风冷处理内存、电源、网卡等非芯片器件，PUE 下限不如浸没。当前这一代平台走的是把冷板路线做到极致：无风扇、液冷母排、100% 液冷计算托盘，方向是连风扇都不要。</p>
+  <p><strong>单相浸没</strong>的能效优势明确，噪声与风机功耗归零，瓶颈在机房承重、工质成本、运维体系与现有机房不兼容、以及器件兼容性认证。<strong>两相浸没</strong>理论能效最优，但工质成本、PFAS 环保监管、密封与冷凝设计复杂度、供应链成熟度四重约束叠加，追踪机构判断它要等芯片 TDP 继续上升才会扩张，目前不是主流。</p>
+  <p>这一节需要主动划掉两组流传很广的数字。<strong>"冷板式占九成"</strong>在中文材料里出现频率极高，但每次出现都不带机构名和调查方法，本轮回溯不到原始白皮书；两家权威机构在这个问题上都只肯给定性判断、不给百分比，这本身就说明业内并没有权威统计。<strong>各路线的 PUE 具体区间</strong>（冷板 1.2–1.4、单相浸没 1.05–1.1、两相 1.03）同样如此。这四行数字在中文技术博客里措辞几乎逐字相同，指向同一份未署名的原始材料，本轮找不到任何一家机构或运营商署名的实测数据集。本篇因此只写"冷板式是主流路线"，不写比例，也不写 PUE 区间。</p>
+  <p>本节唯一带机构和年份的结构性判断是：液到风方案是当前的过渡主流，液到液预计从 2027 年起放量。</p>
+  <div class="src-line">来源：Dell'Oro Group 2026-01-08（"单相直接液冷主导当前部署"）｜IDC 中国 2025-04-08（"冷板式份额进一步提高、成为智算中心标配"）｜TrendForce 2025-08-21（L2A/L2L 节奏）</div>
+  </div>
+</div>
+
+<div class="part-hd">
+  <span class="part-num">PART 2 / 3</span>
+  <div class="part-title">结构：把液冷拆成八个环节，逐个看兑现到了哪一步</div>
+  <div class="part-sub">每个环节先交代它是什么、在链条哪一段，再给我们一个月里拿到的一手信号与核验结论</div>
+</div>
+
+<div class="sub">
+  <div class="sub-b">
+  <p>先给一个价值量的锚，后面每个环节都可以往上挂。独立拆分给到的<strong>整柜全套液冷 BOM 约 36 至 68 万元</strong>，口径差异来自是否包含 CDU：只算冷板、分水器、快接头这类散热组件时约 36 万元，加上 CDU 与全套管路后到 68 万元；某外资机构对上一代旗舰机柜液冷散热组件的测算是 49,860 美元，对下一代的测算是 55,710 美元，<em>代际提升约 11.7%</em>。冷板单体的拆分是每柜约 117 块、单价 200 至 300 美元，合计 17 至 25 万元。</p>
+  <p>这里有一处需要留意的口径落差。我们 8 月初记录到的一份材料按某云厂商 4500 柜测算，给出的是单柜冷板约 100 万元、对应冷板市场规模约 45 亿元。这个数字自洽，但与上述独立拆分的 17 至 25 万元差了四到六倍。差异大概率出在"冷板"二字的边界：是只算冷板本体，还是把整套二次侧散热系统都算了进去。<strong>引用任何单柜价值量之前，先问它把什么算了进去</strong>，这是本部分反复会遇到的问题。</p>
+  </div>
+</div>
+
+<div class="seg">
+  <div class="seg-h"><span class="seg-n">01</span><span class="seg-t">CDU：本月唯一新出现的结构性缺口</span><span class="seg-r">兑现度 · 高</span></div>
+  <div class="seg-b">
+  <p><span class="tag tag-x">环节</span>冷量分配单元，位于一次侧与二次侧之间，负责把机房冷源的冷量分配给机柜内的冷板回路，是液冷系统里技术集成度最高、单体价值量最大的部件。它有机架内与机房级两种形态，前者随机柜出货，后者按机房配置。</p>
+  <p><span class="tag tag-o">一手</span>9 月 1 日我们记录到本月最有价值的一条结构信号：<strong>冷板厂普遍不具备 CDU 的生产能力，被迫外找代工</strong>。这句话的含义比听上去大。它意味着液冷 Tier1 的能力边界并不完整，卡位溢出给了温控出身的厂商。同期一家国内厂商的 1MW CDU 进入芯片厂商参考验证名录并送样赴美测试，另一家云厂商的新一代 CDU 进入下单窗口。8 月 5 日的材料则给出需求侧背景：新一代平台标配液冷带动 CDU 空间较 2025 年数倍提升。</p>
+  <p><span class="tag tag-o">一手</span>能力缺口的另一面是产品线宽度。核查公司自述后发现，能把 CDU、分水器、预制化管路、室外干冷器、集成冷站、浸没箱体一整条列全的公司，在 A 股是少数。多数所谓液冷标的的自述产品线只覆盖其中一两项。</p>
+  <p><strong>→ 所以：</strong>CDU 是本月唯一从"需求好"升级为"有人做不了"的环节。能力缺口比订单增长更难被追平，因为它不是产能问题，而是工程经验问题。这也是本专题里我们认为确定性最高的一段。</p>
+  <div class="chip-row"><span class="chip p">英维克</span><span class="chip p">同飞股份</span><span class="chip p">申菱环境</span><span class="chip">依米康</span><span class="chip">高澜股份</span><span class="chip">冰轮环境</span></div>
+  </div>
+</div>
+
+<div class="seg">
+  <div class="seg-h"><span class="seg-n">02</span><span class="seg-t">液冷泵：第一个把订单写进定期报告的环节</span><span class="seg-r">兑现度 · 高</span></div>
+  <div class="seg-b">
+  <p><span class="tag tag-x">环节</span>CDU 内部的动力源，按功率分小功率与大功率两档，分别对应机架内与机房级 CDU。它是 CDU 里少数可以独立定价、独立出货的部件，因此也是整条链上最早能看到订单数据的地方。</p>
+  <p><span class="tag tag-o">一手</span>8 月 20 日，一家泵企在半年报里披露终端客户订单超 5 万台、130 余个项目在推进；9 月 2 日，液冷泵订单首次在财报中披露。<em>这是整条链上唯一走完"卖方预测到公司自述再到定期报告"三级跳的环节</em>。另一家泵企同期披露 1 至 15kW 产品上半年累计交付约 2 万台，新增日产 200 台产线于 9 月初完成，产品覆盖 22kW 与 37kW 并储备 55kW。</p>
+  <p><span class="tag tag-o">一手</span>需要同框看的是利润。前者自述该业务收入占比仍较低，后者同期归母净利同比下滑 68.7%。<strong>订单进了报表，业绩还没有。</strong>市场流传的"累计订单金额近 10 亿元"经核对在半年报全文中不存在，系由台数倒推，隐含单价与小功率泵的实际档位不符，本篇不采用。</p>
+  <p><strong>→ 所以：</strong>泵是本月证据链最完整的环节，但完整的是订单证据、不是业绩证据。两家公司的当期利润都在下滑，兑现窗口指向四季度及 2027 年。把订单数据直接当成业绩拐点，是这个环节最容易犯的错。</p>
+  <div class="chip-row"><span class="chip p">飞龙股份</span><span class="chip">大元泵业</span></div>
+  </div>
+</div>
+
+<div class="seg">
+  <div class="seg-h"><span class="seg-n">03</span><span class="seg-t">冷板：需求确定，但供给端正在快速增员</span><span class="seg-r">兑现度 · 中</span></div>
+  <div class="seg-b">
+  <p><span class="tag tag-x">环节</span>直接贴合芯片的换热部件，单柜用量约 117 块，是液冷里用量最大、也是最标准化的部件。正因为标准化，它的门槛不在材料而在加工效率、良率与一致性。</p>
+  <p><span class="tag tag-o">一手</span>本月冷板环节最值得注意的不是订单，而是<strong>谁进来了</strong>。8 月 27 日，一家精密制造企业规划大批量生产冷板式散热模组、客户以国产算力链为主，年底完成厂房产能配置；9 月 1 日该公司冷板样品已送多家测试、预计四季度小批量供货。另有一家轴承保持架企业于 8 月 29 日公告在山东与广州两地投资合计 4.26 亿元建设液冷部件产线，年产 1500 万件套，产品写明为液冷板与汇流排。这家公司的切入路径是用冷锻冲压与金属注射成型替代传统数控加工。</p>
+  <p><span class="tag tag-o">一手</span>跨界者的共同特征是<em>都不是从材料端切入，而是从加工工艺端切入</em>。这反过来说明冷板环节的真实门槛在哪里。上述后一家公司的液冷叙事目前处在已公告投项目、未披露客户与收入的阶段：其 2026 年半年报摘要全文没有出现"液冷"二字，公告本身也写明项目尚处前期筹备。其路演材料中的单机柜价值量、投入产出比、量产净利率等数字均无公告依据，本篇不采用。</p>
+  <p><strong>→ 所以：</strong>冷板是需求最确定、但格局最不确定的环节。供给增员通常领先于价格见顶，本月至少两家跨界者官宣产能，且都选在四季度到明年上半年落地。这个环节看订单不如看毛利率，真正的信号会先出现在毛利率上。</p>
+  <div class="chip-row"><span class="chip p">领益智造</span><span class="chip p">鸿富瀚</span><span class="chip">中石科技</span><span class="chip">银轮股份</span><span class="chip">思泉新材</span><span class="chip">飞荣达</span><span class="chip">达瑞电子</span><span class="chip">金帝股份</span><span class="chip">飞亚达</span></div>
+  </div>
+</div>
+
+<div class="seg">
+  <div class="seg-h"><span class="seg-n">04</span><span class="seg-t">快接头、波纹管与分水器：唯一带消耗品属性的环节</span><span class="seg-r">兑现度 · 中</span></div>
+  <div class="seg-b">
+  <p><span class="tag tag-x">环节</span>流体连接与分配部件。快接头负责机柜与管路的可插拔连接，波纹管负责柔性连接与位移补偿，分水器负责把冷量分到各个节点。</p>
+  <p><span class="tag tag-o">一手</span>8 月 26 日的材料给出了这个环节的用量逻辑：八卡服务器占比预计从当前 10% 至 15% 升至 2027 年的 20% 至 25%，8U 风冷转向 2U 与 4U 液冷架构后每个 GPU 配备两个波纹管，机柜内外还需额外波纹管连接分水器以取代盲插，新一代机柜引入内置分水器后再增加两个。关键在最后一句：<strong>波纹管属半消耗品，更换周期约三到五年</strong>，这是整条液冷链上少有的带重复采购属性的部件。</p>
+  <p><span class="tag tag-o">一手</span>本环节的量化数字需要降级处理。公司交流称单柜价值量提升约五成、光模块液冷单柜约 1 万美元，两个数字均只有这一个来源，本篇标注为公司自述口径。可引用的独立佐证是某外资机构对交换托盘冷却价值量提升约 67% 的测算，方向一致但不是同一指标，不能相互替代。核查另发现，一家该环节公司以收购公告级文件披露控股了一家液冷技术公司，并明确说明现阶段产品产能与订单需求存在缺口、扩建正在推进，这是本环节少见的公告级表述。</p>
+  <p><strong>→ 所以：</strong>消耗品属性是这个环节区别于其他环节的地方，三到五年的更换周期意味着装机量会沉淀为后续的存量替换需求。但目前所有幅度数字都只有单一来源，值得跟踪的是用量逻辑而非价格弹性。</p>
+  <div class="chip-row"><span class="chip p">五洋自控</span><span class="chip">三花智控</span><span class="chip">永贵电器</span></div>
+  </div>
+</div>
+
+<div class="seg">
+  <div class="seg-h"><span class="seg-n">05</span><span class="seg-t">机柜结构件与线束盒：被忽略的配套增量</span><span class="seg-r">兑现度 · 中</span></div>
+  <div class="seg-b">
+  <p><span class="tag tag-x">环节</span>机柜内的支撑、走线与连接结构。液冷架构改变了柜内空间布局，风扇位置腾出、管路占位增加，导致结构件重新设计。</p>
+  <p><span class="tag tag-o">一手</span>8 月 18 日与 8 月 26 日两次记录到同一条线索：机柜线束盒的客户大幅上调订单指引，仅单一客户月出货量已增至 7 万只、年化有望超过 80 万只，而此前市场预期是今年 30 万只以上、明年 60 万只，上修幅度约三分之一。该公司同时在沟通搭载滑轨的液冷柜。</p>
+  <p><span class="tag tag-o">一手</span>另一条相关线索来自架构侧：新一代交换托盘从 9 层翻倍至 18 层、PCB 从 26 层升至 30 层，托盘数量翻倍的同时带动了液冷金属波纹管的用量。<strong>结构件的增量往往不是自己涨出来的，是被架构变化带出来的</strong>。</p>
+  <p><strong>→ 所以：</strong>这类配套件单价低、关注度低，但订单指引的上修幅度是本月各环节里较高的。它的风险也在这里：单一客户集中度高，指引上修可以很快，下修同样可以很快。</p>
+  <div class="chip-row"><span class="chip">恒林股份</span></div>
+  </div>
+</div>
+
+<div class="seg">
+  <div class="seg-h"><span class="seg-n">06</span><span class="seg-t">光模块液冷 Cage：从配件升级为独立赛道</span><span class="seg-r">兑现度 · 中低</span></div>
+  <div class="seg-b">
+  <p><span class="tag tag-x">环节</span>光模块的外部散热结构。速率向 1.6T 与 3.2T 迭代后功耗密度持续抬升，外部散热从鼠笼加散热器的风冷方案，转向鼠笼加液冷板的方案；内部则是导热界面材料与均热板降低内部热阻，两环互补并存、同时增量。</p>
+  <p><span class="tag tag-o">一手</span>8 月 13 日晚一家光模块龙头公告拟斥资 17.47 亿元协议受让一家散热材料公司 10.47% 股权，受让价较当日收盘价仅折价 0.77%，承诺 12 个月不减持。值得注意的是公告口径：只写预计产生较强协同效应，<em>未披露任何供货协议或锁量条款</em>。8 月 18 日的材料判断该环节渗透率与价值量较 800G 风冷时明显上升，且链主为国内厂商、格局集中。</p>
+  <p><span class="tag tag-o">一手</span>核查环节发现一处普遍的身份误置。市面上的液冷名单常把光模块厂商列在"液冷 Cage"栏下，但这些公司在互动易上无一条自述液冷业务。<strong>它们是液冷需求的产生方，不是液冷部件的供应方</strong>。这个卡位的实际承接方是有多年 Cage 业务积累、近两年切入液冷的连接器企业。</p>
+  <p><strong>→ 所以：</strong>这个环节的产业逻辑成立，但兑现度是本篇八个环节里较低的一档，目前主要是股权动作与方向性判断，尚无订单或收入层面的公开数据。身份误置的问题需要先解决，否则整个环节的标的映射都是错的。</p>
+  <div class="chip-row"><span class="chip p">奕东电子</span><span class="chip">意华股份</span></div>
+  </div>
+</div>
+
+<div class="seg">
+  <div class="seg-h"><span class="seg-n">07</span><span class="seg-t">一次侧：冷水机组与机房制冷，本月出错最多的地方</span><span class="seg-r">兑现度 · 待澄清</span></div>
+  <div class="seg-b">
+  <p><span class="tag tag-x">环节</span>机房侧的冷源设备，包括冷水机组、干冷器、冷却塔与方舱。它不随机柜出货，按机房配置，因此单值大、交付周期长、受土建进度约束。</p>
+  <p><span class="tag tag-o">一手</span>8 月 16 日至 8 月 23 日，这个环节连续出现高增速说法：某公司上半年数据中心订单同比增长 500%、交付周期从两三个月压缩至 1 个月、1 至 7 月累计新接订单约 90 亿元、产能规划上修至明年底 150 至 200 亿元。这组数字在当时的讨论里权重很高。</p>
+  <p><span class="tag tag-o">一手</span>我们对它做了独立核验，结论是<strong>不成立</strong>。90 亿元的真实出处是某北美客户的意向框架大单，被转述成了累计新接订单；该金额相当于公司全年总营收的 1.28 倍，且远超交易所重大合同披露门槛却没有对应公告；半年报披露时公司称中期未达业绩预告标准、不便讨论业务细节。该公司近三个月已连续否认过多起同类传闻。可以确认的部分是：公司自述海外算力基础建设景气度上升、旗下品牌的北美与东南亚基地自 6 月起进入交付峰期。</p>
+  <p><span class="tag tag-o">一手</span>同环节另一条流传很广的说法同样不成立：某海外温控龙头"当期在手订单 150 亿美元"，实为 2025 年末的订单储备，而该公司自 2026 年二季度起已停止披露订单储备，最后一次季度披露是 2025 年二季度的 85 亿美元。</p>
+  <p><strong>→ 所以：</strong>一次侧是本月注水最集中的环节，原因不难理解：它单值最大、最容易讲出大数字，而机房项目的保密条款又让公司不便澄清。这个环节目前可用的只有定性判断（交付峰期已至），所有具体金额都需要回到公告去对。</p>
+  <div class="chip-row"><span class="chip">冰轮环境</span><span class="chip">申菱环境</span><span class="chip">银轮股份</span></div>
+  </div>
+</div>
+
+<div class="seg">
+  <div class="seg-h"><span class="seg-n">08</span><span class="seg-t">上游材料：导热界面、陶瓷基板、金刚石与铜</span><span class="seg-r">兑现度 · 分化</span></div>
+  <div class="seg-b">
+  <p><span class="tag tag-x">环节</span>四条彼此独立的材料线，唯一的共同点是都服务于热传导，但在链条上的层级完全不同，混为一谈会得出错误结论。</p>
+  <p><span class="tag tag-o">一手</span><strong>铜是本月唯一有实际销量数据的材料线。</strong>算力散热用铜基材上半年销量 1.27 万吨、同比增 68%，机架母线同比增 94%；另有企业 2025 年芯片半导体铜材销量 4.1 万吨、其中算力散热 1.41 万吨同比增 55%，并拟在海外新建 3 万吨液冷及母线用高精密铜排产能。销量口径比金额口径更难修饰，这条线的可信度在本节最高。</p>
+  <p><span class="tag tag-o">一手</span><strong>陶瓷基板受地缘因素扰动。</strong>稀土管制传导至日系陶瓷材料，氮化铝粉体开涨，国内 500 吨连续化产线投产获得验证窗口。但涨价幅度只有一家券商口径，本篇不作幅度卖点，同时纠正一处广泛流传的产业链错位：粉体环节是双寡头格局，另一家常被提及的日本公司是制品与基板厂而非粉体厂。可照写的是价值量口径。光模块速率由 800G 升至 1.6T 时，单只陶瓷价值量由约 17 美元升至约 22 美元。</p>
+  <p><span class="tag tag-o">一手</span><strong>金刚石的技术趋势为真、空间数字为一家之言。</strong>新一代架构确认采用金刚石铜复合导热界面属多方独立报道，中国金刚石产能占全球九成以上亦经独立确认；但 2030 年市场空间数字为单家券商测算，须署来源。这里有一处关键的概念纠正：流传的"某个热流密度以上必须用金刚石"是排他性表述，不成立。<strong>独立口径是金刚石解决芯片级热点扩散、液冷解决系统级排热，两者互补而非替代</strong>。这个说法不是我们的判断，是相关公司自己在互动易上主动说明的。</p>
+  <p><span class="tag tag-o">一手</span><strong>导热界面材料需要与冷板分开看。</strong>它是芯片与散热器之间的填充层，与液冷回路不是同一层级。核查发现多家被列入冷板环节的公司，其自述业务实为导热界面材料，主要面向光模块与器件散热。</p>
+  <p><strong>→ 所以：</strong>四条材料线的兑现度差异极大。铜有销量、陶瓷有涨价但幅度存疑、金刚石有趋势无规模、导热界面被普遍归错环节。把它们打包成"液冷上游材料"来讨论，是本节最常见的错误。</p>
+  <div class="chip-row"><span class="chip p">金田股份</span><span class="chip">旭光电子</span><span class="chip">科创新源</span><span class="chip">阿莱德</span><span class="chip">四方达</span><span class="chip">中兵红箭</span></div>
+  </div>
+</div>
+
+<div class="seg">
+  <div class="seg-h"><span class="seg-n">附</span><span class="seg-t">制造设备与端侧微泵：两条容易被放大的支线</span><span class="seg-r">兑现度 · 低</span></div>
+  <div class="seg-b">
+  <p><span class="tag tag-o">一手</span><strong>制造设备。</strong>液冷与光模块结构件的加工需求确实推动了通用机床新签订单高增：日本机床协会 7 月新签订单同比增 50.4%、1 至 7 月累计同比增 38%，国内反馈数控系统普遍缺货。有企业披露液冷相关接单已排到 10 月、全年预计超 20 亿元。但本月流传最广的一条设备说法经核验只有单一来源：某专用设备半年内单价由 40 多万涨至 60 多万、毛利率超 60%。更要紧的是空间口径不成立。按该材料自身给出的产能口径反推，全球每年 3.5 万台液冷机柜仅需约 140 台设备、对应约 0.84 亿元，而流传的市场空间是 50 至 103 亿元，且该设备属一次性资本开支、寿命在十年以上，不构成持续性收入。</p>
+  <p><span class="tag tag-o">一手</span><strong>端侧微泵液冷。</strong>这条支线与数据中心液冷没有产业链关系，只是共用了"液冷"两个字。8 月 30 日我们做过一次澄清：终端微泵液冷并非今年从零到一，外挂式微泵液冷手机壳已量产、概念机 2023 年即有首发，今年的变化是市场预期把微泵做进整机内部。流传的"散热效率较被动方案提升 300%"仅见于方案供应商的宣传口径，其正式发布稿并未载入该数字。产业链三大件为驱动芯片、压电微泵泵体与高柔性液冷膜片，A 股可对应的主要是驱动芯片环节，泵体与压电陶瓷基本无上市标的。</p>
+  <p><strong>→ 所以：</strong>这两条支线的共同点是叙事弹性远大于订单弹性。设备那条的空间口径经反推后差了两个数量级，端侧那条则连产业链归属都不成立。放在这里是为了说明它们不属于前面八个环节，不是为了给它们估值。</p>
+  <div class="chip-row"><span class="chip">创世纪</span><span class="chip">集智股份</span><span class="chip">科德数控</span><span class="chip">艾为电子</span><span class="chip">南芯科技</span></div>
+  </div>
+</div>
+
+<div class="part-hd">
+  <span class="part-num">PART 3 / 3</span>
+  <div class="part-title">个股：按环节的卡位表</div>
+  <div class="part-sub">仅列 A 股 · 代码经行情接口逐个反查 · 按公开披露等级分档</div>
+</div>
+
+<div class="sub">
+  <div class="sub-b">
+  <p>这张表的编制方式与常见的液冷标的名单有一处根本不同：<strong>每一行的卡位描述都取自公司自己说过的话</strong>，来源是定期报告、公告、投资者关系活动记录表和互动易问答，而不是研报的行业映射。这样做的代价是表会变短，好处是每一行都能追到出处。</p>
+  <p>我们对 46 个候选标的逐个核查，有三条结论需要先说清楚。</p>
+  <p><strong>第一，代码全部核对无误。</strong>46 个六位代码经行情接口做了代码到简称的反查，46 比 46 一致，零错配。名单里原有的一个名字在沪深北三市查无此上市主体，已删除。</p>
+  <p><strong>第二，没有一家披露过单列的"液冷业务收入"。</strong>这是本次核查最重要的发现。全表唯一带金额的公司自述是某零部件厂"2025 年数字能源营收近 15 亿元"，但那是含储能的事业部口径，不是数据中心液冷收入，不能简化引用。<em>整个板块目前还没有一个可比的收入口径</em>，任何流传的"某公司液冷收入多少亿"都需要先问它从哪来。</p>
+  <p><strong>第三，有八家从名单里剔除了。</strong>它们进入各类液冷名单靠的是研报的行业映射，公司自己从未自述过液冷业务。其中一家在投资者三次追问能否做服务器液冷泵时，三次答复其电子水泵用于新能源汽车热管理、排水泵用于家电。</p>
+  </div>
+</div>
+
+<div class="note">
+<b>披露等级怎么读：</b><span class="mk mk-y">强</span> 公司公告、中标公告、收购公告或投资者关系活动记录表等公告级文件明确写了液冷业务；<span class="mk mk-o">中</span> 公司在互动易等平台以本人口径承认，但未见公告级披露；<span class="mk mk-s">待核</span> 该公司在沪市或科创板，本次使用的互动易接口不覆盖，<b>属于我们没查到，不是查到了没有</b>，不可当作否定证据。
+</div>
+
+<div class="pos">
+<table>
+<tr><th style="width:14%">环节</th><th style="width:13%">公司</th><th>卡位（取公司自述口径）</th><th style="width:9%">披露</th><th style="width:11%">我方一手</th></tr>
+
+<tr><td class="seg-c" rowspan="5">CDU 与<br>温控系统</td><td>英维克<br><span class="src">002837</span></td><td>机房温控整机与冷板液冷全链条方案商。互动易以自有液冷业务为前提作答，未展开业务细节</td><td><span class="mk mk-o">中</span></td><td class="d">0805 0812<br>0818 0825<br>0901 0902</td></tr>
+<tr><td>申菱环境<br><span class="src">301018</span></td><td>公司自述液冷是重要战略方向、产品种类齐全，并主动指向定期报告。第三期股权激励把 2027 年营收考核定在 84.18 亿元</td><td><span class="mk mk-o">中</span></td><td class="d">0810 0811<br>0901</td></tr>
+<tr><td>同飞股份<br><span class="src">300990</span></td><td>产品清单为全表最全：CDU、分水器、预制化管路、室外干冷器、集成冷站、浸没液冷箱体。1MW CDU 进入芯片厂商参考验证名录</td><td><span class="mk mk-o">中</span></td><td class="d">0805 0901</td></tr>
+<tr><td>依米康<br><span class="src">300249</span></td><td>向多家北美云厂商<strong>间接供货</strong>数据中心散热设备（经海外托管商穿透），并明确否认进入某芯片厂商供应链；液冷及温控产品获首批 CRAA 认证</td><td><span class="mk mk-y">强</span></td><td class="d">—</td></tr>
+<tr><td>冰轮环境<br><span class="src">000811</span></td><td>旗下品牌供数据中心冷源设备，北美、马来西亚、中国基地自 6 月起进入交付峰期。公司称受商业政策限制不便讨论业务细节</td><td><span class="mk mk-o">中</span></td><td class="d">0816 0817<br>0823</td></tr>
+
+<tr><td class="seg-c" rowspan="3">液冷泵</td><td>飞龙股份<br><span class="src">002536</span></td><td>大功率液冷泵用于服务器与数据中心液冷。半年报披露小功率超 5 万台、大功率近万台、130 余个项目在推进。公司自述该业务收入占比仍较低</td><td><span class="mk mk-o">中</span></td><td class="d">0820 0825<br>0826 0901<br>0902</td></tr>
+<tr><td>大元泵业<br><span class="src">603757</span></td><td>1–15kW 产品上半年累计交付约 2 万台，新增日产 200 台产线 9 月初完成，覆盖 22kW 与 37kW 并储备 55kW；同期归母净利同比 −68.7%</td><td><span class="mk mk-s">待核</span></td><td class="d">0826</td></tr>
+<tr><td>高澜股份<br><span class="src">300499</span></td><td>液冷系统与自产屏蔽泵。互动易液冷答复密度为全表最高，披露部分数据中心液冷产品已通过 CE、UL 认证</td><td><span class="mk mk-o">中</span></td><td class="d">—</td></tr>
+
+<tr><td class="seg-c" rowspan="7">冷板与<br>散热模组</td><td>领益智造<br><span class="src">002600</span></td><td>子公司自 2018 年起为北美头部算力客户核心供应商，交付服务器液冷板、快接头与分水器，已进入其合格供应商名录并持续批量交付。公司自述该业务收入占比较低</td><td><span class="mk mk-y">强</span></td><td class="d">—</td></tr>
+<tr><td>鸿富瀚<br><span class="src">301086</span></td><td>6 月中标公告的整机柜液冷部件冷板产品正按客户需求排产，国内外服务器客户样品测试与认证推进中</td><td><span class="mk mk-y">强</span></td><td class="d">—</td></tr>
+<tr><td>中石科技<br><span class="src">300684</span></td><td>液冷为公司重点布局的核心新增长方向，2025 年完成对液冷子公司的并购整合，液冷产品已实现快速批量交付；公司同时说明当前收入占比仍相对较低</td><td><span class="mk mk-y">强</span></td><td class="d">0816</td></tr>
+<tr><td>银轮股份<br><span class="src">002126</span></td><td>数据中心液冷模组零部件供应商，覆盖二次侧 CDU 不锈钢板换、芯片冷板与一次侧冷水塔干冷器；板式换热器已向多家模组客户送样，部分客户已下达小批订单</td><td><span class="mk mk-y">强</span></td><td class="d">0810</td></tr>
+<tr><td>思泉新材<br><span class="src">301489</span></td><td>2026 年 6 月中标某云厂商液冷产品订单，按月度滚动下单交付，已取得正式订单</td><td><span class="mk mk-o">中</span></td><td class="d">—</td></tr>
+<tr><td>飞荣达<br><span class="src">300602</span></td><td>单相与两相液冷冷板模组、流量控制仪与 CDU，客户名单披露详尽，部分产品已实现批量交付；同日主动澄清尚未向某客户提供服务器液冷产品</td><td><span class="mk mk-o">中</span></td><td class="d">—</td></tr>
+<tr><td>达瑞电子<br><span class="src">300976</span></td><td>并购散热企业获得水冷板产品线，终端延伸至光模块与 AI 服务器；摘牌 22.03 亩地块规划用于液冷散热器件扩产，项目尚处前期筹备</td><td><span class="mk mk-o">中</span></td><td class="d">—</td></tr>
+
+<tr><td class="seg-c" rowspan="3">快接头<br>管路与<br>分水器</td><td>五洋自控<br><span class="src">300420</span></td><td>2026 年 6 月收购公告控股一家液冷技术公司（附审计与资产评估报告）。公司称子公司订单充足、已与国内云厂商合作，并明确<strong>现阶段液冷产品产能与订单需求存在缺口</strong>、产能扩建推进中</td><td><span class="mk mk-y">强</span></td><td class="d">0826</td></tr>
+<tr><td>三花智控<br><span class="src">002050</span></td><td>以热管理零部件供应商身份切入，一次侧与二次侧均已有产品供应，核心品类为阀、泵、换热器、控制器，已为全球部分客户供货</td><td><span class="mk mk-o">中</span></td><td class="d">—</td></tr>
+<tr><td>永贵电器<br><span class="src">300351</span></td><td>液冷快接头系列面向高密度 AI 算力机架，同时有液冷连接器与液冷板组件。公司口径为正在积极拓展下游客户，<strong>未称已批量供货</strong></td><td><span class="mk mk-o">中</span></td><td class="d">—</td></tr>
+
+<tr><td class="seg-c" rowspan="3">机柜结构件<br>与光模块<br>液冷 Cage</td><td>奕东电子<br><span class="src">301123</span></td><td>多年 Cage 业务积累，近两年切入液冷赛道，具备一体化方案能力，公司自述液冷产品持续在量产出货</td><td><span class="mk mk-o">中</span></td><td class="d">—</td></tr>
+<tr><td>意华股份<br><span class="src">002897</span></td><td>高速连接器应用于数据中心与服务器；液冷产品公司自述<strong>处于送样阶段</strong></td><td><span class="mk mk-o">中</span></td><td class="d">—</td></tr>
+<tr><td>恒林股份<br><span class="src">603661</span></td><td>通过连接器与代工龙头供应机柜线束盒，单一客户月出货量增至 7 万只；搭载滑轨的液冷柜正在沟通</td><td><span class="mk mk-s">待核</span></td><td class="d">0818 0826</td></tr>
+
+<tr><td class="seg-c" rowspan="3">上游材料<br>与导热界面</td><td>科创新源<br><span class="src">300731</span></td><td>子公司为高端光模块开发高导热低热阻导热界面材料。<strong>卡位是导热界面材料，与冷板不是同一层级</strong></td><td><span class="mk mk-o">中</span></td><td class="d">0817</td></tr>
+<tr><td>阿莱德<br><span class="src">301419</span></td><td>导热凝胶适配光通信客户的光模块及器件散热。公司说明拟建生产运营中心并非布局单一赛道</td><td><span class="mk mk-o">中</span></td><td class="d">—</td></tr>
+<tr><td>旭光电子<br><span class="src">600353</span></td><td>氮化铝粉体、基板到管壳一体化，年产能 500 吨可扩至 1000 吨以上</td><td><span class="mk mk-s">待核</span></td><td class="d">0811</td></tr>
+
+<tr><td class="seg-c" rowspan="2">金刚石散热<br><span class="src">属不同层级</span></td><td>四方达<br><span class="src">300179</span></td><td>CVD 金刚石散热片。公司两次主动说明<strong>与微通道冷板属散热方案的不同层级、不存在直接竞争，两种方案可协同工作</strong></td><td><span class="mk mk-o">中</span></td><td class="d">0805 0818<br>0825</td></tr>
+<tr><td>中兵红箭<br><span class="src">000519</span></td><td>功能性金刚石用于金属基与陶瓷基复合材料，解决电子器件散热瓶颈。公司自述现阶段<strong>以科研院所采购试验样品为主</strong>，并主动否认涉足金刚石电路板</td><td><span class="mk mk-o">中</span></td><td class="d">—</td></tr>
+
+</table>
+</div>
+
+<div class="sub">
+  <div class="sub-h">3.1　哪些名字我们没有放进表里，以及为什么</div>
+  <div class="sub-b">
+  <p><strong>八家因公司从未自述液冷业务而剔除。</strong>一家泵企在投资者三次追问后三次说明其产品用于新能源汽车与家电；两家管路与注塑企业的互动易问答分别有 27 条和 8 条，零条涉及液冷；一家连接器企业 6 条问答同样零命中；一家精密件企业的真实卡位是参股一家氮化镓功率器件公司，属服务器电源环节而非液冷；一家超硬材料企业自述半导体业务是金刚石刀具与精密陶瓷，是加工耗材不是散热材料，且明确表示暂无相关研发意向；一家培育钻石企业 26 条问答零涉散热。还有一个名字在沪深北三市查无此上市主体。</p>
+  <p><strong>四家光模块企业需要改写身份，而不是剔除。</strong>它们在液冷链条里是<em>热管理需求的产生方，不是液冷部件的供应方</em>。高速光模块功耗密度上升推动 Cage 侧散热改造，但这四家的互动易问答中无一条自述液冷业务。把它们与前面几组混列在"液冷 Cage"栏下，会被读成它们在做 Cage。这个卡位在本名单里的实际承接方是那家有多年 Cage 业务积累、近两年切入液冷的连接器企业。</p>
+  <p><strong>金刚石散热这一组我们保留了，但加了一句限定。</strong>它在物理层级上是芯片级的直接散热与均热层，与冷板不是同一层级、更不是替代关系。这个说法不是我们的判断，是相关公司自己在互动易上主动说明的。放进液冷卡位表若不加限定，读者会误以为它们供液冷部件。</p>
+  <p>最后一条是引用纪律，与选股无关但同样重要。<strong>泵环节那家公司已于 8 月 11 日公开声明从未对外委派专家开展座谈及交流活动</strong>，并要求一切对外信息以公告、定期报告、调研记录表和互动易为准。市面上以专家纪要形式流传的该公司液冷份额、订单与产能数字，渠道已被公司否认，本篇一律不引用。</p>
+  <div class="src-line">核查方法：46 个代码经行情接口反查简称；披露证据取自深交所投资者互动平台全量问答逐条阅读原文，以及公告库标题检索。覆盖缺口：该平台仅覆盖深交所，11 家沪市与科创板公司本次未取得数据，已在表中标为待核。本次未逐份解析 46 家的 2026 年半年报全文，因此对在年报正文写了液冷但未在互动易复述的公司，本表可能低估。</div>
+  </div>
+</div>
+
+<div class="part-hd">
+  <span class="part-num">附录</span>
+  <div class="part-title">这一个月里，哪些数字没扛住核验</div>
+  <div class="part-sub">本部分全部为我方核验记录 · 每条都给出应当采用的口径</div>
+</div>
+
+<div class="sub">
+  <div class="sub-b">
+  <p>液冷是本轮讨论最热的方向，热度高的地方数字注水也最严重。下面这些是我们在过去一个月里逐条查过独立口径的结论。列出来不是为了否定谁，而是因为它们决定了本篇正文里哪些话可以说、该怎么说。前面每一处措辞降级，依据都在这张表里。</p>
+  </div>
+</div>
+
+<div class="numbox">
+  <div class="numbox-h">核验结论 · 与独立口径矛盾（本篇不采用原说法）</div>
+  <table>
+    <tr><th style="width:30%">流传的说法</th><th>核验发现</th></tr>
+    <tr>
+      <td><strong>某温控厂上半年数据中心订单同比增长 500%，1–7 月累计新接订单约 90 亿元</strong></td>
+      <td>90 亿元的真实出处是某北美客户的<strong>意向框架大单</strong>，被转述成了"1–7 月累计新接订单"。三处对不上：90 亿元相当于该公司全年总营收的 1.28 倍；该金额远超交易所重大合同披露门槛（35.25 亿元）却没有对应公告；半年报披露时公司称中期未达业绩预告标准、不便讨论业务细节。该公司近三个月已连续否认过多起同类传闻。<strong>本篇不采用增速与订单额。</strong></td>
+    </tr>
+    <tr>
+      <td><strong>海外温控龙头当期在手订单 150 亿美元并上调全年指引</strong></td>
+      <td>把两个时点拼在了一起。150 亿美元是<strong>2025 年末的订单储备</strong>（同比增 109%），而该公司自 2026 年二季度起已停止披露订单储备与新接订单，最后一次季度披露是 2025 年二季度的 85 亿美元。指引上调属实，但同季营收低于市场预期，公司归因于供应链拥堵与多阶段项目执行时滞。<strong>不得再以"当期在手订单 150 亿"引用。</strong></td>
+    </tr>
+    <tr>
+      <td><strong>某泵企液冷累计订单金额近 10 亿元</strong></td>
+      <td>半年报全文中不存在该表述，系由台数倒推得出，隐含均价约 1.67 万元/台，与小功率微泵的实际功率档位不符。<strong>本篇只采用半年报原文的台数与项目数。</strong></td>
+    </tr>
+    <tr>
+      <td><strong>国内能做 915MHz 大功率 MPCVD 设备的厂商仅 2–3 家；1000 W/cm² 以上必须用金刚石</strong></td>
+      <td>前半句被独立盘点证伪，实际至少 4 家。后半句的排他性表述不成立：独立口径是金刚石解决芯片级热点扩散、液冷解决系统级排热，<strong>两者互补而非替代关系</strong>，不存在"某个热流密度以上只能靠金刚石"的分界。</td>
+    </tr>
+  </table>
+</div>
+
+<div class="numbox">
+  <div class="numbox-h">核验结论 · 仅单一来源（本篇已降级措辞，不作幅度卖点）</div>
+  <table>
+    <tr><th style="width:30%">流传的说法</th><th>核验发现</th></tr>
+    <tr>
+      <td><strong>液冷方管校直机半年内单价由 40 多万涨至 60 多万、毛利率超 60%</strong></td>
+      <td>涨价、毛利率、订单暴增、已切入头部供应链，四项全部只有一家券商的路演转述，无公告、无中报、无第二家机构。更要紧的是空间口径不成立：按该材料自身给出的产能口径（一台设备一个工作日约完成一台机柜），全球每年 3.5 万台液冷机柜仅需约 140 台设备、对应约 0.84 亿元，而流传的市场空间口径是 50 至 103 亿元；且校直机属一次性资本开支、设备寿命在十年以上，不构成持续性收入。<strong>该卡本期不进主线。</strong></td>
+    </tr>
+    <tr>
+      <td><strong>波纹管与分水器单柜价值量提升五成、光模块液冷单柜约 1 万美元</strong></td>
+      <td>两个数字均出自公司交流，本篇标注为公司自述口径。可引用的独立佐证是另一家外资机构对交换托盘冷却价值量提升约 67% 的测算，方向一致但不是同一个指标，不能相互替代。</td>
+    </tr>
+    <tr>
+      <td><strong>氮化铝粉体长协涨价 10–15%、散单上浮 15–25%</strong></td>
+      <td>幅度仅一家券商口径，本篇不作幅度卖点。同时纠正一处广泛流传的产业链错位：粉体环节是双寡头格局，另一家常被提及的日本公司是<strong>制品与基板厂而非粉体厂</strong>。可照写的是价值量口径。光模块速率由 800G 升至 1.6T 时，单只陶瓷价值量由约 17 美元升至约 22 美元。</td>
+    </tr>
+    <tr>
+      <td><strong>金刚石散热 2030 年市场空间 27 至 54 亿美元</strong></td>
+      <td>为单家券商测算，须署来源、不作精确空间卖点。<strong>可照写的部分</strong>：新一代架构确认采用金刚石铜复合导热界面，属多方独立报道；中国金刚石产能占全球九成以上，亦经独立确认。技术趋势为真，空间数字为一家之言。</td>
+    </tr>
+    <tr>
+      <td><strong>某云厂商超过 80% 的 AI 服务器已导入液冷</strong></td>
+      <td>出处确实存在，但只出自一家研究机构的同一篇新闻稿，属第三方估算；该云厂商官方从未公布过任何百分比。本篇采用其官方口径（吉瓦级部署、覆盖 2000 个以上 TPU Pod、七年可用性约 99.999%），八成这个数不作独立论据。</td>
+    </tr>
+  </table>
+</div>
+
+<div class="note">
+<b>一条方法上的提醒：</b>上面被否掉的四条里，有三条的错误方式是同一种：<b>把一个真实存在的数字挪到了错误的时点或错误的口径上</b>。90 亿元确有其事，但那是意向框架而非已签订单；150 亿美元确有其事，但那是一年前的存量而非当期；近 10 亿元则是由真实台数倒推出来的。这类错误比凭空捏造更难识别，因为原始数字经得起搜索，错的是它被安放的位置。核对时的第一个动作应当是问"这个数字原本在说什么"，而不是"这个数字是否存在"。
+</div>
+
+<div class="footer">
+  <div class="footer-brand">怀新投研 · 产业专题 VOL.SP01</div>
+  <div class="footer-ts">2026.09.03 · 覆盖区间 2026.08.03 - 09.02</div>
+</div>
+</body>
+</html>
