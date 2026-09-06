@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产业专题 VOL.SP02 · 无氧铜板带行业深度 · 2026.09.06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>:root{
+  --ink:#2c1810;--ink-light:#5a3e35;--ghost:#9e8878;
+  --paper:#f7f4ef;--paper-warm:#f0ebe0;--paper-deep:#e8dfd0;--border:#d8cfc0;
+  --mast:#3b1a06;--accent:#b45309;--accent-light:#f7eddb;--accent-deep:#92400e;
+  --pill-hot:#dc2626;--pill-new:#1d4ed8;--pill-spread:#7c3aed;--pill-data:#0f766e;--pill-green:#15803d;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-size:13px;line-height:1.65;max-width:860px;margin:0 auto;}
+em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radius:3px;color:#1e40af;font-weight:500;}
+.masthead{background:var(--mast);padding:26px 32px 20px;position:relative;overflow:hidden;}
+.masthead::before{content:'';position:absolute;top:0;right:0;width:220px;height:100%;background:linear-gradient(90deg,transparent,rgba(180,83,9,0.10));}
+.mast-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
+.mast-brand{color:#f7eddb;font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;font-size:11px;letter-spacing:0.12em;opacity:0.7;}
+.mast-vol{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:11px;color:var(--accent);letter-spacing:0.08em;}
+.mast-title{color:#fdf8f0;font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;font-size:25px;font-weight:900;line-height:1.25;}
+.mast-title em{font-style:normal;color:#fbbf24;background:none;padding:0;}
+.mast-subtitle{color:rgba(253,248,240,0.50);font-size:11.5px;margin-top:6px;font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;letter-spacing:0.06em;}
+.stats-bar{background:var(--accent);display:flex;}
+.stat-item{flex:1;padding:10px 14px;border-right:1px solid rgba(255,255,255,0.2);text-align:center;}
+.stat-item:last-child{border-right:none;}
+.stat-num{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:20px;font-weight:500;color:#fff;display:block;line-height:1;}
+.stat-label{font-size:10px;color:rgba(255,255,255,0.72);letter-spacing:0.06em;margin-top:3px;display:block;}
+.footer{background:var(--mast);padding:14px 32px;display:flex;justify-content:space-between;align-items:center;}
+.footer-brand{font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;font-size:12px;color:rgba(253,248,240,0.45);}
+.footer-ts{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:rgba(253,248,240,0.30);letter-spacing:0.06em;}
+.src{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--ghost);letter-spacing:0.02em;}
+.numbox{margin:12px 32px;border:1px solid var(--border);background:#fffdf9;}
+.numbox-h{background:var(--paper-warm);padding:7px 14px;font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--accent-deep);letter-spacing:0.1em;border-bottom:1px solid var(--border);}
+.numbox table{width:100%;border-collapse:collapse;font-size:11.5px;}
+.numbox th{background:#fbf8f2;text-align:left;padding:7px 12px;font-weight:500;color:var(--ink-light);border-bottom:1px solid var(--border);font-size:10.5px;letter-spacing:0.03em;}
+.numbox td{padding:7px 12px;border-bottom:1px solid #eee6d8;vertical-align:top;line-height:1.55;}
+.numbox tr:last-child td{border-bottom:none;}
+.numbox td.n{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;color:var(--accent-deep);white-space:nowrap;}
+.pos{margin:14px 32px;}
+.pos table{width:100%;border-collapse:collapse;font-size:11.5px;background:#fff;border:1px solid var(--border);}
+.pos th{background:var(--mast);color:#fdf8f0;text-align:left;padding:8px 11px;font-weight:500;font-size:10.5px;letter-spacing:0.06em;}
+.pos td{padding:8px 11px;border-bottom:1px solid #eee6d8;vertical-align:top;line-height:1.55;}
+.pos tr:last-child td{border-bottom:none;}
+.pos td.seg-c{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10.5px;color:var(--accent-deep);white-space:nowrap;background:#fdfaf4;}
+.pos td.d{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--ghost);white-space:nowrap;}
+@media(max-width:600px){
+.numbox,.seg,.pos,.note{margin-left:18px;margin-right:18px;}
+.mast-title{font-size:20px;}
+}
+/* ===== 深度报告体例（SP01 v4） ===== */
+.abs{margin:0;padding:20px 32px 6px;background:#fffdf9;border-bottom:1px solid var(--border);}
+.abs-h{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--accent);letter-spacing:0.16em;margin-bottom:12px;}
+.abs-i{display:flex;gap:11px;margin-bottom:13px;align-items:flex-start;}
+.abs-n{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:11px;color:#fff;background:var(--accent);min-width:19px;height:19px;
+  border-radius:2px;text-align:center;line-height:19px;flex-shrink:0;margin-top:2px;}
+.abs-b{font-size:12.4px;line-height:1.75;flex:1;}
+.abs-b b{color:var(--mast);}
+.toc{padding:16px 32px;background:var(--paper-warm);border-bottom:1px solid var(--border);}
+.toc-h{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--accent);letter-spacing:0.16em;margin-bottom:9px;}
+.toc-i{display:flex;font-size:11.8px;line-height:1.9;color:var(--ink);}
+.toc-i b{color:var(--mast);min-width:22px;}
+.toc-s{padding-left:24px;color:var(--ink-light);font-size:11px;line-height:1.8;}
+.fig{margin:16px 32px;padding:12px 14px 9px;background:#fff;border:1px solid var(--border);}
+.fig-t{font-size:11.5px;font-weight:700;color:var(--mast);margin-bottom:9px;line-height:1.45;font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;}
+.fig-s{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:9.5px;color:var(--ghost);margin-top:7px;
+  padding-top:6px;border-top:1px dotted var(--border);line-height:1.5;}
+.ch{background:var(--mast);padding:14px 32px;margin-top:10px;}
+.ch-n{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--accent);letter-spacing:0.14em;display:block;margin-bottom:4px;}
+.ch-t{color:#fdf8f0;font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;font-size:16.5px;font-weight:900;line-height:1.35;}
+.h2{font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;font-size:13.5px;font-weight:700;color:var(--mast);
+  margin:16px 32px 7px;line-height:1.45;padding-left:9px;border-left:3px solid var(--accent);}
+.tx{margin:0 32px 9px;font-size:12.4px;line-height:1.78;}
+.tx b{color:var(--mast);}
+.risk{margin:12px 32px;}
+.risk-i{padding:9px 0;border-bottom:1px dotted var(--border);font-size:12.2px;line-height:1.7;}
+.risk-i:last-child{border-bottom:none;}
+.risk-i b{color:var(--accent-deep);}
+@media(max-width:600px){
+.abs,.toc,.ch,.h2,.tx{padding-left:18px;padding-right:18px;}
+.h2,.tx,.risk{margin-left:18px;margin-right:18px;}
+.fig{margin-left:12px;margin-right:12px;}
+}
+@media print{
+  body{max-width:none;background:#fff;}
+  .ch,.h2{page-break-after:avoid;}
+  .fig,.numbox,.pos,.risk-i,table{page-break-inside:avoid;}
+  .masthead,.stats-bar,.part-hd{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .toc{page-break-after:always;}
+}
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="mast-top">
+    <span class="mast-brand">怀新投研 · 产业专题</span>
+    <span class="mast-vol">VOL.SP02</span>
+  </div>
+  <div class="mast-title">冷板把无氧铜板带的竞争推向冶金状态与工艺配合</div>
+  <div class="mast-subtitle">无氧铜板带行业深度报告 · 2026.09.06</div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat-item"><span class="stat-num">1,024</span><span class="stat-label">全球冷板用铜（吨/年，中值）</span></div>
+  <div class="stat-item"><span class="stat-num">0.5-2.3%</span><span class="stat-label">铜料占冷板价值</span></div>
+  <div class="stat-item"><span class="stat-num">117</span><span class="stat-label">每柜冷板块数</span></div>
+  <div class="stat-item"><span class="stat-num">6,340</span><span class="stat-label">物理上界（吨/年）</span></div>
+</div>
+
+<div class="abs">
+  <div class="abs-h">核心观点</div>
+
+  <div class="abs-i"><span class="abs-n">1</span><div class="abs-b"><b>冷板是单柜液冷价值量最大的单一部件，它对铜的要求是导热、密封与结构三项同时成立。</b>整柜拆解显示冷板每柜约 117 块、单价 200 至 300 美元，合计 16.6 至 24.9 万元，在约 68 万元的单柜液冷价值量中占比最高。冷板贴合芯片工作，铜在其中承担的不再是导电功能，而是把热量从裸片搬到流道，同时构成一个不允许泄漏的封闭腔体。铜的导热系数 400 W/(m·K) 为铝的 1.7 倍，代价是密度 8,960 kg/m³ 为铝的 3.3 倍。约束的牵制关系在于流道：流道越细换热面积越大，而压降与堵塞风险同步上升，微通道方案的流道宽度已不足 1 毫米。</div></div>
+
+  <div class="abs-i"><span class="abs-n">2</span><div class="abs-b"><b>冷板用铜的总量是千吨级，把液冷讲成高端铜材的需求故事在吨位上不成立。</b>按单块冷板外形正推，主芯片冷板含铜 336 至 470 克，CPU 冷板 81 至 113 克，外围小冷板 43 至 60 克；以 117 块的混合构成取加权平均 150 至 350 克，单柜冷板用铜 17.6 至 41.0 公斤。按全球年液冷机柜量 3.5 万台计，<b>全球冷板用铜 614 至 1,433 吨</b>。同期一家头部铜板带企业半年销量为 20.61 万吨。即便把 117 块全部按 120×180×8 毫米的实心纯铜计算，这一物理上不可能的上界也只有 6,340 吨，仍不足该企业半年销量的百分之四。结论对参数选择不敏感。</div></div>
+
+  <div class="abs-i"><span class="abs-n">3</span><div class="abs-b"><b>无氧铜板带在冷板里的意义不是吨位而是冶金状态，铜料成本占冷板价值不足百分之三。</b>按铜价 7.5 至 9.5 万元每吨测算，单柜冷板的铜料值为 1,316 至 3,890 元，占冷板价值 0.53% 至 2.34%。决定良率的是材料状态而非材料数量：钎焊的热历程会使铜退火、降低刚度，搅拌摩擦焊则不会；头部企业的铜板带最薄量产厚度 0.03 至 0.05 毫米、<b>厚度公差 ±0.002 毫米、平直度小于 2 I-Units</b>；无氧铜线棒材的量产氧含量已压到 5 ppm 以下，高端线杆低于 3 ppm，导电率达 101% IACS 以上。这些是通过认证的条件，不是走量的条件。</div></div>
+
+  <div class="abs-i"><span class="abs-n">4</span><div class="abs-b"><b>铜板带的轧制与退火设备已基本完成国产化，真正的卡点前移到冷板制造端。</b>铜板带生产已由块式板带法转为带式生产法，普遍采用感应熔炼、连续铸锭、高精热轧、高精冷轧与无氧连续退火；行业口径确认国产铜加工设备以质优价廉受到国内外用户欢迎，二十辊轧机在相邻的精密带材领域也已逐步完成进口替代。卡点出现在下一道：冷板的密封焊接依赖真空钎焊、扩散焊、搅拌摩擦焊与电子束焊，微通道方案下钎焊焊料会堵塞流道、扩散焊压力会改变流道尺寸，而<b>先进制程的高均匀性与高热流密度水冷板仍依赖进口</b>。</div></div>
+
+  <div class="abs-i"><span class="abs-n">5</span><div class="abs-b"><b>市场给出的定价状态与吨位测算一致，被打上液冷标签的是铜排与液冷铜管而非冷板铜带。</b>行业协会口径确认，一家铜企的高精密异型无氧铜排与铜热管、液冷铜管让算力服务器用上国产散热材料，另一家的铜石墨烯复合材料突破 111% IACS 高导极限，这两家均已被交易所行情系统归入液冷服务器概念；而以铜板带为主业的公司没有该标签，其中覆盖最多的一家 2026 年至今也仅 1 篇卖方研报，且无一篇涉及 AI 或液冷。铜板带 2025 年 1 至 11 月进口 7.74 万吨、出口 11.52 万吨，已是净出口，进口部分对应的是仍需外购的高端规格。</div></div>
+
+  <div class="abs-i"><span class="abs-n">6</span><div class="abs-b"><b>未来三到六个月的观察锚点是加工费方向、认证进展与进口替代节奏。</b>铜板带采用原材料价格加加工费的定价模式，加工费由客户需求、市场供求、产品规格与工艺复杂度决定，是盈利的核心变量。行业协会已明确记录反向压力：下游转为即用即采使铜板带企业开工率普遍下滑，铜价上涨的成本难以向终端有效传导，加工费受挤压，以铝代铜的替代进程同步加快。已确认上调加工费的是铜箔而非铜板带，两者口径不可混用。真正值得跟踪的是高端规格的进口替代进度，以及冷板焊接与检漏工艺的国产化落地。</div></div>
+</div>
+
+<div class="toc">
+  <div class="toc-h">目录</div>
+  <div class="toc-i"><b>一、</b>需求：冷板把无氧铜从导电材料变成导热与密封材料</div>
+  <div class="toc-s">1.1 冷板在单柜液冷中的位置　1.2 三项互相牵制的约束　1.3 三支铜材的口径切分</div>
+  <div class="toc-i"><b>二、</b>测算：冷板用铜的总量是千吨级</div>
+  <div class="toc-s">2.1 关键假设　2.2 单块与单柜用铜量　2.3 全球年需求与压力测试　2.4 铜料在冷板价值中的占比</div>
+  <div class="toc-i"><b>三、</b>材料：决定冷板良率的是无氧铜的冶金状态</div>
+  <div class="toc-s">3.1 铜与铝的取舍　3.2 为什么必须无氧　3.3 四项决定性指标　3.4 钎焊热历程与材料状态的耦合</div>
+  <div class="toc-i"><b>四、</b>制造：轧制设备已国产化，卡点前移到冷板焊接</div>
+  <div class="toc-s">4.1 铜板带工艺路线　4.2 设备国产化状态　4.3 冷板端的四条焊接路线　4.4 增材制造路线</div>
+  <div class="toc-i"><b>五、</b>格局：市场溢价集中在有量的铜排与铜箔环节</div>
+  <div class="toc-s">5.1 供需与进出口　5.2 企业格局　5.3 卡位表　5.4 定价状态表</div>
+  <div class="toc-i"><b>六、</b>产业含义与跟踪清单</div>
+  <div class="toc-i"><b>七、</b>风险提示</div>
+  <div class="toc-h" style="margin-top:12px">图表目录</div>
+  <div class="toc-s">图表1 单柜液冷价值量分解　表2 三项约束　图表3 三支铜材用量对照　图表4 数据中心用铜结构　表5 关键假设　图表6 单块冷板含铜量　图表7 单柜冷板用铜量　图表8 全球冷板用铜量　图表9 与铜板带企业销量对照　图表10 铜料占冷板价值比例　表11 敏感性测算　图表12 常用冷板材料参数　图表13 无氧铜氧含量　图表14 铜板带厚度与公差　表15 铜板带工艺路线　表16 冷板焊接工艺对比　表17 增材制造路线与厂商　图表18 铜板带进出口　图表19 楚江新材铜基销量　图表20 众源新材产销　表21 铜板带重点企业　表22 卡位表　表23 定价状态表　表24 跟踪清单　表25 风险提示</div>
+</div>
+
+<div class="ch"><span class="ch-n">CHAPTER 1</span>
+<div class="ch-t">一、需求：冷板把无氧铜从导电材料变成导热与密封材料</div></div>
+
+<div class="h2">1.1　冷板是单柜液冷价值量最大的单一部件</div>
+
+<p class="tx">冷板的合计价值量在液冷部件中最高，而这一金额由用量堆出而非单价堆出。整柜拆解显示冷板每柜约 117 块、单价 200 至 300 美元，按汇率 7.1 折算合计 16.6 至 24.9 万元。加计 CDU、分水器、快接头与管路后二次侧约 36 万元，再加一次侧全套约 68 万元。冷板因此是单柜液冷中金额最高的单一部件，其中单块的绝对价格并不高。</p>
+
+<div class="fig">
+<div class="fig-t">图表1：冷板是单柜液冷价值量最大的单一部件</div>
+<svg viewBox="0 0 640 165" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><rect x="20.0" y="14" width="185.3" height="30" fill="#b45309"/><text x="112.6470588235294" y="33" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">16.6-24.9 万元</text><rect x="205.3" y="14" width="132.4" height="30" fill="#92400e"/><text x="271.4705882352941" y="33" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">约 15 万元</text><rect x="337.6" y="14" width="282.4" height="30" fill="#1d4ed8"/><text x="478.8235294117647" y="33" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">约 32 万元</text><text x="20" y="60" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">合计 约 68 万元／柜</text><rect x="20" y="66" width="10" height="10" fill="#b45309" rx="1"/><text x="36" y="74" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">冷板 117 块　16.6-24.9 万元</text><rect x="20" y="85" width="10" height="10" fill="#92400e" rx="1"/><text x="36" y="93" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">CDU、分水器、快接头与管路　约 15 万元</text><rect x="20" y="104" width="10" height="10" fill="#1d4ed8" rx="1"/><text x="36" y="112" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">一次侧全套　约 32 万元</text><text x="20" y="151" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">冷板按 117 块 × 200-300 美元、汇率 7.1 折算；其余分项为 SP01 已发布口径</text></svg>
+<div class="fig-s">资料来源：怀新投研 SP01 液冷专题（2026-09-03）单柜价值量拆解，怀新投研整理</div>
+</div>
+
+<p class="tx">用量来自架构而非选择。新一代平台采用 45℃ 液冷、液冷母排与 100% 液冷计算托盘，无风扇设计意味着柜内每一个持续发热的器件都需要一块贴合的冷板，覆盖对象从主芯片扩展到交换芯片、内存与供电模块。<b>117 这个数字是被架构规定的，不随成本优化而下降。</b></p>
+
+<div class="h2">1.2　冷板对铜的要求是三项约束同时成立</div>
+
+<p class="tx">在风冷体系里铜是导热材料，在冷板体系里它同时是导热材料、流道壁和密封件。三项要求互相牵制，任何一项单独优化都会损害另外两项。</p>
+
+<div class="numbox">
+  <div class="numbox-h">表2：冷板对材料的三项约束互相牵制</div>
+  <table>
+    <tr><th style="width:20%">约束</th><th style="width:38%">物理要求</th><th>牵制关系</th></tr>
+    <tr><td>热流密度承载</td><td class="n">铜导热 400 W/(m·K)，为铝的 1.7 倍</td><td>提高导热要求增加铜的截面，而铜密度 8,960 kg/m³ 为铝的 3.3 倍，重量与柜内承重直接冲突</td></tr>
+    <tr><td>流道压降与换热平衡</td><td class="n">微通道流道宽度不足 1 毫米</td><td>流道越细换热面积越大，压降与堵塞风险同步上升，须靠高精度机加工保证流阻与换热平衡</td></tr>
+    <tr><td>零泄漏</td><td class="n">真空钎焊无气孔、无虚焊，严苛氦检漏</td><td>密封依赖焊接，而焊接的热历程与压力又会改变流道尺寸和材料状态</td></tr>
+  </table>
+  <div class="fig-s">资料来源：国金证券《响应AI芯片散热革命，3D打印液冷板前景广阔》2025-11-03、斯瑞新材 2026 年半年度报告，怀新投研整理</div>
+</div>
+
+<p class="tx">第三项的严苛程度可以从一家实际生产铜基水冷板的企业口径中看出。该公司在半年报中把水冷板的技术门槛写成四条：精密流道加工与复杂异形流道需高精度机械加工保证流阻与换热平衡；焊接与密封须做到真空钎焊无气孔、无虚焊并通过严苛氦检漏，长期耐压不裂不漏；材料与表面处理须有无氧铜防氧化与防腐蚀镀层，与超纯水及冷却液兼容且无杂质析出；真空适配须低放气、耐高低温循环。<b>四条里有三条直接指向材料本身的状态，而不是材料的数量。</b></p>
+
+<div class="h2">1.3　三支铜材的口径互不通用</div>
+
+<p class="tx">液冷与算力带动铜需求的说法在传播中被合并成了一条，实际是三条，载体、用量与供应商都不相同。混用口径会得出量级完全错误的结论。</p>
+
+<div class="fig">
+<div class="fig-t">图表3：三支铜材的用量与载体完全不同，口径互不通用</div>
+<svg viewBox="0 0 640 158" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><text x="162" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜缆（高速直连）</text><rect x="170" y="25" width="354.7" height="17" fill="#1d4ed8" rx="2"/><text x="531.6666666666667" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">1,120 kg／柜</text><text x="162" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">PCB 用电子电路铜箔</text><rect x="170" y="59" width="46.5" height="17" fill="#7c3aed" rx="2"/><text x="223.55" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">147 kg／柜</text><text x="162" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">冷板用无氧铜板带</text><rect x="170" y="93" width="9.2" height="17" fill="#b45309" rx="2"/><text x="186.18333333333334" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">约 29 kg／柜</text><text x="170" y="148" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">前两项为国金证券对单台 GB200 NVL72 的测算，第三项测算过程见第二章</text></svg>
+<div class="fig-s">资料来源：国金证券《AIDC，铜的新机遇》2024-05、本报告第二章测算，怀新投研整理</div>
+</div>
+
+<p class="tx">铜缆是量最大的一支。券商对单台 GB200 NVL72 的拆解给出完整测算链：单台铜缆约 5,000 条、单条长度 0.65 米、直径 7 毫米，按铜密度 8.96 g/cm³ 计算每米用铜 344 克，合计约 1.12 吨。铜箔是第二支，同一份测算按全球电子电路铜箔产量与 PCB 行业产值的比值反推，得到单机 PCB 用铜箔约 147 公斤。两项相加，单台 GB200 NVL72 用铜总量约 1.36 吨。</p>
+
+<p class="tx">冷板用的无氧铜板带是第三支，而它在主流测算中没有独立位置。同一份报告把数据中心用铜结构拆为配电设备 75%、接地与互联 22%、管道暖通空调 3%，冷板既未单列，也未说明归入哪一项；全篇涉及冷板的表述只有一句冷板式液冷采用铜铝换热冷板的说明。</p>
+
+<div class="fig">
+<div class="fig-t">图表4：数据中心用铜的主流拆分里没有冷板的独立位置</div>
+<svg viewBox="0 0 640 165" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><rect x="20.0" y="14" width="450.0" height="30" fill="#b45309"/><text x="245.0" y="33" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">75%</text><rect x="470.0" y="14" width="132.0" height="30" fill="#92400e"/><text x="536.0" y="33" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">22%</text><rect x="602.0" y="14" width="18.0" height="30" fill="#1d4ed8"/><text x="20" y="60" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">合计 100%</text><rect x="20" y="66" width="10" height="10" fill="#b45309" rx="1"/><text x="36" y="74" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">配电设备　75%</text><rect x="20" y="85" width="10" height="10" fill="#92400e" rx="1"/><text x="36" y="93" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">接地与互联　22%</text><rect x="20" y="104" width="10" height="10" fill="#1d4ed8" rx="1"/><text x="36" y="112" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">管道暖通空调　3%</text><text x="20" y="151" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">该拆分为数据中心整体用铜结构，冷板未单列，归属未作说明</text></svg>
+<div class="fig-s">资料来源：国金证券《AIDC，铜的新机遇》2024-05，怀新投研整理</div>
+</div>
+
+<p class="tx"><b>把三支合并会造成两个数量级的误差。</b>流传较广的一个口径称高性能训练服务器单台用铜 15 至 30 公斤、为普通服务器的 3 至 6 倍，该数字的原始出处为单一媒体援引的市场测算，目前所见的多个版本均为转载而非独立测算。它与券商的 1.36 吨相差近两个数量级，原因是前者按单台通用服务器计、后者按整柜 72 颗加速器计，两个数字各自成立但不可换算。同一批传播还把高端铜箔需求增速冠以高端铜材之名，而增速对应的载体是铜箔，与冷板用板带并非同一支。</p>
+
+<div class="ch"><span class="ch-n">CHAPTER 2</span>
+<div class="ch-t">二、测算：冷板用铜的总量是千吨级</div></div>
+
+<div class="h2">2.1　关键假设与口径</div>
+
+<p class="tx">测算按物理量正推：单块冷板的外形体积乘以实心率得到含铜体积，再乘以铜密度得到含铜质量，逐级放大到单柜与全球。全部假设逐条列出并标明性质，读者可按表复算。口径写死为全球、冷板环节、纯铜材质，不含铜排、铜缆与铜箔，不含铝制冷板。</p>
+
+<div class="numbox">
+  <div class="numbox-h">表5：关键假设逐条列示，区分外部口径与我方假设</div>
+  <table>
+    <tr><th style="width:26%">参数</th><th style="width:22%">取值</th><th style="width:20%">性质</th><th>来源</th></tr>
+    <tr><td>单柜冷板块数</td><td class="n">117 块</td><td>产业口径</td><td>怀新投研 SP01 液冷专题，整柜拆解</td></tr>
+    <tr><td>单块冷板单价</td><td class="n">200-300 美元</td><td>产业口径</td><td>同上</td></tr>
+    <tr><td>铜密度</td><td class="n">8,960 kg/m³</td><td>物理常数</td><td>国金证券《响应AI芯片散热革命》图表28</td></tr>
+    <tr><td>铜导热系数</td><td class="n">400 W/(m·K)</td><td>物理常数</td><td>同上</td></tr>
+    <tr><td>CPU 冷板贴合尺寸</td><td class="n">72×50 mm</td><td>厂商公开</td><td>新华三泵驱两相芯片级液冷散热系统</td></tr>
+    <tr><td>主芯片冷板外形</td><td class="n">100×150×5 mm</td><td><b>我方假设</b></td><td>取产业常见外形上限，压力测试见 2.3</td></tr>
+    <tr><td>实心率</td><td class="n">50%-70%</td><td><b>我方假设</b></td><td>扣除流道与腔体后的铜占比</td></tr>
+    <tr><td>加权平均单块含铜</td><td class="n">150-350 g</td><td><b>我方假设</b></td><td>117 块混合构成的均值，非主芯片冷板单块值</td></tr>
+    <tr><td>全球年液冷机柜量</td><td class="n">3.5 万台</td><td>产业口径，<b>口径偏保守</b></td><td>怀新投研 SP01 液冷专题。117 块取自 NVL72 级整柜拆解，而 3.5 万台含冷板数量少于 117 的通用液冷柜，两者相乘对用铜量构成高估</td></tr>
+    <tr><td>铜价</td><td class="n">7.5-9.5 万元/吨</td><td><b>我方假设</b></td><td>取区间做敏感性，不取点值</td></tr>
+    <tr><td>汇率</td><td class="n">7.1</td><td><b>我方假设</b></td><td>美元兑人民币</td></tr>
+  </table>
+  <div class="fig-s">资料来源：怀新投研整理</div>
+</div>
+
+<div class="h2">2.2　单块冷板含铜数十克到数百克，单柜合计不足五十公斤</div>
+
+<p class="tx">按外形正推，三类冷板的含铜量差异明显。主芯片冷板外形体积 75 cm³，按 50% 至 70% 实心率折算含铜 336 至 470 克；CPU 冷板按厂商公开的 72×50 毫米贴合流道尺寸、厚度 5 毫米计，含铜 81 至 113 克；外围小冷板按 60×40×4 毫米计，含铜 43 至 60 克。</p>
+
+<div class="fig">
+<div class="fig-t">图表6：按外形尺寸正推，单块冷板含铜量落在数十克到数百克区间</div>
+<svg viewBox="0 0 640 152" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><text x="172" y="36" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">外围小冷板 60×40×4mm</text><rect x="215.6" y="25" width="14.1" height="16" fill="#b45309" rx="2"/><text x="236.6153846153846" y="37" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">43-60 g</text><text x="172" y="68" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">CPU 冷板 72×50×5mm</text><rect x="247.0" y="57" width="26.5" height="16" fill="#92400e" rx="2"/><text x="280.4423076923077" y="69" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">81-113 g</text><text x="172" y="100" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">主芯片冷板 100×150×5mm</text><rect x="457.8" y="89" width="110.8" height="16" fill="#0f766e" rx="2"/><text x="575.6538461538462" y="101" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">336-470 g</text><text x="180" y="142" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">实心率取 50%-70%，即扣除流道与腔体后的铜占比；铜密度 8.96 g/cm³</text></svg>
+<div class="fig-s">资料来源：尺寸取新华三公开的 CPU 冷板贴合流道尺寸与产业常见外形，铜密度取国金证券《响应AI芯片散热革命》图表28，怀新投研测算</div>
+</div>
+
+<p class="tx">单柜的 117 块由这三类混合构成，其中主芯片冷板只占少数。取加权平均单块含铜 150 至 350 克，单柜冷板用铜落在 17.6 至 41.0 公斤。<b>这个量级与整柜其他用铜项完全不在同一档。</b>同一台机柜的铜缆用铜为 1.12 吨，冷板用铜相当于其 1.6% 至 3.7%。</p>
+
+<div class="fig">
+<div class="fig-t">图表7：单柜冷板用铜量在十几到四十公斤之间</div>
+<svg viewBox="0 0 640 218" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="106.7" y="117.8" width="72.0" height="50.2" fill="#b45309" rx="2"/><text x="142.66666666666669" y="110.79743695742042" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">17.6 kg</text><text x="142.66666666666669" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">加权平均</text><text x="142.66666666666669" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">单块 150g</text><rect x="284.0" y="84.7" width="72.0" height="83.3" fill="#b45309" rx="2"/><text x="320.0" y="77.70938404299297" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">29.2 kg</text><text x="320.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">加权平均</text><text x="320.0" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">单块 250g</text><rect x="461.3" y="51.1" width="72.0" height="116.9" fill="#b45309" rx="2"/><text x="497.33333333333337" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">41.0 kg</text><text x="497.33333333333337" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">加权平均</text><text x="497.33333333333337" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">单块 350g</text><text x="40" y="208" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">加权平均含铜量为 117 块混合构成的均值，非主芯片冷板单块值</text></svg>
+<div class="fig-s">资料来源：本报告测算，单柜冷板 117 块取自怀新投研 SP01 液冷专题</div>
+</div>
+
+<div class="h2">2.3　全球年用量在千吨级，且结论不依赖参数选择</div>
+
+<p class="tx">按全球年液冷机柜量 3.5 万台放大，全球冷板用铜为 614 至 1,433 吨。这个量级远低于同期市场对高端铜材需求的公开讨论口径，因此需要检验它是否由参数选择造成。</p>
+
+<p class="tx">检验方法是取物理上不可能的上界：把 117 块冷板全部按 120×180×8 毫米、100% 实心纯铜计算，即假设每块冷板都是一整块没有流道的实心铜坯。此时单块含铜 1,548 克，单柜 181 公斤，全球 6,340 吨。</p>
+
+<div class="fig">
+<div class="fig-t">图表8：全球冷板用铜量是千吨级</div>
+<svg viewBox="0 0 640 218" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="84.5" y="156.7" width="72.0" height="11.3" fill="#92400e" rx="2"/><text x="120.5" y="149.67400951718975" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">614 吨</text><text x="120.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">单块 150g</text><rect x="217.5" y="149.1" width="72.0" height="18.9" fill="#92400e" rx="2"/><text x="253.5" y="142.11105170293536" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">1,024 吨</text><text x="253.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">单块 250g</text><rect x="350.5" y="141.6" width="72.0" height="26.4" fill="#92400e" rx="2"/><text x="386.5" y="134.56654012725232" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">1,433 吨</text><text x="386.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">单块 350g</text><rect x="483.5" y="51.1" width="72.0" height="116.9" fill="#dc2626" rx="2"/><text x="519.5" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">6,340 吨</text><text x="519.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">极端上界</text><text x="519.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">全按实心纯铜</text><rect x="478.5" y="27.1" width="82.0" height="144.9" fill="none" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2" rx="3"/><text x="40" y="208" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">极端上界指 117 块全部按 120×180×8mm 实心纯铜计，物理上不可能，用于检验结论稳健性</text></svg>
+<div class="fig-s">资料来源：本报告测算，全球年液冷机柜量 3.5 万台取自怀新投研 SP01 液冷专题</div>
+</div>
+
+<p class="tx">即便在这个上界，全球冷板用铜仍只相当于一家头部铜板带企业半年销量的 3.08%。该企业 2026 年上半年铜板带销量 20.61 万吨、同比增长 14.55%。同期铜板带全行业 1 至 11 月进口量为 7.74 万吨，上界口径的全球冷板用铜也只占其 8.19%。</p>
+
+<div class="fig">
+<div class="fig-t">图表9：全球冷板用铜量不足一家头部铜板带企业半年销量的百分之一</div>
+<svg viewBox="0 0 640 158" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><text x="192" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">楚江新材 2026 上半年铜板带销量</text><rect x="200" y="25" width="335.5" height="17" fill="#1d4ed8" rx="2"/><text x="542.5116279069767" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">206,100 吨</text><text x="192" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜板带 2025 年 1-11 月进口量</text><rect x="200" y="59" width="126.0" height="17" fill="#7c3aed" rx="2"/><text x="333.0" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">77,400 吨</text><text x="192" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">全球冷板用铜（本报告测算中值）</text><rect x="200" y="93" width="2.0" height="17" fill="#b45309" rx="2"/><text x="209" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">1,024 吨</text><text x="200" y="148" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">进口量取中国有色金属加工工业协会口径；三项均为年度或半年度口径，非同一时段</text></svg>
+<div class="fig-s">资料来源：楚江新材 2026 年半年度报告与 2026-08-31 投资者关系活动记录表、本报告测算，怀新投研整理</div>
+</div>
+
+<p class="tx"><b>把液冷讲成高端铜材的需求故事，在吨位上不成立。</b>结论在整个参数区间内稳健，改变实心率、外形尺寸或机柜量的假设都不会改变量级。真正有量的是铜缆与铜排，那是另外两支，供应商与工艺谱系也不同。</p>
+
+<div class="h2">2.4　铜料在冷板价值中的占比不足百分之三</div>
+
+<p class="tx">吨位小的另一面是价值占比低。按铜价 7.5 至 9.5 万元每吨测算，单柜冷板的铜料值为 1,316 至 3,890 元，而单柜冷板价值为 16.6 至 24.9 万元。</p>
+
+<div class="fig">
+<div class="fig-t">图表10：铜料在冷板价值中的占比不足百分之三</div>
+<svg viewBox="0 0 640 152" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><text x="192" y="36" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">单块 150g，铜价 7.5 万元/吨</text><rect x="272.4" y="25" width="35.5" height="16" fill="#b45309" rx="2"/><text x="314.9666666666667" y="37" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">0.53%-0.79%</text><text x="192" y="68" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">单块 250g，铜价 8.5 万元/吨</text><rect x="336.7" y="57" width="68.3" height="16" fill="#92400e" rx="2"/><text x="412.0" y="69" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">1.00%-1.50%</text><text x="192" y="100" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">单块 350g，铜价 9.5 万元/吨</text><rect x="413.2" y="89" width="106.6" height="16" fill="#0f766e" rx="2"/><text x="526.8" y="101" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">1.56%-2.34%</text><text x="200" y="142" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">占比＝铜料值 ÷ 单柜冷板价值 16.6-24.9 万元。反向敏感性：若单柜冷板价值下修至 8 万元，占比升至约 3.1%，方向不变、边际收窄</text></svg>
+<div class="fig-s">资料来源：本报告测算；单柜冷板价值取怀新投研 SP01 液冷专题的 117 块 × 200-300 美元</div>
+</div>
+
+<div class="numbox">
+  <div class="numbox-h">表11：铜料值与占比的敏感性测算</div>
+  <table>
+    <tr><th style="width:24%">加权平均单块含铜</th><th style="width:18%">单柜用铜</th><th style="width:20%">铜价</th><th style="width:19%">铜料值</th><th>占冷板价值</th></tr>
+    <tr><td>150 g</td><td class="n">17.6 kg</td><td class="n">7.5 万元/吨</td><td class="n">1,316 元</td><td class="n">0.53%-0.79%</td></tr>
+    <tr><td>250 g</td><td class="n">29.2 kg</td><td class="n">8.5 万元/吨</td><td class="n">2,486 元</td><td class="n">1.00%-1.50%</td></tr>
+    <tr><td>350 g</td><td class="n">41.0 kg</td><td class="n">9.5 万元/吨</td><td class="n">3,890 元</td><td class="n">1.56%-2.34%</td></tr>
+  </table>
+  <div class="fig-s">资料来源：怀新投研测算；单柜冷板价值取 117 块 × 200-300 美元、汇率 7.1</div>
+</div>
+
+<p class="tx">铜料占比不足 3% 对冷板厂的含义是，铜价波动不是成本的主要变量，加工效率与良率才是；这与冷板环节应当跟踪毛利率而非订单的判断一致。</p>
+
+<p class="tx">对铜板带厂的含义需要把吨位折成利润才能看清，因为收入弹性等于吨位乘以加工费。一家以紫铜带箔为主业的上市公司 2026 年上半年营业收入 83.44 亿元、营业成本 81.01 亿元，毛利 2.42 亿元、毛利率 2.91%，归母净利润 6,246.77 万元；同期铜板带销量 88,786.92 吨。把全部毛利与净利都归给铜板带这一项，得到单吨毛利约 2,731 元、单吨归母净利约 704 元，这一归属方式高估了铜板带的单吨盈利。</p>
+
+<p class="tx">按此折算，全球冷板用铜 1,024 吨对应的毛利约 280 万元、净利约 72 万元。若高端规格的加工费达到普通板带的五倍，对应毛利约 1,400 万元。<b>这是全球全行业一年的合计数，还要在多家供应商之间分配。</b>即便取 6,340 吨的物理上界并按五倍加工费计，全球合计毛利也不足九千万元。进入这个环节的意义因此不在收入，而在于它是一道验证材料能力的窄门，通过与否取决于一组具体的冶金指标。</p>
+
+<div class="ch"><span class="ch-n">CHAPTER 3</span>
+<div class="ch-t">三、材料：决定冷板良率的是无氧铜的冶金状态</div></div>
+
+<div class="h2">3.1　铜的导热优势有代价，选材是在三项参数间取舍</div>
+
+<p class="tx">冷板基板的选择集中在铜与铝。铜的导热系数 400 W/(m·K)，铝为 238，硅为 130，低温共烧陶瓷不足 10。铜的优势明确，代价同样明确：密度 8,960 kg/m³，为铝的 3.3 倍；比热容 385 J/(kg·K)，低于铝的 900。</p>
+
+<div class="fig">
+<div class="fig-t">图表12：铜的导热系数在常用冷板材料中最高，代价是密度也最大</div>
+<svg viewBox="0 0 640 192" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><text x="182" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜　导热 400 W/(m·K)</text><rect x="190" y="25" width="327.3" height="17" fill="#b45309" rx="2"/><text x="524.2727272727273" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">密度 8,960 kg/m³</text><text x="182" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铝　导热 238 W/(m·K)</text><rect x="190" y="59" width="194.7" height="17" fill="#92400e" rx="2"/><text x="391.72727272727275" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">密度 2,700 kg/m³</text><text x="182" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">硅　导热 130 W/(m·K)</text><rect x="190" y="93" width="106.4" height="17" fill="#0f766e" rx="2"/><text x="303.3636363636364" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">密度 2,330 kg/m³</text><text x="182" y="139" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">低温共烧陶瓷 导热 &lt;10</text><rect x="190" y="127" width="8.2" height="17" fill="#a16207" rx="2"/><text x="205.1818181818182" y="140" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">密度约 2,100 kg/m³</text><text x="190" y="182" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">横轴为导热系数 W/(m·K)，标注值为密度。铜的导热是铝的 1.7 倍，密度是铝的 3.3 倍</text></svg>
+<div class="fig-s">资料来源：国金证券《响应AI芯片散热革命，3D打印液冷板前景广阔》2025-11-03 图表28，怀新投研整理</div>
+</div>
+
+<p class="tx">在单芯片热设计功耗越过 2,300W 的位置上，导热系数的差距无法用增加铝的截面来弥补，因为柜内空间与承重同时受限。高热流密度区域因此仍以铜为主，铝的用武之地在外围与成本敏感部位。<b>铜的地位来自热流密度而非成本，这决定了它不会因铜价上涨而被替代出核心区域。</b></p>
+
+<div class="h2">3.2　必须无氧的原因在焊接与冷却液两端</div>
+
+<p class="tx">冷板用铜要求无氧，约束来自制造与运行两个环节。制造端，含氧铜在还原性气氛中高温焊接时会发生氢病，氢扩散进铜后与晶界处的氧化亚铜反应生成水蒸气，在晶界形成微孔与裂纹，直接表现为钎缝气孔与泄漏。运行端，冷板长期与冷却液接触，一家实际生产铜基水冷板的企业在半年报中把材料要求写为无氧铜防氧化与防腐蚀镀层、与超纯水及冷却液兼容、无杂质析出污染腔体。</p>
+
+<p class="tx">行业已把量产氧含量压到很低的水平。无氧铜线材与棒材的量产成品氧含量已做到 5 ppm 以下，高端无氧铜线杆低于 3 ppm，高强高导铜线杆的导电率达 101% IACS 以上。需要说明的是这一组数字的口径为线材、棒材与线杆，板带的氧含量要求随牌号与用途而定，不能直接套用。</p>
+
+<div class="fig">
+<div class="fig-t">图表13：无氧铜的氧含量要求已压到百万分之几的量级</div>
+<svg viewBox="0 0 640 124" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><text x="192" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">量产无氧铜线材与棒材成品</text><rect x="200" y="25" width="269.2" height="17" fill="#b45309" rx="2"/><text x="476.2307692307692" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">氧含量 ≤5 ppm</text><text x="192" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">高端无氧铜线杆</text><rect x="200" y="59" width="161.5" height="17" fill="#92400e" rx="2"/><text x="368.53846153846155" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">氧含量 &lt;3 ppm</text><text x="200" y="114" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">该口径为线材、棒材与线杆，非板带；板带的氧含量要求随牌号与用途而定</text></svg>
+<div class="fig-s">资料来源：安徽鑫科新材料 2026 年度向特定对象发行股票募集说明书，怀新投研整理</div>
+</div>
+
+<div class="h2">3.3　四项指标决定材料能否通过冷板认证</div>
+
+<p class="tx">吨位不是门槛，指标才是。铜板带加工已进入高精度与超薄化阶段，全连续化生产线普及，头部企业最薄量产带材 0.03 至 0.05 毫米，厚度公差 ±0.002 毫米，平直度小于 2 I-Units。引线框架用铜带已全面国产化，部分产品性能优于国际同类，在 0.03 毫米超薄带领域已有企业达到国际先进水平。</p>
+
+<div class="fig">
+<div class="fig-t">图表14：头部企业的铜板带厚度与公差已做到微米级</div>
+<svg viewBox="0 0 640 124" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><text x="162" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">最薄量产带材厚度</text><rect x="170" y="25" width="330.4" height="17" fill="#b45309" rx="2"/><text x="507.4347826086956" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">30-50 μm（0.03-0.05 mm）</text><text x="162" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">厚度公差</text><rect x="170" y="59" width="16.5" height="17" fill="#dc2626" rx="2"/><text x="193.52173913043478" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">±2 μm（±0.002 mm）</text><text x="170" y="114" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">横轴单位为微米。同一口径下平直度要求为小于 2 I-Units</text></svg>
+<div class="fig-s">资料来源：安徽鑫科新材料 2026 年度向特定对象发行股票募集说明书，怀新投研整理</div>
+</div>
+
+<p class="tx">四项指标各自对应冷板的一个失效模式。<b>厚度公差</b>决定流道深度的一致性，公差累积会造成同一块冷板上各流道流阻不均，局部流量偏低即形成热点。<b>平直度</b>决定盖板与底板在钎焊前的贴合度，贴合不良处焊料填充不足，成为泄漏起点。<b>晶粒度</b>决定冲压与冷锻成形时的回弹与开裂倾向，也决定焊后强度。<b>表面粗糙度与清洁度</b>决定钎料的润湿铺展，残留油脂或氧化层直接对应虚焊。</p>
+
+<div class="h2">3.4　钎焊的热历程会改变材料状态，材料与工艺无法分开选择</div>
+
+<p class="tx">材料指标与制造工艺在冷板上是耦合的，这是与其他铜材应用最不同的一点。券商对冷板焊接工艺的对比里有一条关键描述：钎焊支持更高工作压力、可钎焊翅片以增强刚度，但<b>铜在钎焊过程中退火，降低刚度</b>；搅拌摩擦焊支持一体与分体式设计且不导致铜退火，代价是成本高、工艺时间长。</p>
+
+<p class="tx">这意味着送到冷板厂的铜带处于什么冶金状态，与它经过钎焊炉之后处于什么状态，是两个需要分别控制的问题。选择钎焊路线的冷板厂必须接受焊后铜的软化，并在结构设计上补偿刚度损失；选择搅拌摩擦焊的厂商保住了硬度，付出的是节拍与成本。铜带供应商要同时满足两条路线的不同要求，加工硬化状态、晶粒尺寸与再结晶温度都需要按客户工艺定制。<b>同一牌号的铜带在两条工艺路线下要交付不同的冶金状态，供货因此以定制为常态。</b></p>
+
+<div class="ch"><span class="ch-n">CHAPTER 4</span>
+<div class="ch-t">四、制造：轧制设备已国产化，卡点前移到冷板焊接</div></div>
+
+<div class="h2">4.1　铜板带工艺路线已由块式转为带式连续生产</div>
+
+<p class="tx">铜板带的生产方法经历过一次路线更替。行业口径记录，铜板带材生产方法已由块式板带生产法发展到带式生产法，普遍采用感应熔炼、连续铸锭、高精热轧、高精冷轧、计算机控制与无氧连续退火等生产技术。带式连续生产取代块式的意义在于减少了中间加热与酸洗次数，同时使厚度与板形的在线闭环控制成为可能，这正是把公差做到微米级的前提。</p>
+
+<div class="numbox">
+  <div class="numbox-h">表15：铜板带主要工序与其对应的冷板指标</div>
+  <table>
+    <tr><th style="width:24%">工序</th><th style="width:36%">作用</th><th>对应的冷板指标</th></tr>
+    <tr><td>感应熔炼与连续铸锭</td><td>控制熔体洁净度与脱氧程度，决定铸锭纯净度</td><td class="n">氧含量、导电率与导热率</td></tr>
+    <tr><td>铣面</td><td>去除铸锭表面氧化层与偏析层</td><td class="n">表面清洁度、焊接润湿性</td></tr>
+    <tr><td>高精热轧与冷轧</td><td>逐道次减薄并控制板形，二十辊机组承担精轧</td><td class="n">厚度公差、平直度</td></tr>
+    <tr><td>无氧连续退火</td><td>控制再结晶与晶粒尺寸，恢复塑性</td><td class="n">晶粒度、成形性、焊后强度</td></tr>
+    <tr><td>精整与纵剪分切</td><td>切边、矫直并分切至客户宽度</td><td class="n">边部质量、宽度公差</td></tr>
+  </table>
+  <div class="fig-s">资料来源：安徽鑫科新材料 2026 年度向特定对象发行股票募集说明书，怀新投研整理</div>
+</div>
+
+<div class="h2">4.2　铜加工设备已基本完成国产化</div>
+
+<p class="tx">在相邻的多个材料领域，扩产的瓶颈往往是某一台进口设备。铜板带不属于这种情形。行业口径记录，我国铜加工业引进先进设备并国产化，铜加工设备制造水平显著进步，设计和制造重型和精密生产设备能力增强，国产设备以质优价廉的优势受到国内外用户欢迎。相邻的精密不锈钢带材领域给出同向旁证，该领域早期退火与轧机多采用进口设备，二十辊轧机已逐步完成进口替代。</p>
+
+<p class="tx">企业层面的证据是自有设备改进的专利密度。一家铜板带企业的专利清单中包含二十辊轧机前后门滚轮、二十辊轧机压下监测装置、多辊轧机中间辊移、蚀刻带材退火炉退火张力控制装置、铜板带测宽装置与板材铸造用结晶器等多项。能对进口机组做结构性改进，说明设备已不构成能力边界。行业协会层面，一家装备企业牵头的高端耐热细晶铜板带集成制造技术及关键装备开发与应用项目获得质量技术奖。</p>
+
+<p class="tx"><b>轧制与退火环节不构成卡点。</b></p>
+
+<div class="h2">4.3　冷板的密封焊接是窄口所在</div>
+
+<p class="tx">冷板需要把底板、散热翅片与盖板结合成一个耐压不漏的封闭腔体，常用的密封焊接方式有真空钎焊、扩散焊、搅拌摩擦焊与电子束焊。四条路线各有代价，且在微通道方案下同时遭遇困难。</p>
+
+<div class="numbox">
+  <div class="numbox-h">表16：冷板密封焊接的四条路线各有代价</div>
+  <table>
+    <tr><th style="width:20%">工艺</th><th style="width:36%">优势</th><th>劣势</th></tr>
+    <tr><td>真空钎焊</td><td>支持更高工作压力，可钎焊翅片以增强刚度</td><td>成本高；需考虑钎料化学兼容性；铜在钎焊过程中退火、降低刚度；微通道方案下焊料熔化流动会填充并堵塞流道</td></tr>
+    <tr><td>搅拌摩擦焊</td><td>支持一体与分体式设计，不导致铜退火</td><td>成本高，工艺时间长</td></tr>
+    <tr><td>扩散焊</td><td>结合界面无第三相，接头强度高</td><td>过程中施加的压力会改变微通道结构尺寸，影响流阻及换热性能</td></tr>
+    <tr><td>电子束焊</td><td>能量密度高，热影响区窄</td><td>需真空环境，设备与节拍成本高</td></tr>
+  </table>
+  <div class="fig-s">资料来源：国金证券《响应AI芯片散热革命，3D打印液冷板前景广阔》2025-11-03 图表21，怀新投研整理</div>
+</div>
+
+<p class="tx">微通道方案把矛盾放大。流道宽度不足 1 毫米时，钎焊的焊料熔化后流动会填充微通道造成堵塞，扩散焊施加的压力则会改变流道尺寸并影响流阻与换热性能。传统机加工路线中，铲齿式是数据中心场景占比最高的类型，它从厚板刨削出翅片，用的是板材而非薄带，口径因此写为无氧铜板带而非铜带。</p>
+
+<p class="tx">焊接之后是检漏。一家实际生产铜基水冷板的企业把门槛写为真空钎焊无气孔、无虚焊并通过严苛氦检漏、长期耐压不裂不漏。同一份半年报同时给出了格局判断：该类水冷板全球处于成熟稳定期，以微通道与无氧铜方案为主，海外厂商主导高端市场；国内处于国产化快速成长期，成熟制程配套已批量落地、份额提升，<b>先进制程的高均匀性与高热流密度水冷板仍依赖进口</b>，正攻坚微通道精密加工与材料适配。</p>
+
+<div class="h2">4.4　增材制造是绕开焊接矛盾的第三条路线</div>
+
+<p class="tx">既然四条焊接路线在微通道方案下都有代价，一体成形就成为方向。金属增材制造无需焊接即可得到封闭流道，结构强度与连接处热阻均优于焊接件，流道设计还可通过拓扑优化与仿生设计复杂化。铜的障碍在于它对常见红光激光器反射率极高，难以加工，产业已有采用绿光与蓝光激光器的设备方案来降低反射率。</p>
+
+<div class="numbox">
+  <div class="numbox-h">表17：铜增材制造冷板的产业化进展</div>
+  <table>
+    <tr><th style="width:26%">主体</th><th style="width:30%">技术路线</th><th>已披露进展</th></tr>
+    <tr><td>CoolestDC</td><td>激光粉末床熔融，配套高密度铜粉工艺</td><td class="n">开发一体式冷板，可承受 6 bar 以上水压，GPU 工作温度降低近 50%</td></tr>
+    <tr><td>Fabric8Labs</td><td>电化学增材制造</td><td class="n">打印高精度冷板，可对芯片热点区域精准冷却，性能高于铲齿工艺微通道冷板</td></tr>
+    <tr><td>希禾增材</td><td>绿光 3D 打印</td><td class="n">实现微通道液冷板制造，打印件最小壁厚 0.05 毫米，致密度超过 99.8%</td></tr>
+    <tr><td>锦富技术</td><td>微通道液冷板</td><td class="n">0.08 毫米微通道液冷板已获某台湾客户订单、用于 B200 芯片液冷散热，B300 适配方案完成多轮送样</td></tr>
+  </table>
+  <div class="fig-s">资料来源：国金证券《响应AI芯片散热革命，3D打印液冷板前景广阔》2025-11-03，怀新投研整理</div>
+</div>
+
+<p class="tx">增材路线若放量，对上游材料的影响是形态替换而非量的替换：需求从板带转向铜粉，对纯度与粒度分布提出新要求，而总量仍受制于第二章的物理上限。<b>这条路线改变的是谁供货，不是供多少。</b></p>
+
+<div class="ch"><span class="ch-n">CHAPTER 5</span>
+<div class="ch-t">五、格局：市场溢价集中在有量的铜排与铜箔环节</div></div>
+
+<div class="h2">5.1　铜板带已是净出口，进口量对应仍需外购的高端规格</div>
+
+<p class="tx">供需的总量判断不支持短缺叙事。2025 年 1 至 11 月，我国铜板带进口 7.74 万吨、同比减少 4.6%，出口 11.52 万吨、同比减少 0.9%，已是净出口。铜材整体连续七年净出口，同期净出口 47.92 万吨、同比增长 10.8%。</p>
+
+<div class="fig">
+<div class="fig-t">图表18：铜板带已是净出口，进口量对应的是仍需外购的高端部分</div>
+<svg viewBox="0 0 640 162" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><line x1="385.0" y1="14" x2="385.0" y2="120" stroke="#d8cfc0" stroke-width="1"/><text x="385.0" y="11" font-size="9.5" fill="#9e8878" text-anchor="middle" font-weight="400" font-family="DM Mono, SF Mono, Menlo, monospace">0</text><text x="162" y="39" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜板带 出口</text><rect x="385.0" y="27" width="41.3" height="17" fill="#b45309" rx="2"/><text x="433.3489148580968" y="40" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">11.52 万吨</text><text x="162" y="73" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜板带 进口</text><rect x="357.2" y="61" width="27.8" height="17" fill="#dc2626" rx="2"/><text x="350.2186978297162" y="74" font-size="11" fill="#dc2626" text-anchor="end" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">7.74 万吨</text><text x="162" y="107" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜材整体 净出口</text><rect x="385.0" y="95" width="172.0" height="17" fill="#b45309" rx="2"/><text x="564.0" y="108" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">47.92 万吨</text><text x="20" y="152" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">2025 年 1-11 月口径。铜板带出口同比 -0.9%、进口同比 -4.6%；铜材净出口同比 +10.8%</text></svg>
+<div class="fig-s">资料来源：中国有色金属加工工业协会《2025年中国铜加工行业大事记》，怀新投研整理</div>
+</div>
+
+<p class="tx">仍在进口的 7.74 万吨是理解高端缺口的上限。行业口径确认引线框架用铜带已全面国产化、部分产品性能优于国际同类，说明进口部分已被压缩至更窄的规格范围。把这个上限与第二章的全球冷板用铜 614 至 1,433 吨相比，<b>冷板需求即便全部依赖进口，也只占进口总量的百分之一到百分之二。</b></p>
+
+<div class="h2">5.2　产能集中在头部，上市公司只是格局的一部分</div>
+
+<p class="tx">两家主要上市铜板带企业的产销规模可作参照。一家 2026 年上半年铜板带销量 20.61 万吨、同比增长 14.55%，同期铜导体销量 25.61 万吨、铜合金销量 3.21 万吨，公司自述增长来自 2025 年底投产项目的产能爬坡，产品应用领域包含算力服务器。</p>
+
+<div class="fig">
+<div class="fig-t">图表19：楚江新材铜基三条产品线上半年销量同步增长</div>
+<svg viewBox="0 0 640 158" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><text x="102" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜板带</text><rect x="110" y="25" width="266.7" height="17" fill="#b45309" rx="2"/><text x="383.7176470588235" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">20.61 万吨　同比 +14.55%</text><text x="102" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜导体</text><rect x="110" y="59" width="331.4" height="17" fill="#92400e" rx="2"/><text x="448.4235294117647" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">25.61 万吨　同比 +11.66%</text><text x="102" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜合金</text><rect x="110" y="93" width="41.5" height="17" fill="#0f766e" rx="2"/><text x="158.54117647058825" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">3.21 万吨　同比 +3.73%</text><text x="110" y="148" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">2026 年上半年销量。公司自述增长来自 2025 年底投产项目的产能爬坡</text></svg>
+<div class="fig-s">资料来源：楚江新材 2026-08-31 投资者关系活动记录表，怀新投研整理</div>
+</div>
+
+<p class="tx">另一家以紫铜带箔为主业，2026 年上半年铜板带产量 89,509.86 吨、销量 88,786.92 吨，铜箔产量 2,302.48 吨，出口销量 6,091.76 吨。该公司在半年报中明确定价模式为原材料价格加加工费，加工费由公司根据客户需求、市场供求关系、产品规格与工艺复杂度等确定。其产品应用领域列举中包含散热器与换热器。</p>
+
+<div class="fig">
+<div class="fig-t">图表20：众源新材上半年铜板带销量接近九万吨</div>
+<svg viewBox="0 0 640 192" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif"><text x="132" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜板带 产量</text><rect x="140" y="25" width="386.3" height="17" fill="#b45309" rx="2"/><text x="533.3057115789475" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">89,509.86 吨</text><text x="132" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜板带 销量</text><rect x="140" y="59" width="383.2" height="17" fill="#b45309" rx="2"/><text x="530.1856547368421" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">88,786.92 吨</text><text x="132" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜箔 产量</text><rect x="140" y="93" width="9.9" height="17" fill="#7c3aed" rx="2"/><text x="156.93701894736841" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">2,302.48 吨</text><text x="132" y="139" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">铜板带 出口销量</text><rect x="140" y="127" width="26.3" height="17" fill="#0f766e" rx="2"/><text x="173.29075368421053" y="140" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, SF Mono, Menlo, monospace">6,091.76 吨</text><text x="140" y="182" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, PingFang SC, Hiragino Sans GB, sans-serif">2026 年上半年。公司主营为紫铜带箔材，采用原材料价格加加工费的定价模式</text></svg>
+<div class="fig-s">资料来源：众源新材 2026 年半年度报告，怀新投研整理</div>
+</div>
+
+<p class="tx">2025 年 12 月的铜板带企业家论坛有 20 家重点企业负责人出席，其中包含多家央企与非上市主体。<b>上市公司只是这个行业的一部分，用上市公司口径推算行业总量会低估。</b></p>
+
+<div class="numbox">
+  <div class="numbox-h">表21：铜板带重点企业名单，上市公司只占其中一部分</div>
+  <table>
+    <tr><th style="width:24%">类别</th><th>企业</th></tr>
+    <tr><td>A 股上市</td><td>楚江新材、众源新材、鑫科材料、金田铜业、博威合金</td></tr>
+    <tr><td>央企与国资背景</td><td>中铜华中、中铝洛铜、中色正锐、中色科技、紫金铜业、铜陵金威</td></tr>
+    <tr><td>其他主要企业</td><td>宁波兴业、力博集团、富威科技、上海五星、江西新越、凯安新材、亨通精密铜业、太原晋西春雷、河南凯美龙、浙江花园</td></tr>
+  </table>
+  <div class="fig-s">资料来源：中国有色金属加工工业协会《2025年中国铜加工行业大事记》，2025 年第七届中国铜板带企业家论坛出席企业名单，怀新投研整理</div>
+</div>
+
+<div class="h2">5.3　卡位表</div>
+
+<p class="tx">下表每一行的卡位描述均取自公司自身表述，来源为定期报告、募集说明书、投资者关系活动记录表与行业协会公开记录。一个覆盖全表的事实是，<b>无一家披露单列的冷板用铜材收入</b>，这与第二章测算的量级一致。</p>
+
+<div class="numbox-h" style="margin:14px 32px 0">表22：卡位表，取公司自述与行业协会口径</div>
+<div class="pos">
+<table>
+  <tr><th style="width:14%">环节</th><th style="width:15%">公司</th><th>卡位（取公司自述与行业协会口径）</th></tr>
+  <tr><td class="seg-c">紫铜带箔</td><td>众源新材<br><span class="src">603527</span></td><td>主营即紫铜带箔材的研发、生产和销售，自述为国内该细分行业经营规模较大的主要企业之一。定价模式为原材料价格加加工费。应用领域列举含散热器、换热器。<b>半年报未出现液冷或算力表述</b></td></tr>
+  <tr><td class="seg-c">精密铜带<br>与热工装备</td><td>楚江新材<br><span class="src">002171</span></td><td>自述为全球规模领先的精密铜带研发制造企业、中国铜板带材十强企业第一名。精密铜带产品应用领域列举第二项为算力服务器。在建项目含年产 3.5 万吨高精电子紫铜带材项目。子公司为装备加材料双业务模式，热工装备产品种类含真空钎焊与真空压力扩散焊装备，该装备自述应用领域为航空航天、半导体、机械制造与核工业，<b>不含数据中心</b></td></tr>
+  <tr><td class="seg-c">铜合金板带</td><td>鑫科材料<br><span class="src">600255</span></td><td>募集说明书记载其与另一家企业在 0.03 毫米超薄带等领域技术达到国际先进水平。自有设备改进专利含二十辊轧机压下监测装置、蚀刻带材退火炉退火张力控制装置等。<b>募集说明书未出现液冷或冷板表述</b></td></tr>
+  <tr><td class="seg-c">特殊铜合金</td><td>博威合金<br><span class="src">601137</span></td><td>半年报自述已构建覆盖 AI 算力服务器高速传输、存储、液冷散热及算力高压供电四大方向的全链条材料供应能力。行业协会记录其铜石墨烯复合材料突破 111% IACS 高导极限。拟投资不超 1.5 亿美元在摩洛哥建年产 3 万吨特殊合金电子材料带材项目。<b>主业为特殊铜合金棒线带丝，与纯紫铜板带不是同一品类</b></td></tr>
+  <tr><td class="seg-c">铜排与<br>液冷铜管</td><td>金田股份<br><span class="src">601609</span></td><td>行业协会记录其自主研发的高精密异型无氧铜排、铜热管及液冷铜管等产品让 AI 算力服务器用上国产散热材料。铜排生产装备覆盖上引、挤压、拉拔、冷轧、退火及收线等主要加工环节。<b>卡位在铜排与铜管，不是冷板用板带</b></td></tr>
+  <tr><td class="seg-c">电子铜箔</td><td>海亮股份<br><span class="src">002203</span></td><td>自述已布局并推进 HVLP、RTF 等高端电子铜箔研发生产，当前相关产能稳步释放。对液冷相关提问答复为详见公告。<b>卡位在铜箔支，与冷板用板带不是同一支</b></td></tr>
+  <tr><td class="seg-c">半导体设备<br>用水冷板</td><td>斯瑞新材<br><span class="src">688102</span></td><td>核心产品含半导体设备用铜基水冷板组件，集成高纯净金属材料、高精密机加工、真空钎焊、特种表面处理等技术。半年报给出水冷板技术门槛四条，并判断该类水冷板以微通道与无氧铜方案为主、海外厂商主导高端市场、先进制程产品仍依赖进口。<b>场景为半导体设备，不是数据中心冷板</b></td></tr>
+</table>
+</div>
+<div class="fig-s" style="margin:0 32px 12px">资料来源：各公司 2026 年半年度报告、募集说明书、投资者关系活动记录表，中国有色金属加工工业协会《2025年中国铜加工行业大事记》，怀新投研整理</div>
+
+<div class="h2">5.4　市场给出的定价状态与吨位测算方向一致</div>
+
+<p class="tx">把上表的卡位与市场定价并列，可以看到一个与第二章测算相互印证的分布。以铜板带为主业的三家公司，过去一年区间涨幅全部落在负 14.1% 到正 11.6% 之间；而直接生产水冷板组件的一家上涨 95.8%，主业为电子铜箔的一家上涨 64.7%。表 22 已说明博威合金主业为特殊铜合金棒线带丝，与纯紫铜板带不属同一品类，故未计入这三家。</p>
+
+<div class="numbox-h" style="margin:14px 32px 0">表23：定价状态表，仅含可查证的客观字段</div>
+<div class="pos">
+<table>
+  <tr><th style="width:13%">公司</th><th style="width:17%">主业定位</th><th style="width:10%">总市值</th><th style="width:11%">市盈率</th><th style="width:8%">市净率</th><th style="width:12%">一年涨幅</th><th style="width:11%">液冷标签</th><th>研报覆盖</th></tr>
+  <tr><td>众源新材</td><td>紫铜带箔</td><td class="n">31 亿</td><td class="n">102.8</td><td class="n">1.5</td><td class="n">-7.2%</td><td>无</td><td class="n">0 篇</td></tr>
+  <tr><td>楚江新材</td><td>精密铜带与热工装备</td><td class="n">166 亿</td><td class="n">38.4</td><td class="n">1.9</td><td class="n">+11.6%</td><td>无</td><td class="n">1 篇，0 篇涉 AI</td></tr>
+  <tr><td>鑫科材料</td><td>铜合金板带</td><td class="n">61 亿</td><td class="n">114.2</td><td class="n">4.1</td><td class="n">-14.1%</td><td>无</td><td class="n">0 篇</td></tr>
+  <tr><td>博威合金</td><td>特殊铜合金</td><td class="n">189 亿</td><td class="n">亏损</td><td class="n">1.9</td><td class="n">-15.1%</td><td>有</td><td class="n">0 篇</td></tr>
+  <tr><td>金田股份</td><td>铜排与液冷铜管</td><td class="n">231 亿</td><td class="n">28.1</td><td class="n">2.3</td><td class="n">+19.2%</td><td>有</td><td class="n">3 篇，3 篇涉 AI</td></tr>
+  <tr><td>电工合金</td><td>铜排</td><td class="n">49 亿</td><td class="n">31.6</td><td class="n">4.9</td><td class="n">+0.2%</td><td>有</td><td class="n">0 篇</td></tr>
+  <tr><td>海亮股份</td><td>电子铜箔</td><td class="n">424 亿</td><td class="n">49.5</td><td class="n">2.6</td><td class="n">+64.7%</td><td>无</td><td class="n">6 篇，0 篇涉 AI</td></tr>
+  <tr><td>斯瑞新材</td><td>半导体设备水冷板</td><td class="n">239 亿</td><td class="n">141.8</td><td class="n">11.8</td><td class="n">+95.8%</td><td>无</td><td class="n">3 篇，0 篇涉 AI</td></tr>
+</table>
+</div>
+<div class="fig-s" style="margin:0 32px 12px">资料来源：行情数据截至 2026-09-04 收盘，涨幅区间 2025-09-03 至 2026-09-04、前复权；概念标签取交易所行情系统的液冷服务器板块归属；研报覆盖为 2026 年 1 月 1 日以来的卖方个股研报篇数及其中标题涉及 AI、算力、液冷、散热的篇数。表内不含目标价、评级与盈利预测。市盈率为 TTM 口径，博威合金列示为亏损系其 TTM 归母净利为负，未剔除一次性损益影响。研报覆盖取东方财富研报数据库的个股研报收录量，收录口径可能不覆盖全部机构的内部报告，零覆盖表示该数据库中无收录，不等于无机构关注</div>
+
+<p class="tx">标签与涨幅并不严格对应，被归入液冷概念的三家中有两家一年内接近零涨幅或下跌。更具解释力的是主业是否直接对应有量的环节。涨幅靠前的两家，一家做的是每台服务器上百公斤量级的电子铜箔，一家直接生产水冷板组件本身。以千吨级冷板用板带为想象空间的公司，市场没有给出溢价。</p>
+
+<p class="tx">需要区分两种弹性。<b>前文的测算否定的是冷板环节带来的收入与利润弹性，不构成对主题交易的判断。</b>标签溢价的形成不以收入落地为前提，一旦某家铜板带企业在互动平台或调研纪要中出现冷板材料通过客户验证的表述，溢价可以先于收入出现。第六章的跟踪清单按这一顺序排列观察变量。</p>
+
+<div class="ch"><span class="ch-n">CHAPTER 6</span>
+<div class="ch-t">六、产业含义与跟踪清单</div></div>
+
+<p class="tx">冷板环节对无氧铜板带的拉动，量级上不足以改变任何一家铜板带企业的收入结构。<b>它的性质是一道验证材料能力的窄门。</b>通过这道门所得到的工艺配合能力与客户认证，可以外溢到量更大的相邻应用，这是进入该环节的实际回报。</p>
+
+<p class="tx">三条结构性判断可以贯穿更长时间。其一，铜板带的轧制与退火设备已基本国产化，扩产不受设备制约，这意味着高端规格的差距体现在工艺积累与批次一致性上，而非产能上，追平的速度会慢于单纯的产能扩张。其二，材料与工艺在冷板上是耦合的，钎焊路线接受焊后软化、搅拌摩擦焊保住硬度，铜带供应商需要按客户工艺定制冶金状态，这使供应关系一旦建立就相对稳固。其三，先进制程的高均匀性与高热流密度水冷板仍依赖进口，替代空间在冷板制造端而不在材料端。</p>
+
+<div class="numbox">
+  <div class="numbox-h">表24：跟踪清单，兑现与证伪信号</div>
+  <table>
+    <tr><th style="width:14%">环节</th><th style="width:18%">跟踪变量</th><th style="width:22%">兑现信号</th><th style="width:24%">证伪信号</th><th>数据源与频率</th></tr>
+    <tr><td>铜板带</td><td>加工费方向，而非销量</td><td>出现铜板带加工费上调的公开确认，且区分于铜箔口径</td><td>开工率继续下滑，铜价成本仍无法向终端传导</td><td class="n">加工协会通报、SMM 月度</td></tr>
+    <tr><td>高端规格</td><td>进口量的变化</td><td>铜板带进口量继续下降，高端规格国产替代推进</td><td>进口量回升，说明高端规格差距扩大</td><td class="n">海关 HS 7409 月度</td></tr>
+    <tr><td>冷板制造</td><td>先进制程水冷板的国产化</td><td>国内厂商在高均匀性、高热流密度水冷板上取得批量导入</td><td>该细分继续依赖进口，微通道精密加工未突破</td><td class="n">半年报与调研纪要</td></tr>
+    <tr><td>焊接与检漏</td><td>真空钎焊与氦检漏产能的落地</td><td>装备厂商的自述应用领域出现数据中心，或出现对应订单</td><td>装备应用领域仍局限于航空航天与半导体</td><td class="n">定期报告表述变化</td></tr>
+    <tr><td>工艺路线</td><td>增材制造的产业化节奏</td><td>铜增材冷板进入批量供货，需求形态由板带转向铜粉</td><td>绿光与蓝光激光设备成本无法下降，增材路线停留在样品阶段</td><td class="n">厂商送样与订单公告</td></tr>
+  </table>
+  <div class="fig-s">资料来源：怀新投研整理</div>
+</div>
+
+<p class="tx">对铜板带企业而言，值得关注的不是液冷带来多少收入，而是加工费能否回到反映工艺难度的水平。行业协会已明确记录反向压力：下游转为即用即采使铜板带企业开工率普遍下滑，中游与终端竞争激烈导致铜价上涨的成本难以有效传导，加工费受挤压，同时以铝代铜与铜基复合材料的替代进程加快。<b>已确认上调加工费的是铜箔环节，不是铜板带，两者的口径不可混用。</b></p>
+
+<div class="ch"><span class="ch-n">CHAPTER 7</span>
+<div class="ch-t">七、风险提示</div></div>
+
+<div class="numbox-h" style="margin:12px 32px 0">表25：风险提示与传导机制</div>
+<div class="risk">
+<div class="risk-i"><b>一、测算假设与实际结构存在偏差。</b>第二章的用铜量测算依赖单块冷板外形与实心率两项我方假设。若实际冷板的翅片密度、壁厚或流道占比与假设显著不同，单块含铜量会偏离测算区间。另有一处口径不匹配需要说明：117 块取自 NVL72 级整柜拆解，而 3.5 万台的全球机柜量包含冷板数量少于 117 的通用液冷柜，两者相乘对用铜量构成高估，方向上有利于上述结论。压力测试显示即便取物理上不可能的实心上界，全球冷板用铜仍不足一家头部企业半年销量的百分之四，但若单柜冷板块数或全球机柜量的产业口径本身有误，量级结论需要重新校验。</div>
+<div class="risk-i"><b>二、技术路线迭代改变材料形态。</b>本篇以冷板式与板带材料为主线展开。若增材制造路线的成熟速度快于预期，需求形态将由板带转向铜粉，对纯度与粒度分布提出与现有产线不同的要求，既有的轧制与退火能力积累价值会被削弱；若两相冷板或浸没方案加速，冷板的结构与材料体系也可能重构。</div>
+<div class="risk-i"><b>三、加工费继续受挤压。</b>铜板带采用原材料价格加加工费的定价模式，加工费是盈利的核心变量。行业协会已记录下游即用即采、开工率下滑与成本难以向终端传导等反向压力。若铜价维持高位而下游议价能力不变，加工费可能进一步承压，届时高端规格的技术优势难以转化为盈利改善。</div>
+<div class="risk-i"><b>四、以铝代铜的替代进程超出预期。</b>行业协会记录以铝代铜与铜基复合材料的应用进程显著加快。冷板的核心发热区域目前因热流密度约束仍以铜为主，但若铝基复合材料的导热性能取得突破，或冷却液流量设计给出更大裕度，铜在冷板中的占比可能下降。</div>
+<div class="risk-i"><b>五、AI 算力资本开支不及预期。</b>冷板需求直接派生于液冷机柜出货量。若云厂商资本开支节奏放缓或算力芯片供给受限导致机柜出货低于预期，第二章测算所依据的全球年液冷机柜量将同步下修，本已很小的冷板用铜量会进一步收缩。</div>
+</div>
+
+<div class="footer">
+  <div class="footer-brand">怀新投研 · 产业专题 VOL.SP02 · 无氧铜板带行业深度</div>
+  <div class="footer-ts">2026.09.06</div>
+</div>
+</body>
+</html>
