@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产业专题 VOL.SP03 · 洁净室行业深度 · 2026.09.09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>:root{
+  --ink:#2c1810;--ink-light:#5a3e35;--ghost:#9e8878;
+  --paper:#f7f4ef;--paper-warm:#f0ebe0;--paper-deep:#e8dfd0;--border:#d8cfc0;
+  --mast:#3b1a06;--accent:#b45309;--accent-light:#f7eddb;--accent-deep:#92400e;
+  --pill-hot:#dc2626;--pill-new:#1d4ed8;--pill-spread:#7c3aed;--pill-data:#0f766e;--pill-green:#15803d;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-size:13px;line-height:1.65;max-width:860px;margin:0 auto;}
+em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radius:3px;color:#1e40af;font-weight:500;}
+.masthead{background:var(--mast);padding:26px 32px 20px;position:relative;overflow:hidden;}
+.masthead::before{content:'';position:absolute;top:0;right:0;width:220px;height:100%;background:linear-gradient(90deg,transparent,rgba(180,83,9,0.10));}
+.mast-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
+.mast-brand{color:#f7eddb;font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;font-size:11px;letter-spacing:0.12em;opacity:0.7;}
+.mast-vol{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:11px;color:var(--accent);letter-spacing:0.08em;}
+.mast-title{color:#fdf8f0;font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;font-size:25px;font-weight:900;line-height:1.25;}
+.mast-title em{font-style:normal;color:#fbbf24;background:none;padding:0;}
+.mast-subtitle{color:rgba(253,248,240,0.50);font-size:11.5px;margin-top:6px;font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;letter-spacing:0.06em;}
+.stats-bar{background:var(--accent);display:flex;}
+.stat-item{flex:1;padding:10px 14px;border-right:1px solid rgba(255,255,255,0.2);text-align:center;}
+.stat-item:last-child{border-right:none;}
+.stat-num{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:20px;font-weight:500;color:#fff;display:block;line-height:1;}
+.stat-label{font-size:10px;color:rgba(255,255,255,0.72);letter-spacing:0.06em;margin-top:3px;display:block;}
+.footer{background:var(--mast);padding:14px 32px;display:flex;justify-content:space-between;align-items:center;}
+.footer-brand{font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;font-size:12px;color:rgba(253,248,240,0.45);}
+.footer-ts{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:rgba(253,248,240,0.30);letter-spacing:0.06em;}
+.src{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--ghost);letter-spacing:0.02em;}
+.numbox{margin:12px 32px;border:1px solid var(--border);background:#fffdf9;}
+.numbox-h{background:var(--paper-warm);padding:7px 14px;font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--accent-deep);letter-spacing:0.1em;border-bottom:1px solid var(--border);}
+.numbox table{width:100%;border-collapse:collapse;font-size:11.5px;}
+.numbox th{background:#fbf8f2;text-align:left;padding:7px 12px;font-weight:500;color:var(--ink-light);border-bottom:1px solid var(--border);font-size:10.5px;letter-spacing:0.03em;}
+.numbox td{padding:7px 12px;border-bottom:1px solid #eee6d8;vertical-align:top;line-height:1.55;}
+.numbox tr:last-child td{border-bottom:none;}
+.numbox td.n{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;color:var(--accent-deep);white-space:nowrap;}
+.pos{margin:14px 32px;}
+.pos table{width:100%;border-collapse:collapse;font-size:11.5px;background:#fff;border:1px solid var(--border);}
+.pos th{background:var(--mast);color:#fdf8f0;text-align:left;padding:8px 11px;font-weight:500;font-size:10.5px;letter-spacing:0.06em;}
+.pos td{padding:8px 11px;border-bottom:1px solid #eee6d8;vertical-align:top;line-height:1.55;}
+.pos tr:last-child td{border-bottom:none;}
+.pos td.seg-c{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10.5px;color:var(--accent-deep);white-space:nowrap;background:#fdfaf4;}
+.pos td.d{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--ghost);white-space:nowrap;}
+@media(max-width:600px){
+.numbox,.seg,.pos,.note{margin-left:18px;margin-right:18px;}
+.mast-title{font-size:20px;}
+}
+/* ===== 深度报告体例（SP01 v4） ===== */
+.abs{margin:0;padding:20px 32px 6px;background:#fffdf9;border-bottom:1px solid var(--border);}
+.abs-h{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--accent);letter-spacing:0.16em;margin-bottom:12px;}
+.abs-i{display:flex;gap:11px;margin-bottom:13px;align-items:flex-start;}
+.abs-n{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:11px;color:#fff;background:var(--accent);min-width:19px;height:19px;
+  border-radius:2px;text-align:center;line-height:19px;flex-shrink:0;margin-top:2px;}
+.abs-b{font-size:12.4px;line-height:1.75;flex:1;}
+.abs-b b{color:var(--mast);}
+.toc{padding:16px 32px;background:var(--paper-warm);border-bottom:1px solid var(--border);}
+.toc-h{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--accent);letter-spacing:0.16em;margin-bottom:9px;}
+.toc-i{display:flex;font-size:11.8px;line-height:1.9;color:var(--ink);}
+.toc-i b{color:var(--mast);min-width:22px;}
+.toc-s{padding-left:24px;color:var(--ink-light);font-size:11px;line-height:1.8;}
+.fig{margin:16px 32px;padding:12px 14px 9px;background:#fff;border:1px solid var(--border);}
+.fig-t{font-size:11.5px;font-weight:700;color:var(--mast);margin-bottom:9px;line-height:1.45;font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;}
+.fig-s{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:9.5px;color:var(--ghost);margin-top:7px;
+  padding-top:6px;border-top:1px dotted var(--border);line-height:1.5;}
+.ch{background:var(--mast);padding:14px 32px;margin-top:10px;}
+.ch-n{font-family:'DM Mono','SF Mono',Menlo,Consolas,monospace;font-size:10px;color:var(--accent);letter-spacing:0.14em;display:block;margin-bottom:4px;}
+.ch-t{color:#fdf8f0;font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;font-size:16.5px;font-weight:900;line-height:1.35;}
+.h2{font-family:'Noto Serif SC','Songti SC','Source Han Serif SC','Microsoft YaHei',serif;font-size:13.5px;font-weight:700;color:var(--mast);
+  margin:16px 32px 7px;line-height:1.45;padding-left:9px;border-left:3px solid var(--accent);}
+.tx{margin:0 32px 9px;font-size:12.4px;line-height:1.78;}
+.tx b{color:var(--mast);}
+.risk{margin:12px 32px;}
+.risk-i{padding:9px 0;border-bottom:1px dotted var(--border);font-size:12.2px;line-height:1.7;}
+.risk-i:last-child{border-bottom:none;}
+.risk-i b{color:var(--accent-deep);}
+@media(max-width:600px){
+.abs,.toc,.ch,.h2,.tx{padding-left:18px;padding-right:18px;}
+.h2,.tx,.risk{margin-left:18px;margin-right:18px;}
+.fig{margin-left:12px;margin-right:12px;}
+}
+@media print{
+  body{max-width:none;background:#fff;}
+  .ch,.h2{page-break-after:avoid;}
+  .fig,.numbox,.pos,.risk-i,table{page-break-inside:avoid;}
+  .masthead,.stats-bar,.part-hd{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .toc{page-break-after:always;}
+}
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="mast-top">
+    <span class="mast-brand">怀新投研 · 产业专题</span>
+    <span class="mast-vol">VOL.SP03</span>
+  </div>
+  <div class="mast-title">洁净室把扩产的约束从设备采购移到工程周期</div>
+  <div class="mast-subtitle">洁净室行业深度报告 · 2026.09.09</div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat-item"><span class="stat-num">55-60%</span><span class="stat-label">存储厂口径下的需求满足率</span></div>
+  <div class="stat-item"><span class="stat-num">37pct</span><span class="stat-label">同一公司内设计与总包毛利差</span></div>
+  <div class="stat-item"><span class="stat-num">52.67%</span><span class="stat-label">链上最高的分部毛利率</span></div>
+  <div class="stat-item"><span class="stat-num">4 天</span><span class="stat-label">八家公司见顶的时间窗口</span></div>
+</div>
+
+<div class="abs">
+  <div class="abs-h">核心观点</div>
+
+  <div class="abs-i"><span class="abs-n">1</span><div class="abs-b"><b>这一轮扩产的实际约束是洁净室的建设周期，不落在构成洁净室的任何一种材料或设备上。</b>北美一家存储龙头在 2025 年 12 月的业绩电话会上给出三点：当年不会有新增晶圆厂洁净室产能，洁净室建设交期在各地区都在拉长，只能满足核心客户 55% 至 60% 的需求，增量要到 2028 至 2029 年。这段表述指向从土建到洁净等级验收的完整工程周期。SEMI 口径下三百毫米设备支出 2026 年增长 25%，2027 至 2029 年为 11%、6%、18%，低点落在 2028 年；存储口径为 29%、11%、8%、31%。设备支出与厂房建设支出是两套统计，前者不构成后者的代理变量。风机过滤单元缺货涨价与总包产能封顶两种说法，公开渠道找不到券商行业报告或晶圆厂侧的对应记录。</div></div>
+
+  <div class="abs-i"><span class="abs-n">2</span><div class="abs-b"><b>材料端的进口依赖方向并不一致，被更多讨论的那一种正在下降，上升的是另一种。</b>美埃科技招股说明书披露，覆膜滤材的单一境外供应商采购占比从 98.85% 降到 49.25%，玻纤滤料则从 57.00% 升到 73.58%，而玻纤是高效过滤器的传统基材、用量更大。风机的境外单一供应商占比维持在 75% 至 87%。真正弹性最差的不是这些标准工业品，而是高纯阀门与测量仪表，国产化率低于 1%，质量流量控制器 1% 至 5%，其约束体现为重新认证所需的时间而非供货能力。滤材与风机可以提前备货，主体材料从不紧张，<b>没有一种材料能解释洁净室交期的拉长</b>。</div></div>
+
+  <div class="abs-i"><span class="abs-n">3</span><div class="abs-b"><b>利润集中在工程总包的上下两端，总包的成本结构决定它拿不到定价权。</b>按定期报告分部口径横排，毛利率跨度接近五十个百分点：现场制气及租金 52.67%、运维业务 40% 以上、水厂运维 38.59%、设计咨询 38.16%、半导体气体 37.84%、滤材 33.62%、风机过滤单元 31.38%，而工程总包境内集中在 8.9% 至 11.6%，极端值是太极实业的工程总包分部 1.15%。同一家太极实业内部，设计和咨询与工程总包相差 37 个百分点，同一批项目、同一个周期。柏诚股份的成本构成给出了原因：项目物资 55% 至 58%、分包 37% 至 39%、直接人工只有 3% 至 5%。</div></div>
+
+  <div class="abs-i"><span class="abs-n">4</span><div class="abs-b"><b>工期越紧张，总包合同里替业主过账的比例越高，订单金额的增长不等于业务量的增长。</b>柏诚股份招股说明书记录过这一机制：设备类材料采购占比跳升的原因是业主发包范围中成套设备占比提升。业主在工期紧张时会扩大自己的发包范围以提前锁定长交期设备，这在总包报表上表现为项目物资占比上升、自有工作量占比下降。同一份半年报还说明，二次配业务的执行周期可能因业主工艺机台分批到货而延长，收入确认节奏由业主决定。景气度对工程总包因此是双向变量，它同时推高合同金额与压低单位利润。海外溢价只在总包这一层出现，亚翔集成境外高于境内 18.75 个百分点，而美埃科技与华特气体是境内高于境外。</div></div>
+
+  <div class="abs-i"><span class="abs-n">5</span><div class="abs-b"><b>按年重复收费的部分毛利率约为工程总包的五倍，它的意义出现在建设放缓的那一年。</b>现场制气及租金 52.67%、运维业务 40% 以上、水厂运维服务 38.59%，三项均值 43.75%，同期工程总包四项均值 7.89%。差别不在技术含量而在计费结构，工程总包在交付时一次性结清、价格由投标竞争决定，运营型业务在合同期内按年收取、价格由切换成本决定。这类收入的基数是已投运项目数，新建高峰期签下的合同要等工厂通线后才开始贡献，因此当前不是利润的大头。但它是这条链上唯一不依赖新建的收入，在 SEMI 设备支出增速落到 6% 至 8% 的 2028 年，它仍随存量项目累积而增长。</div></div>
+
+  <div class="abs-i"><span class="abs-n">6</span><div class="abs-b"><b>这一轮的涨跌由板块节奏决定，卖方覆盖没有跟上市值与涨幅的变化。</b>十二家相关公司中有八家的五十二周高点落在 2026 年 6 月 29 日至 7 月 2 日的四个交易日内，分处工程总包、设备耗材与气体化学品三个环节。年内涨幅从正 129.9% 到负 27.3%、跨度 157 个百分点，回撤幅度却整齐落在 43% 至 55%。另有三家的高点停在 2025 年，整段行情与它们无关。覆盖方面，柏诚股份自 2023 年 3 月上市新股覆盖研究后库内再无第二篇，市值 125 亿元、在手订单增长 222%；中电环保库内最后一篇停在 2018 年 11 月；太极实业最后一篇停在 2024 年 8 月，市值 380 亿元、年内涨幅 129.9%。同期贵州茅台 46 篇。</div></div>
+</div>
+
+<div class="toc">
+  <div class="toc-h">目录</div>
+  <div class="toc-i">一、约束：这一轮扩产卡在洁净室的建设周期上</div>
+  <div class="toc-s">1.1 设备支出仍在加速，二〇二八年是本轮增速低点　1.2 供给端的约束来自建设周期本身　1.3 三个候选卡点里只有一个成立</div>
+  <div class="toc-i">二、材料：弹性最差的一环是认证周期</div>
+  <div class="toc-s">2.1 两种滤材的依赖度朝相反方向移动　2.2 阀件与仪表的约束体现为认证周期　2.3 按供应弹性重排，材料端不构成扩产约束</div>
+  <div class="toc-i">三、利润：定价权落在工程总包的上下两端</div>
+  <div class="toc-s">3.1 洁净室造价有两档可核的单价锚　3.2 毛利率从运营端的五成递减到工程总包的一个百分点　3.3 同一家公司内部相差三十七个百分点　3.4 总包的成本结构决定它拿不到定价权　3.5 海外溢价只在工程总包这一层出现　3.6 在手订单的口径互不相同　3.7 应收账款周转天数在链上相差十倍以上</div>
+  <div class="toc-i">四、传导：工期约束走三跳后落回总包的含金量</div>
+  <div class="toc-s">4.1 产能爬坡的节奏决定价格紧张的持续期　4.2 业主为压缩工期而改变发包方式　4.3 先拿到洁净室的厂获得时间窗口</div>
+  <div class="toc-i">五、运营：按年重复收费的部分利润率最高</div>
+  <div class="toc-s">5.1 重复收费环节的毛利率约为工程总包的五倍　5.2 运营型收入的规模目前仍小　5.3 运营型收入在建设放缓的年份仍然增长</div>
+  <div class="toc-i">六、定价：这一轮的涨跌由板块节奏决定</div>
+  <div class="toc-s">6.1 八家公司的高点集中在四个交易日内　6.2 八家的回撤幅度集中在四成到五成五　6.3 三家公司从未参与这一轮　6.4 正帆科技的归母净利润在收入增长期转亏　6.5 卖方研报覆盖与市值和涨幅不匹配</div>
+  <div class="toc-i">七、产业含义、卡位与跟踪清单</div>
+  <div class="toc-s">7.1 产业含义　7.2 A 股卡位表　7.3 跟踪清单　7.4 风险提示</div>
+  <div class="toc-h" style="margin-top:12px">图表目录</div>
+  <div class="toc-s">图表1 三百毫米设备支出增速　图表2 存储设备支出增速　图表3 需求满足率　表4 候选卡点三档判定　图表5 两种滤材依赖方向　图表6 阀件与仪表国产化率　表7 稀缺度与供应弹性　表8 造价锚点与口径边界　图表9 毛利率阶梯　图表10 同一公司内部落差　图表11 总包成本结构　图表12 亚翔分地区毛利率　图表13 境内外毛利差　表14 在手订单口径对照　图表15 应收账款周转天数差距　表16 业主压缩工期的三种做法　表17 三跳传导与证据形态　图表18 重复收费与总包毛利对比　表19 运营型收入构成条件　图表20 年内涨幅　图表21 回撤幅度与高点日期　图表22 收入与利润背离　图表23 卖方研报覆盖　表24 A 股卡位表　表25 兑现与证伪信号　表26 风险提示</div>
+</div>
+
+<div class="ch"><span class="ch-n">CHAPTER 1</span>
+<div class="ch-t">一、约束：这一轮扩产卡在洁净室的建设周期上</div></div>
+
+<div class="h2">1.1　设备支出仍在加速，二〇二八年是本轮增速低点</div>
+
+<p class="tx">SEMI 口径下，三百毫米晶圆厂设备支出 2026 年为 1,420 亿美元，同比增长 <em>25%</em>；此后三年增速为 11%、6%、18%。全球口径 2026 年 1,520 亿美元、增长 24%，2027 年 1,660 亿美元、增长 9%。存储领域的节奏更陡，2026 至 2029 年设备支出增速为 29%、11%、8%、31%。<b>两条曲线的低点都落在 2028 年。</b></p>
+
+<div class="fig">
+<div class="fig-t">图表1：三百毫米设备支出增速在二〇二八年落到本轮低点</div>
+<svg viewBox="0 0 640 218" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="84.5" y="51.1" width="72.0" height="116.9" fill="#b45309" rx="2"/><text x="120.5" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">+25%</text><text x="120.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2026</text><rect x="217.5" y="116.5" width="72.0" height="51.5" fill="#b45309" rx="2"/><text x="253.5" y="109.54237288135593" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">+11%</text><text x="253.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2027</text><rect x="350.5" y="139.9" width="72.0" height="28.1" fill="#dc2626" rx="2"/><text x="386.5" y="132.9322033898305" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">+6%</text><text x="386.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2028</text><rect x="345.5" y="115.9" width="82.0" height="56.1" fill="none" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2" rx="3"/><rect x="483.5" y="83.8" width="72.0" height="84.2" fill="#b45309" rx="2"/><text x="519.5" y="76.79661016949153" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">+18%</text><text x="519.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2029</text><text x="40" y="208" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">口径为 300mm 晶圆厂设备支出同比增速，非厂房建设支出</text></svg>
+<div class="fig-s">资料来源：SEMI 300mm Fab Outlook（2Q26 口径），怀新投研整理</div>
+</div>
+
+<div class="fig">
+<div class="fig-t">图表2：存储设备支出的低点同样落在二〇二八年</div>
+<svg viewBox="0 0 640 218" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="84.5" y="58.6" width="72.0" height="109.4" fill="#1d4ed8" rx="2"/><text x="120.5" y="51.59595407326407" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">+29%</text><text x="120.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2026</text><rect x="217.5" y="126.5" width="72.0" height="41.5" fill="#1d4ed8" rx="2"/><text x="253.5" y="119.50191361399672" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">+11%</text><text x="253.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2027</text><rect x="350.5" y="137.8" width="72.0" height="30.2" fill="#dc2626" rx="2"/><text x="386.5" y="130.81957353745216" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">+8%</text><text x="386.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2028</text><rect x="345.5" y="113.8" width="82.0" height="58.2" fill="none" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2" rx="3"/><rect x="483.5" y="51.1" width="72.0" height="116.9" fill="#1d4ed8" rx="2"/><text x="519.5" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">+31%</text><text x="519.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">2029</text><text x="40" y="208" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">存储领域设备支出同比增速</text></svg>
+<div class="fig-s">资料来源：SEMI 300mm Fab Outlook（2Q26 口径），怀新投研整理</div>
+</div>
+
+<p class="tx">设备支出与厂房建设支出是两套统计口径。SEMI 对建厂支出单独统计，公开渠道披露的只有设备支出与产能两项，建厂支出仅在产品说明中提及而无具体数字。用设备支出增速代替洁净室需求增速，会把两个不同环节的节奏当成同一条。<b>洁净室订单是先行工程量，它的高点与低点都应早于设备侧，而不是同步。</b></p>
+
+<div class="h2">1.2　供给端的约束来自建设周期本身</div>
+
+<p class="tx">北美一家存储龙头在 2025 年 12 月的业绩电话会上给出三点判断：<em>2026 年不会有新增晶圆厂洁净室产能</em>；洁净室建设交期在各个地区都在拉长；当年只能满足核心客户 55% 至 60% 的需求。该公司管理层在随后一个季度补充，增量产能要到 2028 至 2029 年才会出现。这是客户侧的一手口径，来自使用洁净室的一方而非提供洁净室的一方。</p>
+
+<div class="fig">
+<div class="fig-t">图表3：该存储厂二〇二六年只能满足核心客户约六成需求</div>
+<svg viewBox="0 0 640 120" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><text x="142" y="36" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">核心客户提出的需求</text><rect x="150.0" y="25" width="418.2" height="16" fill="#1d4ed8" rx="2"/><text x="575.1818181818182" y="37" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">100%</text><text x="142" y="68" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">2026 年可满足部分</text><rect x="150.0" y="57" width="240.5" height="16" fill="#dc2626" rx="2"/><text x="397.4545454545455" y="69" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">55-60%</text><text x="150" y="110" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">同期该公司表示当年不会有新增晶圆厂洁净室产能，增量要到 2028 至 2029 年</text></svg>
+<div class="fig-s">资料来源：北美一家存储龙头 2025-12-18 业绩电话会，怀新投研整理</div>
+</div>
+
+<p class="tx">这段表述指向的是工程周期，从土建、结构封顶、机电安装到洁净等级验收的完整链条，与任何单一部件的供货能力无关。<b>把这句话用来论证过滤器或风机过滤单元缺货，属于口径挪用。</b></p>
+
+<div class="h2">1.3　三个候选卡点里只有一个成立</div>
+
+<p class="tx">风机过滤单元涨价缺货的说法，公开来源集中在工程承包商与设备经销商的自有渠道，没有券商行业报告或晶圆厂侧的对应记录。洁净室总包存在产能上限的说法同样缺乏支撑，能查到的只是订单饱满：亚翔集成披露未完工合同含税金额 <em>78.98 亿元</em>，相当于其 2025 年营业收入 49.07 亿元的 1.6 倍。订单饱满是需求侧的证据，不构成供给侧封顶的证据。超纯水被外资垄断的说法在系统集成这一层已经不成立，国产厂商是这一层的主要承接方。</p>
+
+<div class="numbox">
+<div class="numbox-h">表4　候选卡点的三档判定</div>
+<table>
+<tr><th style="width:22%">候选环节</th><th style="width:14%">判定</th><th>依据</th></tr>
+<tr><td>洁净室建设周期</td><td class="n">真瓶颈</td><td>客户侧一手口径：当年无新增洁净室产能、交期各地区拉长、需求满足率 55% 至 60%，增量要到 2028 至 2029 年</td></tr>
+<tr><td>高纯阀件与测量仪表</td><td class="n">结构性依赖</td><td>国产化率低于 1%，但当期没有紧缺或涨价记录，约束体现为认证周期而非供货能力</td></tr>
+<tr><td>排气洗涤系统</td><td class="n">中度集中</td><td>全球前五家合计份额约 63%，集中度高于其余厂务子系统</td></tr>
+<tr><td>化学品供应系统</td><td class="n">一般环节</td><td>格局分散，国内龙头市占率 14.28%，不具备稀缺性</td></tr>
+<tr><td>风机过滤单元缺货涨价</td><td class="n">无实据</td><td>来源集中于工程承包商与经销商自有渠道，无券商行业报告或晶圆厂侧记录</td></tr>
+<tr><td>洁净室总包产能上限</td><td class="n">无实据</td><td>只找到在手订单饱满，未找到同时可承接项目数量受限的证据</td></tr>
+<tr><td>超纯水外资垄断</td><td class="n">不成立</td><td>系统集成层已由国产厂商承接，外资集中在膜与树脂等上游材料</td></tr>
+</table>
+</div>
+
+<p class="tx"><b>稀缺的是把洁净室盖出来并通过验收的这段时间，不是构成洁净室的任何一种材料或设备。</b>材料端的问题是替代难度，其供货本身并不紧张，两者的约束形态不同。</p>
+
+<div class="ch"><span class="ch-n">CHAPTER 2</span>
+<div class="ch-t">二、材料：弹性最差的一环是认证周期</div></div>
+
+<div class="h2">2.1　两种滤材的依赖度朝相反方向移动</div>
+
+<p class="tx">高效过滤器的滤材有两条技术路线，覆膜路线与玻纤路线。美埃科技招股说明书披露了报告期内两条路线的单一供应商采购占比：覆膜滤材来自日系供应商的比例从 <em>98.85%</em> 降到 <em>49.25%</em>，玻纤滤料来自美系供应商的比例则从 <em>57.00%</em> 升到 <em>73.58%</em>。风机来自德系供应商的比例维持在 75% 至 87% 之间。</p>
+
+<div class="fig">
+<div class="fig-t">图表5：两种滤材的进口依赖方向相反，玻纤滤料的依赖度在上升</div>
+<svg viewBox="0 0 640 218" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="84.5" y="51.1" width="72.0" height="116.9" fill="#b45309" rx="2"/><text x="120.5" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">98.85%</text><text x="120.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">覆膜滤材</text><text x="120.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">报告期初</text><rect x="217.5" y="109.7" width="72.0" height="58.3" fill="#b45309" rx="2"/><text x="253.5" y="102.73246572876212" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">49.25%</text><text x="253.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">覆膜滤材</text><text x="253.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">报告期末</text><rect x="350.5" y="100.6" width="72.0" height="67.4" fill="#1d4ed8" rx="2"/><text x="386.5" y="93.56346287389727" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">57.00%</text><text x="386.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">玻纤滤料</text><text x="386.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">报告期初</text><rect x="483.5" y="80.9" width="72.0" height="87.1" fill="#1d4ed8" rx="2"/><text x="519.5" y="73.94771225019933" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">73.58%</text><text x="519.5" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">玻纤滤料</text><text x="519.5" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">报告期末</text><text x="40" y="208" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">口径为向单一境外供应商的采购占比；该公司 2023 年后年报不再披露此项</text></svg>
+<div class="fig-s">资料来源：美埃科技招股说明书，怀新投研整理</div>
+</div>
+
+<p class="tx">覆膜路线的国产替代已经推进过一轮，依赖度接近腰斩。玻纤路线的依赖度反而在上升，而玻纤滤料是高效过滤器的传统基材，用量大于覆膜滤材。<b>被更多讨论的是覆膜滤材的进口依赖，实际上升的是玻纤滤料的进口依赖。</b>该公司在 2023 年之后的年报中不再披露这一口径，上述数值的时点止于报告期末。</p>
+
+<div class="h2">2.2　阀件与仪表的约束体现为认证周期</div>
+
+<p class="tx">芯谋研究 2021 年一季度给出的半导体设备端零部件国产化率：阀门低于 1%，测量仪表低于 1%，质量流量控制器 1% 至 5%，真空泵 5% 至 10%。主导厂商是几家欧美与日系公司。</p>
+
+<div class="fig">
+<div class="fig-t">图表6：高纯阀件与测量仪表的国产化率低于百分之一</div>
+<svg viewBox="0 0 640 192" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><text x="132" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">阀门</text><rect x="140" y="25" width="34.2" height="17" fill="#dc2626" rx="2"/><text x="181.16666666666666" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">＜1%</text><text x="132" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">测量仪表</text><rect x="140" y="59" width="34.2" height="17" fill="#dc2626" rx="2"/><text x="181.16666666666666" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">＜1%</text><text x="132" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">质量流量控制器</text><rect x="140" y="93" width="102.5" height="17" fill="#b45309" rx="2"/><text x="249.5" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">1-5%</text><text x="132" y="139" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">真空泵</text><rect x="140" y="127" width="256.2" height="17" fill="#b45309" rx="2"/><text x="403.25" y="140" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">5-10%</text><text x="140" y="182" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">口径为半导体设备端零部件国产化率，厂务端管路与接头未单列；数据时点为 2021 年一季度</text></svg>
+<div class="fig-s">资料来源：芯谋研究（2021Q1 口径），怀新投研整理</div>
+</div>
+
+<p class="tx">这组数据有两重边界。时点是五年前，期间国产替代有进展但缺少同口径的更新版本；口径是半导体设备端，厂务端的电解抛光级不锈钢管、卡套接头与隔膜阀没有单列。<b>把它读成厂务系统的国产化率会高估依赖程度。</b></p>
+
+<p class="tx">这一环真正的约束不在产能。阀件与仪表直接接触工艺气体和化学品，一旦更换需要重新走认证，晶圆厂对更换的容忍度极低，验证周期以年计。<em>约束是时间成本，不是供货能力。</em></p>
+
+<div class="h2">2.3　按供应弹性重排，材料端不构成扩产约束</div>
+
+<p class="tx">把上述环节按供应弹性而非按国产化率重新排列，得到的顺序与市场讨论的顺序不同。滤材与风机的进口依赖度高，但它们是标准工业品，海外产能可以扩、可以加急、可以多源，约束体现为替代难度而非当期供货。阀件与仪表的进口依赖同样高，且无法通过加订单解决。洁净室主体材料如彩钢板、高架地板与龙骨，供应充裕且技术门槛低。</p>
+
+<div class="numbox">
+<div class="numbox-h">表7　洁净室主要投入品的稀缺度与供应弹性</div>
+<table>
+<tr><th style="width:20%">环节</th><th style="width:16%">进口依赖</th><th style="width:16%">扩产可行性</th><th style="width:14%">切换周期</th><th>弹性判定</th></tr>
+<tr><td>玻纤滤料</td><td class="n">73.58%（升）</td><td>标准工业品，海外可扩</td><td class="n">中等</td><td>替代难度大，当期供货不紧</td></tr>
+<tr><td>覆膜滤材</td><td class="n">49.25%（降）</td><td>标准工业品，海外可扩</td><td class="n">中等</td><td>国产替代已推进一轮</td></tr>
+<tr><td>风机与电机</td><td class="n">75% 至 87%</td><td>全球产能充裕</td><td class="n">较短</td><td>供货不构成约束</td></tr>
+<tr><td>高纯阀门与仪表</td><td class="n">国产率＜1%</td><td>非标准件，认证门槛高</td><td class="n">以年计</td><td>弹性最差，约束是认证时间</td></tr>
+<tr><td>质量流量控制器</td><td class="n">国产率 1% 至 5%</td><td>非标准件</td><td class="n">以年计</td><td>同上</td></tr>
+<tr><td>超纯水核心材料</td><td class="n">未获同口径数据</td><td>外资集中在膜与树脂</td><td class="n">中等</td><td>系统集成层已国产</td></tr>
+<tr><td>洁净室主体材料</td><td class="n">低</td><td>国内产能充裕</td><td class="n">短</td><td>不稀缺</td></tr>
+<tr><td>熟练施工队与工期</td><td class="n">不适用</td><td>不可库存、不可加急</td><td class="n">不可压缩</td><td>真正没有弹性的一项</td></tr>
+</table>
+</div>
+
+<p class="tx"><b>没有一种材料能解释洁净室交期的拉长。</b>滤材与风机可以提前备货，阀件与仪表的问题在切换而不在获取，主体材料从来不紧张。剩下的只有工期本身，它无法通过采购提前解决，也无法通过库存平滑。</p>
+
+<div class="ch"><span class="ch-n">CHAPTER 3</span>
+<div class="ch-t">三、利润：定价权落在工程总包的上下两端</div></div>
+
+<div class="h2">3.1　洁净室造价有两档可核的单价锚</div>
+
+<p class="tx">亚翔集成招股说明书给出四至五级洁净室的两档室内初投资：洁净室主体连同净化空调系统约 <em>1.5 万元每平方米</em>；再加纯水制备、高纯气体、废气废水、消防、供配电与真空清扫等设备与管线之后，为 <em>3.0 万至 4.0 万元每平方米</em>。按两档相除，主体与净化空调占全含造价的 37.5% 至 50%，工艺系统与公用配套占 50% 至 62.5%。</p>
+
+<p class="tx">项目层面另有一个可核的锚。国内一家动态存储龙头的十二英寸二期项目，无尘室系统工程包金额为 <em>7.282 亿元</em>，承接方为亚翔集成，其角色是分包，总包由一家国内工程设计院承担。这个数字给出的是单个系统包的量级，而非整厂洁净室的全部投资。</p>
+
+<div class="numbox">
+<div class="numbox-h">表8　洁净室造价的可核锚点与它们的口径边界</div>
+<table>
+<tr><th style="width:30%">锚点</th><th style="width:20%">数值</th><th>口径边界</th></tr>
+<tr><td>洁净室主体加净化空调</td><td class="n">1.5 万元／㎡</td><td>四至五级垂直单向流洁净室室内初投资，不含工艺系统与公用配套</td></tr>
+<tr><td>全含工艺与公用</td><td class="n">3.0 至 4.0 万元／㎡</td><td>加计纯水、高纯气、废气废水、消防、供配电与真空清扫</td></tr>
+<tr><td>单个无尘室系统包</td><td class="n">7.282 亿元</td><td>十二英寸存储二期项目的分包合同额，非整厂洁净室投资</td></tr>
+<tr><td>高纯工艺系统占固定资产投资</td><td class="n">5% 至 8%</td><td>集成电路、光伏、生物制药与食品饮料的通用口径，非半导体专用</td></tr>
+<tr><td>高纯工艺系统占厂房投资</td><td class="n">约 40%</td><td>券商按设备占资本支出 77%、厂房占 20% 推算，属推导值</td></tr>
+</table>
+</div>
+
+<p class="tx">另有一组流传较广的比例，洁净室占晶圆厂投资 10% 至 20%。这组数字的分母与分子各不相同，有的分母是资本开支、分子是洁净室工程，有的分母是厂房建设、分子是洁净室，还有的分子扩到含高纯工艺与动力尾气的整个厂务系统。<b>三者不是同一个指标的三次测量，合并使用会得到没有意义的中间值。</b></p>
+
+<div class="h2">3.2　毛利率从运营端的五成递减到工程总包的一个百分点</div>
+
+<p class="tx">按最新定期报告的分部口径横排，这条链的毛利率跨度接近五十个百分点。最高的一档是投运之后按年重复收费的业务：金宏气体的现场制气及租金 <em>52.67%</em>，正帆科技的运维业务 40% 以上，金科环境的水厂运维服务 <em>38.59%</em>。中间一档是一次性交付的设计、特气与设备耗材，落在 26% 至 38% 之间。最低的一档是工程总包，境内集中在 <em>8.9% 至 11.6%</em>，极端值是太极实业的工程总包分部 <em>1.15%</em>，该分部同期收入 95.77 亿元。</p>
+
+<div class="fig">
+<div class="fig-t">图表9：毛利率从运营端的五成递减到工程总包的一个百分点</div>
+<svg viewBox="0 0 640 498" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><text x="170" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">金宏气体　现场制气及租金</text><rect x="178" y="25" width="349.9" height="17" fill="#0f766e" rx="2"/><text x="534.8792857142857" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">52.67%</text><text x="170" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">正帆科技　MRO 运维</text><rect x="178" y="59" width="265.7" height="17" fill="#0f766e" rx="2"/><text x="450.7142857142857" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">40%+</text><text x="170" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">金科环境　水厂运维服务</text><rect x="178" y="93" width="256.3" height="17" fill="#0f766e" rx="2"/><text x="441.34785714285715" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">38.59%</text><text x="170" y="139" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">太极实业　设计和咨询</text><rect x="178" y="127" width="253.5" height="17" fill="#7c3aed" rx="2"/><text x="438.4914285714285" y="140" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">38.16%</text><text x="170" y="173" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">华特气体　半导体气体</text><rect x="178" y="161" width="251.4" height="17" fill="#1d4ed8" rx="2"/><text x="436.3657142857143" y="174" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">37.84%</text><text x="170" y="207" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">再升科技　滤材</text><rect x="178" y="195" width="223.3" height="17" fill="#1d4ed8" rx="2"/><text x="408.33285714285716" y="208" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">33.62%</text><text x="170" y="241" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">美埃科技　风机过滤单元</text><rect x="178" y="229" width="208.5" height="17" fill="#1d4ed8" rx="2"/><text x="393.4528571428571" y="242" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">31.38%</text><text x="170" y="275" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">正帆科技　电子工艺设备</text><rect x="178" y="263" width="174.0" height="17" fill="#1d4ed8" rx="2"/><text x="359.04285714285714" y="276" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">24.8-27.6%</text><text x="170" y="309" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">柏诚股份　二次配</text><rect x="178" y="297" width="165.1" height="17" fill="#1d4ed8" rx="2"/><text x="350.07500000000005" y="310" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">22.6-27.1%</text><text x="170" y="343" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">亚翔集成　大陆分部</text><rect x="178" y="331" width="77.1" height="17" fill="#b45309" rx="2"/><text x="262.0571428571428" y="344" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">11.60%</text><text x="170" y="377" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">圣晖集成　洁净室工程</text><rect x="178" y="365" width="65.4" height="17" fill="#b45309" rx="2"/><text x="250.43214285714285" y="378" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">9.85%</text><text x="170" y="411" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">柏诚股份　洁净室系统集成</text><rect x="178" y="399" width="59.4" height="17" fill="#b45309" rx="2"/><text x="244.38714285714286" y="412" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">8.94%</text><text x="170" y="445" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">太极实业　工程总包</text><rect x="178" y="433" width="7.6" height="17" fill="#dc2626" rx="2"/><text x="192.6392857142857" y="446" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">1.15%</text><text x="178" y="488" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">报告期以 2026 年半年度为主，正帆电子工艺设备与柏诚二次配为区间值</text></svg>
+<div class="fig-s">资料来源：各公司 2025 年报与 2026 年半年度报告，怀新投研整理</div>
+</div>
+
+<div class="h2">3.3　同一家公司内部相差三十七个百分点</div>
+
+<p class="tx">太极实业同时经营设计咨询与工程总包两段业务。2026 年上半年，设计和咨询分部毛利率 38.16%，工程总包分部 1.15%，两者相差 <em>37 个百分点</em>。同一家公司、同一批项目、同一个景气周期。</p>
+
+<div class="fig">
+<div class="fig-t">图表10：同一家公司内设计业务与工程总包相差三十七个百分点</div>
+<svg viewBox="0 0 640 218" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="151.0" y="51.1" width="72.0" height="116.9" fill="#7c3aed" rx="2"/><text x="187.0" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">38.16%</text><text x="187.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">太极实业</text><text x="187.0" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">设计和咨询</text><rect x="417.0" y="164.5" width="72.0" height="3.5" fill="#dc2626" rx="2"/><text x="453.0" y="157.47558895640123" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">1.15%</text><text x="453.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">太极实业</text><text x="453.0" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">工程总包</text><rect x="412.0" y="140.5" width="82.0" height="31.5" fill="none" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2" rx="3"/><text x="40" y="208" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">工程总包分部同期收入 95.77 亿元</text></svg>
+<div class="fig-s">资料来源：各公司 2025 年报与 2026 年半年度报告，怀新投研整理</div>
+</div>
+
+<p class="tx"><b>决定利润的是在链条上的位置，不是行业景气度。</b>景气度对两个分部是同一个变量，落差却始终存在。把工程总包的低毛利归因于竞争激烈或周期低谷，无法解释为什么隔壁分部在同一时期拿到接近四成。</p>
+
+<div class="h2">3.4　总包的成本结构决定它拿不到定价权</div>
+
+<p class="tx">柏诚股份招股说明书披露的洁净室系统集成营业成本构成：项目物资 55% 至 58%，分包 37% 至 39%，直接人工 <em>3% 至 5%</em>。物资与分包合计占成本九成以上，二者的价格分别由供应商市场和分包市场决定。</p>
+
+<div class="fig">
+<div class="fig-t">图表11：工程总包的成本里直接人工只有百分之四</div>
+<svg viewBox="0 0 640 165" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><rect x="20.0" y="14" width="339.0" height="30" fill="#b45309"/><text x="189.5" y="33" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">55-58%</text><rect x="359.0" y="14" width="237.0" height="30" fill="#92400e"/><text x="477.5" y="33" font-size="10.5" fill="#fff" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">37-39%</text><rect x="596.0" y="14" width="24.0" height="30" fill="#1d4ed8"/><text x="20" y="60" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">合计 洁净室系统集成营业成本</text><rect x="20" y="66" width="10" height="10" fill="#b45309" rx="1"/><text x="36" y="74" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">项目物资　55-58%</text><rect x="20" y="85" width="10" height="10" fill="#92400e" rx="1"/><text x="36" y="93" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">分包　37-39%</text><rect x="20" y="104" width="10" height="10" fill="#1d4ed8" rx="1"/><text x="36" y="112" font-size="10.5" fill="#2c1810" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">直接人工　3-5%</text><text x="20" y="151" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">项目物资与分包合计占成本九成以上，二者的价格由业主发包范围与分包市场决定</text></svg>
+<div class="fig-s">资料来源：柏诚股份招股说明书，怀新投研整理</div>
+</div>
+
+<p class="tx">同一份文件解释了设备类材料采购占比在某一年跳升的原因：业主发包范围中成套设备的占比提升。<b>总包合同额里有多少是自己的活、多少是替业主过账的设备采购，由业主的发包方式决定。</b>订单金额的增长因此不能直接读成业务量的增长，两者之间隔着一个业主可以随时调整的变量。</p>
+
+<div class="h2">3.5　海外溢价只在工程总包这一层出现</div>
+
+<p class="tx">亚翔集成 2026 年上半年综合毛利率 24.25%，分地区看，新加坡分部 <em>30.35%</em>，大陆分部 <em>11.60%</em>，越南分部为负。综合毛利率由境外项目支撑，境内总包本身没有超额利润。</p>
+
+<div class="fig">
+<div class="fig-t">图表12：亚翔集成的综合毛利由新加坡分部支撑</div>
+<svg viewBox="0 0 640 162" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="365.0" y1="14" x2="365.0" y2="120" stroke="#d8cfc0" stroke-width="1"/><text x="365.0" y="11" font-size="9.5" fill="#9e8878" text-anchor="middle" font-weight="400" font-family="DM Mono, monospace">0</text><text x="122" y="39" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">新加坡分部</text><rect x="365.0" y="27" width="188.0" height="17" fill="#b45309" rx="2"/><text x="560.0" y="40" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">30.35%</text><text x="122" y="73" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">大陆分部</text><rect x="365.0" y="61" width="71.9" height="17" fill="#b45309" rx="2"/><text x="443.85502471169684" y="74" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">11.60%</text><text x="122" y="107" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">越南分部</text><rect x="324.1" y="95" width="40.9" height="17" fill="#dc2626" rx="2"/><text x="317.1169686985173" y="108" font-size="11" fill="#dc2626" text-anchor="end" font-weight="500" font-family="DM Mono, monospace">-6.60%</text><text x="20" y="152" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">同期公司综合毛利率 24.25%</text></svg>
+<div class="fig-s">资料来源：各公司 2025 年报与 2026 年半年度报告，怀新投研整理</div>
+</div>
+
+<p class="tx">把境外分部毛利率减去境内分部毛利率，工程总包四家全为正：亚翔集成 18.75 个百分点，再升科技 14.35 个百分点，太极实业 12.01 个百分点，圣晖集成 6.14 个百分点，柏诚股份接近持平。设备与气体两家为负：美埃科技境内高于境外 1.75 个百分点，华特气体境内高于境外 <em>7.11 个百分点</em>。</p>
+
+<div class="fig">
+<div class="fig-t">图表13：设备与气体环节的境外毛利低于境内</div>
+<svg viewBox="0 0 640 298" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="355.0" y1="14" x2="355.0" y2="256" stroke="#d8cfc0" stroke-width="1"/><text x="355.0" y="11" font-size="9.5" fill="#9e8878" text-anchor="middle" font-weight="400" font-family="DM Mono, monospace">0</text><text x="102" y="39" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">亚翔集成</text><rect x="355.0" y="27" width="196.0" height="17" fill="#b45309" rx="2"/><text x="558.0" y="40" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+18.75pct</text><text x="102" y="73" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">再升科技</text><rect x="355.0" y="61" width="150.0" height="17" fill="#b45309" rx="2"/><text x="512.0053333333333" y="74" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+14.35pct</text><text x="102" y="107" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">太极实业</text><rect x="355.0" y="95" width="125.5" height="17" fill="#b45309" rx="2"/><text x="487.54453333333333" y="108" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+12.01pct</text><text x="102" y="141" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">圣晖集成</text><rect x="355.0" y="129" width="64.2" height="17" fill="#b45309" rx="2"/><text x="426.1834666666667" y="142" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+6.14pct</text><text x="102" y="175" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">柏诚股份</text><rect x="355.0" y="163" width="6.7" height="17" fill="#b45309" rx="2"/><text x="368.69013333333334" y="176" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+0.64pct</text><text x="102" y="209" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">美埃科技</text><rect x="336.7" y="197" width="18.3" height="17" fill="#dc2626" rx="2"/><text x="329.70666666666665" y="210" font-size="11" fill="#dc2626" text-anchor="end" font-weight="500" font-family="DM Mono, monospace">-1.75pct</text><text x="102" y="243" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">华特气体</text><rect x="280.7" y="231" width="74.3" height="17" fill="#dc2626" rx="2"/><text x="273.6768" y="244" font-size="11" fill="#dc2626" text-anchor="end" font-weight="500" font-family="DM Mono, monospace">-7.11pct</text><text x="20" y="288" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">数值为境外分部毛利率减境内分部毛利率</text></svg>
+<div class="fig-s">资料来源：各公司 2025 年报与 2026 年半年度报告，怀新投研整理</div>
+</div>
+
+<p class="tx"><b>海外业务毛利更高这句话，只适用于工程总包。</b>设备与气体在境外面对的是本土成熟供应商，价格竞争强于境内，方向因此相反。把总包的地域规律套到设备与气体上，结论会正好写反。</p>
+
+<div class="h2">3.6　在手订单的口径互不相同，不能横向比较</div>
+
+<p class="tx">这条链上各家披露在手订单的口径并不统一。柏诚股份的在手订单 56.29 亿元、同比增长 <em>222.15%</em>；圣晖集成 29.30 亿元，其中境外 15.72 亿元高于境内 13.58 亿元；正帆科技披露的是新签 32.3 亿元、增长 62%；太极实业旗下工程设计子公司新签 337.62 亿元、增长 195.88%；亚翔集成披露的是未完工合同含税金额 78.98 亿元。</p>
+
+<div class="numbox">
+<div class="numbox-h">表14　在手订单披露口径对照</div>
+<table>
+<tr><th style="width:20%">公司</th><th style="width:22%">披露值</th><th style="width:18%">口径</th><th>是否可与他家直接比较</th></tr>
+<tr><td>柏诚股份</td><td class="n">56.29 亿元（+222.15%）</td><td>在手订单</td><td>与同为在手订单口径的公司可比</td></tr>
+<tr><td>圣晖集成</td><td class="n">29.30 亿元</td><td>在手订单</td><td>境外 15.72 亿元、境内 13.58 亿元，境外已超过境内</td></tr>
+<tr><td>正帆科技</td><td class="n">32.3 亿元（+62%）</td><td>期内新签</td><td>新签为流量，与在手存量不可比</td></tr>
+<tr><td>太极实业旗下工程设计子公司</td><td class="n">337.62 亿元（+195.88%）</td><td>期内新签</td><td>同为流量口径，且含非洁净室工程</td></tr>
+<tr><td>亚翔集成</td><td class="n">78.98 亿元</td><td>未完工合同含税金额</td><td>含税且口径不同，与在手订单不可直接比</td></tr>
+</table>
+</div>
+
+<p class="tx">订单转成收入的节奏，唯一明确的公开锚来自柏诚股份半年报：项目的密集执行期一般为 <em>6 至 12 个月</em>，二次配业务的执行周期可能因业主工艺机台分批到货而延长。这意味着当期收入对应的是半年到一年前签下的合同，当期新签要到下一个会计年度才充分体现。</p>
+
+<p class="tx">订单增长与毛利下行同时出现，公司自己给过解释。正帆科技的说法是自 2024 年起采取激进的定价策略，前期签署的低毛利订单仍在逐步交付；圣晖集成的说法是市场竞争越激烈的领域毛利率水平相对越低，并提到前期策略性承接的项目。<b>在手订单的增长里包含了为拿订单让出的价格。</b></p>
+
+<div class="h2">3.7　应收账款周转天数在链上相差十倍以上</div>
+
+<p class="tx">至纯科技 <em>501 天</em>，金科环境 358 天，中电环保 312 天，柏诚股份 <em>39 天</em>，首尾相差十二倍。承接运维与水务类业务的公司账期长于工程结算，金科环境的水厂运维毛利率 38.59% 对应 358 天，柏诚股份的洁净室系统集成毛利率 8.94% 对应 39 天。至纯科技的 501 天与其同期亏损并存，成因与前两家不同。</p>
+
+<div class="fig">
+<div class="fig-t">图表15：应收账款周转天数在链上相差十倍以上</div>
+<svg viewBox="0 0 640 192" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><text x="102" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">至纯科技</text><rect x="110" y="25" width="393.6" height="17" fill="#dc2626" rx="2"/><text x="510.64285714285717" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">501 天</text><text x="102" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">金科环境</text><rect x="110" y="59" width="281.3" height="17" fill="#dc2626" rx="2"/><text x="398.2857142857143" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">358 天</text><text x="102" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">中电环保</text><rect x="110" y="93" width="245.1" height="17" fill="#dc2626" rx="2"/><text x="362.1428571428571" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">312 天</text><text x="102" y="139" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">柏诚股份</text><rect x="110" y="127" width="30.6" height="17" fill="#b45309" rx="2"/><text x="147.64285714285714" y="140" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">39 天</text><text x="110" y="182" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">口径为应收账款周转天数</text></svg>
+<div class="fig-s">资料来源：各公司 2025 年报与 2026 年半年度报告，怀新投研整理</div>
+</div>
+
+<p class="tx"><b>按年计费的运维类业务对现金流的占用重于一次性结清的工程业务。</b>毛利率与回款速度在这条链上不会同时拿到。</p>
+
+<div class="ch"><span class="ch-n">CHAPTER 4</span>
+<div class="ch-t">四、传导：工期约束走三跳后落回总包的含金量</div></div>
+
+<p class="tx">以下判断的确定性按证据形态标注，定期报告与公告承载为高，公司自述为中，按机制推演为低。</p>
+
+<div class="h2">4.1　第一跳：产能爬坡的节奏决定价格紧张的持续期</div>
+
+<p class="tx">存储产品的价格取决于供需缺口的闭合速度，而闭合速度取决于新产能何时投产。北美一家存储龙头的口径把这个时点推到 2028 至 2029 年，理由是洁净室产能当年不增加、建设交期在拉长。SEMI 的设备支出曲线在 2028 年落到本轮低点，两条线在时间上对得起来。</p>
+
+<p class="tx"><b>产能投放被工程周期推后，等价于价格紧张期被同步拉长。</b>这一跳的确定性为中，它依赖单一客户的公开表述，但该表述来自采购方而非供应方，缺乏夸大动机。</p>
+
+<div class="h2">4.2　第二跳：业主为压缩工期而改变发包方式</div>
+
+<p class="tx">当工期成为最稀缺的变量，业主会用三种方式换时间：把更多成套设备纳入自己的发包范围以便提前锁定长交期设备；采用模块化预制，把现场施工转移到工厂；把二次配等后段工作前置到机台到货之前分批启动。</p>
+
+<p class="tx">这三种做法都会改变总包合同的构成。柏诚股份招股说明书已经记录过第一种做法的结果：业主发包范围中成套设备占比提升，直接推高了总包成本中项目物资的比例。<b>业主抢工期的动作，在总包报表上表现为过账体量增加、自有工作量占比下降。</b></p>
+
+<div class="numbox">
+<div class="numbox-h">表16　业主压缩工期的三种做法与它们在总包报表上的结果</div>
+<table>
+<tr><th style="width:22%">做法</th><th style="width:26%">对工期的作用</th><th style="width:30%">对总包的影响</th><th style="width:12%">确定性</th></tr>
+<tr><td>扩大成套设备发包范围</td><td>提前锁定长交期设备，避免安装期等货</td><td>项目物资占成本比例上升，过账体量增加，毛利率被摊薄</td><td class="n">高</td></tr>
+<tr><td>模块化预制</td><td>把现场作业转移到工厂并行进行</td><td>现场人工占比进一步下降，自有工作量向预制环节转移</td><td class="n">低</td></tr>
+<tr><td>二次配前置分批</td><td>不等机台全部到货即启动后段</td><td>执行周期拉长，收入确认节奏被业主到货节奏牵制</td><td class="n">中</td></tr>
+</table>
+</div>
+
+<p class="tx">第三种做法在柏诚股份半年报里有对应表述：二次配业务的执行周期可能因业主方工艺机台分批到货而延长。<em>总包的收入确认节奏由业主的到货节奏决定</em>，这一点在订单充足的时候同样成立。</p>
+
+<div class="h2">4.3　第三跳：先拿到洁净室的厂获得时间窗口</div>
+
+<p class="tx">洁净室建设周期无法用钱压缩到某个下限以下，这使得开工时点本身成为竞争要素。已经完成土建并进入机电安装的项目，与刚拿到批文的项目之间，差距是不可追赶的日历时间。</p>
+
+<p class="tx"><b>这带来的是时间窗口而不是成本优势。</b>先投产的厂在缺口闭合之前多卖若干个季度的高价产品，单位成本并不因此下降。窗口的宽度等于后来者补齐工期所需的时间，一旦后来者的洁净室完工，优势随之消失。这一跳的确定性为低，属于按机制推演，没有直接的公开数据支撑。</p>
+
+<div class="numbox">
+<div class="numbox-h">表17　工期约束的三跳传导与各自的证据形态</div>
+<table>
+<tr><th style="width:8%">跳</th><th style="width:30%">传导内容</th><th style="width:38%">证据</th><th style="width:12%">确定性</th></tr>
+<tr><td class="n">第一跳</td><td>产能投放推后，价格紧张期拉长</td><td>客户侧电话会口径，叠加 SEMI 设备支出 2028 年低点</td><td class="n">中</td></tr>
+<tr><td class="n">第二跳</td><td>业主改变发包方式抢工期，总包过账加厚</td><td>招股说明书记录的发包范围变化与成本结构位移</td><td class="n">高</td></tr>
+<tr><td class="n">第三跳</td><td>先完工的厂获得时间窗口</td><td>按工期不可压缩这一机制推演，无直接数据</td><td class="n">低</td></tr>
+</table>
+</div>
+
+<p class="tx"><b>工期越紧张，业主越倾向于把设备抓在自己手里发包，总包拿到的合同金额越大而含金量越低。</b>景气度对工程总包的作用因此不是单向的，订单规模与单位利润在同一个变量下朝相反方向移动。</p>
+
+<div class="ch"><span class="ch-n">CHAPTER 5</span>
+<div class="ch-t">五、运营：按年重复收费的部分利润率最高</div></div>
+
+<div class="h2">5.1　重复收费环节的毛利率约为工程总包的五倍</div>
+
+<p class="tx">这条链上毛利率最高的三项业务有一个共同特征，它们都在工厂投运之后才开始计费，且按年重复：金宏气体的现场制气及租金 52.67%，正帆科技的运维业务 40% 以上，金科环境的水厂运维服务 38.59%。三项均值 43.75%。同期工程总包四项的均值为 7.89%。</p>
+
+<div class="fig">
+<div class="fig-t">图表18：按年重复收费的环节毛利率约为工程总包的五倍</div>
+<svg viewBox="0 0 640 218" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="40" y1="168" x2="600" y2="168" stroke="#d8cfc0"/><rect x="151.0" y="51.1" width="72.0" height="116.9" fill="#0f766e" rx="2"/><text x="187.0" y="44.050847457627114" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">43.75%</text><text x="187.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">按年重复收费</text><text x="187.0" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">三项均值</text><rect x="417.0" y="146.9" width="72.0" height="21.1" fill="#b45309" rx="2"/><text x="453.0" y="139.90905569007265" font-size="11.5" fill="#92400e" text-anchor="middle" font-weight="500" font-family="DM Mono, monospace">7.89%</text><text x="453.0" y="184" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">工程总包</text><text x="453.0" y="197" font-size="10.5" fill="#2c1810" text-anchor="middle" font-weight="400" font-family="Noto Sans SC, sans-serif">四项均值</text><text x="40" y="208" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">重复收费取现场制气及租金、MRO 运维、水厂运维；总包取亚翔大陆、圣晖、柏诚、太极</text></svg>
+<div class="fig-s">资料来源：各公司 2025 年报与 2026 年半年度报告，怀新投研整理</div>
+</div>
+
+<p class="tx">两类业务的差别不在技术含量，而在计费结构。工程总包在交付时一次性结清，价格由投标竞争决定；运营型业务在合同期内按量或按年收取，价格由切换成本决定。<b>晶圆厂不会为了省几个点的服务费去更换正在供气的现场装置。</b></p>
+
+<div class="h2">5.2　运营型收入的规模目前仍小</div>
+
+<p class="tx">运营型收入的规模受制于两点。它的基数是已投运项目数量，新建高峰期签下的合同要等到工厂通线之后才开始贡献，滞后一到两年；单个项目的年度金额远小于建设期的一次性合同额，即便毛利率高出四五倍，绝对利润的追赶仍需要项目数量累积。</p>
+
+<p class="tx"><b>在建设高峰期，运营型收入不会是利润的大头。</b>这一判断的确定性为中，依据是各家分部收入的绝对规模，运营型分部在这些公司的营收占比目前都不高。</p>
+
+<div class="h2">5.3　运营型收入在建设放缓的年份仍然增长</div>
+
+<p class="tx">SEMI 的设备支出增速在 2028 年落到本轮低点，三百毫米口径 6%、存储口径 8%。工程总包的收入对新建投资高度敏感，新签放缓会在半年到一年后传导到收入端。运营型收入的驱动变量是存量投运项目数，这个变量在新建放缓时仍然在增长，因为前几年建成的厂陆续进入合同期。</p>
+
+<p class="tx"><em>运营型业务是这条链上唯一不依赖新建的收入。</em>它在景气高点贡献有限，在景气回落时反而构成缓冲。判断这类业务的受益程度，看的是已经投运并进入收费期的项目基数，而不是公司是否披露了这项业务。</p>
+
+<div class="numbox">
+<div class="numbox-h">表19　运营型收入的构成条件与各家的位置</div>
+<table>
+<tr><th style="width:18%">公司</th><th style="width:22%">运营型业务</th><th style="width:12%">毛利率</th><th style="width:20%">计费方式</th><th style="width:16%">存量基数</th><th style="width:10%">确定性</th></tr>
+<tr><td>金宏气体</td><td>现场制气及租金</td><td class="n">52.67%</td><td>按合同期收取制气服务费与设备租金</td><td>已形成，分部单列披露</td><td class="n">高</td></tr>
+<tr><td>正帆科技</td><td>MRO 运维</td><td class="n">40% 以上</td><td>按年提供厂务运维与备件</td><td>已形成，分部单列披露</td><td class="n">高</td></tr>
+<tr><td>金科环境</td><td>水厂运维服务</td><td class="n">38.59%</td><td>按处理量与年度服务费收取</td><td>已形成，分部单列披露</td><td class="n">高</td></tr>
+<tr><td>华特气体</td><td>特种气体供应</td><td class="n">35.26%</td><td>按批次供货，非合同期计费</td><td>供货关系稳定但非运营模式</td><td class="n">中</td></tr>
+<tr><td>中电环保</td><td>水处理运营</td><td class="n">未单列</td><td>未获同口径分部数据</td><td>未获披露</td><td class="n">低</td></tr>
+</table>
+</div>
+
+<p class="tx">表中前三家的运营型业务已在定期报告中单列分部并给出毛利率，这是可核的形态。<b>特种气体的高毛利来自产品本身而非合同结构</b>，它按批次供货、随行就市，与按年计费的运营模式属于两回事，在判断防御性时不应合并。</p>
+
+<div class="ch"><span class="ch-n">CHAPTER 6</span>
+<div class="ch-t">六、定价：这一轮的涨跌由板块节奏决定</div></div>
+
+<div class="h2">6.1　八家公司的高点集中在四个交易日内</div>
+
+<p class="tx">按前复权口径统计十二家相关公司的五十二周最高价所在交易日：美埃科技在 6 月 29 日，亚翔集成、柏诚股份、圣晖集成在 6 月 30 日，太极实业、华特气体、正帆科技在 7 月 1 日，金宏气体在 7 月 2 日。<b>八家分处工程总包、设备耗材与气体化学品三个不同环节，见顶时间落在同一个四天窗口内。</b></p>
+
+<p class="tx">这八家的基本面差异很大。有的在手订单翻了两倍，有的营收同比下滑；有的境外业务占比过半，有的几乎全在境内。同步性这么高，说明触发见顶的变量不在各家自身。</p>
+
+<div class="h2">6.2　八家的回撤幅度集中在四成到五成五</div>
+
+<p class="tx">截至 2026 年 9 月 9 日，年内涨幅从太极实业的 129.9% 到再升科技的负 27.3%，跨度约 <em>157 个百分点</em>。但从各自五十二周高点算起的回撤，八家集中在 <em>43% 至 55%</em> 之间。</p>
+
+<div class="fig">
+<div class="fig-t">图表20：年内涨幅在正负之间相差一百五十个百分点</div>
+<svg viewBox="0 0 640 468" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="350.0" y1="14" x2="350.0" y2="426" stroke="#d8cfc0" stroke-width="1"/><text x="350.0" y="11" font-size="9.5" fill="#9e8878" text-anchor="middle" font-weight="400" font-family="DM Mono, monospace">0</text><text x="92" y="39" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">太极实业</text><rect x="350.0" y="27" width="200.0" height="17" fill="#b45309" rx="2"/><text x="557.0" y="40" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+129.9%</text><text x="92" y="73" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">华特气体</text><rect x="350.0" y="61" width="199.4" height="17" fill="#b45309" rx="2"/><text x="556.3841416474211" y="74" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+129.5%</text><text x="92" y="107" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">正帆科技</text><rect x="350.0" y="95" width="150.4" height="17" fill="#b45309" rx="2"/><text x="507.423402617398" y="108" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+97.7%</text><text x="92" y="141" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">亚翔集成</text><rect x="350.0" y="129" width="108.2" height="17" fill="#b45309" rx="2"/><text x="465.2371054657429" y="142" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+70.3%</text><text x="92" y="175" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">柏诚股份</text><rect x="350.0" y="163" width="84.7" height="17" fill="#b45309" rx="2"/><text x="441.6805234795997" y="176" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+55.0%</text><text x="92" y="209" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">金宏气体</text><rect x="350.0" y="197" width="51.4" height="17" fill="#b45309" rx="2"/><text x="408.42417244033874" y="210" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+33.4%</text><text x="92" y="243" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">圣晖集成</text><rect x="350.0" y="231" width="40.2" height="17" fill="#b45309" rx="2"/><text x="397.1847575057737" y="244" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+26.1%</text><text x="92" y="277" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">美埃科技</text><rect x="350.0" y="265" width="18.2" height="17" fill="#b45309" rx="2"/><text x="375.16782140107773" y="278" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+11.8%</text><text x="92" y="311" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">金科环境</text><rect x="334.6" y="299" width="15.4" height="17" fill="#dc2626" rx="2"/><text x="327.6035411855273" y="312" font-size="11" fill="#dc2626" text-anchor="end" font-weight="500" font-family="DM Mono, monospace">-10.0%</text><text x="92" y="345" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">中电环保</text><rect x="330.1" y="333" width="19.9" height="17" fill="#dc2626" rx="2"/><text x="323.1385681293302" y="346" font-size="11" fill="#dc2626" text-anchor="end" font-weight="500" font-family="DM Mono, monospace">-12.9%</text><text x="92" y="379" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">至纯科技</text><rect x="310.3" y="367" width="39.7" height="17" fill="#dc2626" rx="2"/><text x="303.2771362586605" y="380" font-size="11" fill="#dc2626" text-anchor="end" font-weight="500" font-family="DM Mono, monospace">-25.8%</text><text x="92" y="413" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">再升科技</text><rect x="308.0" y="401" width="42.0" height="17" fill="#dc2626" rx="2"/><text x="300.9676674364896" y="414" font-size="11" fill="#dc2626" text-anchor="end" font-weight="500" font-family="DM Mono, monospace">-27.3%</text><text x="20" y="458" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">前复权口径，起点为 2025-12-31 收盘价，截至 2026-09-09</text></svg>
+<div class="fig-s">资料来源：腾讯财经前复权日线、东财研报库，截至 2026-09-09，怀新投研整理</div>
+</div>
+
+<div class="fig">
+<div class="fig-t">图表21：回撤幅度高度一致，八家集中在四成到五成五</div>
+<svg viewBox="0 0 640 464" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><text x="160" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">再升科技　2026-05-28</text><rect x="168" y="25" width="335.6" height="17" fill="#dc2626" rx="2"/><text x="510.6142857142857" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-61.5%</text><text x="160" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">华特气体　2026-07-01</text><rect x="168" y="59" width="299.6" height="17" fill="#dc2626" rx="2"/><text x="474.59714285714284" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-54.9%</text><text x="160" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">金宏气体　2026-07-02</text><rect x="168" y="93" width="274.5" height="17" fill="#dc2626" rx="2"/><text x="449.4942857142857" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-50.3%</text><text x="160" y="139" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">美埃科技　2026-06-29</text><rect x="168" y="127" width="269.6" height="17" fill="#dc2626" rx="2"/><text x="444.5828571428571" y="140" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-49.4%</text><text x="160" y="173" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">柏诚股份　2026-06-30</text><rect x="168" y="161" width="261.4" height="17" fill="#dc2626" rx="2"/><text x="436.39714285714285" y="174" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-47.9%</text><text x="160" y="207" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">圣晖集成　2026-06-30</text><rect x="168" y="195" width="247.8" height="17" fill="#dc2626" rx="2"/><text x="422.75428571428574" y="208" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-45.4%</text><text x="160" y="241" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">亚翔集成　2026-06-30</text><rect x="168" y="229" width="239.6" height="17" fill="#dc2626" rx="2"/><text x="414.56857142857143" y="242" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-43.9%</text><text x="160" y="275" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">太极实业　2026-07-01</text><rect x="168" y="263" width="236.8" height="17" fill="#dc2626" rx="2"/><text x="411.84000000000003" y="276" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-43.4%</text><text x="160" y="309" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">至纯科技　2025-10-14</text><rect x="168" y="297" width="230.3" height="17" fill="#b45309" rx="2"/><text x="405.2914285714286" y="310" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-42.2%</text><text x="160" y="343" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">金科环境　2025-09-11</text><rect x="168" y="331" width="210.6" height="17" fill="#b45309" rx="2"/><text x="385.6457142857143" y="344" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-38.6%</text><text x="160" y="377" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">正帆科技　2026-07-01</text><rect x="168" y="365" width="162.1" height="17" fill="#0f766e" rx="2"/><text x="337.07714285714286" y="378" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-29.7%</text><text x="160" y="411" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">中电环保　2025-11-19</text><rect x="168" y="399" width="161.5" height="17" fill="#b45309" rx="2"/><text x="336.5314285714286" y="412" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">-29.6%</text><text x="168" y="454" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">标签中的日期为各自 52 周最高价所在交易日</text></svg>
+<div class="fig-s">资料来源：腾讯财经前复权日线、东财研报库，截至 2026-09-09，怀新投研整理</div>
+</div>
+
+<p class="tx"><b>涨的时候幅度取决于各自的弹性，跌的时候幅度趋于一致。</b>这是仓位统一进出留下的痕迹，与逐家重估留下的痕迹不同。后者会让基本面分化的公司在回撤幅度上也分化。</p>
+
+<div class="h2">6.3　三家公司从未参与这一轮</div>
+
+<p class="tx">金科环境的最高价停在 2025 年 9 月 11 日，至纯科技停在 2025 年 10 月 14 日，中电环保停在 2025 年 11 月 19 日。三家的高点都在 2025 年，2026 年上半年的整段行情与它们无关。这三家分属水处理与气体化学品两个环节。</p>
+
+<p class="tx">水处理在洁净室投资中的位置并不边缘，超纯水系统是全含造价里的主要子项之一。<em>它没有被当作洁净室故事的一部分交易过。</em></p>
+
+<div class="h2">6.4　正帆科技的归母净利润在收入增长期转亏</div>
+
+<p class="tx">正帆科技是十二家中近六十日唯一上涨的公司，涨幅 39.3%，同期其余各家为负 14% 至负 37%。它距五十二周高点的回撤只有 29.7%，明显浅于其余八家。</p>
+
+<p class="tx">同期的定期报告显示，2026 年上半年营业总收入 <em>22.30 亿元</em>、同比增长 10.6%，归母净利润为 <em>负 0.50 亿元</em>，上年同期为正 0.94 亿元。2025 年全年归母净利润为 1.36 亿元。<b>收入还在增长，利润已经转亏。</b></p>
+
+<div class="fig">
+<div class="fig-t">图表22：正帆科技的收入增长而归母净利转为亏损</div>
+<svg viewBox="0 0 640 128" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><line x1="365.0" y1="14" x2="365.0" y2="86" stroke="#d8cfc0" stroke-width="1"/><text x="365.0" y="11" font-size="9.5" fill="#9e8878" text-anchor="middle" font-weight="400" font-family="DM Mono, monospace">0</text><text x="122" y="39" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">2025 年上半年</text><rect x="365.0" y="27" width="188.0" height="17" fill="#b45309" rx="2"/><text x="560.0" y="40" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">+0.94 亿元</text><text x="122" y="73" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">2026 年上半年</text><rect x="265.0" y="61" width="100.0" height="17" fill="#dc2626" rx="2"/><text x="258.0" y="74" font-size="11" fill="#dc2626" text-anchor="end" font-weight="500" font-family="DM Mono, monospace">-0.50 亿元</text><text x="20" y="118" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">同期营业总收入由 20.17 亿元增至 22.30 亿元，增幅 10.6%</text></svg>
+<div class="fig-s">资料来源：新浪财经利润表（公司定期报告口径），怀新投研整理</div>
+</div>
+
+<p class="tx">这与该公司自己的解释一致：自 2024 年起采取激进的定价策略，前期签署的低毛利订单仍在逐步交付。第三章讨论过的机制在这里完整显形，为拿订单让出的价格，在一到两年后的交付期兑现为报表上的亏损。</p>
+
+<p class="tx">至纯科技同样是负市盈率，但性质不同。它 2026 年上半年营业收入 10.20 亿元、同比下滑 <em>36.6%</em>，归母净利润负 2.87 亿元，2025 年全年负 7.77 亿元。收入在收缩而不是在增长，两家的负值不应并列解读。</p>
+
+<div class="h2">6.5　卖方研报覆盖与市值和涨幅不匹配</div>
+
+<p class="tx">按东财研报库口径统计 2026 年内的个股研报篇数：柏诚股份 0 篇，太极实业 0 篇，正帆科技 0 篇，至纯科技 0 篇，再升科技 0 篇，中电环保 0 篇；亚翔集成、华特气体、圣晖集成各 2 篇，美埃科技、金宏气体各 4 篇。同期贵州茅台 46 篇。</p>
+
+<div class="fig">
+<div class="fig-t">图表23：年内卖方研报数量与市值和涨幅不匹配</div>
+<svg viewBox="0 0 640 498" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, sans-serif"><text x="124" y="37" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">贵州茅台（对照）</text><rect x="132" y="25" width="384.6" height="17" fill="#7c3aed" rx="2"/><text x="523.56" y="38" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">46 篇</text><text x="124" y="71" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">金宏气体</text><rect x="132" y="59" width="33.4" height="17" fill="#b45309" rx="2"/><text x="172.44" y="72" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">4 篇</text><text x="124" y="105" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">美埃科技</text><rect x="132" y="93" width="33.4" height="17" fill="#b45309" rx="2"/><text x="172.44" y="106" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">4 篇</text><text x="124" y="139" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">亚翔集成</text><rect x="132" y="127" width="16.7" height="17" fill="#b45309" rx="2"/><text x="155.72" y="140" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">2 篇</text><text x="124" y="173" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">华特气体</text><rect x="132" y="161" width="16.7" height="17" fill="#b45309" rx="2"/><text x="155.72" y="174" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">2 篇</text><text x="124" y="207" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">圣晖集成</text><rect x="132" y="195" width="16.7" height="17" fill="#b45309" rx="2"/><text x="155.72" y="208" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">2 篇</text><text x="124" y="241" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">金科环境</text><rect x="132" y="229" width="8.4" height="17" fill="#b45309" rx="2"/><text x="147.36" y="242" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">1 篇</text><text x="124" y="275" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">柏诚股份</text><rect x="132" y="263" width="2.0" height="17" fill="#dc2626" rx="2"/><text x="141" y="276" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">0 篇</text><text x="124" y="309" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">太极实业</text><rect x="132" y="297" width="2.0" height="17" fill="#dc2626" rx="2"/><text x="141" y="310" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">0 篇</text><text x="124" y="343" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">正帆科技</text><rect x="132" y="331" width="2.0" height="17" fill="#dc2626" rx="2"/><text x="141" y="344" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">0 篇</text><text x="124" y="377" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">至纯科技</text><rect x="132" y="365" width="2.0" height="17" fill="#dc2626" rx="2"/><text x="141" y="378" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">0 篇</text><text x="124" y="411" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">再升科技</text><rect x="132" y="399" width="2.0" height="17" fill="#dc2626" rx="2"/><text x="141" y="412" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">0 篇</text><text x="124" y="445" font-size="11" fill="#2c1810" text-anchor="end" font-weight="400" font-family="Noto Sans SC, sans-serif">中电环保</text><rect x="132" y="433" width="2.0" height="17" fill="#dc2626" rx="2"/><text x="141" y="446" font-size="11" fill="#92400e" text-anchor="start" font-weight="500" font-family="DM Mono, monospace">0 篇</text><text x="132" y="488" font-size="10" fill="#9e8878" text-anchor="start" font-weight="400" font-family="Noto Sans SC, sans-serif">口径为东财研报库收录的 2026 年内个股研报篇数，小券商与未公开发布的研报可能不在库内</text></svg>
+<div class="fig-s">资料来源：腾讯财经前复权日线、东财研报库，截至 2026-09-09，怀新投研整理</div>
+</div>
+
+<p class="tx">把时间窗口放宽到上市以来，柏诚股份自 2023 年 3 月上市时的新股覆盖研究之后，库内再无第二篇，公司市值 <em>125 亿元</em>、在手订单同比增长 222%。中电环保库内最后一篇研报的日期是 <em>2018 年 11 月</em>。太极实业库内共 33 篇，最后一篇停在 2024 年 8 月，公司市值 380 亿元、年内涨幅 129.9%。</p>
+
+<p class="tx">这一口径有边界。东财研报库收录的是公开发布并被其抓取的研报，小券商的内部报告与未公开发布的部分不在库内，篇数不能当作覆盖广度的绝对值。<b>用于比较量级差异仍然成立</b>，零篇与四十六篇之间不是抓取误差能解释的距离。</p>
+
+<p class="tx"><b>覆盖密度与价格变化在这一轮里是脱钩的。</b>行情由板块节奏驱动，期间没有新的公开研究重新计算过这些公司的价值。充分定价与尚未发现这两种说法都缺少支撑，前者需要有人算过，后者需要有人在看，而 2026 年内的公开研报数量说明两件事都没有充分发生。这一判断的确定性为中，依据是价格同步性与覆盖密度两项可核数据，市场参与者的实际决策依据无法从公开数据还原。</p>
+
+<div class="ch"><span class="ch-n">CHAPTER 7</span>
+<div class="ch-t">七、产业含义、卡位与跟踪清单</div></div>
+
+<div class="h2">7.1　产业含义</div>
+
+<p class="tx"><b>第一，稀缺性与利润在这条链上不在同一个位置。</b>稀缺的是把洁净室盖出来并通过验收的日历时间，利润集中在投运后按年收费的运营端、设计端与工艺系统端。承接订单的工程总包既不掌握稀缺资源，也不占据利润高地，它的报表把两者之间的价差留给了上下两端。</p>
+
+<p class="tx"><b>第二，订单金额的增长不等于业务量的增长。</b>总包合同里有多大比例是替业主过账的成套设备，由业主的发包方式决定，而业主在工期紧张时倾向于扩大自己的发包范围。景气度因此对工程总包是双向变量，它同时推高合同金额与压低单位利润。判断这类公司要看成本结构中项目物资的占比变化，而不只看新签金额。</p>
+
+<p class="tx"><b>第三，材料端的进口依赖不是当期约束。</b>滤材与风机可以提前备货，主体材料从不紧张，阀件与仪表的问题在于切换需要重新认证，属于时间成本而非供货能力。把国产化率低直接读成供应链风险，会错判风险发生的时点与形态。</p>
+
+<div class="h2">7.2　A 股卡位表</div>
+
+<div class="numbox-h" style="margin:12px 18px 0;border:1px solid var(--border);border-bottom:none;">表24　A 股卡位表</div>
+<div class="pos">
+<table>
+<tr><th style="width:14%">公司</th><th style="width:8%">代码</th><th style="width:12%">环节</th><th>公开口径下的位置</th><th style="width:10%">披露等级</th></tr>
+<tr><td>亚翔集成</td><td class="seg-c">603929</td><td>工程总包</td><td>境外项目为主要毛利来源，新加坡分部 30.35%、大陆分部 11.60%；承接十二英寸存储二期无尘室系统包 7.282 亿元；未完工合同含税 78.98 亿元</td><td class="d">强</td></tr>
+<tr><td>柏诚股份</td><td class="seg-c">601133</td><td>工程总包</td><td>洁净室系统集成毛利率 8.94%，二次配 22.6% 至 27.1%；在手订单 56.29 亿元、同比增长 222.15%；成本中直接人工 3% 至 5%</td><td class="d">强</td></tr>
+<tr><td>圣晖集成</td><td class="seg-c">603163</td><td>工程总包</td><td>洁净室工程毛利率 9.85%；在手订单 29.30 亿元，其中境外 15.72 亿元已超境内；2026 年上半年营收同比下滑 16.0%</td><td class="d">强</td></tr>
+<tr><td>太极实业</td><td class="seg-c">600667</td><td>工程总包与设计</td><td>设计和咨询分部毛利率 38.16%，工程总包分部 1.15%；旗下工程设计子公司新签 337.62 亿元、增长 195.88%</td><td class="d">强</td></tr>
+<tr><td>美埃科技</td><td class="seg-c">688376</td><td>设备与耗材</td><td>风机过滤单元毛利率 31.38%，境内高于境外 1.75 个百分点；招股说明书披露覆膜滤材与玻纤滤料的单一供应商依赖度</td><td class="d">强</td></tr>
+<tr><td>再升科技</td><td class="seg-c">603601</td><td>设备与耗材</td><td>滤材毛利率 33.62%，境外高于境内 14.35 个百分点</td><td class="d">强</td></tr>
+<tr><td>正帆科技</td><td class="seg-c">688596</td><td>气体与化学品</td><td>电子工艺设备毛利率 24.8% 至 27.6%，运维业务 40% 以上；2026 年上半年营收增长 10.6% 而归母净利润为负 0.50 亿元</td><td class="d">强</td></tr>
+<tr><td>至纯科技</td><td class="seg-c">603690</td><td>气体与化学品</td><td>2026 年上半年营收同比下滑 36.6%、归母净利润负 2.87 亿元；应收账款周转 501 天</td><td class="d">强</td></tr>
+<tr><td>华特气体</td><td class="seg-c">688268</td><td>气体与化学品</td><td>半导体气体毛利率 37.84%、特种气体 35.26%；境内高于境外 7.11 个百分点</td><td class="d">强</td></tr>
+<tr><td>金宏气体</td><td class="seg-c">688106</td><td>气体与化学品</td><td>现场制气及租金毛利率 52.67%，为本表所列分部中最高，计费方式为合同期内按年收取</td><td class="d">强</td></tr>
+<tr><td>金科环境</td><td class="seg-c">688466</td><td>水处理</td><td>水厂运维服务毛利率 38.59%；应收账款周转 358 天</td><td class="d">强</td></tr>
+<tr><td>中电环保</td><td class="seg-c">300172</td><td>水处理</td><td>应收账款周转 312 天；运营型收入未单列分部，接口未覆盖同口径数据</td><td class="d">待核</td></tr>
+</table>
+</div>
+
+<p class="tx">披露等级中，强表示数据来自定期报告、招股说明书或交易所公告，待核表示公开接口未覆盖该项，不等于该公司没有相应业务。表中仅列 A 股，不含估值字段。</p>
+
+<div class="h2">7.3　跟踪清单</div>
+
+<div class="numbox">
+<div class="numbox-h">表25　兑现与证伪信号</div>
+<table>
+<tr><th style="width:30%">跟踪变量</th><th style="width:34%">观察方式</th><th>对应的判断</th></tr>
+<tr><td>洁净室建设交期是否继续拉长</td><td>存储厂业绩电话会的产能表述、扩产项目的投产时点公告</td><td>第一章的约束前提</td></tr>
+<tr><td>总包成本中项目物资占比</td><td>柏诚股份、圣晖集成半年报的成本构成披露</td><td>第三章与第四章的过账机制</td></tr>
+<tr><td>低毛利订单的交付进度</td><td>正帆科技、圣晖集成分季度毛利率是否止跌</td><td>第三章的订单让价</td></tr>
+<tr><td>运营型分部的收入绝对额</td><td>金宏现场制气、正帆运维、金科水厂运维的分部收入</td><td>第五章的防御性判断</td></tr>
+<tr><td>SEMI 设备支出的后续修订</td><td>2028 年增速低点是否被上修或下修</td><td>第一章与第五章的时点</td></tr>
+<tr><td>玻纤滤料依赖度</td><td>美埃科技是否恢复披露单一供应商采购占比</td><td>第二章的依赖方向</td></tr>
+<tr><td>卖方覆盖是否恢复</td><td>柏诚股份、太极实业、正帆科技是否出现新的公开研报</td><td>第六章的覆盖密度</td></tr>
+<tr><td>亚翔集成的新中标公告</td><td>自 2025 年 4 月以来的公告空窗是否结束</td><td>第六章的存量结算判断</td></tr>
+</table>
+</div>
+
+<div class="h2">7.4　风险提示</div>
+
+<div class="numbox-h" style="margin:12px 18px 0;border:1px solid var(--border);border-bottom:none;">表26　风险提示</div>
+<div class="risk">
+<div class="risk-i"><b>建设周期约束提前缓解。</b>若洁净室产能在 2027 年提前释放，第一章的约束前提失效，产能投放时点前移，价格紧张期相应缩短，第四章第一跳的传导不再成立。</div>
+<div class="risk-i"><b>发包方式反向变化。</b>若业主缩小成套设备的发包范围，总包合同中的过账比例下降、单位毛利回升，第三章与第四章关于总包含金量被摊薄的机制会朝相反方向运行。</div>
+<div class="risk-i"><b>低毛利订单的交付期长于预期。</b>若前期签署的订单交付延续到 2027 年之后，相关公司的毛利率修复时点后移，第六章关于收入与利润背离的观察会持续更久。</div>
+<div class="risk-i"><b>核心证据依赖单一采购方口径。</b>第一章的关键表述来自一家存储厂商的业绩电话会，若该公司调整扩产计划或后续表述改口，洁净室为实际卡点这一判断需要重估。</div>
+<div class="risk-i"><b>国产化率数据的时点偏差。</b>第二章的阀件与仪表口径为 2021 年一季度，期间的国产替代进展没有同口径更新，按此判断当前依赖程度存在高估的可能。</div>
+<div class="risk-i"><b>研报覆盖统计的口径限制。</b>第六章的覆盖密度依赖单一研报库，未公开发布的报告不在其中，篇数只能用于量级比较，不能作为覆盖广度的绝对值。</div>
+</div>
+
+
+<div class="footer">
+  <span class="footer-brand">怀新投研 · 产业专题 VOL.SP03</span>
+  <span class="footer-ts">2026-09-09 14:52</span>
+</div>
+
+</body>
+</html>
