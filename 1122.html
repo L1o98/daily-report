@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>产业投研日报 VOL.138 · 2026.11.22</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --ink:#2c1810;--ink-light:#5a3e35;--ghost:#9e8878;
+  --paper:#f7f4ef;--paper-warm:#f0ebe0;--paper-deep:#e8dfd0;--border:#d8cfc0;
+  --mast:#3b1a06;--accent:#b45309;--accent-light:#f7eddb;--accent-deep:#92400e;
+  --pill-hot:#dc2626;--pill-new:#1d4ed8;--pill-spread:#7c3aed;--pill-data:#0f766e;--pill-green:#15803d;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--paper);color:var(--ink);font-family:'Noto Sans SC',sans-serif;font-size:13px;line-height:1.65;max-width:860px;margin:0 auto;}
+em{font-style:normal;background:rgba(147,197,253,0.30);padding:0 4px;border-radius:3px;color:#1e40af;font-weight:500;}
+
+.alert-bar{background:#1e3a5f;padding:13px 32px;display:flex;align-items:flex-start;gap:12px;border-bottom:2px solid #3b82f6;}
+.alert-icon{font-size:18px;line-height:1;padding-top:1px;flex-shrink:0;}
+.alert-label{font-family:'DM Mono',monospace;font-size:10px;color:#93c5fd;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:4px;}
+.alert-text{color:#e0f2fe;font-size:12.5px;line-height:1.6;font-family:'Noto Serif SC',serif;}
+.alert-text em{background:rgba(147,197,253,0.28);color:#fff;}
+
+.masthead{background:var(--mast);padding:26px 32px 20px;position:relative;overflow:hidden;}
+.masthead::before{content:'';position:absolute;top:0;right:0;width:220px;height:100%;background:linear-gradient(90deg,transparent,rgba(180,83,9,0.10));}
+.mast-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
+.mast-brand{color:#f7eddb;font-family:'Noto Serif SC',serif;font-size:11px;letter-spacing:0.12em;opacity:0.7;}
+.mast-vol{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);letter-spacing:0.08em;}
+.mast-title{color:#fdf8f0;font-family:'Noto Serif SC',serif;font-size:25px;font-weight:900;line-height:1.25;}
+.mast-title em{font-style:normal;color:#fbbf24;background:none;padding:0;}
+.mast-subtitle{color:rgba(253,248,240,0.50);font-size:11.5px;margin-top:6px;font-family:'DM Mono',monospace;letter-spacing:0.06em;}
+
+.stats-bar{background:var(--accent);display:flex;}
+.stat-item{flex:1;padding:10px 14px;border-right:1px solid rgba(255,255,255,0.2);text-align:center;}
+.stat-item:last-child{border-right:none;}
+.stat-num{font-family:'DM Mono',monospace;font-size:20px;font-weight:500;color:#fff;display:block;line-height:1;}
+.stat-label{font-size:10px;color:rgba(255,255,255,0.72);letter-spacing:0.06em;margin-top:3px;display:block;}
+
+.context-bar{background:#1c1209;padding:16px 32px;border-bottom:2px solid var(--accent);}
+.ctx-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:10px;}
+.ctx-item{display:flex;gap:12px;margin-bottom:9px;align-items:flex-start;}
+.ctx-item:last-child{margin-bottom:0;}
+.ctx-who{font-family:'DM Mono',monospace;font-size:10px;color:#fbbf24;white-space:nowrap;padding-top:2px;min-width:80px;}
+.ctx-text{color:rgba(253,248,240,0.78);font-size:12px;line-height:1.55;}
+.ctx-text em{background:rgba(147,197,253,0.28);color:#fff;}
+.ctx-text .arrow{color:var(--accent);font-weight:700;}
+
+.verdict-bar{background:var(--accent);padding:14px 32px;}
+.verdict-label{font-family:'DM Mono',monospace;font-size:10px;color:rgba(255,255,255,0.60);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:6px;}
+.verdict-text{color:#fff;font-size:13.5px;line-height:1.6;font-family:'Noto Serif SC',serif;}
+.verdict-text em{background:rgba(255,255,255,0.22);color:#fff;}
+
+.section-hd{display:flex;align-items:center;gap:10px;padding:20px 32px 12px;}
+.section-num{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:0.1em;border:1px solid var(--accent);padding:2px 6px;border-radius:2px;}
+.section-title{font-family:'Noto Serif SC',serif;font-size:14px;font-weight:700;color:var(--ink);letter-spacing:0.04em;}
+.section-rule{flex:1;height:1px;background:var(--border);}
+
+.hero-wrap{padding:0 32px 8px;}
+.hero-card{background:var(--paper-warm);border:1px solid var(--border);border-top:4px solid var(--accent);border-radius:4px;overflow:hidden;}
+.hero-inner{padding:20px 22px 0;}
+.hero-pill-row{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;}
+.pill{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:2px;font-weight:500;}
+.pill-hot{background:#fef2f2;color:var(--pill-hot);border:1px solid #fca5a5;}
+.pill-new{background:#eff6ff;color:var(--pill-new);border:1px solid #93c5fd;}
+.pill-data{background:#f0fdf4;color:var(--pill-data);border:1px solid #86efac;}
+.pill-spread{background:#faf5ff;color:var(--pill-spread);border:1px solid #d8b4fe;}
+.hero-title{font-family:'Noto Serif SC',serif;font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:8px;}
+.hero-source{font-family:'DM Mono',monospace;font-size:10px;color:var(--ghost);margin-bottom:14px;}
+.catalyst-box{background:#fff;border-left:3px solid var(--accent);padding:9px 12px;margin-bottom:14px;font-size:12.5px;color:var(--ink);font-style:italic;}
+.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px;}
+.drow-4{background:var(--paper-deep);border-radius:3px;padding:10px 8px 8px;text-align:center;}
+.di-n{font-family:'DM Mono',monospace;font-size:17px;font-weight:500;color:var(--accent);display:block;line-height:1.1;}
+.di-l{font-size:10px;color:var(--ghost);margin-top:3px;display:block;}
+.hero-body{font-size:13px;line-height:1.7;color:var(--ink-light);padding-bottom:16px;}
+.hero-body p{margin-bottom:8px;}
+.hero-body strong{color:var(--ink);font-weight:700;}
+.chip-row{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 16px;}
+.chip{font-family:'DM Mono',monospace;font-size:10px;background:var(--paper-deep);border:1px solid var(--border);color:var(--ink-light);padding:3px 8px;border-radius:3px;}
+.chip.p{background:var(--accent-light);border-color:#fcd34d;color:var(--accent-deep);font-weight:500;}
+.chip.p::before{content:'★ ';font-size:9px;}
+.therefore-block{background:var(--accent);padding:12px 22px;display:flex;gap:10px;align-items:flex-start;}
+.tb-label{font-family:'DM Mono',monospace;font-size:11px;color:#fcd34d;white-space:nowrap;padding-top:1px;font-weight:500;}
+.tb-text{color:#fff;font-size:13px;line-height:1.55;}
+
+.sig-grid{padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.sig-card{background:var(--paper-warm);border:1px solid var(--border);border-top:3px solid var(--pill-new);border-radius:4px;overflow:hidden;}
+.sig-card.hot{border-top-color:var(--pill-hot);}
+.sig-card.orange{border-top-color:var(--accent);}
+.sig-card.green{border-top-color:var(--pill-green);}
+.sig-card.purple{border-top-color:var(--pill-spread);}
+.sig-inner{padding:14px 14px 0;}
+.sig-title{font-family:'Noto Serif SC',serif;font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:6px;line-height:1.35;}
+.sig-source{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--ghost);margin-bottom:9px;}
+.sig-body{font-size:12px;line-height:1.65;color:var(--ink-light);padding-bottom:11px;}
+.sig-body strong{color:var(--ink);}
+.sig-body p{margin-bottom:7px;}
+.sig-chips{padding:0 14px 10px;display:flex;gap:5px;flex-wrap:wrap;}
+.sig-therefore{display:flex;gap:8px;padding:9px 14px;background:var(--paper-deep);align-items:flex-start;}
+.sig-therefore.orange{background:var(--accent-light);}
+.sig-therefore.hot{background:#fef2f2;}
+.sig-therefore.green{background:#f0fdf4;}
+.sig-therefore.purple{background:#faf5ff;}
+.sl{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);white-space:nowrap;padding-top:1px;font-weight:500;}
+.st2{font-size:11.5px;color:var(--ink-light);line-height:1.5;}
+
+.bg-grid{padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.bg-card{background:var(--paper-warm);border:1px solid var(--border);border-left:3px solid var(--border);border-radius:4px;padding:13px 14px;}
+.bg-card.accent-l{border-left-color:var(--accent);}
+.bg-card.blue-l{border-left-color:var(--pill-new);}
+.bg-card.green-l{border-left-color:var(--pill-green);}
+.bg-card.purple-l{border-left-color:var(--pill-spread);}
+.bg-card.red-l{border-left-color:var(--pill-hot);}
+.bg-card.gray-l{border-left-color:var(--ghost);}
+.bg-tag{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--ghost);margin-bottom:5px;}
+.bg-title{font-family:'Noto Serif SC',serif;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:6px;line-height:1.35;}
+.bg-body{font-size:11.5px;line-height:1.6;color:var(--ink-light);}
+.bg-chips{margin-top:8px;display:flex;gap:4px;flex-wrap:wrap;}
+
+.watch-wrap{padding:0 32px;}
+.watch-table{width:100%;border-collapse:collapse;background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;overflow:hidden;font-size:12px;}
+.watch-table thead tr{background:var(--mast);}
+.watch-table thead th{color:rgba(253,248,240,0.65);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.08em;padding:9px 12px;text-align:left;font-weight:400;}
+.watch-table tbody tr{border-bottom:1px solid var(--border);}
+.watch-table tbody tr:last-child{border-bottom:none;}
+.watch-table tbody tr:hover{background:var(--paper-deep);}
+.watch-table td{padding:10px 12px;vertical-align:top;color:var(--ink-light);line-height:1.55;}
+.watch-table td:first-child{color:var(--ink);font-weight:500;font-size:12.5px;}
+.node-red{font-family:'DM Mono',monospace;font-size:10px;background:#fef2f2;color:var(--pill-hot);border:1px solid #fca5a5;padding:1px 6px;border-radius:2px;display:inline-block;}
+.node-amber{font-family:'DM Mono',monospace;font-size:10px;background:var(--accent-light);color:var(--accent-deep);border:1px solid #fcd34d;padding:1px 6px;border-radius:2px;display:inline-block;}
+.node-green{font-family:'DM Mono',monospace;font-size:10px;background:#f0fdf4;color:var(--pill-green);border:1px solid #86efac;padding:1px 6px;border-radius:2px;display:inline-block;}
+
+.ticker-grid{padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.ticker-card{background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;display:flex;overflow:hidden;}
+.ticker-left{background:var(--mast);padding:14px;display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:82px;}
+.ticker-name{font-family:'Noto Sans SC',sans-serif;font-size:13px;font-weight:700;color:#fdf8f0;text-align:center;line-height:1.3;margin-bottom:6px;}
+.ticker-count{font-family:'DM Mono',monospace;font-size:30px;font-weight:500;color:var(--accent);line-height:1;}
+.ticker-unit{font-family:'DM Mono',monospace;font-size:9px;color:rgba(253,248,240,0.40);margin-top:2px;}
+.ticker-right{padding:12px 13px;flex:1;}
+.ticker-logic{font-size:11.5px;color:var(--ink-light);line-height:1.58;margin-bottom:7px;}
+.ticker-source{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--ghost);}
+
+.gloss-wrap{padding:0 32px 32px;}
+.gloss-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.gc{background:var(--paper-warm);border:1px solid var(--border);border-radius:4px;padding:12px 14px;}
+.gc-term{font-family:'DM Mono',monospace;font-size:12px;color:var(--accent-deep);font-weight:500;display:block;margin-bottom:5px;}
+.gc-def{font-size:11.5px;color:var(--ink-light);line-height:1.6;margin-bottom:6px;}
+.gc-why{font-size:11px;color:var(--ink-light);background:var(--paper-deep);border-radius:2px;padding:5px 8px;line-height:1.55;}
+.gc-why strong{color:var(--accent);}
+
+.footer{background:var(--mast);padding:14px 32px;display:flex;justify-content:space-between;align-items:center;}
+.footer-brand{font-family:'Noto Serif SC',serif;font-size:12px;color:rgba(253,248,240,0.45);}
+.footer-ts{font-family:'DM Mono',monospace;font-size:10px;color:rgba(253,248,240,0.30);letter-spacing:0.06em;}
+.sentiment-bar{background:var(--paper-warm);margin:12px 32px;border:1px solid var(--border);border-top:3px solid var(--accent);padding:18px 22px;border-radius:4px}.sentiment-bar .ctx-label{color:var(--accent)}.sentiment-bar .ctx-who{color:var(--accent-deep);min-width:88px}.sentiment-bar .ctx-text{color:var(--ink-light)}.sentiment-bar a,.hero-source a,.sig-source a,.context-bar a{color:inherit;text-decoration:underline;text-underline-offset:3px}.sentiment-bar .ctx-text em{color:#1e40af}.ctx-meta{display:block;color:var(--ghost);font-size:10px;margin-bottom:3px}.sig-body p{margin-bottom:10px}.bg-body p{margin-bottom:7px}@media(max-width:600px){.sentiment-bar{margin:10px 16px;padding:14px}.ctx-item{display:block}.ctx-who{display:block;margin-bottom:4px}.data-row{flex-wrap:wrap}.drow-4{min-width:50%;}.mast-title{font-size:23px}}
+
+@media(max-width:600px){.sig-grid,.bg-grid,.ticker-grid,.gloss-grid{grid-template-columns:1fr}.sig-grid,.bg-grid,.ticker-grid{padding-left:16px;padding-right:16px}.gloss-wrap{padding:0 16px 24px}.watch-wrap{padding:0 16px;overflow-x:auto}.watch-table{min-width:640px}.section-hd{padding-left:16px;padding-right:16px}.hero-wrap{padding-left:16px;padding-right:16px}.hero-inner{padding:16px 16px 0}.footer{display:block}.footer-brand{margin-top:6px;font-size:10px}}
+.bg-body a{color:var(--accent-deep);text-underline-offset:2px}.ticker-card{display:block;padding:12px 14px}.ticker-name{display:block;color:var(--ink);font-weight:700;font-size:13px;margin-bottom:5px}.ticker-logic{display:block;font-size:12px}.ticker-source{display:block;font-size:10px;margin-top:4px}</style>
+</head>
+<body>
+<div class="alert-bar"><div class="alert-icon">▤</div><div><div class="alert-label">■ 今日操盘策略</div><div class="alert-text">重点观察上证指数，周线低位计数与日线初步底部信号同时出现，但跌势仍在加快；<em>11月23日至25日</em>能否止跌或显著放缓下跌，将影响这轮信号能否保留。观察多个指数是否同步企稳，若上半周继续加速下行，信号可能失效，暂不据此确认反转。</div></div></div>
+<div class="masthead"><div class="mast-top"><span class="mast-brand">产业投研日报</span><span class="mast-vol">VOL.138</span></div><div class="mast-title">海外芯片交付受限，国产制造与集群运营面临交付考验</div><div class="mast-subtitle">2026.11.22 SUN · 周末复盘 · 信息截至22:30<br>国产算力　｜　融资保证金、蒸镀源、机器人数据、PCB钻针</div></div>
+<div class="verdict-bar"><div class="verdict-label">■ 今日判断</div><div class="verdict-text">国产算力的替代需求更迫切，业绩兑现仍要经过制造和部署。海外代工交付限制已见诸报道，汕头国产芯片集群也已启用，供给约束与应用落地同时发生。晶圆厂新增设备采购、芯片量产良率和运营商付费调用，将决定国内能承接多少需求。周末融资保证金下调提供了政策支持，但要到11月30日实施；上半周市场仍需自行消化抛售，底部信号尚待价格走势确认。</div></div>
+<div class="section-hd"><span class="section-num">HERO</span><span class="section-title">今日主线</span><div class="section-rule"></div></div>
+<div class="hero-wrap"><div class="hero-card"><div class="hero-inner"><div class="hero-pill-row"><span class="pill pill-hot">国产制造</span><span class="pill pill-data">集群运营</span></div><div class="hero-title">部分境外芯片交付暂停，国产替代需要制造与应用同步推进</div><div class="hero-source">11月19日报道／11月16日地方披露 · <a href="https://ca.investing.com/news/stock-market-news/tsmc-tightens-china-ai-chip-curbs-as-new-us-rules-close-manufacturing-loophole-sources-say-4969601" target="_blank" rel="noopener noreferrer">路透报道（Investing.com刊载）</a> ／ <a href="https://www.shantou.gov.cn/cnst/ywdt/styw/content/post_2585143.html" target="_blank" rel="noopener noreferrer">汕头市政府门户网站</a></div><div class="catalyst-box">新增变化是部分交付受到限制。国内已有集群落地样本，接下来跟踪制造承接、设备验收与付费服务。</div><div class="hero-body"><p><strong>交付限制让国产制造更紧迫。</strong>路透11月19日报道，台积电收紧对部分中国芯片设计客户的先进制造限制，涉及此前获准的一些订单；同日报道亦提及金融时报关于台积电、三星暂停部分交付的消息。受限范围需按具体客户、产品和许可证判断。开源电子与广发计算机的交流均关注国产制造承接机会。境外流片受限后，设计公司需要重新评估可获得的工艺、封装及制造排期。</p><p><strong>设计迁移会先增加工程工作。</strong>芯片更换制造平台，要重新完成工艺适配、设计验证和流片，之后才进入良率爬坡。已有国产量产基础的产品，与需要迁移工艺的新品，交付时间会有明显差异。晶圆厂扩产也需要厂务、设备搬入、工艺调试和客户认证。对设备供应商而言，客户扩产计划只有转成采购合同并完成验收，才能逐步贡献收入。</p><p><strong>国产集群已经有运营样本。</strong>汕头市政府门户网站11月16日披露，昇腾950DT词元出海集群已于11月13日启用，中国电信提供基础底座，华为提供设备，天亿马负责投资运营。该项目把境内生成的算力服务经海缆连接海外市场。可进一步观察海外客户付费调用、集群稳定运行和资金回收，启用本身尚不能说明利用率与利润水平。</p><p><strong>公司映射沿采购环节展开。</strong>中芯国际对应晶圆制造承接；北方华创、中微公司、拓荆科技对应设备采购及交付；苏试试验对应可靠性与失效分析等检测需求；天亿马则直接参与汕头集群投资运营。它们各自面对不同的兑现条件。制造看产出与良率，设备看验收，检测看客户送样及设备利用率，运营看调用与回款。</p><p><strong>国产算力也受客户预算约束。</strong>海外AI投资预期降温会影响融资意愿，国内替代则可能改变同一笔采购预算的去向。两者能够同时发生。若国内云厂增加国产芯片采购，但应用收入与回款放缓，设备需求仍可能分批释放。后续财报中，采购预付款、在建工程转固、折旧和云收入的配合程度，将比单一的资本开支增长更能说明投入产出。</p></div><div class="chip-row"><span class="chip p">中芯国际</span><span class="chip p">北方华创</span><span class="chip p">中微公司</span><span class="chip p">拓荆科技</span><span class="chip p">苏试试验</span><span class="chip p">天亿马</span></div></div></div></div>
+<div class="context-bar sentiment-bar"><div class="ctx-label">■ 市场声音</div>
+<div class="ctx-item"><div class="ctx-who">外资机构</div><div class="ctx-text"><span class="ctx-meta">Edmond de Rothschild资管 · 11月20日 · 机构原文 · <a href="https://am.edmond-de-rothschild.com/media/1anphrv5/edram-market-flash-20-11-2026-english.pdf" target="_blank" rel="noopener noreferrer">原文</a></span>该机构把本轮风险回避归因于AI支出疑虑与联储偏鹰态度叠加，指出卖压已经从科技扩散至防御和低波动股票，美债则获得避险买盘。其观察期截至报告发布时，不能与周五最终收盘数据混用。对组合而言，原先以行业分散降低波动的做法，在广泛卖出时也可能同时承压。</div></div>
+<div class="ctx-item"><div class="ctx-who">海外媒体</div><div class="ctx-text"><span class="ctx-meta">路透 · 11月20日伦敦上午报道 · MarketScreener刊载 · <a href="https://uk.marketscreener.com/news/stocks-slide-as-ai-selloff-deepens-asia-set-for-worst-week-since-2020-ce785ed3d98aff21" target="_blank" rel="noopener noreferrer">原文</a></span>报道认为Anthropic上市未能扭转AI交易信心，全球股票承压，投资者转向政府债券。它描述的是当时亚洲交易及欧美盘前环境。与国内卖方强调替代需求的观点并列，两类观点分别关注需求与融资。技术应用仍在推进，但新增支出的融资成本与回报要求已经提高。</div></div>
+</div><div class="section-hd"><span class="section-num">SIGNAL</span><span class="section-title">今日信号</span><div class="section-rule"></div></div><div class="sig-grid">
+<div class="sig-card purple"><div class="sig-inner"><div class="hero-pill-row"><span class="pill pill-data">融资规则</span></div><div class="sig-title">融资买入最低保证金比例降至80%，11月30日起实施</div><div class="sig-source">沪深北交易所 · 11月22日 · <a href="https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20261122_10838649.shtml" target="_blank" rel="noopener noreferrer">原文</a></div><div class="sig-body"><p>交易所通知将最低融资保证金比例由100%调低至80%，属于已公布、待生效的规则调整。同等合格保证金可支持的融资额度增加，但实际使用仍取决于券商授信、可充抵资产折算和客户意愿。</p><p>按保证金金额除以比例计算，100万元保证金对应融资买入额度上限由100万元变为125万元，增加25%；这不是新增资金实际入市的承诺。11月30日前先看政策预期与市场承接，实施后再看融资余额、成交和券商具体安排，不能把理论额度一次性计入资金流。</p></div><div class="sig-chips"></div></div></div>
+<div class="sig-card orange"><div class="sig-inner"><div class="hero-pill-row"><span class="pill pill-data">OLED设备</span></div><div class="sig-title">奥来德子公司预中标蒸镀源，预计金额5.5亿至7亿元</div><div class="sig-source">11月22日披露 · 公司公告转载 · <a href="https://www.cfi.net.cn/p20261122000184.html" target="_blank" rel="noopener noreferrer">原文</a></div><div class="sig-body"><p>上海升翕成为京东方第8.6代AMOLED生产线线性蒸镀源第一中标候选人，预计金额5.5亿至7亿元，评标公示于11月23日截止。当前仍需经过公示、正式中标与合同签订，最终金额以合同为准。</p><p>公告预计交付、验收对2027及2028年业绩产生影响，也存在延后可能。设备随面板线建设安装，确认收入通常晚于中标。对主业的跟踪应落在采购合同、交付批次和验收上；玻璃基板材料及机器人电子皮肤属于其他业务，不把蒸镀源项目金额外推为这些新业务的订单。</p></div><div class="sig-chips"><span class="chip p">奥来德</span></div></div></div>
+<div class="sig-card green"><div class="sig-inner"><div class="hero-pill-row"><span class="pill pill-data">PCB耗材</span></div><div class="sig-title">鼎泰高科刀具订单增长，高多层板推动钻针组合变化</div><div class="sig-source">10月28日三季报／11月22日交流汇编 · <a href="https://static.cninfo.com.cn/finalpage/2026-10-28/1225629480.PDF">公司三季报</a></div><div class="sig-body"><p>公司三季报披露，前三季营收34.87亿元，同比增长139.25%，由AI PCB相关精密刀具及研磨抛光材料订单增长带动。同期经营现金流净额约158万元，采购支出增加，收入扩张仍占用营运资金。调研材料把高多层板的钻孔变化归纳为分段套钻：先用较短钻针预钻，再逐步加深。板厚、孔径、材料和加工精度共同影响钻针组合与使用寿命，不能仅按板层增加比例推算耗材需求。</p><p>交流称公司涂层钻及高长径比产品占比提高。产品结构改变可带动均价，但更耐磨的钻针也可能降低更换频率，板厂还会优化复磨和加工参数。后续需把高端钻针出货、单位售价和实际寿命放在一起，判断板厂加工量增长能转成多少耗材收入。扩产规划仍需用投产与利用率检验。</p></div><div class="sig-chips"><span class="chip p">鼎泰高科</span></div></div></div>
+<div class="sig-card blue"><div class="sig-inner"><div class="hero-pill-row"><span class="pill pill-data">机器人数据</span></div><div class="sig-title">具身智能数据标准研制推进，数采交付需要统一质量口径</div><div class="sig-source">11月12日官方披露／11月22日研制动态 · <a href="https://jszwb.jiangsu.gov.cn/art/2026/11/12/art_92152_11859087.html">江苏省数据局</a></div><div class="sig-body"><p>江苏省数据局11月12日披露，具身智能数据标准起草工作组已于11月10日成立，围绕真机采集数据、人类演示数据与上下文协议启动标准预研。机器人训练涉及动作、视觉、力觉和任务结果，同一动作在不同本体上的可用程度并不相同，采集时长增长也未必对应更多可训练样本。</p><p>国金具身与东吴电新均关注真实交互数据需求。标准研制若推进到采集格式、标注、质量评价和验收规则，有助客户比较数据供应商。对触觉与数采链企业，跟踪重点是产品是否嵌入客户采集系统、是否有持续采购及数据验收，标准研制本身不对应订单，也不代表强制标准已经实施。</p></div><div class="sig-chips"><span class="chip p">日盈电子</span><span class="chip p">奥比中光</span><span class="chip p">福莱新材</span></div></div></div>
+</div><div class="section-hd"><span class="section-num">BRIEFING</span><span class="section-title">背景扩散</span><div class="section-rule"></div></div><div class="bg-grid">
+<div class="bg-card"><div class="bg-tag">NAND · TrendForce · 11月19日</div><div class="bg-title">NAND首季合约价预测转跌，产能仍在扩张</div><div class="bg-body">TrendForce预计2027年首季整体NAND合约价环比下降0%至5%，第二季起各产品类别进入下行；全年比特供应预计增长25%至30%。该机构认为，中国云厂商受GPU供应与库存等因素制约，下调企业级SSD订单，可能抵消北美新增需求。供给侧的高层数迁移和QLC渗透仍在增加比特产出。模组企业需消化库存成本，原厂面对量价压力，设备企业则还要看资本支出能否兑现；这些影响不能直接套到HBM或全部DRAM。 <a href="https://www.trendforce.com/presscenter/news/20261119-13314.html" target="_blank" rel="noopener noreferrer">原文</a></div><div class="bg-chips"></div></div>
+<div class="bg-card"><div class="bg-tag">机器人 · 北特科技业绩交流 · 11月16日</div><div class="bg-title">北特昆山产线启动后，还要等待批量交付贡献收入</div><div class="bg-body">公司业绩交流披露昆山产线已搬迁并启动生产，泰国基地仍在施工。供应链对明年放量的预期较高，工厂进度、设备可用与稳定良率却有各自时间表。丝杠需要满足精度、寿命与一致性要求，送样、定点、排产和收入确认也处于不同阶段。后续优先看客户验收与持续拉货，再观察新业务毛利能否覆盖折旧、研发及海外建设投入；不能用产线启动替代盈利兑现。 <a href="https://wap.stockstar.com/detail/IG2026111600036978" target="_blank" rel="noopener noreferrer">原文</a></div><div class="bg-chips"><span class="chip p">北特科技</span></div></div>
+<div class="bg-card"><div class="bg-tag">机器人零部件 · 11月22日调研汇编</div><div class="bg-title">减速器、丝杠与触觉配套面对不同交付节拍</div><div class="bg-body">调研围绕斯菱股份的减速器与轴承、金沃股份的丝杠核心部件、日盈电子的触觉方案展开。减速器和丝杠要跟随本体排产，轴承还可能按不同关节规格分批导入；触觉方案则取决于传感器、模组和算法协同。把机器人台数换算成零部件收入时，需要明确单机用量、供应份额和交付范围。若一家提供核心零件、另一家交付总成，不能将两者的订单金额当作同口径比较。</div><div class="bg-chips"><span class="chip p">金沃股份</span><span class="chip p">日盈电子</span></div></div>
+<div class="bg-card"><div class="bg-tag">端侧AI · 国海电子、东北计算机 · 11月22日汇编</div><div class="bg-title">端侧芯片新品仍要逐项核对制造与客户验证</div><div class="bg-body">两家机构均关注主控、协处理器和连接芯片的平台化机会。终端加入视觉理解、语音对话与动作执行后，会增加本地算力、内存带宽及能效要求，但眼镜、玩具和工业视觉的功耗与成本约束差异较大。部分产品已有流片或客户验证进展，具体供货仍需看产品许可、工艺及晶圆厂安排。工具链能够跨终端复用的企业，可降低客户开发成本，最终收入仍随客户新品量产释放。</div><div class="bg-chips"><span class="chip p">瑞芯微</span><span class="chip p">恒玄科技</span><span class="chip p">乐鑫科技</span><span class="chip p">晶晨股份</span></div></div>
+<div class="bg-card"><div class="bg-tag">半导体检测 · 华创机械 · 11月22日汇编</div><div class="bg-title">工艺迁移增加失效分析需求，检测机构要看产能利用</div><div class="bg-body">交流关注苏试试验旗下宜特业务从设计公司向晶圆厂、设备厂拓展，以及可靠性、失效分析和材料分析之间的业务变化。工艺迁移时，客户需要定位缺陷、验证封装及器件寿命，可能增加送样。设备购置后能否形成收入，取决于客户认证、工程人员和实验室排期。高功耗芯片测试的设备能力还需与具体测试项目匹配，不宜单凭功率覆盖范围推断全部先进芯片测试收入。</div><div class="bg-chips"><span class="chip p">苏试试验</span></div></div>
+<div class="bg-card"><div class="bg-tag">核电 · 中信公用事业 · 11月22日汇编</div><div class="bg-title">核电机制电价仍属政策预期，需先看覆盖与结算规则</div><div class="bg-body">中信公用事业认为，核电中长期经营面临市场电价波动，提出全国性机制电价可能降低盈利波动的判断。若部分电量按较稳定规则结算，现金流可见度有望提高，但收益取决于保障比例、电价及剩余市场电量的成交情况。现有试点不能直接视作全国统一规则；跟踪中国核电、中国广核时，还应把机组投产、利用小时和检修安排与电价变化一并考虑。</div><div class="bg-chips"><span class="chip p">中国核电</span><span class="chip p">中国广核</span></div></div>
+<div class="bg-card"><div class="bg-tag">互联网 · 中金互联网 · 11月22日</div><div class="bg-title">互联网估值回落后，经营压力仍影响板块修复</div><div class="bg-body">中金互联网周思考认为，宏观需求、内容时长竞争及AI投入仍对盈利和现金流施压。外卖竞争若缓和，有助部分平台减少补贴；短剧对娱乐时长的争夺则可能影响游戏、广告和长视频。公司之间的差异将通过广告变现、用户留存和回购能力体现。单季利润好于预期，还需区分收入改善与费用收缩；资本开支见顶的管理层预期，也要与设备到货、预付款和折旧分别核对。</div><div class="bg-chips"></div></div>
+<div class="bg-card"><div class="bg-tag">传媒 · 芒果超媒点评 · 11月20日</div><div class="bg-title">芒果超媒内容热度能否带动会员与广告仍需观察</div><div class="bg-body">点评关注新综艺热度、头部内容接力以及AIGC内容厂牌。综艺播放和市占率上升，能否转化为收入，仍取决于广告合同、会员拉新与续费，内容成本又决定利润率。AI制作可能扩大供给或减少部分工序成本，但平台需要持续获得付费、招商及版权收入。后续把节目排播、会员经营和季度成本变化对照，可判断内容热度是否带来可持续经营改善。</div><div class="bg-chips"><span class="chip p">芒果超媒</span></div></div>
+<div class="bg-card"><div class="bg-tag">有色金属 · 国盛有色 · 11月22日</div><div class="bg-title">铜库存与冶炼收益需要和金融卖压分别观察</div><div class="bg-body">国盛有色交流认为，近期金属价格同时受到美元、风险偏好与AI资本开支预期影响，实物端供给约束则尚未全部解除。铜矿复产仍需审批及谈判，冶炼收益还受硫酸、金银等副产品价格影响。若副产品贡献下降，矿端加工费偏弱的压力会更明显。后续看显性库存、现货升贴水与实际减产，才能判断金融卖压是否进一步传到供需；铜与铝的新增产能条件也不相同。</div><div class="bg-chips"></div></div>
+<div class="bg-card"><div class="bg-tag">红利与现金流 · 11月22日机构交流</div><div class="bg-title">红利资产要用未来分红能力检验静态股息率</div><div class="bg-body">交流关注建筑央企、建材与核电等现金回报方向。历史股息率以过去分红与当前股价计算，若利润回落、回款变慢或资本开支上升，下一期现金分红可能与历史值不同。建筑企业要看应收回款、项目现金流及负债，建材还需看销量与吨毛利。对有明确分红底线的公司，也需逐项核对承诺适用年份和约束条件，低估值与高静态股息率本身不能保证防御效果。</div><div class="bg-chips"><span class="chip p">中国建筑</span><span class="chip p">中材国际</span></div></div>
+</div><div class="section-hd"><span class="section-num">WATCH</span><span class="section-title">跟踪变量</span><div class="section-rule"></div></div>
+<div class="watch-wrap"><table class="watch-table"><thead><tr><th>事项</th><th>观察时间</th><th>变量</th><th>结果影响</th></tr></thead><tbody><tr><td>市场承接</td><td>11月23日至25日</td><td>上证与其他宽基指数的跌速、同步企稳程度</td><td>若继续加速下行，初步底部信号可能失效</td></tr><tr><td>融资规则实施</td><td>11月30日起</td><td>券商调整、融资余额与实际成交</td><td>规则空间须转成实际融资需求</td></tr><tr><td>蒸镀源采购</td><td>11月23日公示截止后</td><td>正式中标、合同与交付验收安排</td><td>预计影响2027至2028年，可能延后</td></tr><tr><td>国产算力</td><td>后续采购与财报</td><td>设备验收、芯片良率、集群付费调用</td><td>采购、制造与运营分别检验兑现</td></tr><tr><td>机器人交付</td><td>年末至2027年首季</td><td>客户验收、连续拉货与产品良率</td><td>区分目标排产、零部件交付和收入</td></tr><tr><td>存储价格</td><td>2027年首季至次季</td><td>NAND合约、现货、云厂订单与库存</td><td>验证TrendForce预测，独立观察HBM</td></tr><tr><td>PCB钻针</td><td>后续季度披露</td><td>高端钻针销量、均价与使用寿命</td><td>确认产品升级对收入及利润的净影响</td></tr></tbody></table></div>
+<div class="section-hd"><span class="section-num">COMPANIES</span><span class="section-title">高频标的速览</span><div class="section-rule"></div></div><div class="ticker-grid">
+<div class="ticker-card"><div class="ticker-name">北特科技</div><div class="ticker-logic">昆山产线启动，观察丝杠批量交付。</div><div class="ticker-source">当日资料提及；业务兑现条件见正文</div></div>
+<div class="ticker-card"><div class="ticker-name">中芯国际</div><div class="ticker-logic">制造承接要看产能与量产良率。</div><div class="ticker-source">当日资料提及；业务兑现条件见正文</div></div>
+<div class="ticker-card"><div class="ticker-name">苏试试验</div><div class="ticker-logic">工艺迁移及客户拓展可能增加检测。</div><div class="ticker-source">当日资料提及；业务兑现条件见正文</div></div>
+<div class="ticker-card"><div class="ticker-name">瑞芯微</div><div class="ticker-logic">端侧新品看制造安排与客户量产。</div><div class="ticker-source">当日资料提及；业务兑现条件见正文</div></div>
+<div class="ticker-card"><div class="ticker-name">奥来德</div><div class="ticker-logic">蒸镀源预中标，待合同与后续验收。</div><div class="ticker-source">当日资料提及；业务兑现条件见正文</div></div>
+<div class="ticker-card"><div class="ticker-name">日盈电子</div><div class="ticker-logic">触觉方案与数采合作看采购落地。</div><div class="ticker-source">当日资料提及；业务兑现条件见正文</div></div>
+<div class="ticker-card"><div class="ticker-name">科达利</div><div class="ticker-logic">机器人业务随客户验证与量产推进。</div><div class="ticker-source">当日资料提及；业务兑现条件见正文</div></div>
+<div class="ticker-card"><div class="ticker-name">浙江荣泰</div><div class="ticker-logic">机器人配套进度随本体排产检验。</div><div class="ticker-source">当日资料提及；业务兑现条件见正文</div></div>
+</div><div class="footer"><div class="footer-brand">怀新 · 产业投研日报</div><div class="footer-ts">VOL.138 · 2026.11.22 · 22:30</div></div></body></html>
