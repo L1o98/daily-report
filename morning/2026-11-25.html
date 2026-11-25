@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>开盘雷达 · 2026.11.25</title>
+<style>
+:root { --paper:#f7f4ef; --ink:#2c1810; --accent:#b45309; --muted:#79675b; --line:#d9cfc2; --wash:#efe7db; --down:#56684f; --up:#a3442c; }
+* { box-sizing:border-box; }
+html { background:var(--paper); color:var(--ink); font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif; }
+body { margin:0; }
+main { max-width:1180px; margin:auto; padding:34px 48px 46px; }
+header { border-top:5px solid var(--ink); border-bottom:1px solid var(--ink); padding:19px 0; }
+.edition,.mastfoot { color:var(--muted); font-size:13px; }
+.mastfoot { display:flex; justify-content:space-between; gap:10px; }
+h1,h2,article h4 { font-family:"Noto Serif CJK SC","Songti SC",serif; }
+h1 { font-size:52px; letter-spacing:.13em; margin:12px 0 5px; font-weight:800; }
+.lead { padding:25px 0; }
+h2 { font-size:34px; line-height:1.48; margin:0 0 12px; }
+.lead p { font-size:16px; line-height:1.9; margin:0; max-width:970px; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-block:1px solid var(--line); padding:17px 0; }
+.metric { padding:0 20px; border-left:1px solid var(--line); }
+.metric:first-child { border:0; padding-left:0; }
+.metric small { display:block; color:var(--muted); font-size:12px; }
+.metric strong { display:block; font-size:34px; line-height:1.15; letter-spacing:-.04em; margin:8px 0; color:var(--up); }
+.metric.negative strong { color:var(--down); }
+.metric.neutral strong { color:var(--muted); }
+.metric span { font-size:13px; color:var(--muted); }
+.metric strong,.metric span { font-variant-numeric:tabular-nums; }
+.session { font-size:11px; line-height:1.7; color:var(--muted); margin:9px 0 24px; }
+.market { margin:23px 0 29px; border-bottom:1px solid var(--line); }
+h3 { font-size:20px; letter-spacing:.08em; margin:0; padding:0 0 12px; border-bottom:2px solid var(--ink); }
+.market-row { display:grid; grid-template-columns:155px minmax(0,1fr); gap:22px; padding:15px 0; border-bottom:1px solid var(--line); }
+.market-row:last-child { border-bottom:0; }
+.market-row h4 { font-size:14px; line-height:1.7; color:var(--accent); margin:0; }
+.market-row p,article p { font-size:14px; line-height:1.95; margin:0; }
+.event-body,.columns { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:28px; }
+.columns { padding:12px 0; border-bottom:1px solid var(--line); font-size:12px; color:var(--muted); }
+article { border-bottom:1px solid var(--line); padding:19px 0 21px; }
+article h4 { font-size:20px; line-height:1.5; margin:0 0 12px; }
+.mobile-label { display:none; }
+.calendar { margin:22px 0 0; padding:13px 17px; background:var(--wash); font-size:13px; line-height:1.8; }
+@media (max-width:700px) {
+  main { padding:20px 20px 28px; }
+  h1 { font-size:40px; }
+  h2 { font-size:25px; }
+  .edition,.mastfoot { font-size:11px; }
+  .mastfoot { flex-direction:column; gap:5px; }
+  .lead p { font-size:14px; }
+  .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 0; }
+  .metric { padding:0 12px; }
+  .metric:nth-child(3) { border:0; padding-left:0; }
+  .metric strong { font-size:30px; }
+  .market-row,.event-body { display:block; }
+  .market-row h4 { margin-bottom:5px; }
+  .columns { display:none; }
+  article h4 { font-size:19px; }
+  article p+p { margin-top:12px; }
+  .mobile-label { display:block; color:var(--muted); font-size:11px; margin-bottom:3px; }
+}
+</style>
+</head>
+<body>
+<main data-date="2026-11-25">
+<header>
+  <div class="edition">2026.11.25　星期三</div>
+  <h1>开盘雷达</h1>
+  <div class="mastfoot"><span>信息截至 08:30（北京时间）</span><span>美股交易日 11月24日 · 周二</span></div>
+</header>
+<section class="lead">
+  <h2>芯片股回吐涨幅，纳指跌1.48%，道指重返5万点</h2>
+  <p>英伟达回吐周一部分涨幅，费城半导体指数跌近8%，带动纳指和标普500回落。多数标普成分股仍收涨，医疗和必需消费板块走强。美国消费者信心跳升，百货商科尔士在同店销售转正后大涨。</p>
+</section>
+<section class="metrics" aria-label="美股常规收盘">
+  <div class="metric negative"><small>标普500</small><strong>−0.50%</strong><span>7,201.09 点</span></div>
+  <div class="metric negative"><small>纳斯达克综合</small><strong>−1.48%</strong><span>23,733.54 点</span></div>
+  <div class="metric positive"><small>道琼斯工业</small><strong>+0.85%</strong><span>50,018.70 点</span></div>
+  <div class="metric positive"><small>罗素2000</small><strong>+0.57%</strong><span>2,684.94 点</span></div>
+</section>
+<p class="session">纽约11月24日16:00常规收盘，对应北京时间11月25日05:00。下列个股和ETF涨跌幅均为常规收盘，财报另标发布时段。</p>
+<section class="market"><h3>美股回顾</h3>
+  <div class="market-row"><h4>半导体指数跌7.88%</h4><p>黄仁勋复职带起的周一涨势未能延续。英伟达周二跌5.86%，模拟芯片商亚德诺（ADI）在发布财报后跌17.37%，科技板块ETF（XLK）跌3.26%。前一晚公布财报的慧与（HPE）也跌约16%。从芯片到服务器，抛售范围比单看英伟达更广。</p></div>
+  <div class="market-row"><h4>医疗与必需消费逆势收涨</h4><p>医疗板块ETF（XLV）涨2.95%，必需消费板块ETF（XLP）涨1.66%，罗素2000也收涨0.57%。大型科技股压低了标普500，但多数成分股上涨。戴尔常规收盘跌约12%，随后才公布业绩和上调指引。</p></div>
+  <div class="market-row"><h4>同店销售转正，科尔士涨近两成</h4><p>科尔士公布第三财季同店销售同比增长1.2%，逾四年来首次转正。公司上调全年业绩展望，股价收涨19.48%。</p></div>
+</section>
+<section aria-label="要闻速览"><h3>要闻速览</h3>
+  <div class="columns" aria-hidden="true"><span>消息摘要</span><span>市场关注</span></div>
+  <article><h4>美国11月消费者信心升至103.3</h4><div class="event-body">
+    <p><span class="mobile-label">消息摘要</span>美国谘商会公布，11月消费者信心指数由10月修订后的91.9升至103.3，为2025年1月以来最高。受访者对当前和未来就业状况的看法均有改善。</p>
+    <p><span class="mobile-label">市场关注</span>受访者计划小幅增加商品和度假支出。感恩节后的零售数据将提供实际消费的对照。</p>
+  </div></article>
+  <article><h4>戴尔上调全年AI服务器收入指引</h4><div class="event-body">
+    <p><span class="mobile-label">消息摘要</span>戴尔在周二美股盘后公布，2027财年第三季度AI优化服务器收入为220亿美元，同比增长291%。公司把该业务全年收入指引由740亿美元上调至780亿美元。</p>
+    <p><span class="mobile-label">市场关注</span>服务器收入已明显增长。随着出货规模上升，订单能否按期交付、服务器收入能带来多少利润，仍会影响市场对这份指引的解读。</p>
+  </div></article>
+  <article><h4>赛诺菲拟斥资410亿美元收购Insmed</h4><div class="event-body">
+    <p><span class="mobile-label">消息摘要</span>赛诺菲同意以每股175美元现金收购美国药企Insmed，股权价值约410亿美元。Insmed周二收涨约14%。交易仍须取得股东及监管批准。</p>
+    <p><span class="mobile-label">市场关注</span>Insmed的Brinsupri和Arikayce均已上市。若交易完成，赛诺菲将用自己的销售网络扩大这两款呼吸疾病药物的覆盖。</p>
+  </div></article>
+</section>
+<p class="calendar">今晚21:30（北京时间），美国经济分析局计划公布10月个人收入和支出（含PCE价格指数）及三季度GDP第二次估算。纽交所周四感恩节休市，周五美东13:00提前收盘。</p>
+</main>
+</body>
+</html>
